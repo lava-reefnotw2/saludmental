@@ -1,0 +1,180 @@
+{
+  "sample_size": 4993,
+  "y1_prevalence": 0.1858602042860004,
+  "countries_count": 12,
+  "prevalence_by_country": {
+    "ARG": 0.1995,
+    "BRA": 0.2139,
+    "CHL": 0.1779,
+    "COL": 0.1875,
+    "CRI": 0.1923,
+    "ECU": 0.1587,
+    "GTM": 0.1847,
+    "MEX": 0.1803,
+    "PAN": 0.1947,
+    "PER": 0.1683,
+    "SLV": 0.1851,
+    "URY": 0.1875
+  },
+  "prevalence_by_sex": {
+    "Femenino (0)": 0.2390715667311412,
+    "Masculino (1)": 0.1287375415282392
+  },
+  "prevalence_by_age": {
+    "11-13": 0.1795,
+    "14-15": 0.1961,
+    "16-17": 0.1785
+  },
+  "bivariate_associations": [
+    {
+      "determinante": "Acoso escolar (últimos 30d)",
+      "variable": "bullied_past_month",
+      "chi2_stat": 314.71,
+      "p_value": 2.0533961485231795e-70,
+      "odds_ratio": 3.67,
+      "ci_95": "[3.16 - 4.25]",
+      "significativo": true
+    },
+    {
+      "determinante": "Inseguridad alimentaria (≥2)",
+      "variable": "food_insecurity",
+      "chi2_stat": 116.34,
+      "p_value": 3.994432801016436e-27,
+      "odds_ratio": 2.45,
+      "ci_95": "[2.08 - 2.90]",
+      "significativo": true
+    },
+    {
+      "determinante": "Bajo apoyo parental (≤2)",
+      "variable": "parents_support",
+      "chi2_stat": 77.92,
+      "p_value": 1.0715710468113422e-18,
+      "odds_ratio": 2.0,
+      "ci_95": "[1.71 - 2.34]",
+      "significativo": true
+    },
+    {
+      "determinante": "Baja conexión escolar (≤2)",
+      "variable": "school_connectedness",
+      "chi2_stat": 48.15,
+      "p_value": 3.9565307070152145e-12,
+      "odds_ratio": 1.7,
+      "ci_95": "[1.46 - 1.97]",
+      "significativo": true
+    },
+    {
+      "determinante": "Absentismo escolar injustificado",
+      "variable": "truancy_past_month",
+      "chi2_stat": 1.28,
+      "p_value": 0.25794287450636266,
+      "odds_ratio": 1.12,
+      "ci_95": "[0.93 - 1.35]",
+      "significativo": false
+    },
+    {
+      "determinante": "Consumo reciente de alcohol",
+      "variable": "alcohol_use",
+      "chi2_stat": 17.23,
+      "p_value": 3.3040542263053676e-05,
+      "odds_ratio": 1.44,
+      "ci_95": "[1.21 - 1.71]",
+      "significativo": true
+    },
+    {
+      "determinante": "Consumo de drogas ilícitas",
+      "variable": "drug_use",
+      "chi2_stat": 34.18,
+      "p_value": 5.0252129594210904e-09,
+      "odds_ratio": 2.07,
+      "ci_95": "[1.62 - 2.64]",
+      "significativo": true
+    },
+    {
+      "determinante": "Peleas físicas (≥1)",
+      "variable": "physical_fights",
+      "chi2_stat": 0.13,
+      "p_value": 0.7208433449414902,
+      "odds_ratio": 0.97,
+      "ci_95": "[0.83 - 1.13]",
+      "significativo": false
+    },
+    {
+      "determinante": "Ansiedad que interrumpe el sueño (≥4)",
+      "variable": "anxiety_sleep",
+      "chi2_stat": 934.94,
+      "p_value": 2.4890140110293983e-205,
+      "odds_ratio": 10.17,
+      "ci_95": "[8.61 - 12.00]",
+      "significativo": true
+    },
+    {
+      "determinante": "Soledad grave frecuente (≥4)",
+      "variable": "loneliness",
+      "chi2_stat": 3186.75,
+      "p_value": 0.0,
+      "odds_ratio": null,
+      "ci_95": "N/A",
+      "significativo": true
+    },
+    {
+      "determinante": "Sexo femenino (referencia masc.)",
+      "variable": "sex",
+      "chi2_stat": 99.57,
+      "p_value": 1.894078657336611e-23,
+      "odds_ratio": 2.13,
+      "ci_95": "[1.83 - 2.47]",
+      "significativo": true
+    }
+  ],
+  "spearman_correlations": {
+    "loneliness": {
+      "rho": 0.66,
+      "p_value": 0.0
+    },
+    "anxiety_sleep": {
+      "rho": 0.384,
+      "p_value": 2.4101061420936147e-175
+    },
+    "bullied_past_month": {
+      "rho": 0.252,
+      "p_value": 5.693875986418593e-73
+    },
+    "bullied_type_count": {
+      "rho": 0.263,
+      "p_value": 7.851517678020364e-80
+    },
+    "parents_support": {
+      "rho": -0.094,
+      "p_value": 3.5675541174663003e-11
+    },
+    "family_connectedness": {
+      "rho": -0.053,
+      "p_value": 0.00015714014460602404
+    },
+    "school_connectedness": {
+      "rho": -0.088,
+      "p_value": 5.767352604605427e-10
+    },
+    "food_insecurity": {
+      "rho": 0.173,
+      "p_value": 6.682910844265638e-35
+    },
+    "alcohol_use": {
+      "rho": 0.059,
+      "p_value": 2.6609388189754147e-05
+    },
+    "drug_use": {
+      "rho": 0.084,
+      "p_value": 3.059176809067672e-09
+    },
+    "gini_index": {
+      "rho": 0.013,
+      "p_value": 0.36625369594928847
+    },
+    "health_exp_pc_usd": {
+      "rho": 0.013,
+      "p_value": 0.37041978155379984
+    }
+  },
+  "descriptive_univariate": {}
+}

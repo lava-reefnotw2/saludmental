@@ -1,0 +1,146 @@
+[
+  {
+    "feature":"loneliness",
+    "mean_abs_shap":5.53
+  },
+  {
+    "feature":"anxiety sleep",
+    "mean_abs_shap":1.7478
+  },
+  {
+    "feature":"bullied type count",
+    "mean_abs_shap":0.2062
+  },
+  {
+    "feature":"food insecurity",
+    "mean_abs_shap":0.2018
+  },
+  {
+    "feature":"school connectedness",
+    "mean_abs_shap":0.1575
+  },
+  {
+    "feature":"parents support",
+    "mean_abs_shap":0.15
+  },
+  {
+    "feature":"family connectedness",
+    "mean_abs_shap":0.1368
+  },
+  {
+    "feature":"friends support",
+    "mean_abs_shap":0.1171
+  },
+  {
+    "feature":"age years",
+    "mean_abs_shap":0.1035
+  },
+  {
+    "feature":"health exp pc usd",
+    "mean_abs_shap":0.0924
+  },
+  {
+    "feature":"parents supervision",
+    "mean_abs_shap":0.0898
+  },
+  {
+    "feature":"sex 0",
+    "mean_abs_shap":0.0802
+  },
+  {
+    "feature":"drug use",
+    "mean_abs_shap":0.0797
+  },
+  {
+    "feature":"physical fights",
+    "mean_abs_shap":0.0788
+  },
+  {
+    "feature":"gini index",
+    "mean_abs_shap":0.0787
+  },
+  {
+    "feature":"bullied past month",
+    "mean_abs_shap":0.071
+  },
+  {
+    "feature":"sex 1",
+    "mean_abs_shap":0.0708
+  },
+  {
+    "feature":"country MEX",
+    "mean_abs_shap":0.0628
+  },
+  {
+    "feature":"grade band mid 9 10",
+    "mean_abs_shap":0.0427
+  },
+  {
+    "feature":"urban rural 1",
+    "mean_abs_shap":0.041
+  },
+  {
+    "feature":"grade band low 7 8",
+    "mean_abs_shap":0.0363
+  },
+  {
+    "feature":"urban rural 0",
+    "mean_abs_shap":0.0321
+  },
+  {
+    "feature":"country CHL",
+    "mean_abs_shap":0.0311
+  },
+  {
+    "feature":"country ARG",
+    "mean_abs_shap":0.031
+  },
+  {
+    "feature":"tobacco use",
+    "mean_abs_shap":0.0307
+  },
+  {
+    "feature":"country PAN",
+    "mean_abs_shap":0.0295
+  },
+  {
+    "feature":"country ECU",
+    "mean_abs_shap":0.0246
+  },
+  {
+    "feature":"country COL",
+    "mean_abs_shap":0.0237
+  },
+  {
+    "feature":"alcohol use",
+    "mean_abs_shap":0.0224
+  },
+  {
+    "feature":"country URY",
+    "mean_abs_shap":0.0216
+  },
+  {
+    "feature":"country GTM",
+    "mean_abs_shap":0.0146
+  },
+  {
+    "feature":"country CRI",
+    "mean_abs_shap":0.0142
+  },
+  {
+    "feature":"country PER",
+    "mean_abs_shap":0.0107
+  },
+  {
+    "feature":"grade band high 11 12",
+    "mean_abs_shap":0.0101
+  },
+  {
+    "feature":"country BRA",
+    "mean_abs_shap":0.0094
+  },
+  {
+    "feature":"country SLV",
+    "mean_abs_shap":0.0063
+  }
+]

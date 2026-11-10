@@ -1,0 +1,309 @@
+# PROTOCOLO CIENTÍFICO Y TÉCNICO SP-07
+
+## Detección de patrones de riesgo en salud mental adolescente mediante inteligencia artificial y determinantes sociales
+
+**Título en inglés:** Explainable Machine Learning for Adolescent Mental Health Risk Stratification Using Social and Behavioral Determinants  
+**Versión:** 2.0 corregida | **Fecha de revisión:** 10 de noviembre de 2026  
+**Tipo de estudio:** transversal analítico, multicéntrico y retrospectivo, con microdatos secundarios de encuestas escolares  
+**Producto informático:** plataforma de investigación reproducible en Streamlit para datos tabulares  
+**Estado:** protocolo metodológico prospectivo respecto al análisis; no se afirma disponer aún de microdatos armonizados, modelos validados ni resultados empíricos.
+
+> **Regla de interpretación:** el proyecto identifica *asociaciones y patrones predictivos concurrentes* en indicadores autorreportados. No identifica trastornos psiquiátricos, no pronostica necesariamente eventos futuros y no está diseñado para diagnóstico, triaje clínico ni decisiones automatizadas sobre adolescentes.
+
+---
+
+## 0. Revisión de alineamiento y decisiones de corrección
+
+### 0.1 Coherencia con la ficha P07
+
+La ficha P07 plantea identificar patrones asociados a indicadores de malestar psicológico y riesgo psicosocial en adolescentes, usando encuestas poblacionales, cinco familias de modelos (regresión logística, Random Forest, XGBoost, CatBoost y MLP), ensambles/multitarea, comparación entre países, SHAP, evaluación de sesgos y resultados orientados a prevención no estigmatizante. **Estos componentes se conservan**. La plataforma es un medio de análisis e interpretación, no el objeto clínico del estudio.
+
+### 0.2 Correcciones sustantivas introducidas
+
+1. **Desenlace principal operable.** Se sustituye el desenlace compuesto inicial —que mezclaba soledad, ideación y supuestos síntomas depresivos sin una validación documentada— por **ideación suicida autorreportada en los últimos 12 meses (sí/no)**, una pregunta explícita de GSHS. Esto ofrece un criterio reproducible y evita presentar una combinación ad hoc como escala clínica validada. Soledad frecuente y preocupación que impide dormir se mantienen como desenlaces secundarios separados. La selección queda sujeta a constatar su disponibilidad y comparabilidad en las encuestas elegidas.
+2. **Fuga de información.** Las variables que definen cualquier desenlace (ideación, plan, intento, soledad y preocupación/sueño), y sus transformaciones, se excluyen de la matriz de predictores de **todos** los desenlaces. Los predictores se limitan a factores demográficos, familiares, escolares, conductuales y contextuales verificables. Se reporta el carácter transversal de la asociación.
+3. **Datos realmente tabulares.** Se sustituyen las referencias de Promptuario a fotografías, Grad-CAM++, mapas de atención y máscaras por importación de microdatos/tablas y explicabilidad tabular con SHAP, coeficientes, permutación, curvas de dependencia e interacciones sustentadas.
+4. **Disponibilidad real de indicadores.** Se elimina la asignación presuntamente universal de códigos de preguntas (B1, C1, F1, etc.), años y variables no verificadas. Se introduce una matriz de armonización por encuesta, país y año con procedencia y criterios de exclusión explícitos.
+5. **Validación consistente.** Se define partición por países —nunca aleatoria por filas—, con objetivo orientativo 70/15/15 para desarrollo/calibración-prueba final cuando el número de países y eventos lo permita. Dentro del conjunto de desarrollo se aplica validación cruzada anidada 5×3 agrupada por país. Leave-one-country-out queda como análisis de sensibilidad adicional, no como otro «fold externo» simultáneo.
+6. **Muestra sin precisión ficticia.** Se retira la afirmación de que N=4.900, 12 países y 323 personas/celda son suficientes. El tamaño real y la factibilidad de cada validación se determinarán después del inventario de datos, cuantificando eventos/no eventos, países, conglomerados y precisión de intervalos.
+7. **Calibración y equidad.** Se separan las estimaciones descriptivas de las pruebas confirmatorias, se prioriza PR-AUC para el desenlace infrecuente y se incorporan sensibilidad, especificidad, precisión, curvas de calibración e intervalos compatibles con la agrupación y, cuando sea factible, con el diseño muestral.
+8. **Alcance de la interfaz.** El módulo de inferencia se restringe a demostraciones reproducibles de investigación; no expone diagnósticos individuales, «severidades clínicas» ni nombres de estudiantes. Los reportes públicos son agregados y llevan advertencias de uso.
+9. **Guías de reporte.** TRIPOD+AI orienta el reporte; PROBAST+AI orienta la revisión de calidad y riesgo de sesgo. CLAIM se excluye por tratarse de una guía para imágenes médicas, ajenas al SP-07.
+
+### 0.3 Decisión que deberá ratificarse tras auditar los datos
+
+La priorización de ideación suicida como Y1 es una **decisión metodológica propuesta en esta revisión**, no una exigencia textual de P07. Si la disponibilidad, la ética o la comparabilidad entre países impiden usarla, se deberá documentar y preregistrar **antes de entrenar** un desenlace alternativo basado en un ítem verificable (p. ej., soledad frecuente); no se improvisará una etiqueta compuesta ni se redefinirá Y1 después de observar resultados.
+
+---
+
+## 1. Fundamentación, problema y justificación
+
+La salud mental en la adolescencia interactúa con el entorno familiar, escolar, social y económico. Las encuestas escolares GSHS de la Organización Mundial de la Salud permiten estudiar indicadores autorreportados de soledad, preocupación/sueño y conducta suicida junto con aspectos de violencia, apoyo social y conductas de salud. Su fortaleza es el empleo de procedimientos de encuesta documentados; su límite, que las preguntas, los años de levantamiento y el universo escolar varían entre países.
+
+El problema científico es determinar si la combinación de factores individuales y contextuales mejora, de manera **reproducible y transportable**, la identificación estadística de indicadores de vulnerabilidad respecto de modelos demográficos simples, sin confundir asociación con causalidad ni traducir el resultado en un diagnóstico individual.
+
+**Vacío de investigación abordado:** comparación homogénea de modelos lineales y no lineales; evaluación de la contribución incremental de determinantes contextuales; validación entre países con control de fugas; calibración; equidad algorítmica; explicabilidad y examen de utilidad exclusivamente poblacional bajo supuestos explícitos. No se presupone que este vacío sea universal: deberá acreditarse mediante revisión de literatura en el manuscrito final.
+
+**Pregunta central:** ¿cuánto mejoran los modelos de aprendizaje automático explicables, al incorporar determinantes familiares, escolares, conductuales y socioeconómicos, la discriminación y calibración de indicadores autorreportados de riesgo psicosocial en adolescentes escolarizados, y qué tan estables son esos resultados entre países y subgrupos?
+
+---
+
+## 2. Objetivos
+
+### 2.1 Objetivo general
+
+Identificar y explicar patrones **asociados** con indicadores autorreportados de riesgo psicosocial en adolescentes escolarizados mediante la comparación de modelos de aprendizaje automático sobre determinantes individuales y contextuales, evaluando desempeño, calibración, transportabilidad y equidad entre países.
+
+### 2.2 Objetivos específicos
+
+1. Construir un conjunto de datos tabulares armonizado y trazable a partir de microdatos GSHS, con enriquecimiento contextual de fuentes oficiales cuando exista correspondencia país-año justificable.
+2. Comparar regresión logística, Random Forest, XGBoost, CatBoost y MLP bajo idénticas particiones y criterios de evaluación; considerar ensambles como análisis adicional.
+3. Estimar la contribución incremental de predictores familiares, escolares, conductuales y contextuales frente a un modelo demográfico basal y frente a un modelo individual sin contexto macro.
+4. Evaluar los desenlaces secundarios de soledad frecuente, preocupación/sueño frecuente, planificación e intento suicida, siempre que existan eventos y datos comparables suficientes; explorar MLP multitarea únicamente si hay factibilidad.
+5. Cuantificar discriminación, calibración, incertidumbre y diferencias entre países, grupos de edad y sexo, preservando el diseño de encuesta en los análisis pertinentes.
+6. Interpretar factores asociados y posibles interacciones con métodos apropiados para datos tabulares; investigar la estabilidad de las explicaciones por país y por modelo.
+7. Implementar un entorno Streamlit para ingesta, auditoría, entrenamiento, evaluación, explicabilidad y reportes **agregados**, con reproducibilidad y restricciones de uso ético.
+
+---
+
+## 3. Diseño, población, fuentes y unidad de análisis
+
+**Diseño:** estudio observacional transversal analítico con datos secundarios. La unidad de observación es una respuesta individual anonimizada; los resultados deben distinguir la unidad de muestreo y el contexto país/ola.
+
+**Población de referencia:** adolescentes escolarizados representados por las encuestas GSHS seleccionadas. GSHS está dirigida principalmente a estudiantes de 13–17 años; cualquier participante de 11–12 años solo se incluirá si aparece realmente en una encuesta elegible y se documenta el soporte por país/edad. La inferencia **no** se extiende a adolescentes fuera del sistema escolar.
+
+**Fuentes de datos verificables:**
+
+- **Primaria:** catálogo de microdatos, cuestionarios, diccionarios y documentación de muestreo GSHS (OMS), por país y ola.
+- **Contextual condicional:** indicadores del Banco Mundial por país y año de la encuesta (p. ej., PIB per cápita, clasificación de ingreso o Gini, gasto en salud), solo después de verificar disponibilidad, fecha, definición, rezago y cobertura. Se deberá decidir si el indicador es propiamente predictor contextual o solo variable de estratificación.
+- **UNICEF:** referencia complementaria para marco conceptual, informes o indicadores específicos **identificados y trazables**. «UNICEF Global Insight» no se tratará como si fuera automáticamente una tabla de microdatos descargable; una fuente de UNICEF solo se integrará tras verificar producto, diccionario, licencia y llave de unión.
+
+**Criterios de inclusión:** archivos públicos o debidamente autorizados, país y ola identificables, diseño y codificación documentados, edad observada, etiqueta Y1 verificable, al menos una base común de predictores suficientemente comparable.
+
+**Exclusiones y restricciones:** olas sin Y1 o sin documentación crítica; ausencia de consentimiento de uso o restricciones incompatibles; imposibilidad de mapear categorías de manera defendible; registros duplicados comprobados; no disponibilidad de eventos/no eventos para evaluar una partición. La falta de predictores por sí sola **no** da lugar a exclusión automática por un umbral arbitrario del 30 %: se analiza su patrón y las alternativas de imputación o variable no disponible.
+
+**Diseño complejo:** conservar `weight`, `psu` y `stratum` originales, si están disponibles. Documentar con precisión si los pesos sustentan inferencia descriptiva, entrenamiento ponderado o evaluación ponderada; no mezclar países de forma que el peso de una encuesta se interprete como peso poblacional global sin una estrategia de normalización justificada. Para estimación de intervalos considerar conglomerados/estratos y, en sensibilidad, estructura por país.
+
+---
+
+## 4. Definición de desenlaces y prevención de fugas
+
+### 4.1 Desenlace primario
+
+**Y1: ideación suicida autorreportada en los últimos 12 meses.** Codificación: 1 = «sí, consideró seriamente intentarlo»; 0 = «no», siguiendo la pregunta y el diccionario local GSHS. Las categorías desconocidas, omitidas y no aplicables no se convierten a 0. El resultado indica **autorreporte sobre una ventana temporal**, no diagnóstico ni predicción prospectiva de muerte o intento de suicidio.
+
+### 4.2 Desenlaces secundarios condicionados por disponibilidad
+
+- **Y2, plan suicida autorreportado:** 1 = sí, 0 = no, últimos 12 meses.
+- **Y3, intento suicida autorreportado:** 1 = al menos un intento, 0 = ninguno, últimos 12 meses.
+- **Y4, soledad frecuente:** 1 = respuesta «la mayor parte del tiempo» o «siempre», 0 = categorías inferiores; verificar categorías por versión.
+- **Y5, preocupación que impide dormir frecuentemente:** 1 = «la mayor parte del tiempo» o «siempre», 0 = inferiores; denominación deliberadamente no diagnóstica.
+
+No se crea una escala clínica de depresión, ansiedad, severidad o «malestar psicológico» sumando ítems sin evidencia independiente de validez. No se presenta consumo de sustancias como desenlace central del MLP, porque P07 lo menciona como posible variable conductual y en el protocolo previo aparecía inconsistentemente como otra cabeza sin correspondencia con la arquitectura; puede analizarse como factor conductual si está documentado.
+
+### 4.3 Regla transversal contra la fuga de etiquetas
+
+Excluir de **todos los conjuntos de predictores** los cinco desenlaces originales, sus indicadores dicotomizados, recodificaciones, recuentos derivados, variables que contengan su respuesta directa y cualquier etiqueta obtenida a partir de ellos. Cuando se analice Y3, no usar Y1/Y2 como predictores aunque correlacionen. Los transformadores, la selección de variables, los pesos de clase, la imputación, el escalado, la calibración y SHAP se ajustan solo con datos apropiados de entrenamiento. Validación y prueba nunca se utilizan para decidir qué variable incluir por su rendimiento.
+
+**Limitación temporal:** aunque se utilice «clasificación» o «estratificación», la encuesta no permite afirmar prospectividad; los factores y los desenlaces pueden proceder de ventanas temporales coincidentes.
+
+---
+
+## 5. Diccionario mínimo y plan de armonización
+
+Todos los nombres siguientes son **nombres canónicos propuestos**, no nombres de columnas garantizados por la OMS. El archivo `data_dictionary.csv` deberá registrar: fuente, encuesta/ola, pregunta literal, variable de origen, tipo, valores/códigos, etiquetas, reglas de recodificación, porcentaje de faltantes por país, licencia, alcance temporal y estado (`confirmado`, `condicional` o `no disponible`).
+
+| Grupo | Variables canónicas | Condición y rol |
+|---|---|---|
+| Identificación técnica | `survey_id`, `record_key`, `country_iso3`, `survey_year` | Identificación de fuente; `record_key` aleatorio local, no identidad personal |
+| Diseño muestral | `weight`, `psu`, `stratum` | Procedencia GSHS; necesarios para análisis del diseño cuando estén presentes |
+| Demografía | `age_years`, `sex_reported`, `grade` | Predictores basales; armonización con categorías originales, sin inventar binarización |
+| Familiar y social | `food_insecurity`, `parental_supervision`, `parental_understanding`, `parental_free_time_knowledge`, `close_friends` | Predictores condicionales; cada ítem debe verificarse |
+| Escolar y violencia | `bullying`, `physical_attack`, `physical_fight`, `truancy`, `peer_kindness` | Predictores condicionales, con ventana de referencia documentada |
+| Conductas y hábitos | `tobacco_30d`, `alcohol_30d`, `drug_use`, `physical_activity`, `sedentary_time`, `fruit_veg` | Predictores condicionales, sin asumir escalas idénticas |
+| Macroeconomía | `income_group`, `gini_country_year`, `health_exp_country_year` | Factores contextuales externos; unión auditada por país-año y cobertura |
+| Desenlaces | `y1_ideation`, `y2_plan`, `y3_attempt`, `y4_loneliness_frequent`, `y5_worry_sleep_frequent` | Solo etiquetas; excluidas de todas las matrices X |
+| Variables no garantizadas | `urban_rural`, `school_connectedness`, `family_connectedness`, `depression_diagnosis` | No asumir disponibilidad; admitirlas solo con evidencia específica y justificación |
+
+**Reglas de armonización:** (a) conservar los datos brutos en modo solo lectura; (b) construir una correspondencia versionada por país/ola, nunca mediante número de pregunta genérico; (c) separar ausencia estructural de un ítem y falta individual de respuesta; (d) identificar preguntas no equivalentes y evitar agregarlas; (e) registrar cualquier conversión de unidad, año, moneda y cambio de período; (f) generar informe de cobertura y conflictos antes de entrenar; (g) no crear registros, etiquetas o países ficticios para rellenar vacíos.
+
+**Grupos de variables para ablación:** B0 = demografía; B1 = B0 + familia/escuela/conductas armonizables; B2 = B1 + contexto país-año. El efecto incremental de contexto macro se evalúa comparando B2−B1, evitando atribuir a «contexto» mejoras producidas por predictores individuales añadidos al mismo tiempo.
+
+---
+
+## 6. Plan de muestreo, tamaño de muestra y factibilidad
+
+Este es un estudio de datos secundarios: el volumen no se fija arbitrariamente antes del inventario de encuestas. **N=4.900 del documento previo no se considera un tamaño demostrado suficiente**. Del mismo modo, la regla EPV=20 con «48 parámetros efectivos» no valida por sí sola el tamaño requerido para cinco algoritmos ni para el análisis por países.
+
+Antes de configurar entrenamiento se entregará `feasibility_report` con: número de países y olas; n total y ponderado cuando proceda; prevalencia y conteos de eventos/no eventos por desenlace, país, sexo, tramo de edad y partición; tasa de faltantes; número de PSU/estratos; heterogeneidad y número de grupos aptos para CV; precisión aproximada de PR-AUC, sensibilidad y calibración mediante simulación/reestrategias adecuadas al diseño.
+
+**Criterios de decisión:**
+
+1. Exigir que cualquier partición utilizada para evaluar un desenlace tenga ambas clases presentes y suficientes eventos/no eventos para intervalos interpretables; si falla, no publicar una puntuación aparentemente precisa.
+2. Planificar tamaño efectivo de muestra, complejidad del modelo y error esperado con enfoques contemporáneos de planificación para modelos predictivos; el supuesto EPV puede mostrarse solo como referencia exploratoria, no como garantía.
+3. El tamaño y la precisión se evaluarán por **país y desenlace**, no solo por total combinado. No se asegura análisis de una celda país×subgrupo si el conteo es pequeño.
+4. Para privacidad, suprimir o agrupar celdas de reporte con tamaños bajos (umbral mínimo propuesto: n<20, sujeto a política de divulgación y riesgo real); mostrar `no estimable` cuando falten eventos.
+5. Si la muestra no alcanza los requisitos de una hipótesis o del MLP multitarea, degradar esa parte a análisis exploratorio o no realizarla, sin inventar datos ni presentarla como validación confirmatoria.
+
+---
+
+## 7. Particionado, validación y prevención de sobreajuste
+
+### 7.1 Jerarquía de particiones
+
+**Paso A: auditoría previa.** Confirmar número de países, olas, distribución de clases y necesidad de evitar que un mismo país aparezca a ambos lados de una validación anunciada como «entre países». Todas las olas de un país se agrupan en el mismo lado de una partición interpaís, salvo un análisis temporal explícito con justificación diferente.
+
+**Paso B: separación inicial de grupos (si factible).** Objetivo **orientativo** de 70 % desarrollo, 15 % validación/calibración y 15 % prueba externa, considerando el porcentaje de sujetos **y** la cantidad de países/olas. Los grupos se asignan por país, con semillas fijadas; las proporciones exactas pueden diferir por tamaños desiguales. El 15 % de prueba externa queda bloqueado hasta finalizar la selección de modelos, calibración y umbral. La validación de 15 % se usa para calibración/umbral/criterios finales, no para informar la búsqueda anidada ni el test.
+
+**Paso C: CV anidada sobre desarrollo (~70 %), si es factible.** 5 folds **externos** agrupados por país para estimar desempeño de selección; dentro de cada fold externo, 3 folds **internos** agrupados por país para Optuna. Cada ensayo ajusta preprocesamiento y modelo solo en datos del fold interno de entrenamiento. Elegir parámetros por PR-AUC de Y1, reentrenar en `outer_train` y evaluar **una sola vez** en `outer_val`. Agregar las cinco estimaciones por fold con dispersión e intervalos; no tratar los folds como independientes para obtener un p-valor ingenuo.
+
+**Paso D: calibración y decisión operativa.** Seleccionar familia e hiperparámetros exclusivamente mediante el desarrollo/CV; entrenar versión candidata en el desarrollo; utilizar validación apartada para calibración (Platt preferente por parsimonia, isotónica solo con eventos suficientes) y elección de umbral preespecificada. No realizar ajuste en prueba.
+
+**Paso E: evaluación final.** Evaluar una única vez en países de prueba, indicando que el número de países puede ser pequeño y que la precisión es limitada. El resultado queda congelado y los cambios posteriores generan nueva versión del experimento, no sobrescriben el test.
+
+### 7.2 Alternativas de factibilidad
+
+- Si no hay países suficientes con ambas clases para 5×3 y 70/15/15, registrar la causa y **no forzar** los números. Usar un esquema agrupado menos ambicioso (p. ej., 3×2) y presentarlo como cambio preespecificado/justificado; priorizar un conjunto externo de prueba utilizable.
+- Si la validación independiente para calibración resulta demasiado pequeña, utilizar calibración **cross-fitted exclusivamente dentro del desarrollo**, manteniendo prueba intacta; documentar sustitución de la partición 70/15/15.
+- **Leave-one-country-out** es un análisis adicional de transportabilidad sobre los países de desarrollo, sin reintegrar resultados de test externo en la selección. No se afirma que LOCO sea a la vez la CV externa 5-fold.
+- Un **holdout temporal** puede estudiarse cuando existan olas comparables, pero no debe denominarse validación interpaís si mantiene los mismos países; los diseños temporal e interpaís contestan preguntas diferentes.
+
+---
+
+## 8. Hipótesis y plan estadístico
+
+### 8.1 Hipótesis principal preespecificada
+
+**H1.** La incorporación de variables familiares, escolares, conductuales y contextuales incrementa la discriminación del desenlace Y1 frente a un modelo demográfico basal. Estadístico principal: **ΔPR-AUC = PR-AUC(B2) − PR-AUC(B0)** evaluado de forma pareada en las mismas observaciones/grupos, con IC95 %. Se informa también el contraste **B2 frente a B1** para aislar el aporte contextual. La hipótesis científica apunta a Δ>0; no se presupone de antemano una mejora fija de 0,03 ni se interpretan resultados negativos como demostración de equivalencia.
+
+### 8.2 Hipótesis secundarias / preguntas exploratorias
+
+- **H2, transportabilidad:** estimar caída de PR-AUC/ROC-AUC y cambio de calibración por país frente a la distribución de desarrollo; sin suponer un umbral de éxito clínico de ROC-AUC=0,75.
+- **H3, equidad:** estimar diferencias de sensibilidad, FNR, FPR, calibración y PR-AUC entre subgrupos con intervalos de confianza; una brecha ≤0,10 es un umbral de vigilancia *propuesto*, no prueba automática de equidad.
+- **H4, modelos complejos:** comparar RF, XGBoost, CatBoost, MLP y ensamble frente a regresión logística en Y1 y, condicionalmente, otros desenlaces. El MLP multitarea es exploratorio y solo se ejecuta si las etiquetas y eventos lo permiten.
+- **H5, interpretabilidad:** evaluar estabilidad de variables relevantes e interacciones entre países y familias de modelos; SHAP describe contribuciones predictivas, no efectos causales.
+
+**Inferencia:** estimaciones con IC95 % en el test final; bootstrap pareado por unidades independientes apropiadas (países o PSU según estimando y tamaño) y sensibilidad al diseño muestral. No ejecutar DeLong clásico por observación como si hubiera independencia cuando hay conglomerados; si se usa una prueba formal de AUC, justificar adaptación al diseño. McNemar se considera solo donde las observaciones pareadas sean independientes o exista ajuste por conglomerados. Si las hipótesis múltiples se someten a contraste formal, declarar familia de pruebas y método de control de multiplicidad. No usar p-valores para conclusiones de equivalencia sin diseño específico.
+
+---
+
+## 9. Modelos, configuración y entrenamiento
+
+**Igualdad experimental:** mismas observaciones elegibles, misma etiqueta, mismas particiones, misma estrategia de búsqueda y reporte de presupuesto de cómputo; las transformaciones pueden ser específicas de cada algoritmo pero siempre se ajustan dentro del fold.
+
+### 9.1 Basal demográfico y regresión logística
+
+B0: regresión logística con edad, sexo autorreportado y grado disponibles (grupo de ingreso del país solo si se declara como variable contextual, no en B0). Regresión logística L2/ElasticNet con imputación ajustada en train, one-hot para categorías con valores desconocidos y escalado de variables numéricas. Espacio Optuna propuesto: `C` entre 1e-3 y 1e2 (log), `l1_ratio` entre 0 y 1 cuando el solver y penalización lo permitan; fijar semilla y máximo de iteraciones. Los coeficientes/odds ratios son asociaciones condicionales y su interpretación exige revisar colinealidad y codificación.
+
+### 9.2 Random Forest
+
+Búsqueda orientativa: `n_estimators` 300–1000; `max_depth` 4–24 o ilimitada; `min_samples_leaf` 2–50; `max_features` `sqrt` o fracción 0,3–1; opciones de ponderación de clase. Verificar robustez frente a prevalencia/país. Importancia por permutación sobre datos no usados para el ajuste y SHAP cuando sea factible.
+
+### 9.3 XGBoost
+
+`objective=binary:logistic`; búsqueda orientativa: `n_estimators` 200–1200; `max_depth` 2–8; `learning_rate` 0,01–0,2; `subsample` 0,6–1; `colsample_bytree` 0,6–1; `min_child_weight` 1–30; `reg_lambda` 0,1–30. Ajustar `scale_pos_weight` exclusivamente desde el entrenamiento correspondiente. Early stopping requiere una partición interna del entrenamiento, **nunca** el fold externo ni prueba.
+
+### 9.4 CatBoost
+
+Variables categóricas tratadas de modo nativo cuando sea posible; búsqueda orientativa: `depth` 4–10, `learning_rate` 0,01–0,2, `l2_leaf_reg` 1–30, `iterations` 300–1500. Fijar semilla, pérdida binaria y `eval_metric` compatible con PR-AUC. No combinar simultáneamente ponderaciones de clases redundantes. El conjunto de early stopping es interno al entrenamiento.
+
+### 9.5 MLP tabular y multitarea condicional
+
+MLP unidesenlace como quinta familia principal; arquitectura inicial 64→32 neuronas con activación ReLU, dropout 0,1–0,3 y regularización, sujeta a Optuna. Para multitarea, tronco compartido con hasta cinco cabezas sigmoides *solo cuando los desenlaces Y1–Y5 sean observables y comparables*. Las pérdidas se enmascaran por etiqueta ausente, no se imputan los desenlaces; pesos por tarea se determinan dentro del entrenamiento y se justifican mediante prevalencia/estabilidad, **no** por una tabla fija arbitraria de «severidad». Considerar un baseline monodesenlace equivalente para juzgar si multitarea aporta algo. Evitar BatchNorm+SELU por defecto sin justificar su compatibilidad con el resto de la arquitectura.
+
+### 9.6 Ensambles como extensión
+
+Votación ponderada/stacking sobre probabilidades **out-of-fold** generadas dentro del entrenamiento, usando particiones agrupadas por país. El meta-modelo no verá etiquetas o predicciones generadas sobre observaciones usadas indebidamente para ajustar modelos base. Ningún ensamble puede entrenarse retrospectivamente sobre el test. Se reportará complejidad y coste adicional, no solo PR-AUC.
+
+### 9.7 Imputación y desbalance
+
+Imputación simple con indicador de faltantes como baseline; imputación más compleja solo si supera una prueba de factibilidad sin fugas. No imputar país/año o etiquetas. El desbalance se abordará inicialmente con pesos de clase y elección de métricas; SMOTE u otros remuestreos solo dentro de los folds de entrenamiento y con justificación para datos mixtos y estructura por países. Registrar todo ajuste automático.
+
+---
+
+## 10. Evaluación, calibración, equidad y explicabilidad
+
+### 10.1 Métricas y gráficos
+
+- **Principales:** PR-AUC de Y1; prevalencia de referencia y ganancia incremental respecto a B0/B1.
+- **Complementarias:** ROC-AUC, sensibilidad, especificidad, PPV/precision, NPV, F1, balanced accuracy y matrices de confusión en umbral predefinido.
+- **Calibración:** Brier score, pendiente/intercepto de calibración, gráfico observado-estimado con intervalos y tamaño por bin; reportar incertidumbre y resultados por país si hay eventos suficientes.
+- **Representaciones:** PR y ROC con leyendas explícitas, gráficos de calibración, diferencias entre modelos con intervalos, conteo de eventos/no eventos, distribuciones/faltantes ponderados cuando corresponda, curvas de sensibilidad-precisión por umbral.
+- **Estadística descriptiva:** resumen por país, sexo, edad y ola, proporciones ponderadas/no ponderadas claramente diferenciadas, tamaños efectivos y faltantes. Cada figura tendrá título informativo, definiciones, interpretación breve y limitaciones.
+
+### 10.2 Equidad y transporte
+
+Subgrupos *si están disponibles y se pueden reportar sin riesgo*: sexo autorreportado, edad observada con bandas justificadas, país y grupo de ingreso; ubicación urbana/rural solo si existe dato verificable. Reportar diferencias absolutas de FNR/FPR y calibración junto con incertidumbre y conteos, evitando «justicia» categórica basada solo en una cifra. Probar mitigaciones **solo en entrenamiento** y volver a evaluar en grupos reservados; no aplicar umbrales discriminatorios diferenciados sin análisis ético, jurídico y de consecuencias.
+
+### 10.3 Explicabilidad apropiada para datos tabulares
+
+Regresión logística: signos, OR e intervalos apropiados; árboles: importancia por permutación y SHAP; MLP: SHAP muestral u otra técnica de atribución compatible y económicamente viable. Gráficos globales: barras de magnitud, beeswarm, dependencia/interacción en variables justificadas, evaluación de estabilidad entre folds y países. Las explicaciones locales se limitan a casos **sintéticos o anonimizados de acceso restringido**, y no se presentan como explicación causal del estado mental de una persona.
+
+**No corresponden a este estudio:** Grad-CAM++, visualizaciones de máscaras de segmentación o mapas de atención de imágenes, porque no existe una modalidad de imágenes en P07.
+
+### 10.4 Utilidad poblacional
+
+El análisis de curvas de decisión (*decision-curve analysis*) es **exploratorio** y se incluye solo si se explicitan escenarios, prevalencia aplicable, umbrales y consecuencias de falsos positivos/falsos negativos. No se infiere «beneficio clínico» real de encuestas transversales sin evaluación de una intervención. Las salidas útiles para políticas serán agregados por país/grupo y hallazgos de asociación, no acciones individualizadas.
+
+---
+
+## 11. Arquitectura de la plataforma Streamlit SP-07
+
+### 11.1 Principios de implementación
+
+Python, Streamlit, paquetes de análisis tabular, Optuna, artefactos versionados y almacenamiento reproducible. PostgreSQL es opción de persistencia para metadatos y ejecución; Parquet/archivos locales versionados pueden utilizarse en un prototipo trazable. Separar `src/data`, `src/features`, `src/models`, `src/validation`, `src/evaluation`, `src/explainability`, `src/reporting`, `src/security` y `app/pages`. No presumir que una base o un «harness DeepSeek» existen: verificar el repositorio y configurar adaptadores sin dependencias obligatorias no demostradas.
+
+### 11.2 Fases funcionales adaptadas a Promptuario
+
+**Fase 0 — Preparación:** auditar repositorio, dependencias, versiones, permisos y fuentes; configurar entorno, estructura de proyecto, pruebas, trazabilidad y adaptador DeepSeek solo si se requiere; imponer reglas de privacidad, semillas y separación de datasets.
+
+**Fase 1 — MVP de datos:** importar CSV, XLSX, Parquet y formatos GSHS disponibles (p. ej., Stata/SPSS mediante librerías); inspeccionar diccionarios; editor de metadatos y mapeo sin alterar datos brutos; armonizar país-ola; validar pesos/PSU/estratos; visualizar coberturas, faltantes, prevalencias y tamaños por grupo; bloquear entrenamiento si fallan controles críticos.
+
+**Fase 2 — Entrenamiento:** selector de modelo y bloques B0/B1/B2, Optuna con presupuesto y espacio documentados, CV agrupada 5×3 cuando sea factible, seguimiento de folds/trials, logs reproducibles, artefactos y comparación preliminar sin contaminar test; adaptar 70/15/15 según grupos y eventos.
+
+**Fase 3 — Evaluación:** PR-AUC, ROC-AUC, matrices de confusión, calibración, IC95 %, comparación pareada adecuada a conglomerados, error por subgrupo, evaluación externa por país y lectura de las limitaciones; evitar afirmaciones diagnósticas.
+
+**Fase 4 — Explicabilidad:** SHAP tabular, permutación, coeficientes y curvas de dependencia con control de disponibilidad y costos; vistas globales y grupos agregados. Sin Grad-CAM++ ni imágenes médicas.
+
+**Fase 5 — Reportes:** exportaciones Word, PDF, Excel y figuras 600 DPI para uso científico (cuando los paquetes estén disponibles); incluir procedencia, parámetros, conteos, intervalos, gráficos, limitaciones, control ético y versiones de artefactos; supresión de celdas sensibles.
+
+**Fase 6 — Inferencia de investigación:** scoring en lote o ejemplo sintético para reproducir modelos, **solo en entorno de investigación y sin identificación personal**. Mostrar probabilidades estimadas con incertidumbre, características del modelo, calibración, límites y advertencias. «Severidad» se reemplaza por perfiles descriptivos no clínicos y no se devuelve puntuación personal a menores.
+
+**Fase 7 — Interfaz Optuna:** configurar espacios de búsqueda, presupuesto y semillas; seguir trials y objetivos por fold; detectar prunings y fallas; comparar tiempo/desempeño e impedir vistas o selecciones basadas en test.
+
+### 11.3 Gobernanza y reproducibilidad
+
+Cada ejecución registra `run_id`, fecha, commit Git, huellas de archivos/encuestas, manifiesto de fuentes, diccionario versionado, particiones (identificadores de grupos, no identidad), semillas, versiones de librerías, espacio Optuna, trials, hiperparámetros, transformadores, modelos, calibración, umbral, métricas e interpretación. Las rutas, credenciales y secretos nunca se imprimen en reportes. Guardar reportes de calidad y decisiones de inclusión/exclusión. Los datos brutos permanecen inmutables y bajo control de acceso.
+
+---
+
+## 12. Procedimiento ejecutable y controles de calidad
+
+1. **Inventario:** localizar fuentes originales, licencias y cuestionarios; generar `dataset_manifest` e informe país-ola sin declarar descargado lo que no esté disponible.
+2. **Auditoría:** ejecutar comprobaciones de duplicados, etiquetas, código de faltantes, grupos, pesos y congruencia de años; detenerse ante incompatibilidades no resueltas.
+3. **Armonización:** convertir a nombres canónicos con mapeos explícitos versionados; ejecutar pruebas de correspondencia y conteos antes/después.
+4. **Análisis descriptivo:** calcular distribución de predictores/desenlaces y evaluar factibilidad de Y1, secundarios y subgrupos.
+5. **Particiones bloqueadas:** crear y guardar grupos de desarrollo/validación/prueba; probar inexistencia de países compartidos cuando se declare validación interpaís.
+6. **Entrenamiento y selección:** ejecutar 5×3 agrupado si es factible; efectuar ajuste y búsqueda dentro de folds; persistir resultados y errores por trial.
+7. **Calibración:** usar solamente validación autorizada o cross-fitting interno; congelar calibrador/umbral.
+8. **Evaluación final:** abrir prueba una vez, producir métricas e incertidumbre y registrar limitaciones.
+9. **Explicabilidad y equidad:** calcular atribuciones globales y auditoría de subgrupos con límites de privacidad.
+10. **Reportes:** generar documento reproducible con fuentes, diseños, exclusiones, resultados reales y declaraciones éticas.
+11. **Verificación automática:** tests de no-leakage, integridad de particiones, reproducibilidad de semillas, compatibilidad de serialización, importación de datos, seguridad del reporte y smoke tests de Streamlit.
+12. **Corrección inmediata:** todo fallo reproducible encontrado durante la implementación se corrige en el código/configuración/documentación en la misma ejecución, se reejecutan las pruebas y se registra evidencia del arreglo. Una limitación no solucionable (falta de archivo, acceso o tamaño insuficiente) queda reportada sin fabricar una solución.
+
+**Puertas de aceptación mínimas:** (i) datos brutos conservados; (ii) diccionario y procedencia por variable; (iii) ninguna etiqueta en X; (iv) particiones por país disjuntas; (v) ajuste de cada transformador dentro de train; (vi) test intacto hasta cierre; (vii) tablas y gráficos con interpretaciones y conteos; (viii) modelos y reportes reproducibles; (ix) salidas públicas agregadas; (x) ausencia de diagnóstico o recomendación clínica individual.
+
+---
+
+## 13. Aspectos éticos, límites y publicación
+
+**Uso permitido:** investigación secundaria de patrones poblacionales, elaboración de conocimiento metodológico e identificación de determinantes asociados. La aplicación no se presenta como herramienta certificada de cribado o diagnóstico, ni puede utilizarse para evaluar, sancionar, clasificar administrativamente o decidir servicios para un adolescente determinado.
+
+**Protección de datos:** revisar licencias, condiciones de uso y aprobación/exención del comité de ética institucional según corresponda; no afirmar consentimiento o autorización específicos que no se hayan verificado. Eliminar identificadores directos; controlar accesos, cifrado en reposo/transporte si existe servidor, retención y supresión de celdas pequeñas. No generar perfiles nominales en informes ni publicar microdatos restringidos.
+
+**Limitaciones científicas:** autorreporte; deseabilidad social; diferencias de cuestionario, idioma, años y regiones; selección exclusiva de escolarizados; temporabilidad cruzada; posible falta de representatividad nacional; comparabilidad parcial de indicadores; diferencias de diseño muestral; cambios temporales; número limitado de países y eventos; correlación geográfica y posible confusión ecológica; SHAP y los modelos no permiten inferencia causal.
+
+**Guías:** reportar la investigación de modelos con **TRIPOD+AI** y examinar calidad/riesgo de sesgo con **PROBAST+AI**; cuando se describa la implementación técnica, informar reproducibilidad, incertidumbre y gobernanza. **CLAIM no aplica**, pues su objeto son imágenes médicas. Una futura implementación clínica o intervención exigiría validaciones independientes y procedimientos éticos/regulatorios adicionales.
+
+**Resultados esperados (no observados todavía):** un conjunto armonizado auditado, modelos comparados con incertidumbre, análisis de aportes de determinantes, explicaciones tabulares, evaluación de equidad/transportabilidad y plataforma reproducible. No se anticipa un algoritmo ganador ni una mejora estadísticamente significativa.

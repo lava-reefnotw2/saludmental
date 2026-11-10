@@ -1,0 +1,49 @@
+{
+  "H1_contextual_gain": {
+    "auc_full": 0.9766,
+    "auc_demo": 0.5876,
+    "delta_auc": 0.389,
+    "ci_95": [
+      0.3672,
+      0.4077
+    ],
+    "p_value": 0.0,
+    "hypothesis_supported": true
+  },
+  "H2_clinical_utility": {
+    "auc_obs": 0.9766,
+    "ci_95": [
+      0.9734,
+      0.9797
+    ],
+    "p_value": 0.0,
+    "hypothesis_supported": true
+  },
+  "H3_calibration": {
+    "slope": 0.689,
+    "intercept": 1.025,
+    "target_slope": "[0.8, 1.2]",
+    "target_intercept": "[-0.05, 0.05]",
+    "hypothesis_supported": false
+  },
+  "H4_algorithmic_fairness": {
+    "max_fnr_gaps": {
+      "sex": 0.0,
+      "age_band": 0.0,
+      "urban_rural": 0.0
+    },
+    "threshold_max_gap": 0.1,
+    "hypothesis_supported": true
+  },
+  "H5_ensemble_multitask": {
+    "pr_auc_ensemble": 0.9045,
+    "pr_auc_best_single": 0.9046,
+    "hypothesis_supported": true
+  },
+  "H6_transnational_stability": {
+    "pooled_auc": 0.9766,
+    "min_country_auc": 0.9676,
+    "locv_drop": 0.009,
+    "hypothesis_supported": true
+  }
+}
