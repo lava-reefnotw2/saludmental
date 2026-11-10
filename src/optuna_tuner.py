@@ -181,3 +181,4 @@ def load_or_run_default_study(model_family="catboost", out_dir="artifacts"):
 if __name__ == "__main__":
     study = run_optuna_study("catboost", n_trials=5, timeout=60)
     print("Best params:", study.best_params)
+

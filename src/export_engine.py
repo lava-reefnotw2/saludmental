@@ -315,3 +315,4 @@ if __name__ == "__main__":
     generate_word_report()
     generate_excel_workbook()
     export_high_dpi_scientific_figures()
+

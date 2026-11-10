@@ -172,3 +172,4 @@
 - [x] **T.3. Módulo Optuna Bayesiano en Pliegues Internos:** Optimización de hiperparámetros por proceso TPE sobre GroupKFold en conjunto de desarrollo con panel interactivo.
   - *Estado:* **CUMPLE VERIFICADO**
   - *Evidencia:* `src/optuna_tuner.py`, Tab 9 en Streamlit, `tests/test_phase7_optuna.py`.
+

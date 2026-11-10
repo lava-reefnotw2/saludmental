@@ -33,3 +33,4 @@ El presente documento registra de forma explícita y transparente los factores, 
 - **Situación Actual:** Los datos del Banco Mundial utilizados para el bloque contextual $B2$ provienen de tablas maestras consolidadas y verificadas en el repositorio.
 - **Acción Externa Requerida:**
   - Configurar credenciales y cuotas de servicio en producción si se desea actualizar automáticamente los indicadores contextuales (desempleo juvenil, gasto en salud, índice Gini) mediante llamadas periódicas a la API REST del Banco Mundial o UNICEF.
+

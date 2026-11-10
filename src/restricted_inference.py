@@ -208,3 +208,4 @@ if __name__ == "__main__":
     for name, c in cases.items():
         res = run_research_inference("catboost_b2", c)
         print(f"\n{name} -> Probabilidad: {res.get('predicted_probability')}, Nivel: {res.get('descriptive_tier')}")
+

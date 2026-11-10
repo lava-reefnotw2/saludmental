@@ -136,3 +136,4 @@ Se ejecutó la suite completa de pruebas unitarias y de integración (`python -m
 - `tests/test_phase3_to_phase7_pipeline.py`: 1 test de integración integral superado (Flujo completo Fases 1 a 7 ejecutado en 61.9 segundos).
 
 **Total:** 16 pruebas ejecutadas, **0 fallos, 0 errores**.
+

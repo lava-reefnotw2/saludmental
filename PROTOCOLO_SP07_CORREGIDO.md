@@ -307,3 +307,4 @@ Cada ejecución registra `run_id`, fecha, commit Git, huellas de archivos/encues
 **Guías:** reportar la investigación de modelos con **TRIPOD+AI** y examinar calidad/riesgo de sesgo con **PROBAST+AI**; cuando se describa la implementación técnica, informar reproducibilidad, incertidumbre y gobernanza. **CLAIM no aplica**, pues su objeto son imágenes médicas. Una futura implementación clínica o intervención exigiría validaciones independientes y procedimientos éticos/regulatorios adicionales.
 
 **Resultados esperados (no observados todavía):** un conjunto armonizado auditado, modelos comparados con incertidumbre, análisis de aportes de determinantes, explicaciones tabulares, evaluación de equidad/transportabilidad y plataforma reproducible. No se anticipa un algoritmo ganador ni una mejora estadísticamente significativa.
+

@@ -113,4 +113,28 @@ Todas las modificaciones fueron implementadas, verificadas y testeadas en la ses
   - `tests/test_phase6_inference.py` (3 tests)
   - `tests/test_phase7_optuna.py` (3 tests)
   - `tests/test_phase3_to_phase7_pipeline.py` (1 test de integración integral)
-- **Resultado:** 16 pruebas ejecutadas exitosamente (0 fallos, 0 errores).
+  - `tests/test_statistical_analysis.py` (7 tests dedicados al módulo de análisis estadístico)
+- **Resultado:** 23 pruebas ejecutadas exitosamente (0 fallos, 0 errores).
+
+### 15. NUEVO MÓDULO: «ANÁLISIS ESTADÍSTICO» INTEGRAL (`src/statistical_analysis_module.py`)
+- **Implementación Científica:** Creado módulo central `src/statistical_analysis_module.py` con las 16 visualizaciones científicas requeridas:
+  1. *Mapa de calor de disponibilidad, armonización y calidad de datos* (Variables x País-Año).
+  2. *Prevalencia de indicadores autorreportados* por país, sexo y grupos de edad con IC Wilson (95%) y denominadores ($n/N$).
+  3. *Ganancia predictiva por ablación de determinantes* ($B0$ vs $B1$ vs $B2$) con diferencias pareadas bootstrap.
+  4. *Forest plot del desempeño entre países* (PR-AUC, ROC-AUC, IC 95% distinguiendo Desarrollo OOF, Validación y Prueba Externa).
+  5. *Auditoría de equidad algorítmica* (Sensibilidad, Especificidad, FNR, FPR, Calibración O/E y brechas frente al umbral 0.10).
+  6. *Gráficos de dependencia SHAP e interacciones* entre factores escolares (`bullied_past_month`) y soporte familiar (`parents_support`).
+  7. *Curvas de calibración decílica y puntuación Brier* con pendiente e intercepto de Cox.
+  8. *Comparativa de las 5+ familias de algoritmos y desenlaces $Y_1-Y_5$* con indicación de «No estimable» cuando corresponde.
+  9. *Distribución de factores entre grupos con y sin el indicador estudiado* (Mann-Whitney U y boxplots).
+  10. *Estabilidad de variables relevantes y SHAP entre folds y países*.
+  11. *Heatmap de interacciones SHAP*.
+  12. *Distribución de probabilidades estimadas según clases observadas* con umbrales de Youden y costo 3:1.
+  13. *Variabilidad del desempeño entre folds externos*.
+  14. *Curvas de aprendizaje con particiones agrupadas por país*.
+  15. *Historial de convergencia de Optuna e importancia de hiperparámetros*.
+  16. *Curvas de Decisión Clínica y Beneficio Neto (DCA)* con justificación explícita de supuestos poblacionales y limitaciones transversales.
+- **Interfaz y Sub-pestañas:** Estructurado en 7 sub-pestañas temáticas con filtros coordinados de dataset, ejecución (`run_id`), desenlace, algoritmo, país, grupo demográfico y partición.
+- **Panel de Exportación Multiformato:** Descargas directas en cada gráfico de imagen rasterizada a 600 DPI (PNG), vectorial (SVG), tabla agregada (CSV) y libro analítico (Excel).
+- **Integración y Navegación:** Pestaña principal navegable **«📈 Análisis estadístico»** añadida en `app.py` y sincronizada en `streamlit_app/app.py`.
+

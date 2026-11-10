@@ -44,6 +44,7 @@ from pdf_report_generator import (
 from export_engine import generate_word_report, generate_excel_workbook, export_high_dpi_scientific_figures
 from restricted_inference import get_predefined_synthetic_cases, run_research_inference, VALIDATION_SCHEMA
 from optuna_tuner import load_or_run_default_study, run_optuna_study, get_search_spaces_documentation
+from statistical_analysis_module import render_statistical_analysis_module
 
 # Configuración de página
 st.set_page_config(
@@ -496,9 +497,10 @@ st.info("⚕️ **Aviso Ético, Regulatorio y de Protección de Datos (TRIPOD+AI
         "Los microdatos actuales corresponden a un fixture de investigación calibrado para QA.")
 
 # ==============================================================================
-# LAS 10 PESTAÑAS FUNCIONALES DEL SISTEMA SP-07
+# LAS PESTAÑAS FUNCIONALES DEL SISTEMA SP-07 (INCLUYENDO ANÁLISIS ESTADÍSTICO)
 # ==============================================================================
-tab_m1, tab_m2, tab_m3, tab_m4, tab_m5, tab_m6, tab_m7, tab_inf, tab_opt, tab_sql = st.tabs([
+tab_stat, tab_m1, tab_m2, tab_m3, tab_m4, tab_m5, tab_m6, tab_m7, tab_inf, tab_opt, tab_sql = st.tabs([
+    "📈 Análisis estadístico",
     "🌐 Módulo 1: Ingesta",
     "📋 Módulo 2: Calidad",
     "🧪 Módulo 3: Features",
@@ -510,6 +512,12 @@ tab_m1, tab_m2, tab_m3, tab_m4, tab_m5, tab_m6, tab_m7, tab_inf, tab_opt, tab_sq
     "⚡ Módulo 9: Optuna UI",
     "🗺️ Consola SQL & Población"
 ])
+
+# ==============================================================================
+# MÓDULO NUEVO: ANÁLISIS ESTADÍSTICO INTEGRAL (FASES 0 A 7)
+# ==============================================================================
+with tab_stat:
+    render_statistical_analysis_module(root_dir)
 
 # ==============================================================================
 # MÓDULO 1: INGESTA MULTI-FUENTE Y DATOS

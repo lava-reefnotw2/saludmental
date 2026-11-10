@@ -1,0 +1,113 @@
+{
+  "model": "logreg_elasticnet_b1",
+  "folds": [
+    {
+      "fold_name": "Fold 1 (PER, COL)",
+      "countries": [
+        "PER",
+        "COL"
+      ],
+      "n_samples": 832,
+      "n_events": 195,
+      "prevalence": 0.2344,
+      "pr_auc": 0.3929,
+      "roc_auc": 0.672,
+      "brier": 0.2285,
+      "partition": "Desarrollo OOF"
+    },
+    {
+      "fold_name": "Fold 2 (MEX, BRA)",
+      "countries": [
+        "MEX",
+        "BRA"
+      ],
+      "n_samples": 832,
+      "n_events": 167,
+      "prevalence": 0.2007,
+      "pr_auc": 0.2983,
+      "roc_auc": 0.6384,
+      "brier": 0.2294,
+      "partition": "Desarrollo OOF"
+    },
+    {
+      "fold_name": "Fold 3 (ECU, PAN)",
+      "countries": [
+        "ECU",
+        "PAN"
+      ],
+      "n_samples": 832,
+      "n_events": 180,
+      "prevalence": 0.2163,
+      "pr_auc": 0.3421,
+      "roc_auc": 0.6263,
+      "brier": 0.2374,
+      "partition": "Desarrollo OOF"
+    },
+    {
+      "fold_name": "Fold 4 (SLV, GTM)",
+      "countries": [
+        "SLV",
+        "GTM"
+      ],
+      "n_samples": 833,
+      "n_events": 182,
+      "prevalence": 0.2185,
+      "pr_auc": 0.3556,
+      "roc_auc": 0.6396,
+      "brier": 0.2306,
+      "partition": "Desarrollo OOF"
+    },
+    {
+      "fold_name": "Test Externo 1 (CHL)",
+      "countries": [
+        "CHL"
+      ],
+      "n_samples": 416,
+      "n_events": 100,
+      "prevalence": 0.2404,
+      "pr_auc": 0.3992,
+      "roc_auc": 0.6245,
+      "brier": 0.2278,
+      "partition": "Test Externo"
+    },
+    {
+      "fold_name": "Test Externo 2 (URY)",
+      "countries": [
+        "URY"
+      ],
+      "n_samples": 416,
+      "n_events": 89,
+      "prevalence": 0.2139,
+      "pr_auc": 0.3487,
+      "roc_auc": 0.658,
+      "brier": 0.2346,
+      "partition": "Test Externo"
+    },
+    {
+      "fold_name": "Val/Calib 1 (ARG)",
+      "countries": [
+        "ARG"
+      ],
+      "n_samples": 416,
+      "n_events": 91,
+      "prevalence": 0.2188,
+      "pr_auc": 0.3508,
+      "roc_auc": 0.6385,
+      "brier": 0.2342,
+      "partition": "Validaci\u00f3n"
+    },
+    {
+      "fold_name": "Val/Calib 2 (CRI)",
+      "countries": [
+        "CRI"
+      ],
+      "n_samples": 416,
+      "n_events": 84,
+      "prevalence": 0.2019,
+      "pr_auc": 0.2714,
+      "roc_auc": 0.5597,
+      "brier": 0.2489,
+      "partition": "Validaci\u00f3n"
+    }
+  ]
+}
