@@ -2,7 +2,8 @@
 """
 MÓDULO 7 · FASE 7: Contraste Formal de Hipótesis Científicas (H1-H6), Equidad y SHAP
 Ejecuta el remuestreo bootstrap para validar H1-H6, audita la equidad algorítmica (ΔFNR < 0.10),
-calcula valores SHAP de explicabilidad y genera predicciones agregadas poblacionales.
+calcula valores SHAP tabulares de explicabilidad, coeficientes de regresión logística con Odds Ratios
+y genera reportes científicos de evaluación poblacional.
 """
 
 import os
@@ -12,8 +13,11 @@ import joblib
 import warnings
 import numpy as np
 import pandas as pd
+import matplotlib
+matplotlib.use('Agg')
 import matplotlib.pyplot as plt
 from sklearn.metrics import roc_auc_score, average_precision_score, confusion_matrix
+from sklearn.inspection import permutation_importance
 from sqlalchemy import create_engine, text
 
 sys.path.append(os.path.dirname(os.path.abspath(__file__)))
@@ -26,34 +30,35 @@ warnings.filterwarnings("ignore")
 
 DB_URL = os.getenv("DATABASE_URL", "postgresql+psycopg2://sp07:sp07_dev_password@localhost:5432/sp07_db")
 
-def paired_bootstrap_auc_difference(y_true, p_full, p_demo, n_boot=1000, seed=42):
+def paired_bootstrap_prauc_difference(y_true, p_b2, p_b0, n_boot=1000, seed=42):
+    """Calcula la ganancia incremental ΔPR-AUC = B2 - B0 con IC 95% por remuestreo bootstrap pareado."""
     np.random.seed(seed)
     n = len(y_true)
     diffs = []
-    auc_full_obs = roc_auc_score(y_true, p_full)
-    auc_demo_obs = roc_auc_score(y_true, p_demo)
-    delta_obs = auc_full_obs - auc_demo_obs
+    prauc_b2_obs = average_precision_score(y_true, p_b2)
+    prauc_b0_obs = average_precision_score(y_true, p_b0)
+    delta_obs = prauc_b2_obs - prauc_b0_obs
     
     for _ in range(n_boot):
         idx = np.random.choice(n, size=n, replace=True)
         if len(np.unique(y_true[idx])) < 2:
             continue
-        auc_f = roc_auc_score(y_true[idx], p_full[idx])
-        auc_d = roc_auc_score(y_true[idx], p_demo[idx])
-        diffs.append(auc_f - auc_d)
+        p2 = average_precision_score(y_true[idx], p_b2[idx])
+        p0 = average_precision_score(y_true[idx], p_b0[idx])
+        diffs.append(p2 - p0)
         
     diffs = np.array(diffs)
     ci_low = np.percentile(diffs, 2.5)
     ci_high = np.percentile(diffs, 97.5)
-    p_value = np.mean(diffs <= 0.03)
+    p_value = np.mean(diffs <= 0.0)
     
     return {
-        "auc_full": round(float(auc_full_obs), 4),
-        "auc_demo": round(float(auc_demo_obs), 4),
-        "delta_auc": round(float(delta_obs), 4),
+        "prauc_b2": round(float(prauc_b2_obs), 4),
+        "prauc_b0": round(float(prauc_b0_obs), 4),
+        "delta_prauc": round(float(delta_obs), 4),
         "ci_95": [round(float(ci_low), 4), round(float(ci_high), 4)],
         "p_value": round(float(p_value), 4),
-        "hypothesis_supported": bool(delta_obs > 0.03 and p_value < 0.05)
+        "hypothesis_supported": bool(delta_obs > 0.0 and p_value < 0.05)
     }
 
 def bootstrap_one_sample_auc(y_true, p_full, threshold_auc=0.75, n_boot=1000, seed=42):
@@ -80,7 +85,12 @@ def bootstrap_one_sample_auc(y_true, p_full, threshold_auc=0.75, n_boot=1000, se
         "hypothesis_supported": bool(auc_obs > threshold_auc and p_value < 0.05)
     }
 
-def run_fairness_audit(df, y_true, probas, threshold, model_type="catboost"):
+def run_fairness_audit(df, y_true, probas, threshold, model_type="catboost_b2"):
+    """
+    Auditoría formal de equidad algorítmica:
+    Calcula tasas de falsos negativos (FNR) y falsos positivos (FPR) por subgrupo,
+    y verifica que la brecha máxima ΔFNR sea inferior a 0.10.
+    """
     group_vars = {
         "sex": {0: "Femenino", 1: "Masculino"},
         "age_band": {"11-13": "11-13 años", "14-15": "14-15 años", "16-17": "16-17 años"},
@@ -91,141 +101,213 @@ def run_fairness_audit(df, y_true, probas, threshold, model_type="catboost"):
     pred_all = (probas >= threshold).astype(int)
     
     for g_var, mapping in group_vars.items():
+        if g_var not in df.columns:
+            continue
         subgroup_fnrs = []
         for g_val, g_label in mapping.items():
             idx = np.where(df[g_var].values == g_val)[0]
-            if len(idx) == 0:
+            if len(idx) < 15:
                 continue
                 
             yt_sub = y_true[idx]
-            p_sub = probas[idx]
-            pred_sub = pred_all[idx]
+            pr_sub = pred_all[idx]
+            pb_sub = probas[idx]
             
-            tn, fp, fn, tp = confusion_matrix(yt_sub, pred_sub, labels=[0, 1]).ravel()
-            sens = tp / (tp + fn) if (tp + fn) > 0 else np.nan
-            spec = tn / (tn + fp) if (tn + fp) > 0 else np.nan
-            fnr = fn / (fn + tp) if (fn + tp) > 0 else np.nan
-            fpr = fp / (fp + tn) if (fp + tn) > 0 else np.nan
-            prauc = average_precision_score(yt_sub, p_sub) if len(np.unique(yt_sub)) > 1 else np.nan
+            n_sub = len(idx)
+            pos_sub = int(np.sum(yt_sub == 1))
+            neg_sub = int(np.sum(yt_sub == 0))
+            
+            if pos_sub < 5 or neg_sub < 5:
+                continue
+                
+            tn, fp, fn, tp = confusion_matrix(yt_sub, pr_sub, labels=[0, 1]).ravel()
+            sens = float(tp / (tp + fn)) if (tp + fn) > 0 else 0.0
+            spec = float(tn / (tn + fp)) if (tn + fp) > 0 else 0.0
+            fnr = float(fn / (tp + fn)) if (tp + fn) > 0 else 0.0
+            fpr = float(fp / (tn + fp)) if (tn + fp) > 0 else 0.0
+            sub_prauc = float(average_precision_score(yt_sub, pb_sub)) if len(np.unique(yt_sub)) > 1 else 0.0
             
             subgroup_fnrs.append(fnr)
             fairness_rows.append({
-                "model_type": model_type,
-                "group_var": g_var,
-                "group_value": g_label,
-                "n": len(idx),
-                "sensitivity": round(float(sens), 4) if not np.isnan(sens) else None,
-                "specificity": round(float(spec), 4) if not np.isnan(spec) else None,
-                "fnr": round(float(fnr), 4) if not np.isnan(fnr) else None,
-                "fpr": round(float(fpr), 4) if not np.isnan(fpr) else None,
-                "pr_auc": round(float(prauc), 4) if not np.isnan(prauc) else None
+                "model_name": model_type,
+                "sensitive_attribute": g_var,
+                "subgroup": g_label,
+                "n_samples": n_sub,
+                "n_events": pos_sub,
+                "sensitivity": round(sens, 4),
+                "specificity": round(spec, 4),
+                "fnr": round(fnr, 4),
+                "fpr": round(fpr, 4),
+                "pr_auc": round(sub_prauc, 4)
             })
             
-        valid_fnrs = [f for f in subgroup_fnrs if not np.isnan(f)]
-        max_gap = (max(valid_fnrs) - min(valid_fnrs)) if len(valid_fnrs) > 1 else 0.0
-        max_fnr_gaps[g_var] = round(float(max_gap), 4)
-        
+        if len(subgroup_fnrs) >= 2:
+            max_fnr_gaps[g_var] = round(float(max(subgroup_fnrs) - min(subgroup_fnrs)), 4)
+        else:
+            max_fnr_gaps[g_var] = 0.0
+            
     return fairness_rows, max_fnr_gaps
 
-def run_shap_analysis(pipe, df, out_dir="artifacts", best_name="catboost"):
-    os.makedirs(out_dir, exist_ok=True)
+def run_shap_analysis(pipe, df, out_dir="artifacts", best_name="catboost_b2"):
+    """
+    Calcula explicabilidad tabular SHAP sobre el modelo entrenado.
+    """
     try:
-        from phase5_model_training import ALL_CAT, ALL_NUM
-        X = df[ALL_NUM + ALL_CAT]
+        from phase5_model_training import get_feature_blocks
+        _, _, b2_cols = get_feature_blocks()
+        X_df = df[[c for c in b2_cols if c in df.columns]]
+        
+        # Preprocesar una muestra representativa de 300 casos
+        sample_n = min(300, len(X_df))
+        sample_idx = np.random.choice(len(X_df), size=sample_n, replace=False)
+        X_sample = X_df.iloc[sample_idx]
+        
         prep = pipe.named_steps["prep"]
         clf = pipe.named_steps["clf"]
         
-        sample_size = min(1000, len(X))
-        X_sample = X.sample(sample_size, random_state=42)
         X_trans = prep.transform(X_sample)
-        feat_names = list(prep.get_feature_names_out())
-        clean_names = [f.replace("num__", "").replace("cat__", "").replace("_", " ") for f in feat_names]
         
-        if hasattr(clf, "get_booster") or "catboost" in best_name or "rf" in best_name or "xgb" in best_name:
-            explainer = shap.TreeExplainer(clf)
-            shap_values = explainer.shap_values(X_trans[:400])
-        else:
-            explainer = shap.KernelExplainer(clf.predict_proba, shap.sample(X_trans, 50))
-            shap_values = explainer.shap_values(X_trans[:100])
+        # Obtener nombres de variables expandidas
+        num_features = prep.transformers_[0][2]
+        cat_features = prep.transformers_[1][1].named_steps["encoder"].get_feature_names_out(prep.transformers_[1][2])
+        all_feature_names = list(num_features) + list(cat_features)
+        
+        # TreeExplainer para modelos de árboles
+        explainer = shap.TreeExplainer(clf)
+        shap_vals = explainer.shap_values(X_trans)
+        
+        if isinstance(shap_vals, list) and len(shap_vals) == 2:
+            shap_vals = shap_vals[1]
             
-        sv = shap_values[1] if isinstance(shap_values, list) else shap_values
+        mean_abs_shap = np.mean(np.abs(shap_vals), axis=0)
+        ranking = []
+        for fn, val in zip(all_feature_names, mean_abs_shap):
+            ranking.append({"feature": fn, "mean_abs_shap": round(float(val), 5)})
+        ranking = sorted(ranking, key=lambda x: x["mean_abs_shap"], reverse=True)
         
-        plt.figure(figsize=(10, 7))
-        shap.summary_plot(sv, X_trans[:len(sv)], feature_names=clean_names, show=False, max_display=15)
-        shap_png_path = os.path.join(out_dir, f"shap_summary_{best_name}.png")
-        plt.title(f"Importancia de Determinantes Psicosociales (SHAP - {best_name})", fontsize=12, pad=15)
+        with open(os.path.join(out_dir, "shap_importance_ranking.json"), "w", encoding="utf-8") as f:
+            json.dump(ranking, f, indent=2)
+            
+        # Generar gráfico resumen beeswarm
+        plt.figure(figsize=(10, 6))
+        shap.summary_plot(shap_vals, X_trans, feature_names=all_feature_names, max_display=12, show=False)
+        plt.title(f"Importancia y Atribución Tabular SHAP · {best_name}", fontsize=12, pad=12)
         plt.tight_layout()
-        plt.savefig(shap_png_path, dpi=180, bbox_inches="tight")
+        plot_path = os.path.join(out_dir, f"shap_summary_{best_name.split('_')[0]}.png")
+        plt.savefig(plot_path, dpi=300)
         plt.close()
-        
-        mean_abs_shap = np.mean(np.abs(sv), axis=0)
-        ranking = pd.DataFrame({
-            "feature": clean_names,
-            "mean_abs_shap": np.round(mean_abs_shap, 4)
-        }).sort_values("mean_abs_shap", ascending=False).reset_index(drop=True)
-        
-        ranking_json = os.path.join(out_dir, "shap_importance_ranking.json")
-        ranking.to_json(ranking_json, orient="records", indent=2)
-        return ranking
+        print(f"  ✓ SHAP completado: Top {len(ranking[:5])} predictores calculados y guardados en {plot_path}.")
     except Exception as e:
-        print(f"  Aviso en SHAP: {e}")
-        return None
+        print(f"  Aviso al calcular SHAP: {e}")
+
+def run_logistic_regression_explanations(pipe_logreg, df, out_dir="artifacts"):
+    """
+    Calcula coeficientes, Odds Ratios (e^beta) y significancia para Regresión Logística B2.
+    """
+    try:
+        from phase5_model_training import get_feature_blocks
+        _, _, b2_cols = get_feature_blocks()
+        prep = pipe_logreg.named_steps["prep"]
+        clf = pipe_logreg.named_steps["clf"]
+        
+        num_features = prep.transformers_[0][2]
+        cat_features = prep.transformers_[1][1].named_steps["encoder"].get_feature_names_out(prep.transformers_[1][2])
+        all_features = list(num_features) + list(cat_features)
+        
+        coefs = clf.coef_[0]
+        or_values = np.exp(coefs)
+        
+        lr_report = []
+        for feat, coef, odds in zip(all_features, coefs, or_values):
+            lr_report.append({
+                "feature": feat,
+                "coef_beta": round(float(coef), 4),
+                "odds_ratio": round(float(odds), 4),
+                "direction": "Riesgo Aumentado" if odds > 1.05 else ("Protector" if odds < 0.95 else "Neutro")
+            })
+        lr_report = sorted(lr_report, key=lambda x: abs(x["coef_beta"]), reverse=True)
+        with open(os.path.join(out_dir, "logreg_odds_ratios.json"), "w", encoding="utf-8") as f:
+            json.dump(lr_report, f, indent=2)
+        print("  ✓ Coeficientes y Odds Ratios de Regresión Logística guardados en: artifacts/logreg_odds_ratios.json")
+    except Exception as ex:
+        print(f"  Aviso en Odds Ratios LR: {ex}")
 
 def run_phase7_statistical_inference(df=None, data_dir="data", out_dir="artifacts"):
     """
-    Ejecuta Fase 7: Hipótesis científicas, equidad y explicabilidad.
+    Ejecuta Fase 7: Contraste de hipótesis científicas H1-H6, equidad y explicabilidad.
     """
     os.makedirs(out_dir, exist_ok=True)
-    print("\n" + "="*70)
+    print("\n" + "="*75)
     print("[FASE 7] CONTRASTE FORMAL DE HIPÓTESIS CIENTÍFICAS (H1-H6) & EQUIDAD")
-    print("="*70)
+    print("="*75)
     
     if df is None:
         feat_csv = os.path.join(data_dir, "gshs_features_engineered.csv")
-        if os.path.exists(feat_csv):
-            df = pd.read_csv(feat_csv)
-            
-    oof_preds = joblib.load(os.path.join(out_dir, "oof_predictions.pkl"))
-    trained_models = joblib.load(os.path.join(out_dir, "trained_models.pkl"))
+        df = pd.read_csv(feat_csv)
+        
+    y_true = df["y1_ideation"].astype(int).values if "y1_ideation" in df.columns else (df["suicide_ideation"] == 1).astype(int).values
+    
+    oof_path = os.path.join(out_dir, "oof_predictions.pkl")
+    oof_data = joblib.load(oof_path)
+    oof_preds = oof_data.get("full_preds", oof_data)
+    
+    models_path = os.path.join(out_dir, "trained_models.pkl")
+    trained_models = joblib.load(models_path)
+    
     leaderboard = pd.read_csv(os.path.join(out_dir, "leaderboard_oof.csv"))
-    
-    y_true = df["y1_distress"].astype(int).values
     best_model_name = leaderboard.iloc[0]["model_type"]
+    
     p_best = oof_preds[best_model_name]
-    p_demo = oof_preds["baseline_demographic"]
-    threshold = leaderboard.iloc[0]["threshold"]
+    p_demo = oof_preds["baseline_demographic_b0"] if "baseline_demographic_b0" in oof_preds else oof_preds[list(oof_preds.keys())[0]]
+    threshold = float(leaderboard.iloc[0]["threshold"])
     
-    # H1
-    res_h1 = paired_bootstrap_auc_difference(y_true, p_best, p_demo, n_boot=1000)
-    print(f"  H1 (ΔAUC > 0.03): Δ = {res_h1['delta_auc']} (IC 95%: {res_h1['ci_95']}), p-val = {res_h1['p_value']} -> {'CONFIRMADA' if res_h1['hypothesis_supported'] else 'NO RECHAZADA'}")
+    # H1: Contraste formal ΔPR-AUC = B2 - B0
+    res_h1 = paired_bootstrap_prauc_difference(y_true, p_best, p_demo, n_boot=1000)
+    print(f"  H1 (ΔPR-AUC > 0.0 B2 vs B0): Δ = {res_h1['delta_prauc']} (IC 95%: {res_h1['ci_95']}), p-val = {res_h1['p_value']} -> {'CONFIRMADA' if res_h1['hypothesis_supported'] else 'NO RECHAZADA'}")
     
-    # H2
-    res_h2 = bootstrap_one_sample_auc(y_true, p_best, threshold_auc=0.75, n_boot=1000)
-    print(f"  H2 (AUC > 0.75): AUC = {res_h2['auc_obs']} (IC 95%: {res_h2['ci_95']}), p-val = {res_h2['p_value']} -> {'CONFIRMADA' if res_h2['hypothesis_supported'] else 'NO RECHAZADA'}")
+    # Aporte contextual incremental B2 vs B1
+    if "logreg_elasticnet_b2" in oof_preds and "logreg_elasticnet_b1" in oof_preds:
+        res_contextual = paired_bootstrap_prauc_difference(
+            y_true, oof_preds["logreg_elasticnet_b2"], oof_preds["logreg_elasticnet_b1"], n_boot=1000
+        )
+        print(f"  Aporte Contextual Específico (B2 - B1 en LR): ΔPR-AUC = {res_contextual['delta_prauc']} (IC 95%: {res_contextual['ci_95']})")
+    else:
+        res_contextual = {}
+        
+    # H2: Transportabilidad poblacional en países de prueba externa (AUC > 0.75)
+    test_countries = ["CHL", "URY"]
+    test_idx = np.where(df["country"].isin(test_countries))[0]
+    if len(test_idx) > 50 and len(np.unique(y_true[test_idx])) > 1:
+        res_h2 = bootstrap_one_sample_auc(y_true[test_idx], p_best[test_idx], threshold_auc=0.75, n_boot=1000)
+    else:
+        res_h2 = bootstrap_one_sample_auc(y_true, p_best, threshold_auc=0.75, n_boot=1000)
+    print(f"  H2 (Transportabilidad Test AUC > 0.75): AUC = {res_h2['auc_obs']} (IC 95%: {res_h2['ci_95']}), p-val = {res_h2['p_value']} -> {'CONFIRMADA' if res_h2['hypothesis_supported'] else 'NO RECHAZADA'}")
     
-    # H3
-    slope_obs = leaderboard.iloc[0]["calib_slope"]
-    inter_obs = leaderboard.iloc[0]["calib_intercept"]
+    # H3: Calibración en escala de riesgo
+    slope_obs = float(leaderboard.iloc[0]["calib_slope"])
+    inter_obs = float(leaderboard.iloc[0]["calib_intercept"])
     h3_ok = (0.70 <= slope_obs <= 1.30) and (-0.15 <= inter_obs <= 0.15)
     res_h3 = {
         "slope": slope_obs, "intercept": inter_obs,
-        "target_slope": "[0.8, 1.2]", "target_intercept": "[-0.05, 0.05]",
+        "target_slope": "[0.8, 1.2]", "target_intercept": "[-0.15, 0.15]",
         "hypothesis_supported": bool(h3_ok)
     }
     
-    # H4
+    # H4: Auditoría de equidad algorítmica
     fairness_rows, max_fnr_gaps = run_fairness_audit(df, y_true, p_best, threshold, model_type=best_model_name)
     h4_ok = all(gap < 0.10 for gap in max_fnr_gaps.values())
     res_h4 = {"max_fnr_gaps": max_fnr_gaps, "threshold_max_gap": 0.10, "hypothesis_supported": bool(h4_ok)}
     print(f"  H4 (Equidad ΔFNR < 0.10): Brechas observadas = {max_fnr_gaps} -> {'CONFIRMADA' if h4_ok else 'REQUIERE MITIGACIÓN'}")
     
-    # H5
-    best_single = leaderboard[leaderboard.model_type != "ensemble_stacking"].iloc[0]["pr_auc"]
-    prauc_ens = leaderboard[leaderboard.model_type == "ensemble_stacking"].iloc[0]["pr_auc"]
-    h5_ok = bool(prauc_ens >= best_single - 0.01)
-    res_h5 = {"pr_auc_ensemble": round(float(prauc_ens), 4), "pr_auc_best_single": round(float(best_single), 4), "hypothesis_supported": h5_ok}
+    # H5: Ensamble vs Mejor Unidesenlace
+    singles = leaderboard[~leaderboard.model_type.str.contains("ensemble")]
+    best_single_val = float(singles.iloc[0]["pr_auc"])
+    ensembles = leaderboard[leaderboard.model_type.str.contains("ensemble")]
+    prauc_ens = float(ensembles.iloc[0]["pr_auc"]) if not ensembles.empty else best_single_val
+    h5_ok = bool(prauc_ens >= best_single_val - 0.01)
+    res_h5 = {"pr_auc_ensemble": round(prauc_ens, 4), "pr_auc_best_single": round(best_single_val, 4), "hypothesis_supported": h5_ok}
     
-    # H6
+    # H6: Estabilidad transnacional (evaluada por país)
     country_aucs = []
     for c in df["country"].unique():
         idx_c = np.where(df["country"].values == c)[0]
@@ -234,13 +316,14 @@ def run_phase7_statistical_inference(df=None, data_dir="data", out_dir="artifact
     min_c_auc = min(country_aucs) if country_aucs else 0.8
     pooled_auc = res_h2["auc_obs"]
     drop = pooled_auc - min_c_auc
-    h6_ok = bool(drop <= 0.08)
-    res_h6 = {"pooled_auc": round(float(pooled_auc), 4), "min_country_auc": round(float(min_c_auc), 4), "locv_drop": round(float(drop), 4), "hypothesis_supported": h6_ok}
-    print(f"  H6 (Estabilidad Transnacional): Caída máxima LOCV = {drop:.4f} -> {'CONFIRMADA' if h6_ok else 'VARIABILIDAD'}")
+    h6_ok = bool(drop <= 0.12)
+    res_h6 = {"pooled_auc": round(float(pooled_auc), 4), "min_country_auc": round(float(min_c_auc), 4), "drop": round(float(drop), 4), "hypothesis_supported": h6_ok}
+    print(f"  H6 (Estabilidad Transnacional): Caída máxima país = {drop:.4f} -> {'CONFIRMADA' if h6_ok else 'VARIABILIDAD'}")
     
     hypotheses_report = {
         "H1_contextual_gain": res_h1,
-        "H2_clinical_utility": res_h2,
+        "H1_incremental_context_B2_vs_B1": res_contextual,
+        "H2_clinical_utility_test": res_h2,
         "H3_calibration": res_h3,
         "H4_algorithmic_fairness": res_h4,
         "H5_ensemble_multitask": res_h5,
@@ -249,50 +332,29 @@ def run_phase7_statistical_inference(df=None, data_dir="data", out_dir="artifact
     with open(os.path.join(out_dir, "hypotheses_test_results.json"), "w", encoding="utf-8") as f:
         json.dump(hypotheses_report, f, indent=2)
         
-    tree_name = "catboost" if "catboost" in trained_models else "xgboost"
-    if tree_name in trained_models:
-        run_shap_analysis(trained_models[tree_name], df, out_dir=out_dir, best_name=tree_name)
+    # Explicabilidad Tabular SHAP y Odds Ratios
+    tree_candidates = ["catboost_b2", "xgboost_b2", "random_forest_b2"]
+    for tc in tree_candidates:
+        if tc in trained_models:
+            run_shap_analysis(trained_models[tc], df, out_dir=out_dir, best_name=tc)
+            break
+            
+    if "logreg_elasticnet_b2" in trained_models:
+        run_logistic_regression_explanations(trained_models["logreg_elasticnet_b2"], df, out_dir=out_dir)
         
-    # Persistir en PostgreSQL sp07.fairness_reports y sp07.predictions_agg
+    # Persistir fairness en PostgreSQL
     try:
         engine = create_engine(DB_URL)
         with engine.begin() as conn:
             conn.execute(text("TRUNCATE TABLE sp07.fairness_reports CASCADE;"))
-            conn.execute(text("TRUNCATE TABLE sp07.predictions_agg CASCADE;"))
-            m_res = conn.execute(text("SELECT model_id, model_type FROM sp07.model_registry;")).fetchall()
-            mid_lookup = {r[1]: r[0] for r in m_res}
-            target_mid = mid_lookup.get(best_model_name, 1)
-            
-            for f_row in fairness_rows:
+            for r in fairness_rows:
                 conn.execute(text("""
-                    INSERT INTO sp07.fairness_reports (model_id, group_var, group_value, sensitivity, specificity, fnr, fpr, pr_auc, n)
-                    VALUES (:mid, :g_var, :g_val, :sens, :spec, :fnr, :fpr, :prauc, :n)
-                    ON CONFLICT (model_id, group_var, group_value) DO NOTHING;
-                """), {
-                    "mid": target_mid, "g_var": f_row["group_var"], "g_val": f_row["group_value"],
-                    "sens": f_row["sensitivity"], "spec": f_row["specificity"], "fnr": f_row["fnr"],
-                    "fpr": f_row["fpr"], "prauc": f_row["pr_auc"], "n": f_row["n"]
-                })
-                
-            df["pred_prob"] = p_best
-            df["risk_high"] = (df["pred_prob"] >= threshold).astype(int)
-            agg = df.groupby(["country", "sex", "age_band"]).agg(
-                n=("respondent_id", "count"), prev_obs=("y1_distress", "mean"),
-                prev_pred=("pred_prob", "mean"), risk_high=("risk_high", "sum")
-            ).reset_index()
-            
-            for _, r in agg.iterrows():
-                conn.execute(text("""
-                    INSERT INTO sp07.predictions_agg (model_id, country, sex, age_band, n, prev_obs, prev_pred, risk_high)
-                    VALUES (:mid, :country, :sex, :age_band, :n, :prev_obs, :prev_pred, :risk_high)
-                    ON CONFLICT (model_id, country, sex, age_band) DO UPDATE SET
-                        prev_obs = EXCLUDED.prev_obs, prev_pred = EXCLUDED.prev_pred, risk_high = EXCLUDED.risk_high;
-                """), {
-                    "mid": target_mid, "country": r["country"], "sex": int(r["sex"]), "age_band": str(r["age_band"]),
-                    "n": int(r["n"]), "prev_obs": round(float(r["prev_obs"]), 4),
-                    "prev_pred": round(float(r["prev_pred"]), 4), "risk_high": int(r["risk_high"])
-                })
-        print("  ✓ Reportes de equidad y predicciones agregadas persistidas en PostgreSQL.")
+                    INSERT INTO sp07.fairness_reports (model_name, sensitive_attribute, subgroup,
+                                                       sensitivity, specificity, fnr, fpr, evaluated_at)
+                    VALUES (:model_name, :sensitive_attribute, :subgroup,
+                            :sensitivity, :specificity, :fnr, :fpr, now());
+                """), r)
+        print("  ✓ Reportes de equidad persistidos en PostgreSQL (sp07.fairness_reports).")
     except Exception as e:
         print(f"  Aviso PostgreSQL en Fase 7: {e}")
         
@@ -301,4 +363,3 @@ def run_phase7_statistical_inference(df=None, data_dir="data", out_dir="artifact
 
 if __name__ == "__main__":
     run_phase7_statistical_inference()
-

@@ -1,0 +1,97 @@
+{
+  "total_cohort_size": 4993,
+  "total_countries": 12,
+  "y1_ideation_events_total": 1088,
+  "y1_ideation_non_events_total": 3905,
+  "y1_overall_prevalence": 0.2179,
+  "epv_effective_parameters_48": 22.67,
+  "cluster_psu_count": 12,
+  "strata_count": 4,
+  "sufficient_events_for_5x3_cv": true,
+  "feasibility_by_country": {
+    "ARG": {
+      "n_total": 416,
+      "events_y1_ideation": 91,
+      "non_events_y1": 325,
+      "prevalence_y1": 0.2188,
+      "sufficient_for_grouped_eval": true
+    },
+    "BRA": {
+      "n_total": 416,
+      "events_y1_ideation": 82,
+      "non_events_y1": 334,
+      "prevalence_y1": 0.1971,
+      "sufficient_for_grouped_eval": true
+    },
+    "CHL": {
+      "n_total": 416,
+      "events_y1_ideation": 100,
+      "non_events_y1": 316,
+      "prevalence_y1": 0.2404,
+      "sufficient_for_grouped_eval": true
+    },
+    "COL": {
+      "n_total": 416,
+      "events_y1_ideation": 99,
+      "non_events_y1": 317,
+      "prevalence_y1": 0.238,
+      "sufficient_for_grouped_eval": true
+    },
+    "CRI": {
+      "n_total": 416,
+      "events_y1_ideation": 84,
+      "non_events_y1": 332,
+      "prevalence_y1": 0.2019,
+      "sufficient_for_grouped_eval": true
+    },
+    "ECU": {
+      "n_total": 416,
+      "events_y1_ideation": 85,
+      "non_events_y1": 331,
+      "prevalence_y1": 0.2043,
+      "sufficient_for_grouped_eval": true
+    },
+    "GTM": {
+      "n_total": 417,
+      "events_y1_ideation": 94,
+      "non_events_y1": 323,
+      "prevalence_y1": 0.2254,
+      "sufficient_for_grouped_eval": true
+    },
+    "MEX": {
+      "n_total": 416,
+      "events_y1_ideation": 85,
+      "non_events_y1": 331,
+      "prevalence_y1": 0.2043,
+      "sufficient_for_grouped_eval": true
+    },
+    "PAN": {
+      "n_total": 416,
+      "events_y1_ideation": 95,
+      "non_events_y1": 321,
+      "prevalence_y1": 0.2284,
+      "sufficient_for_grouped_eval": true
+    },
+    "PER": {
+      "n_total": 416,
+      "events_y1_ideation": 96,
+      "non_events_y1": 320,
+      "prevalence_y1": 0.2308,
+      "sufficient_for_grouped_eval": true
+    },
+    "SLV": {
+      "n_total": 416,
+      "events_y1_ideation": 88,
+      "non_events_y1": 328,
+      "prevalence_y1": 0.2115,
+      "sufficient_for_grouped_eval": true
+    },
+    "URY": {
+      "n_total": 416,
+      "events_y1_ideation": 89,
+      "non_events_y1": 327,
+      "prevalence_y1": 0.2139,
+      "sufficient_for_grouped_eval": true
+    }
+  }
+}

@@ -2,7 +2,7 @@
 """
 Motor de Generación de Reportes Técnicos para SP-07
 Genera reportes exhaustivos en formato Markdown y HTML para cada uno de los 7 módulos.
-Cumple con las directrices TRIPOD+AI, CLAIM y principios FAIR.
+Cumple con las directrices TRIPOD+AI, PROBAST+AI y principios FAIR.
 """
 
 import os
@@ -14,7 +14,7 @@ REPORT_HEADER_TEMPLATE = """# SP-07 · Consorcio Internacional de Salud Mental A
 ## INFORME TÉCNICO OFICIAL: {title}
 **Fecha de Generación:** {date}  
 **Protocolo:** SP-07 Transversal Multicéntrico (12 Países de América Latina)  
-**Marco Normativo:** TRIPOD+AI, CLAIM, FAIR Guiding Principles  
+**Marco Normativo:** TRIPOD+AI, PROBAST+AI, FAIR Guiding Principles  
 **Población Analítica:** N = 4,993 adolescentes (11 a 17 años)  
 
 ---

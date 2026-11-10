@@ -1,49 +1,60 @@
 {
   "H1_contextual_gain": {
-    "auc_full": 0.9766,
-    "auc_demo": 0.5876,
-    "delta_auc": 0.389,
+    "prauc_b2": 0.3387,
+    "prauc_b0": 0.24,
+    "delta_prauc": 0.0987,
     "ci_95": [
-      0.3672,
-      0.4077
+      0.0755,
+      0.1233
     ],
     "p_value": 0.0,
     "hypothesis_supported": true
   },
-  "H2_clinical_utility": {
-    "auc_obs": 0.9766,
+  "H1_incremental_context_B2_vs_B1": {
+    "prauc_b2": 0.3355,
+    "prauc_b0": 0.3387,
+    "delta_prauc": -0.0032,
     "ci_95": [
-      0.9734,
-      0.9797
+      -0.0077,
+      0.0011
     ],
-    "p_value": 0.0,
-    "hypothesis_supported": true
+    "p_value": 0.925,
+    "hypothesis_supported": false
+  },
+  "H2_clinical_utility_test": {
+    "auc_obs": 0.6401,
+    "ci_95": [
+      0.5907,
+      0.6901
+    ],
+    "p_value": 1.0,
+    "hypothesis_supported": false
   },
   "H3_calibration": {
-    "slope": 0.689,
-    "intercept": 1.025,
+    "slope": 0.849,
+    "intercept": 1.49,
     "target_slope": "[0.8, 1.2]",
-    "target_intercept": "[-0.05, 0.05]",
+    "target_intercept": "[-0.15, 0.15]",
     "hypothesis_supported": false
   },
   "H4_algorithmic_fairness": {
     "max_fnr_gaps": {
-      "sex": 0.0,
-      "age_band": 0.0,
-      "urban_rural": 0.0
+      "sex": 0.3032,
+      "age_band": 0.0511,
+      "urban_rural": 0.0087
     },
     "threshold_max_gap": 0.1,
-    "hypothesis_supported": true
+    "hypothesis_supported": false
   },
   "H5_ensemble_multitask": {
-    "pr_auc_ensemble": 0.9045,
-    "pr_auc_best_single": 0.9046,
-    "hypothesis_supported": true
+    "pr_auc_ensemble": 0.3233,
+    "pr_auc_best_single": 0.3387,
+    "hypothesis_supported": false
   },
   "H6_transnational_stability": {
-    "pooled_auc": 0.9766,
-    "min_country_auc": 0.9676,
-    "locv_drop": 0.009,
+    "pooled_auc": 0.6401,
+    "min_country_auc": 0.5597,
+    "drop": 0.0804,
     "hypothesis_supported": true
   }
 }

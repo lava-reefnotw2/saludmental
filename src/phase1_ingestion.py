@@ -2,6 +2,7 @@
 """
 MÓDULO 1 · FASE 1: Ingesta y Validación Multi-Fuente
 Fuentes: WHO Global School-based Student Health Survey (GSHS), UNICEF Innocenti, World Bank Open Data.
+Registra metadatos de muestreo complejo (weight, psu, stratum), diccionario versionado y controles de calidad.
 """
 
 import os
@@ -70,19 +71,28 @@ def fetch_world_bank_context():
 
 def generate_raw_gshs_responses(n_total=5000, seed=42):
     """
-    Genera microdatos crudos representativos de las encuestas escolares WHO-GSHS + UNICEF Innocenti.
+    Genera microdatos crudos representativos de encuestas escolares WHO-GSHS + UNICEF Innocenti.
+    Incluye ponderación de diseño muestral (weight), conglomerado (psu) y estrato (stratum).
+    Nota metodológica: Fixture sintético calibrado con distribuciones empíricas de OMS-GSHS.
     """
     np.random.seed(seed)
     n_per_country = n_total // len(COUNTRIES)
     records = []
     
-    for c in COUNTRIES:
+    for c_idx, c in enumerate(COUNTRIES):
         n_c = n_per_country + (1 if c == COUNTRIES[-1] and (n_per_country * len(COUNTRIES)) < n_total else 0)
         
         age = np.random.choice([11, 12, 13, 14, 15, 16, 17], size=n_c, p=[0.08, 0.14, 0.18, 0.22, 0.18, 0.12, 0.08])
         sex = np.random.choice([0, 1], size=n_c, p=[0.51, 0.49])
         grade = np.clip(age - 10 + np.random.choice([-1, 0, 1], size=n_c, p=[0.1, 0.8, 0.1]), 1, 6)
         urban_rural = np.random.choice([0, 1], size=n_c, p=[0.25, 0.75])
+        
+        # Diseño muestral complejo: 8-12 colegios por país (PSU), 3 estratos (urbano/rural/tipo)
+        n_psu = np.random.randint(8, 13)
+        psu = np.random.randint(1, n_psu + 1, size=n_c)
+        stratum = urban_rural * 2 + np.random.choice([0, 1], size=n_c, p=[0.6, 0.4]) + 1
+        sampling_weight = np.clip(np.random.lognormal(mean=0.0, sigma=0.35, size=n_c), 0.25, 4.5)
+        sampling_weight = np.round(sampling_weight / np.mean(sampling_weight), 4)
         
         food_insecurity = np.random.choice([0, 1, 2, 3], size=n_c, p=[0.60, 0.23, 0.12, 0.05])
         parents_supervision = np.random.choice([1, 2, 3, 4], size=n_c, p=[0.12, 0.23, 0.35, 0.30])
@@ -123,7 +133,6 @@ def generate_raw_gshs_responses(n_total=5000, seed=42):
             + 0.30 * (parents_support <= 2)
             + 0.25 * (family_connectedness <= 2)
             + 0.20 * (school_connectedness <= 2)
-            + 0.30 * (anxiety_sleep_temp := np.random.choice([1, 2, 3, 4, 5], size=n_c, p=[0.40, 0.25, 0.18, 0.11, 0.06]))
             + 0.25 * alcohol_use
             + 0.35 * drug_use
             + np.random.normal(0, 0.5, size=n_c)
@@ -131,7 +140,7 @@ def generate_raw_gshs_responses(n_total=5000, seed=42):
         
         loneliness_prob = 1 / (1 + np.exp(- (latent_distress_score + 0.3)))
         loneliness = np.clip(np.round(1 + 4 * loneliness_prob).astype(int), 1, 5)
-        anxiety_sleep = anxiety_sleep_temp
+        anxiety_sleep = np.clip(np.round(1 + 4 * (1 / (1 + np.exp(- (latent_distress_score + 0.2))))).astype(int), 1, 5)
         
         p_ideation = 1 / (1 + np.exp(- (latent_distress_score * 0.9 - 0.5)))
         suicide_ideation = (np.random.rand(n_c) < p_ideation).astype(int)
@@ -146,6 +155,9 @@ def generate_raw_gshs_responses(n_total=5000, seed=42):
                 "respondent_id": str(uuid.uuid4()),
                 "country": c,
                 "survey_year": 2022,
+                "weight": float(sampling_weight[i]),
+                "psu": int(psu[i]),
+                "stratum": int(stratum[i]),
                 "age_years": int(age[i]),
                 "sex": int(sex[i]),
                 "grade": int(grade[i]),
@@ -176,7 +188,76 @@ def generate_raw_gshs_responses(n_total=5000, seed=42):
                 "bmi_for_age_z": float(bmi_z[i])
             })
             
-    return pd.DataFrame(records)
+    df = pd.DataFrame(records)
+    return df
+
+def populate_dictionary_in_db(conn):
+    """
+    Puebla el diccionario de datos oficial versionado según el Protocolo v2.0.
+    Identifica el rol exacto de cada variable para prevenir fugas y habilitar auditoría.
+    """
+    conn.execute(text("TRUNCATE TABLE sp07.dict_variables CASCADE;"))
+    dict_records = [
+        ("respondent_id", "varchar", "ID", "UUID v4", "Identificador Técnico", "No missing", 2),
+        ("country", "categorical", "WHO-GSHS", "ISO-3166 alpha-3", "Agrupación/Cluster", "No missing", 2),
+        ("survey_year", "integer", "WHO-GSHS", "2018-2024", "Control temporal", "No missing", 2),
+        ("weight", "continuous", "WHO-GSHS", "Ponderador muestral", "Diseño Muestral", "No missing", 2),
+        ("psu", "integer", "WHO-GSHS", "Unidad Primaria Muestral (Colegio)", "Diseño Muestral", "No missing", 2),
+        ("stratum", "integer", "WHO-GSHS", "Estrato socio-demográfico", "Diseño Muestral", "No missing", 2),
+        ("age_years", "integer", "WHO-GSHS", "11-17 años", "Predictor Demográfico B0", "Mediana", 2),
+        ("sex", "binary", "WHO-GSHS", "0=Femenino, 1=Masculino", "Predictor Demográfico B0 / Equidad", "Moda", 2),
+        ("grade", "ordinal", "WHO-GSHS", "1-6 grado escolar", "Predictor Demográfico B0", "Mediana", 2),
+        ("grade_band", "categorical", "Derivada", "low_7_8, mid_9_10, high_11_12", "Predictor Demográfico B0", "Derivada", 2),
+        ("urban_rural", "binary", "WHO-GSHS", "0=Rural, 1=Urbano", "Predictor Individual B1 / Equidad", "Moda", 2),
+        ("food_insecurity", "ordinal", "GSHS F0", "0=Nunca .. 3=Siempre", "Predictor Individual B1", "Mediana", 2),
+        ("parents_supervision", "ordinal", "GSHS F1", "1=Nunca .. 4=Siempre", "Predictor Individual B1", "Mediana", 2),
+        ("parents_support", "ordinal", "GSHS F2", "1=Nunca .. 5=Siempre", "Predictor Individual B1", "Mediana", 2),
+        ("family_connectedness", "ordinal", "GSHS F3", "1=Baja .. 5=Alta", "Predictor Individual B1", "Mediana", 2),
+        ("friends_support", "ordinal", "GSHS F4", "1=Bajo .. 5=Alto", "Predictor Individual B1", "Mediana", 2),
+        ("school_connectedness", "ordinal", "GSHS I2", "1=Bajo .. 5=Alto", "Predictor Individual B1", "Mediana", 2),
+        ("bullied_past_month", "binary", "GSHS C1", "0=No, 1=Sí (últimos 30d)", "Predictor Individual B1", "Zero impute", 2),
+        ("bullied_type_count", "integer", "GSHS C2", "0 a 6 tipos de agresión", "Predictor Individual B1", "Zero impute", 2),
+        ("physical_fights", "integer", "GSHS D1", "0 a 4+ peleas", "Predictor Individual B1", "Mediana", 2),
+        ("physically_attacked", "binary", "GSHS D2", "0=No, 1=Sí", "Predictor Individual B1", "Zero impute", 2),
+        ("tobacco_use", "binary", "GSHS E1", "0=No, 1=Sí (30d)", "Predictor Individual B1", "Zero impute", 2),
+        ("alcohol_use", "binary", "GSHS E2", "0=No, 1=Sí (30d)", "Predictor Individual B1", "Zero impute", 2),
+        ("drug_use", "binary", "GSHS E3", "0=No, 1=Sí (30d)", "Predictor Individual B1", "Zero impute", 2),
+        ("fruit_veg_intake", "ordinal", "GSHS H1", "0=Bajo .. 2=Adecuado", "Predictor Individual B1", "Mediana", 2),
+        ("physical_activity_60min", "binary", "GSHS H2", "0=No, 1=Sí (≥60m/día)", "Predictor Individual B1", "Zero impute", 2),
+        ("sedentary_hours", "ordinal", "GSHS H3", "0=<1h .. 3=≥5h/día", "Predictor Individual B1", "Mediana", 2),
+        ("truancy_past_month", "binary", "GSHS I1", "0=No, 1=Sí (≥1 día)", "Predictor Individual B1", "Zero impute", 2),
+        ("bmi_for_age_z", "continuous", "GSHS A1", "Z-score antropométrico", "Predictor Individual B1", "Mediana", 2),
+        ("gini_index", "continuous", "Banco Mundial", "0 a 100", "Predictor Contextual B2", "Media país", 2),
+        ("health_exp_pc_usd", "continuous", "Banco Mundial", "USD per cápita", "Predictor Contextual B2", "Media país", 2),
+        ("unemployment_youth", "continuous", "Banco Mundial / OIT", "% Desempleo juvenil", "Predictor Contextual B2", "Media país", 2),
+        ("internet_pct", "continuous", "Banco Mundial / ITU", "% Penetración internet", "Predictor Contextual B2", "Media país", 2),
+        ("y1_ideation", "binary", "GSHS B3", "0=No, 1=Sí (últimos 12m)", "DESENLACE PRIMARIO (Y1) [EXCLUIDO DE X]", "Etiqueta real", 2),
+        ("y2_plan", "binary", "GSHS B4", "0=No, 1=Sí (últimos 12m)", "DESENLACE SECUNDARIO (Y2) [EXCLUIDO DE X]", "Etiqueta real", 2),
+        ("y3_attempt", "binary", "GSHS B5", "0=No, 1=Sí (últimos 12m)", "DESENLACE SECUNDARIO (Y3) [EXCLUIDO DE X]", "Etiqueta real", 2),
+        ("y4_loneliness_frequent", "binary", "GSHS B1 (≥4)", "0=Rara vez, 1=Frecuente", "DESENLACE SECUNDARIO (Y4) [EXCLUIDO DE X]", "Etiqueta real", 2),
+        ("y5_worry_sleep_frequent", "binary", "GSHS B2 (≥4)", "0=Rara vez, 1=Frecuente", "DESENLACE SECUNDARIO (Y5) [EXCLUIDO DE X]", "Etiqueta real", 2),
+        ("loneliness", "ordinal", "GSHS B1", "1=Nunca .. 5=Siempre", "ÍTEM BASE DESENLACE [EXCLUIDO DE X POR NO-LEAKAGE]", "Etiqueta real", 2),
+        ("anxiety_sleep", "ordinal", "GSHS B2", "1=Nunca .. 5=Siempre", "ÍTEM BASE DESENLACE [EXCLUIDO DE X POR NO-LEAKAGE]", "Etiqueta real", 2),
+        ("suicide_ideation", "binary", "GSHS B3", "0=No, 1=Sí", "ÍTEM BASE DESENLACE [EXCLUIDO DE X POR NO-LEAKAGE]", "Etiqueta real", 2),
+        ("suicide_plan", "binary", "GSHS B4", "0=No, 1=Sí", "ÍTEM BASE DESENLACE [EXCLUIDO DE X POR NO-LEAKAGE]", "Etiqueta real", 2),
+        ("suicide_attempt", "binary", "GSHS B5", "0=No, 1=Sí", "ÍTEM BASE DESENLACE [EXCLUIDO DE X POR NO-LEAKAGE]", "Etiqueta real", 2),
+        ("suicide_attempt_n", "integer", "GSHS B5_n", "Conteo de intentos", "ÍTEM BASE DESENLACE [EXCLUIDO DE X POR NO-LEAKAGE]", "Etiqueta real", 2)
+    ]
+    for r in dict_records:
+        conn.execute(text("""
+            INSERT INTO sp07.dict_variables (var_name, var_type, source, coding, role, missing_rule, version)
+            VALUES (:vname, :vtype, :vsrc, :vcode, :vrole, :vmiss, :vver)
+            ON CONFLICT (var_name) DO UPDATE SET
+                var_type = EXCLUDED.var_type,
+                source = EXCLUDED.source,
+                coding = EXCLUDED.coding,
+                role = EXCLUDED.role,
+                missing_rule = EXCLUDED.missing_rule,
+                version = EXCLUDED.version;
+        """), {
+            "vname": r[0], "vtype": r[1], "vsrc": r[2], "vcode": r[3],
+            "vrole": r[4], "vmiss": r[5], "vver": r[6]
+        })
 
 def run_phase1_ingestion(data_dir="data", n_total=5000, seed=2026):
     """
@@ -211,9 +292,10 @@ def run_phase1_ingestion(data_dir="data", n_total=5000, seed=2026):
                 """), r.to_dict())
                 
             conn.execute(text("TRUNCATE TABLE sp07.raw_responses CASCADE;"))
+            populate_dictionary_in_db(conn)
             
         df_raw.to_sql("raw_responses", con=engine, schema="sp07", if_exists="append", index=False, chunksize=1000)
-        print("  ✓ Datos persistidos en PostgreSQL (sp07.raw_responses, sp07.country_context).")
+        print("  ✓ Datos y diccionario persistidos en PostgreSQL (sp07.raw_responses, sp07.dict_variables).")
     except Exception as e:
         print(f"  Aviso PostgreSQL en Fase 1: {e}")
         
@@ -222,4 +304,3 @@ def run_phase1_ingestion(data_dir="data", n_total=5000, seed=2026):
 
 if __name__ == "__main__":
     run_phase1_ingestion()
-

@@ -1,0 +1,254 @@
+[
+  {
+    "feature": "bullied_past_month_1",
+    "coef_beta": 0.2878,
+    "odds_ratio": 1.3335,
+    "direction": "Riesgo Aumentado"
+  },
+  {
+    "feature": "bullied_past_month_0",
+    "coef_beta": -0.2849,
+    "odds_ratio": 0.7521,
+    "direction": "Protector"
+  },
+  {
+    "feature": "sex_0",
+    "coef_beta": 0.2803,
+    "odds_ratio": 1.3236,
+    "direction": "Riesgo Aumentado"
+  },
+  {
+    "feature": "sex_1",
+    "coef_beta": -0.2774,
+    "odds_ratio": 0.7577,
+    "direction": "Protector"
+  },
+  {
+    "feature": "school_connectedness_2",
+    "coef_beta": 0.2669,
+    "odds_ratio": 1.306,
+    "direction": "Riesgo Aumentado"
+  },
+  {
+    "feature": "food_insecurity",
+    "coef_beta": 0.1901,
+    "odds_ratio": 1.2094,
+    "direction": "Riesgo Aumentado"
+  },
+  {
+    "feature": "family_connectedness",
+    "coef_beta": -0.1756,
+    "odds_ratio": 0.8389,
+    "direction": "Protector"
+  },
+  {
+    "feature": "drug_use_1",
+    "coef_beta": 0.1749,
+    "odds_ratio": 1.1911,
+    "direction": "Riesgo Aumentado"
+  },
+  {
+    "feature": "drug_use_0",
+    "coef_beta": -0.1719,
+    "odds_ratio": 0.842,
+    "direction": "Protector"
+  },
+  {
+    "feature": "school_connectedness_5",
+    "coef_beta": -0.1687,
+    "odds_ratio": 0.8448,
+    "direction": "Protector"
+  },
+  {
+    "feature": "cumulative_risk_score",
+    "coef_beta": 0.1205,
+    "odds_ratio": 1.1281,
+    "direction": "Riesgo Aumentado"
+  },
+  {
+    "feature": "grade_band_low_7_8",
+    "coef_beta": -0.1191,
+    "odds_ratio": 0.8877,
+    "direction": "Protector"
+  },
+  {
+    "feature": "truancy_past_month_0",
+    "coef_beta": 0.0789,
+    "odds_ratio": 1.0821,
+    "direction": "Riesgo Aumentado"
+  },
+  {
+    "feature": "truancy_past_month_1",
+    "coef_beta": -0.0759,
+    "odds_ratio": 0.9269,
+    "direction": "Protector"
+  },
+  {
+    "feature": "school_connectedness_1",
+    "coef_beta": 0.0636,
+    "odds_ratio": 1.0656,
+    "direction": "Riesgo Aumentado"
+  },
+  {
+    "feature": "fruit_veg_intake",
+    "coef_beta": 0.0604,
+    "odds_ratio": 1.0623,
+    "direction": "Riesgo Aumentado"
+  },
+  {
+    "feature": "sedentary_hours",
+    "coef_beta": -0.056,
+    "odds_ratio": 0.9456,
+    "direction": "Protector"
+  },
+  {
+    "feature": "parents_support",
+    "coef_beta": -0.0516,
+    "odds_ratio": 0.9497,
+    "direction": "Protector"
+  },
+  {
+    "feature": "age_years",
+    "coef_beta": -0.0452,
+    "odds_ratio": 0.9558,
+    "direction": "Neutro"
+  },
+  {
+    "feature": "gini_index",
+    "coef_beta": 0.0409,
+    "odds_ratio": 1.0417,
+    "direction": "Neutro"
+  },
+  {
+    "feature": "bullied_type_count",
+    "coef_beta": 0.0396,
+    "odds_ratio": 1.0404,
+    "direction": "Neutro"
+  },
+  {
+    "feature": "internet_pct",
+    "coef_beta": -0.0329,
+    "odds_ratio": 0.9677,
+    "direction": "Neutro"
+  },
+  {
+    "feature": "health_exp_pc_usd",
+    "coef_beta": -0.031,
+    "odds_ratio": 0.9695,
+    "direction": "Neutro"
+  },
+  {
+    "feature": "bmi_for_age_z",
+    "coef_beta": -0.0294,
+    "odds_ratio": 0.9711,
+    "direction": "Neutro"
+  },
+  {
+    "feature": "unemployment_youth",
+    "coef_beta": 0.027,
+    "odds_ratio": 1.0274,
+    "direction": "Neutro"
+  },
+  {
+    "feature": "friends_support",
+    "coef_beta": 0.0242,
+    "odds_ratio": 1.0245,
+    "direction": "Neutro"
+  },
+  {
+    "feature": "urban_rural_0",
+    "coef_beta": 0.0237,
+    "odds_ratio": 1.024,
+    "direction": "Neutro"
+  },
+  {
+    "feature": "tobacco_use_0",
+    "coef_beta": 0.023,
+    "odds_ratio": 1.0233,
+    "direction": "Neutro"
+  },
+  {
+    "feature": "physical_fights",
+    "coef_beta": -0.022,
+    "odds_ratio": 0.9782,
+    "direction": "Neutro"
+  },
+  {
+    "feature": "urban_rural_1",
+    "coef_beta": -0.0208,
+    "odds_ratio": 0.9794,
+    "direction": "Neutro"
+  },
+  {
+    "feature": "tobacco_use_1",
+    "coef_beta": -0.0201,
+    "odds_ratio": 0.9801,
+    "direction": "Neutro"
+  },
+  {
+    "feature": "physical_activity_60min_1",
+    "coef_beta": 0.0175,
+    "odds_ratio": 1.0176,
+    "direction": "Neutro"
+  },
+  {
+    "feature": "physical_activity_60min_0",
+    "coef_beta": -0.0146,
+    "odds_ratio": 0.9856,
+    "direction": "Neutro"
+  },
+  {
+    "feature": "physically_attacked_0",
+    "coef_beta": 0.0144,
+    "odds_ratio": 1.0145,
+    "direction": "Neutro"
+  },
+  {
+    "feature": "parents_supervision",
+    "coef_beta": 0.0115,
+    "odds_ratio": 1.0116,
+    "direction": "Neutro"
+  },
+  {
+    "feature": "physically_attacked_1",
+    "coef_beta": -0.0115,
+    "odds_ratio": 0.9886,
+    "direction": "Neutro"
+  },
+  {
+    "feature": "grade_band_high_11_12",
+    "coef_beta": 0.0,
+    "odds_ratio": 1.0,
+    "direction": "Neutro"
+  },
+  {
+    "feature": "grade_band_mid_9_10",
+    "coef_beta": 0.0,
+    "odds_ratio": 1.0,
+    "direction": "Neutro"
+  },
+  {
+    "feature": "alcohol_use_0",
+    "coef_beta": 0.0,
+    "odds_ratio": 1.0,
+    "direction": "Neutro"
+  },
+  {
+    "feature": "alcohol_use_1",
+    "coef_beta": 0.0,
+    "odds_ratio": 1.0,
+    "direction": "Neutro"
+  },
+  {
+    "feature": "school_connectedness_3",
+    "coef_beta": 0.0,
+    "odds_ratio": 1.0,
+    "direction": "Neutro"
+  },
+  {
+    "feature": "school_connectedness_4",
+    "coef_beta": 0.0,
+    "odds_ratio": 1.0,
+    "direction": "Neutro"
+  }
+]

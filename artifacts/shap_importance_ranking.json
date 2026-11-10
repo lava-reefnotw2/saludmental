@@ -1,146 +1,170 @@
 [
   {
-    "feature":"loneliness",
-    "mean_abs_shap":5.53
+    "feature": "bmi_for_age_z",
+    "mean_abs_shap": 0.18423
   },
   {
-    "feature":"anxiety sleep",
-    "mean_abs_shap":1.7478
+    "feature": "sex_1",
+    "mean_abs_shap": 0.17887
   },
   {
-    "feature":"bullied type count",
-    "mean_abs_shap":0.2062
+    "feature": "cumulative_risk_score",
+    "mean_abs_shap": 0.15284
   },
   {
-    "feature":"food insecurity",
-    "mean_abs_shap":0.2018
+    "feature": "food_insecurity",
+    "mean_abs_shap": 0.14823
   },
   {
-    "feature":"school connectedness",
-    "mean_abs_shap":0.1575
+    "feature": "family_connectedness",
+    "mean_abs_shap": 0.1481
   },
   {
-    "feature":"parents support",
-    "mean_abs_shap":0.15
+    "feature": "sex_0",
+    "mean_abs_shap": 0.12257
   },
   {
-    "feature":"family connectedness",
-    "mean_abs_shap":0.1368
+    "feature": "bullied_past_month_1",
+    "mean_abs_shap": 0.10585
   },
   {
-    "feature":"friends support",
-    "mean_abs_shap":0.1171
+    "feature": "bullied_type_count",
+    "mean_abs_shap": 0.09238
   },
   {
-    "feature":"age years",
-    "mean_abs_shap":0.1035
+    "feature": "age_years",
+    "mean_abs_shap": 0.0914
   },
   {
-    "feature":"health exp pc usd",
-    "mean_abs_shap":0.0924
+    "feature": "bullied_past_month_0",
+    "mean_abs_shap": 0.09135
   },
   {
-    "feature":"parents supervision",
-    "mean_abs_shap":0.0898
+    "feature": "sedentary_hours",
+    "mean_abs_shap": 0.08392
   },
   {
-    "feature":"sex 0",
-    "mean_abs_shap":0.0802
+    "feature": "friends_support",
+    "mean_abs_shap": 0.0836
   },
   {
-    "feature":"drug use",
-    "mean_abs_shap":0.0797
+    "feature": "fruit_veg_intake",
+    "mean_abs_shap": 0.07458
   },
   {
-    "feature":"physical fights",
-    "mean_abs_shap":0.0788
+    "feature": "physical_fights",
+    "mean_abs_shap": 0.06829
   },
   {
-    "feature":"gini index",
-    "mean_abs_shap":0.0787
+    "feature": "parents_support",
+    "mean_abs_shap": 0.05934
   },
   {
-    "feature":"bullied past month",
-    "mean_abs_shap":0.071
+    "feature": "parents_supervision",
+    "mean_abs_shap": 0.05814
   },
   {
-    "feature":"sex 1",
-    "mean_abs_shap":0.0708
+    "feature": "internet_pct",
+    "mean_abs_shap": 0.05542
   },
   {
-    "feature":"country MEX",
-    "mean_abs_shap":0.0628
+    "feature": "school_connectedness_2",
+    "mean_abs_shap": 0.05253
   },
   {
-    "feature":"grade band mid 9 10",
-    "mean_abs_shap":0.0427
+    "feature": "health_exp_pc_usd",
+    "mean_abs_shap": 0.05252
   },
   {
-    "feature":"urban rural 1",
-    "mean_abs_shap":0.041
+    "feature": "unemployment_youth",
+    "mean_abs_shap": 0.05035
   },
   {
-    "feature":"grade band low 7 8",
-    "mean_abs_shap":0.0363
+    "feature": "school_connectedness_5",
+    "mean_abs_shap": 0.04228
   },
   {
-    "feature":"urban rural 0",
-    "mean_abs_shap":0.0321
+    "feature": "school_connectedness_3",
+    "mean_abs_shap": 0.04195
   },
   {
-    "feature":"country CHL",
-    "mean_abs_shap":0.0311
+    "feature": "gini_index",
+    "mean_abs_shap": 0.03577
   },
   {
-    "feature":"country ARG",
-    "mean_abs_shap":0.031
+    "feature": "grade_band_low_7_8",
+    "mean_abs_shap": 0.03164
   },
   {
-    "feature":"tobacco use",
-    "mean_abs_shap":0.0307
+    "feature": "grade_band_mid_9_10",
+    "mean_abs_shap": 0.02161
   },
   {
-    "feature":"country PAN",
-    "mean_abs_shap":0.0295
+    "feature": "drug_use_0",
+    "mean_abs_shap": 0.02094
   },
   {
-    "feature":"country ECU",
-    "mean_abs_shap":0.0246
+    "feature": "truancy_past_month_0",
+    "mean_abs_shap": 0.01891
   },
   {
-    "feature":"country COL",
-    "mean_abs_shap":0.0237
+    "feature": "truancy_past_month_1",
+    "mean_abs_shap": 0.01786
   },
   {
-    "feature":"alcohol use",
-    "mean_abs_shap":0.0224
+    "feature": "physical_activity_60min_0",
+    "mean_abs_shap": 0.01737
   },
   {
-    "feature":"country URY",
-    "mean_abs_shap":0.0216
+    "feature": "urban_rural_0",
+    "mean_abs_shap": 0.01717
   },
   {
-    "feature":"country GTM",
-    "mean_abs_shap":0.0146
+    "feature": "school_connectedness_4",
+    "mean_abs_shap": 0.01534
   },
   {
-    "feature":"country CRI",
-    "mean_abs_shap":0.0142
+    "feature": "physical_activity_60min_1",
+    "mean_abs_shap": 0.01512
   },
   {
-    "feature":"country PER",
-    "mean_abs_shap":0.0107
+    "feature": "urban_rural_1",
+    "mean_abs_shap": 0.01473
   },
   {
-    "feature":"grade band high 11 12",
-    "mean_abs_shap":0.0101
+    "feature": "alcohol_use_0",
+    "mean_abs_shap": 0.01413
   },
   {
-    "feature":"country BRA",
-    "mean_abs_shap":0.0094
+    "feature": "tobacco_use_1",
+    "mean_abs_shap": 0.01335
   },
   {
-    "feature":"country SLV",
-    "mean_abs_shap":0.0063
+    "feature": "physically_attacked_0",
+    "mean_abs_shap": 0.01285
+  },
+  {
+    "feature": "drug_use_1",
+    "mean_abs_shap": 0.01095
+  },
+  {
+    "feature": "alcohol_use_1",
+    "mean_abs_shap": 0.01073
+  },
+  {
+    "feature": "physically_attacked_1",
+    "mean_abs_shap": 0.0103
+  },
+  {
+    "feature": "school_connectedness_1",
+    "mean_abs_shap": 0.00919
+  },
+  {
+    "feature": "tobacco_use_0",
+    "mean_abs_shap": 0.00743
+  },
+  {
+    "feature": "grade_band_high_11_12",
+    "mean_abs_shap": 0.00652
   }
 ]

@@ -3,7 +3,7 @@
 Motor de Generación de Reportes Técnicos en Formato PDF para SP-07
 Genera reportes PDF oficiales, estandarizados y de alta fidelidad gráfica
 para cada uno de los 7 módulos del pipeline.
-Cumple con las normas TRIPOD+AI, CLAIM y principios FAIR.
+Cumple con las normas TRIPOD+AI, PROBAST+AI y principios FAIR.
 """
 
 import os
@@ -56,7 +56,7 @@ class NumberedCanvas(canvas.Canvas):
         self.setFillColor(colors.HexColor('#64748b'))
         
         # Encabezado
-        self.drawString(36, 11 * inch - 26, "SP-07 · Consorcio Internacional de Salud Mental Adolescente | TRIPOD+AI & CLAIM")
+        self.drawString(36, 11 * inch - 26, "SP-07 · Consorcio Internacional de Salud Mental Adolescente | TRIPOD+AI & PROBAST+AI")
         self.setStrokeColor(colors.HexColor('#e2e8f0'))
         self.setLineWidth(0.5)
         self.line(36, 11 * inch - 30, 8.5 * inch - 36, 11 * inch - 30)
@@ -199,7 +199,7 @@ def generate_pdf_module_1(df_ctx: pd.DataFrame, df_dict: pd.DataFrame, out_path:
     meta_text = (
         f"<b>Fecha:</b> {datetime.datetime.now().strftime('%Y-%m-%d %H:%M')} | "
         f"<b>Fuentes:</b> WHO-GSHS + UNICEF Innocenti + Banco Mundial (API REST) | "
-        f"<b>Cohorte:</b> 12 Países (N = 4,993) | <b>Cumplimiento:</b> TRIPOD+AI & CLAIM"
+        f"<b>Cohorte:</b> 12 Países (N = 4,993) | <b>Cumplimiento:</b> TRIPOD+AI & PROBAST+AI"
     )
     story.append(Paragraph(meta_text, styles['Callout']))
     story.append(Spacer(1, 6))
@@ -545,7 +545,7 @@ def generate_pdf_module_5(df_reg: pd.DataFrame, out_path: str):
     story.append(Paragraph(
         "<b>Interpretación y Explicabilidad del Esquema de Modelos:</b> La cartera abarca desde modelos lineales altamente interpretables "
         "(ElasticNet) hasta ensambles no lineales de alta capacidad (CatBoost y Stacking). Esto permite verificar el balance óptimo "
-        "entre fidelidad matemática y explicabilidad clínica requerida por las guías CLAIM.",
+        "entre fidelidad matemática y explicabilidad requerida por las guías TRIPOD+AI y PROBAST+AI.",
         styles['Callout']
     ))
     story.append(Spacer(1, 8))

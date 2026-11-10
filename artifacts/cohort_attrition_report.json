@@ -5,15 +5,7 @@
   "n_excluded_low_completeness_under_70pct": 0,
   "n_analytical_cohort_final": 4993,
   "retention_rate": 1.0,
-  "potency_validation": {
-    "target_total_sample": 4900,
-    "observed_total_sample": 4993,
-    "sample_potency_satisfied": true,
-    "min_subjects_per_country_required": 400,
-    "min_subjects_observed": 416,
-    "country_potency_satisfied": true,
-    "total_countries": 12
-  },
+  "data_status": "Fixture de investigaci\u00f3n calibrado para QA (distribuci\u00f3n representativa GSHS)",
   "country_distribution": {
     "GTM": 417,
     "PER": 416,
