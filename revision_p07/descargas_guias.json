@@ -1,0 +1,23 @@
+[
+  {
+    "file": "YRBS2025_guia.pdf",
+    "url": "https://www.cdc.gov/yrbs/files/2025/2025-YRBS-Data-Users-Guide-Final.pdf",
+    "bytes": 802320,
+    "sha256": "d9014fae532bb9e5418c01ed5e24aebd97220348ece8155618cccf3152c1d31a",
+    "status": "descargado"
+  },
+  {
+    "file": "YRBS2023_guia.pdf",
+    "url": "https://www.cdc.gov/yrbs/media/pdf/2023/2023_National_YRBS_Data_Users_Guide508.pdf",
+    "bytes": 1036445,
+    "sha256": "54b081c797873c1a16d7b6d4be728591667fb7781e799ee2bec9fa6ae3f90a61",
+    "status": "descargado"
+  },
+  {
+    "file": "YRBS2021_guia.pdf",
+    "url": "https://www.cdc.gov/yrbs/files/2021/pdf/2021_YRBS_Data_Users_Guide_508.pdf",
+    "bytes": 2215399,
+    "sha256": "e758264daa61b0e8750401f98c7485ed98eb21983afa87b7fe5f32aa50e2cfe2",
+    "status": "descargado"
+  }
+]

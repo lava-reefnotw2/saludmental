@@ -1,0 +1,65 @@
+﻿Material complementario del artículo P07
+
+El documento Word contiene seis tablas editables, seis figuras y 31 referencias.
+Este paquete conserva las seis tablas en CSV (UTF-8 con BOM) y las seis figuras
+en PNG de 3840 × 2320 píxeles, con metadatos de 600 dpi. Los valores decimales de
+las tablas usan coma; los archivos CSV emplean comillas donde son necesarias.
+
+Procedencia: ejecución 20261117T222805Z_88089e7c de la aplicación local P07.
+Se utilizaron los resultados empíricos conservados y las funciones de gráficos
+que alimentan el módulo 7. La edición visual ajustó títulos, tipografía y leyendas.
+No se inventaron resultados ni se volvió a entrenar para redactar este artículo.
+Las cohortes y modelos de cada figura se identifican en su pie en el manuscrito.
+
+La matriz crítica complementaria compara ocho antecedentes centrales. Sus columnas
+de límites y brecha son síntesis críticas para P07, no citas literales ni una
+evaluación sistemática de riesgo de sesgo. El registro bibliográfico documenta
+una búsqueda narrativa en Europe PMC y fuentes editoriales, sin acceso a las
+plataformas de suscripción Scopus o Web of Science.
+
+Antes del envío editorial: confirmar autores, afiliaciones, ORCID, correspondencia,
+contribuciones CRediT, conflictos, financiación, situación ética y depósito/licencia
+de datos; adaptar los detalles a la revista seleccionada. Estas declaraciones no
+se han supuesto. La calidad del manuscrito no garantiza aceptación ni cuartil.
+
+No se incluyen microdatos de estudiantes en este paquete.
+
+TABLAS
+
+Tabla 1. Encuestas y composición de la cohorte de 13 a 15 años
+Nota: Y1: ideación suicida autorreportada en doce meses. Conteos sin ponderar; proporciones ponderadas dentro de cada encuesta. No se calculó una prevalencia regional. Los años y marcos nacionales difirieron. Fuente: auditoria_cohorte.csv y eda_por_pais.csv de la ejecución activa.
+
+Tabla 2. Operacionalización y disponibilidad de los predictores
+Nota: D: demográfico; N: núcleo; C: completo. Las filas agrupan catorce variables: edad y sexo son dos; agresión y peleas son dos. Los códigos se expandieron como categorías, sin asumir distancias ordinales. Ausencia individual: categoría explícita. El bloque completo añadió cinco preguntas no disponibles en Guatemala. País, año y otros desenlaces no se utilizaron como predictores. Fuente: armonizacion.csv, variables.json y real_data_training.py.
+
+Tabla 3. Rendimiento macro externo en ocho países con el núcleo común
+Nota: AP: average precision; ROC-AUC: área bajo la curva ROC; MLP: perceptrón multicapa; Sens.: sensibilidad; Espec.: especificidad. Cada país contribuyó por igual al promedio y las métricas nacionales utilizaron pesos de encuesta. Sensibilidad y especificidad correspondieron a umbrales elegidos internamente por partición. La selección anidada pudo elegir distintas familias; no representa un único ajuste. No se dispuso de IC de estas medias en el artefacto. Fuente: gshs8_core/resumen_macro.csv.
+
+Tabla 4. Incrementos pareados de AP en los mismos cinco países externos
+Nota: Las primeras seis filas comparan núcleo común con bloque completo y la misma selección logística. Las dos últimas cambian países de desarrollo conservando variables, estrategia logística y estudiantes externos; no corresponden a las columnas núcleo/familiar. Diferencias B−A, 44 837 estudiantes externos en conjunto. IC percentiles de 500 remuestreos de PSU dentro de estrato, con modelos y países fijos; estratos de una PSU fijos. Fuente: comparaciones_pareadas.csv.
+
+Tabla 5. Funcionamiento externo de la logística familiar en cinco países
+Nota: Sens.: sensibilidad; Espec.: especificidad; VPP: valor predictivo positivo. Sesgo: media ponderada de probabilidad menos proporción observada, ideal 0. Pendiente de recalibración diagnóstica, ideal 1; no se aplicó al modelo externo. Umbrales ajustados internamente; resultados del bloque completo de cinco países, no de ocho países. Fuente: protocolo/metricas.csv.
+
+Tabla 6. Magnitud de atribuciones y estabilidad de importancia de CatBoost
+Nota: Media simple de cinco países, con ponderación de encuesta dentro de país. SHAP y pérdida de AP: muestras externas de 512 estudiantes por país; rangos: muestras separadas de 384 estudiantes y una permutación por variable. SHAP en log-odds, con indicadores agrupados por variable; no indica dirección ni causalidad. Rango 1 indica mayor pérdida de AP. Una pérdida negativa puede surgir por variación de la permutación. Fuente: explicacion.csv y estabilidad.csv.
+
+FIGURAS
+
+Figura 1. Aporte de los predictores
+Nota de la aplicación: Media de los cinco países: ΔAP +0.214 (IC95% +0.203 a +0.225). Un valor positivo indica mejor precisión promedio al ordenar las respuestas positivas. Cada punto compara los mismos estudiantes de prueba. La media da igual peso a los cinco países. IC95% de 500 remuestreos de conglomerados dentro de estratos, condicionados a los modelos ajustados.
+
+Figura 2. Familia, escuela y alimentación
+Nota de la aplicación: Para «Mis padres comprendieron mis problemas», la proporción con Y1 fue 36.7% en «Nunca» y 10.8% en «Siempre». Son grupos de estudiantes distintos. Estudiantes de 13–15 años con Y1 observado en los últimos 12 meses. Asociación descriptiva sin ajuste. IC95% aproximados por linealización dentro de la cohorte elegible. Los estratos con una sola PSU aportan cero a la varianza. Se omiten categorías con menos de diez positivos o diez negativos.
+
+Figura 3. Comparación de algoritmos
+Nota de la aplicación: Frente a la logística, las diferencias de AP van de -0.085 a +0.011 entre las combinaciones de país y algoritmo. Cada celda compara modelos en los mismos estudiantes del país excluido. Son diferencias puntuales. Las diferencias pequeñas requieren evaluar incertidumbre antes de proclamar una familia ganadora.
+
+Figura 4. PR cinco países
+Nota de la aplicación: Cada punto corresponde a un umbral. La precisión indica qué proporción de los señalados respondió Y1 positivamente y la sensibilidad qué proporción de los positivos se recuperó. La prevalencia del país sirve de referencia.
+
+Figura 5. Calibración cinco países
+Nota de la aplicación: Cada punto agrupa probabilidades similares. Por encima de la diagonal la frecuencia observada supera la predicción media y el modelo subestima Y1. Las barras muestran el IC95% de la frecuencia observada.
+
+Figura 6. Brechas por sexo y edad
+Nota de la aplicación: La mayor brecha en magnitud corresponde a Uruguay: -41.7 puntos porcentuales (femenino menos masculino, FNR). Cero indica igual estimación entre grupos. FNR es la proporción de positivos omitidos y FPR la de negativos señalados. Los intervalos por conglomerados reflejan incertidumbre dentro de cada país.

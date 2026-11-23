@@ -1,0 +1,8479 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<codeBook version="1.2.2" ID="HND_2012_GSHS_v01" xml-lang="en" xmlns="http://www.icpsr.umich.edu/DDI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.icpsr.umich.edu/DDI http://www.icpsr.umich.edu/DDI/Version1-2-2.xsd">
+  <docDscr>
+    <citation>
+      <titlStmt>
+        <titl>
+          HND_2012_GSHS_v01_M
+        </titl>
+        <IDNo>
+          DDI_HND_2012_GSHS_v01_M
+        </IDNo>
+      </titlStmt>
+      <prodStmt>
+        <producer affiliation="World Health Organization" role="Documentation of data">
+          Yue Wu
+        </producer>
+        <producer affiliation="World Health Organization" role="Supervision and review of metadata and  documentation of study">
+          Melanie Cowan
+        </producer>
+        <prodDate date="2018-08-07">
+          2018-08-07
+        </prodDate>
+        <software version="4.0.9" date="2013-04-23">
+          Nesstar Publisher
+        </software>
+      </prodStmt>
+      <verStmt>
+        <version>
+          Version 1.0 (August 2018).
+        </version>
+      </verStmt>
+    </citation>
+  </docDscr>
+  <stdyDscr>
+    <citation>
+      <titlStmt>
+        <titl>
+          Global School-Based Student Health Survey 2012
+        </titl>
+        <altTitl>
+          GSHS 2012
+        </altTitl>
+        <IDNo>
+          HND_2012_GSHS_v01
+        </IDNo>
+      </titlStmt>
+      <rspStmt>
+        <AuthEnty>
+          Secretaría de Educación
+        </AuthEnty>
+      </rspStmt>
+      <prodStmt>
+        <software version="4.0.9" date="2013-04-23">
+          Nesstar Publisher
+        </software>
+        <fundAg abbr="WHO">
+          World Health Organization
+        </fundAg>
+        <fundAg abbr="CDC">
+          US Centers for Disease Control and Prevention
+        </fundAg>
+      </prodStmt>
+      <distStmt>
+        <contact affiliation="World Health Organization" URI="http://www.who.int/ncds/surveillance/gshs/en/" email="ncdmonitoring@who.int">
+          NCD Surveillance Team
+        </contact>
+      </distStmt>
+      <serStmt>
+        <serName>
+          Global School-Based Student Health Survey
+        </serName>
+        <serInfo>
+          This is the first GSHS conducted by Honduras.
+        </serInfo>
+      </serStmt>
+      <verStmt>
+        <version date="2018-08-07">
+          Public-use dataset
+        </version>
+      </verStmt>
+    </citation>
+    <stdyInfo>
+      <subject>
+        <keyword>
+          adolescents
+        </keyword>
+        <keyword>
+          school health
+        </keyword>
+        <keyword>
+          noncommunicable diseases
+        </keyword>
+        <keyword>
+          risk factors
+        </keyword>
+        <keyword>
+          protective factors
+        </keyword>
+        <keyword>
+          health surveys
+        </keyword>
+        <keyword>
+          alcohol use
+        </keyword>
+        <keyword>
+          diet
+        </keyword>
+        <keyword>
+          nutrition
+        </keyword>
+        <keyword>
+          hygiene
+        </keyword>
+        <keyword>
+          mental health
+        </keyword>
+        <keyword>
+          physical activity
+        </keyword>
+        <keyword>
+          sexual behaviours
+        </keyword>
+        <keyword>
+          HIV
+        </keyword>
+        <keyword>
+          tobacco use
+        </keyword>
+        <keyword>
+          violence and unintentional injury
+        </keyword>
+        <keyword>
+          overweight
+        </keyword>
+        <keyword>
+          obesity
+        </keyword>
+        <keyword>
+          bullying
+        </keyword>
+        <topcClas vocab="Survey">
+          Global School-based Student Health Survey (GSHS)
+        </topcClas>
+      </subject>
+      <abstract>
+        The GSHS is a school-based survey which uses a self-administered questionnaire to obtain data on young people's health behaviour and protective factors related to the leading causes of morbidity and mortality among children and adults worldwide.
+      </abstract>
+      <sumDscr>
+        <collDate date="2012-09" event="start"/>
+        <collDate date="2012-09" event="end"/>
+        <nation abbr="HND">
+          Honduras
+        </nation>
+        <geogCover>
+          National coverage
+        </geogCover>
+        <anlyUnit>
+          Individuals
+        </anlyUnit>
+        <universe>
+          School-going adolescents aged 13-15 years.
+        </universe>
+        <dataKind>
+          Sample survey data [ssd]
+        </dataKind>
+      </sumDscr>
+      <notes>
+        <![CDATA[The following core modules were included in the survey:
+alcohol use
+dietary behaviours
+hygiene
+mental health
+physical activity
+protective factors
+sexual behaviours
+tobacco use
+violence and unintentional injury]]>
+      </notes>
+    </stdyInfo>
+    <method>
+      <dataColl>
+        <sampProc>
+          The Honduras GSHS was a school-based survey of students in grades 7th, 8th &amp; 9th. A two-stage cluster sample design was used to produce data representative of all students in 7th, 8th &amp; 9th in Honduras. At the first stage, schools were selected with probability proportional to enrollment size. At the second stage, classes were randomly selected and all students in selected classes were eligible to participate.
+        </sampProc>
+        <collMode>
+          self-administered
+        </collMode>
+        <resInstru>
+          <![CDATA[The following core modules were included in the survey:
+alcohol use
+dietary behaviours
+hygiene
+mental health
+physical activity
+protective factors
+sexual behaviours
+tobacco use
+violence and unintentional injury]]>
+        </resInstru>
+        <sources/>
+        <weight>
+          <![CDATA[The weighting formula used is:
+W=W1 * W2 * f1 * f2 * f3.
+The list below shows what each variable in the formula represents.
+W1 - The inverse of the probability of selecting each school
+W2 - The inverse of the probability of selecting each classroom
+f1 - A school-level non response adjustment factor
+f2 - A student-level non response adjustment factor calculated by classroom
+f3 - A post stratification adjustment factor calculated by sex within grade]]>
+        </weight>
+        <cleanOps>
+          All data processing (scanning, cleaning, editing, and weighting) was conducted at the US Centers for Disease Control.
+        </cleanOps>
+      </dataColl>
+      <anlyInfo>
+        <respRate>
+          The school response rate was 100%, the student response rate was 79%, and the overall response rate was 79%.
+        </respRate>
+      </anlyInfo>
+    </method>
+    <dataAccs>
+      <useStmt>
+        <citReq>
+          <![CDATA[Publications based on GSHS data should use the following acknowledgement:
+"This paper uses data from the Global School-Based Student Health Survey (GSHS). GSHS is supported by the World Health Organization and the US Centers for Disease Control and Prevention."]]>
+        </citReq>
+        <conditions>
+          <![CDATA[The user undertakes: 
+(1) to acknowledge the data source. 
+(2) to share any planned publications with WHO prior to publication.
+(3) to offer co-authorship of any reports or publications using the survey results  to the coordinator of the survey.
+(4) to use the data for non-commercial, not-for-profit public health purposes only.]]>
+        </conditions>
+        <disclaimer>
+          The data is being distributed without warranty of any kind. The responsibility for the use of the data lies with the user. In no event shall the World Health Organization be liable for damages arising from its use.
+        </disclaimer>
+      </useStmt>
+    </dataAccs>
+  </stdyDscr>
+  <fileDscr ID="F1" URI="HND_2012_GSHS_v01_M.Nesstar?Index=0&amp;Name=HND2012_Public_Use">
+    <fileTxt>
+      <fileName>
+        HND2012_Public_Use.NSDstat
+      </fileName>
+      <fileCont>
+        National public-use dataset
+      </fileCont>
+      <dimensns>
+        <caseQnty>
+          1779
+        </caseQnty>
+        <varQnty>
+          115
+        </varQnty>
+      </dimensns>
+      <fileType>
+        Nesstar 200801
+      </fileType>
+    </fileTxt>
+  </fileDscr>
+  <dataDscr>
+    <var ID="V1" name="Q1" files="F1" dcml="0" intrvl="discrete">
+      <location width="1"/>
+      <labl>
+        How old are you
+      </labl>
+      <qstn>
+        <qstnLit>
+          How old are you?
+        </qstnLit>
+      </qstn>
+      <valrng>
+        <range UNITS="REAL" min="1" max="6"/>
+      </valrng>
+      <invalrng>
+        <item UNITS="REAL" VALUE="-1.79769313486232e+308"/>
+      </invalrng>
+      <sumStat type="vald">
+        1763
+      </sumStat>
+      <sumStat type="invd">
+        16
+      </sumStat>
+      <catgry>
+        <catValu>
+          1
+        </catValu>
+        <labl>
+          11 years old or younger
+        </labl>
+        <catStat type="freq">
+          33
+        </catStat>
+      </catgry>
+      <catgry>
+        <catValu>
+          2
+        </catValu>
+        <labl>
+          12 years old
+        </labl>
+        <catStat type="freq">
+          235
+        </catStat>
+      </catgry>
+      <catgry>
+        <catValu>
+          3
+        </catValu>
+        <labl>
+          13 years old
+        </labl>
+        <catStat type="freq">
+          429
+        </catStat>
+      </catgry>
+      <catgry>
+        <catValu>
+          4
+        </catValu>
+        <labl>
+          14 years old
+        </labl>
+        <catStat type="freq">
+          467
+        </catStat>
+      </catgry>
+      <catgry>
+        <catValu>
+          5
+        </catValu>
+        <labl>
+          15 years old
+        </labl>
+        <catStat type="freq">
+          355
+        </catStat>
+      </catgry>
+      <catgry>
+        <catValu>
+          6
+        </catValu>
+        <labl>
+          16 years old or older
+        </labl>
+        <catStat type="freq">
+          244
+        </catStat>
+      </catgry>
+      <catgry missing="Y">
+        <catValu>
+          Sysmiss
+        </catValu>
+        <catStat type="freq">
+          16
+        </catStat>
+      </catgry>
+      <varFormat type="numeric" schema="other"/>
+    </var>
+    <var ID="V2" name="Q2" files="F1" dcml="0" intrvl="discrete">
+      <location width="1"/>
+      <labl>
+        Sex
+      </labl>
+      <qstn>
+        <qstnLit>
+          What is your sex?
+        </qstnLit>
+      </qstn>
+      <valrng>
+        <range UNITS="REAL" min="1" max="2"/>
+      </valrng>
+      <invalrng>
+        <item UNITS="REAL" VALUE="-1.79769313486232e+308"/>
+      </invalrng>
+      <sumStat type="vald">
+        1748
+      </sumStat>
+      <sumStat type="invd">
+        31
+      </sumStat>
+      <catgry>
+        <catValu>
+          1
+        </catValu>
+        <labl>
+          Male
+        </labl>
+        <catStat type="freq">
+          839
+        </catStat>
+      </catgry>
+      <catgry>
+        <catValu>
+          2
+        </catValu>
+        <labl>
+          Female
+        </labl>
+        <catStat type="freq">
+          909
+        </catStat>
+      </catgry>
+      <catgry missing="Y">
+        <catValu>
+          Sysmiss
+        </catValu>
+        <catStat type="freq">
+          31
+        </catStat>
+      </catgry>
+      <varFormat type="numeric" schema="other"/>
+    </var>
+    <var ID="V3" name="Q3" files="F1" dcml="0" intrvl="discrete">
+      <location width="1"/>
+      <labl>
+        In what grade are you
+      </labl>
+      <qstn>
+        <qstnLit>
+          In what grade/class/ standard are you? COUNTRY SPECIFIC RESPONSE OPTIONS
+        </qstnLit>
+      </qstn>
+      <valrng>
+        <range UNITS="REAL" min="1" max="7"/>
+      </valrng>
+      <invalrng>
+        <item UNITS="REAL" VALUE="-1.79769313486232e+308"/>
+      </invalrng>
+      <sumStat type="vald">
+        1776
+      </sumStat>
+      <sumStat type="invd">
+        3
+      </sumStat>
+      <catgry>
+        <catValu>
+          1
+        </catValu>
+        <labl>
+          6th grade
+        </labl>
+        <catStat type="freq">
+          0
+        </catStat>
+      </catgry>
+      <catgry>
+        <catValu>
+          2
+        </catValu>
+        <labl>
+          7th grade
+        </labl>
+        <catStat type="freq">
+          621
+        </catStat>
+      </catgry>
+      <catgry>
+        <catValu>
+          3
+        </catValu>
+        <labl>
+          8th grade
+        </labl>
+        <catStat type="freq">
+          553
+        </catStat>
+      </catgry>
+      <catgry>
+        <catValu>
+          4
+        </catValu>
+        <labl>
+          9th grade
+        </labl>
+        <catStat type="freq">
+          459
+        </catStat>
+      </catgry>
+      <catgry>
+        <catValu>
+          5
+        </catValu>
+        <labl>
+          1 curso
+        </labl>
+        <catStat type="freq">
+          137
+        </catStat>
+      </catgry>
+      <catgry>
+        <catValu>
+          6
+        </catValu>
+        <labl>
+          2 curso
+        </labl>
+        <catStat type="freq">
+          4
+        </catStat>
+      </catgry>
+      <catgry>
+        <catValu>
+          7
+        </catValu>
+        <labl>
+          3 curso
+        </labl>
+        <catStat type="freq">
+          2
+        </catStat>
+      </catgry>
+      <catgry missing="Y">
+        <catValu>
+          Sysmiss
+        </catValu>
+        <catStat type="freq">
+          3
+        </catStat>
+      </catgry>
+      <varFormat type="numeric" schema="other"/>
+    </var>
+    <var ID="V4" name="Q4" files="F1" dcml="2" intrvl="contin">
+      <location width="5"/>
+      <labl>
+        How tall are you
+      </labl>
+      <qstn>
+        <preQTxt>
+          The next 3 questions ask about your height, weight, and going hungry.
+        </preQTxt>
+        <qstnLit>
+          How tall are you without your shoes on? ON THE ANSWER SHEET, WRITE YOUR HEIGHT IN THE SHADED BOXES AT THE TOP OF THE GRID. THEN FILL IN THE OVAL BELOW EACH NUMBER.
+        </qstnLit>
+      </qstn>
+      <valrng>
+        <range UNITS="REAL" min="1.15" max="1.85"/>
+      </valrng>
+      <invalrng>
+        <item UNITS="REAL" VALUE="-1.79769313486232e+308"/>
+      </invalrng>
+      <sumStat type="vald">
+        1679
+      </sumStat>
+      <sumStat type="invd">
+        100
+      </sumStat>
+      <sumStat type="min">
+        1.15
+      </sumStat>
+      <sumStat type="max">
+        1.85
+      </sumStat>
+      <sumStat type="mean">
+        1.566
+      </sumStat>
+      <sumStat type="stdev">
+        0.0863
+      </sumStat>
+      <varFormat type="numeric" schema="other"/>
+    </var>
+    <var ID="V5" name="Q5" files="F1" dcml="2" intrvl="contin">
+      <location width="5"/>
+      <labl>
+        How much do you weigh
+      </labl>
+      <qstn>
+        <preQTxt>
+          The next 3 questions ask about your height, weight, and going hungry.
+        </preQTxt>
+        <qstnLit>
+          How much do you weigh without your shoes on? ON THE ANSWER SHEET, WRITE YOUR WEIGHT IN THE SHADED BOXES AT THE TOP OF THE GRID. THEN FILL IN THE OVAL BELOW EACH NUMBER.
+        </qstnLit>
+      </qstn>
+      <valrng>
+        <range UNITS="REAL" min="28" max="124"/>
+      </valrng>
+      <invalrng>
+        <item UNITS="REAL" VALUE="-1.79769313486232e+308"/>
+      </invalrng>
+      <sumStat type="vald">
+        1679
+      </sumStat>
+      <sumStat type="invd">
+        100
+      </sumStat>
+      <sumStat type="min">
+        28
+      </sumStat>
+      <sumStat type="max">
+        124
+      </sumStat>
+      <sumStat type="mean">
+        50.027
+      </sumStat>
+      <sumStat type="stdev">
+        11.491
+      </sumStat>
+      <varFormat type="numeric" schema="other"/>
+    </var>
+    <var ID="V6" name="Q6" files="F1" dcml="0" intrvl="discrete">
+      <location width="1"/>
+      <labl>
+        Went hungry past 30 days
+      </labl>
+      <qstn>
+        <preQTxt>
+          The next 3 questions ask about your height, weight, and going hungry.
+        </preQTxt>
+        <qstnLit>
+          During the past 30 days, how often did you go hungry because there was not enough food in your home?
+        </qstnLit>
+      </qstn>
+      <valrng>
+        <range UNITS="REAL" min="1" max="5"/>
+      </valrng>
+      <invalrng>
+        <item UNITS="REAL" VALUE="-1.79769313486232e+308"/>
+      </invalrng>
+      <sumStat type="vald">
+        1767
+      </sumStat>
+      <sumStat type="invd">
+        12
+      </sumStat>
+      <catgry>
+        <catValu>
+          1
+        </catValu>
+        <labl>
+          Never
+        </labl>
+        <catStat type="freq">
+          1133
+        </catStat>
+      </catgry>
+      <catgry>
+        <catValu>
+          2
+        </catValu>
+        <labl>
+          Rarely
+        </labl>
+        <catStat type="freq">
+          393
+        </catStat>
+      </catgry>
+      <catgry>
+        <catValu>
+          3
+        </catValu>
+        <labl>
+          Sometimes
+        </labl>
+        <catStat type="freq">
+          172
+        </catStat>
+      </catgry>
+      <catgry>
+        <catValu>
+          4
+        </catValu>
+        <labl>
+          Most of the time
+        </labl>
+        <catStat type="freq">
+          30
+        </catStat>
+      </catgry>
+      <catgry>
+        <catValu>
+          5
+        </catValu>
+        <labl>
+          Always
+        </labl>
+        <catStat type="freq">
+          39
+        </catStat>
+      </catgry>
+      <catgry missing="Y">
+        <catValu>
+          Sysmiss
+        </catValu>
+        <catStat type="freq">
+          12
+        </catStat>
+      </catgry>
+      <varFormat type="numeric" schema="other"/>
+    </var>
+    <var ID="V7" name="Q7" files="F1" dcml="0" intrvl="discrete">
+      <location width="1"/>
+      <labl>
+        Eat fruit per day past 30 days
+      </labl>
+      <qstn>
+        <preQTxt>
+          The next 4 questions ask about what you might eat and drink
+        </preQTxt>
+        <qstnLit>
+          During the past 30 days, how many times per day did you usually eat fruit, such as COUNTRY SPECIFIC EXAMPLES?
+        </qstnLit>
+      </qstn>
+      <valrng>
+        <range UNITS="REAL" min="1" max="7"/>
+      </valrng>
+      <invalrng>
+        <item UNITS="REAL" VALUE="-1.79769313486232e+308"/>
+      </invalrng>
+      <sumStat type="vald">
+        1772
+      </sumStat>
+      <sumStat type="invd">
+        7
+      </sumStat>
+      <catgry>
+        <catValu>
+          1
+        </catValu>
+        <labl>
+          Did not eat fruit
+        </labl>
+        <catStat type="freq">
+          242
+        </catStat>
+      </catgry>
+      <catgry>
+        <catValu>
+          2
+        </catValu>
+        <labl>
+          Less than one time per day
+        </labl>
+        <catStat type="freq">
+          340
+        </catStat>
+      </catgry>
+      <catgry>
+        <catValu>
+          3
+        </catValu>
+        <labl>
+          1 time per day
+        </labl>
+        <catStat type="freq">
+          440
+        </catStat>
+      </catgry>
+      <catgry>
+        <catValu>
+          4
+        </catValu>
+        <labl>
+          2 times per day
+        </labl>
+        <catStat type="freq">
+          320
+        </catStat>
+      </catgry>
+      <catgry>
+        <catValu>
+          5
+        </catValu>
+        <labl>
+          3 times per day
+        </labl>
+        <catStat type="freq">
+          205
+        </catStat>
+      </catgry>
+      <catgry>
+        <catValu>
+          6
+        </catValu>
+        <labl>
+          4 times per day
+        </labl>
+        <catStat type="freq">
+          87
+        </catStat>
+      </catgry>
+      <catgry>
+        <catValu>
+          7
+        </catValu>
+        <labl>
+          5 or more times per day
+        </labl>
+        <catStat type="freq">
+          138
+        </catStat>
+      </catgry>
+      <catgry missing="Y">
+        <catValu>
+          Sysmiss
+        </catValu>
+        <catStat type="freq">
+          7
+        </catStat>
+      </catgry>
+      <varFormat type="numeric" schema="other"/>
+    </var>
+    <var ID="V8" name="Q8" files="F1" dcml="0" intrvl="discrete">
+      <location width="1"/>
+      <labl>
+        Eat vegetables past 30 days
+      </labl>
+      <qstn>
+        <preQTxt>
+          The next 4 questions ask about what you might eat and drink.
+        </preQTxt>
+        <qstnLit>
+          During the past 30 days, how many times per day did you usually eat vegetables, such as COUNTRY SPECIFIC EXAMPLES?
+        </qstnLit>
+      </qstn>
+      <valrng>
+        <range UNITS="REAL" min="1" max="7"/>
+      </valrng>
+      <invalrng>
+        <item UNITS="REAL" VALUE="-1.79769313486232e+308"/>
+      </invalrng>
+      <sumStat type="vald">
+        1756
+      </sumStat>
+      <sumStat type="invd">
+        23
+      </sumStat>
+      <catgry>
+        <catValu>
+          1
+        </catValu>
+        <labl>
+          Did not eat vegetables
+        </labl>
+        <catStat type="freq">
+          233
+        </catStat>
+      </catgry>
+      <catgry>
+        <catValu>
+          2
+        </catValu>
+        <labl>
+          Less than one time per day
+        </labl>
+        <catStat type="freq">
+          310
+        </catStat>
+      </catgry>
+      <catgry>
+        <catValu>
+          3
+        </catValu>
+        <labl>
+          1 time per day
+        </labl>
+        <catStat type="freq">
+          546
+        </catStat>
+      </catgry>
+      <catgry>
+        <catValu>
+          4
+        </catValu>
+        <labl>
+          2 times per day
+        </labl>
+        <catStat type="freq">
+          318
+        </catStat>
+      </catgry>
+      <catgry>
+        <catValu>
+          5
+        </catValu>
+        <labl>
+          3 times per day
+        </labl>
+        <catStat type="freq">
+          175
+        </catStat>
+      </catgry>
+      <catgry>
+        <catValu>
+          6
+        </catValu>
+        <labl>
+          4 times per day
+        </labl>
+        <catStat type="freq">
+          58
+        </catStat>
+      </catgry>
+      <catgry>
+        <catValu>
+          7
+        </catValu>
+        <labl>
+          5 or more times per day
+        </labl>
+        <catStat type="freq">
+          116
+        </catStat>
+      </catgry>
+      <catgry missing="Y">
+        <catValu>
+          Sysmiss
+        </catValu>
+        <catStat type="freq">
+          23
+        </catStat>
+      </catgry>
+      <varFormat type="numeric" schema="other"/>
+    </var>
+    <var ID="V9" name="Q9" files="F1" dcml="0" intrvl="discrete">
+      <location width="1"/>
+      <labl>
+        Drink soft drinks past 30 days
+      </labl>
+      <qstn>
+        <preQTxt>
+          The next 4 questions ask about what you might eat and drink.
+        </preQTxt>
+        <qstnLit>
+          During the past 30 days, how many times per day did you usually drink carbonated soft drinks, such as COUNTRY SPECIFIC EXAMPLES? (Do not include diet soft drinks.)
+        </qstnLit>
+      </qstn>
+      <valrng>
+        <range UNITS="REAL" min="1" max="7"/>
+      </valrng>
+      <invalrng>
+        <item UNITS="REAL" VALUE="-1.79769313486232e+308"/>
+      </invalrng>
+      <sumStat type="vald">
+        1762
+      </sumStat>
+      <sumStat type="invd">
+        17
+      </sumStat>
+      <catgry>
+        <catValu>
+          1
+        </catValu>
+        <labl>
+          Did not drink soft drinks
+        </labl>
+        <catStat type="freq">
+          146
+        </catStat>
+      </catgry>
+      <catgry>
+        <catValu>
+          2
+        </catValu>
+        <labl>
+          Less than one time per day
+        </labl>
+        <catStat type="freq">
+          311
+        </catStat>
+      </catgry>
+      <catgry>
+        <catValu>
+          3
+        </catValu>
+        <labl>
+          1 time per day
+        </labl>
+        <catStat type="freq">
+          433
+        </catStat>
+      </catgry>
+      <catgry>
+        <catValu>
+          4
+        </catValu>
+        <labl>
+          2 times per day
+        </labl>
+        <catStat type="freq">
+          373
+        </catStat>
+      </catgry>
+      <catgry>
+        <catValu>
+          5
+        </catValu>
+        <labl>
+          3 times per day
+        </labl>
+        <catStat type="freq">
+          225
+        </catStat>
+      </catgry>
+      <catgry>
+        <catValu>
+          6
+        </catValu>
+        <labl>
+          4 times per day
+        </labl>
+        <catStat type="freq">
+          92
+        </catStat>
+      </catgry>
+      <catgry>
+        <catValu>
+          7
+        </catValu>
+        <labl>
+          5 or more times per day
+        </labl>
+        <catStat type="freq">
+          182
+        </catStat>
+      </catgry>
+      <catgry missing="Y">
+        <catValu>
+          Sysmiss
+        </catValu>
+        <catStat type="freq">
+          17
+        </catStat>
+      </catgry>
+      <varFormat type="numeric" schema="other"/>
+    </var>
+    <var ID="V10" name="Q10" files="F1" dcml="0" intrvl="discrete">
+      <location width="1"/>
+      <labl>
+        Ate fast food past 7 days
+      </labl>
+      <qstn>
+        <preQTxt>
+          The next 4 questions ask about what you might eat and drink.
+        </preQTxt>
+        <qstnLit>
+          During the past 7 days, on how many days did you eat food from a fast food restaurant, such as COUNTRY SPECIFIC EXAMPLES?
+        </qstnLit>
+      </qstn>
+      <valrng>
+        <range UNITS="REAL" min="1" max="8"/>
+      </valrng>
+      <invalrng>
+        <item UNITS="REAL" VALUE="-1.79769313486232e+308"/>
+      </invalrng>
+      <sumStat type="vald">
+        1753
+      </sumStat>
+      <sumStat type="invd">
+        26
+      </sumStat>
+      <catgry>
+        <catValu>
+          1
+        </catValu>
+        <labl>
+          0 days
+        </labl>
+        <catStat type="freq">
+          942
+        </catStat>
+      </catgry>
+      <catgry>
+        <catValu>
+          2
+        </catValu>
+        <labl>
+          1 day
+        </labl>
+        <catStat type="freq">
+          374
+        </catStat>
+      </catgry>
+      <catgry>
+        <catValu>
+          3
+        </catValu>
+        <labl>
+          2 days
+        </labl>
+        <catStat type="freq">
+          208
+        </catStat>
+      </catgry>
+      <catgry>
+        <catValu>
+          4
+        </catValu>
+        <labl>
+          3 days
+        </labl>
+        <catStat type="freq">
+          110
+        </catStat>
+      </catgry>
+      <catgry>
+        <catValu>
+          5
+        </catValu>
+        <labl>
+          4 days
+        </labl>
+        <catStat type="freq">
+          42
+        </catStat>
+      </catgry>
+      <catgry>
+        <catValu>
+          6
+        </catValu>
+        <labl>
+          5 days
+        </labl>
+        <catStat type="freq">
+          31
+        </catStat>
+      </catgry>
+      <catgry>
+        <catValu>
+          7
+        </catValu>
+        <labl>
+          6 days
+        </labl>
+        <catStat type="freq">
+          17
+        </catStat>
+      </catgry>
+      <catgry>
+        <catValu>
+          8
+        </catValu>
+        <labl>
+          7 days
+        </labl>
+        <catStat type="freq">
+          29
+        </catStat>
+      </catgry>
+      <catgry missing="Y">
+        <catValu>
+          Sysmiss
+        </catValu>
+        <catStat type="freq">
+          26
+        </catStat>
+      </catgry>
+      <varFormat type="numeric" schema="other"/>
+    </var>
+    <var ID="V11" name="Q11" files="F1" dcml="0" intrvl="discrete">
+      <location width="1"/>
+      <labl>
+        How many times per day brush teeth
+      </labl>
+      <qstn>
+        <preQTxt>
+          The next 4 questions ask about cleaning your teeth and washing your hands
+        </preQTxt>
+        <qstnLit>
+          During the past 30 days, how many times per day did you usually clean or brush your teeth?
+        </qstnLit>
+      </qstn>
+      <valrng>
+        <range UNITS="REAL" min="1" max="6"/>
+      </valrng>
+      <invalrng>
+        <item UNITS="REAL" VALUE="-1.79769313486232e+308"/>
+      </invalrng>
+      <sumStat type="vald">
+        1772
+      </sumStat>
+      <sumStat type="invd">
+        7
+      </sumStat>
+      <catgry>
+        <catValu>
+          1
+        </catValu>
+        <labl>
+          Did not brush my teeth
+        </labl>
+        <catStat type="freq">
+          31
+        </catStat>
+      </catgry>
+      <catgry>
+        <catValu>
+          2
+        </catValu>
+        <labl>
+          Less than 1 time per day
+        </labl>
+        <catStat type="freq">
+          46
+        </catStat>
+      </catgry>
+      <catgry>
+        <catValu>
+          3
+        </catValu>
+        <labl>
+          1 time per day
+        </labl>
+        <catStat type="freq">
+          147
+        </catStat>
+      </catgry>
+      <catgry>
+        <catValu>
+          4
+        </catValu>
+        <labl>
+          2 times per day
+        </labl>
+        <catStat type="freq">
+          383
+        </catStat>
+      </catgry>
+      <catgry>
+        <catValu>
+          5
+        </catValu>
+        <labl>
+          3 times per day
+        </labl>
+        <catStat type="freq">
+          882
+        </catStat>
+      </catgry>
+      <catgry>
+        <catValu>
+          6
+        </catValu>
+        <labl>
+          4 or more times per day
+        </labl>
+        <catStat type="freq">
+          283
+        </catStat>
+      </catgry>
+      <catgry missing="Y">
+        <catValu>
+          Sysmiss
+        </catValu>
+        <catStat type="freq">
+          7
+        </catStat>
+      </catgry>
+      <varFormat type="numeric" schema="other"/>
+    </var>
+    <var ID="V12" name="Q12" files="F1" dcml="0" intrvl="discrete">
+      <location width="1"/>
+      <labl>
+        Wash hands before eating past 30 days
+      </labl>
+      <qstn>
+        <preQTxt>
+          The next 4 questions ask about cleaning your teeth and washing your hands
+        </preQTxt>
+        <qstnLit>
+          During the past 30 days, how often did you wash your hands before eating?
+        </qstnLit>
+      </qstn>
+      <valrng>
+        <range UNITS="REAL" min="1" max="5"/>
+      </valrng>
+      <invalrng>
+        <item UNITS="REAL" VALUE="-1.79769313486232e+308"/>
+      </invalrng>
+      <sumStat type="vald">
+        1770
+      </sumStat>
+      <sumStat type="invd">
+        9
+      </sumStat>
+      <catgry>
+        <catValu>
+          1
+        </catValu>
+        <labl>
+          Never
+        </labl>
+        <catStat type="freq">
+          41
+        </catStat>
+      </catgry>
+      <catgry>
+        <catValu>
+          2
+        </catValu>
+        <labl>
+          Rarely
+        </labl>
+        <catStat type="freq">
+          90
+        </catStat>
+      </catgry>
+      <catgry>
+        <catValu>
+          3
+        </catValu>
+        <labl>
+          Sometimes
+        </labl>
+        <catStat type="freq">
+          174
+        </catStat>
+      </catgry>
+      <catgry>
+        <catValu>
+          4
+        </catValu>
+        <labl>
+          Most of the time
+        </labl>
+        <catStat type="freq">
+          477
+        </catStat>
+      </catgry>
+      <catgry>
+        <catValu>
+          5
+        </catValu>
+        <labl>
+          Always
+        </labl>
+        <catStat type="freq">
+          988
+        </catStat>
+      </catgry>
+      <catgry missing="Y">
+        <catValu>
+          Sysmiss
+        </catValu>
+        <catStat type="freq">
+          9
+        </catStat>
+      </catgry>
+      <varFormat type="numeric" schema="other"/>
+    </var>
+    <var ID="V13" name="Q13" files="F1" dcml="0" intrvl="discrete">
+      <location width="1"/>
+      <labl>
+        Wash hands after toilet past 30 day
+      </labl>
+      <qstn>
+        <preQTxt>
+          The next 4 questions ask about cleaning your teeth and washing your hands
+        </preQTxt>
+        <qstnLit>
+          During the past 30 days, how often did you wash your hands after using the toilet or latrine?
+        </qstnLit>
+      </qstn>
+      <valrng>
+        <range UNITS="REAL" min="1" max="5"/>
+      </valrng>
+      <invalrng>
+        <item UNITS="REAL" VALUE="-1.79769313486232e+308"/>
+      </invalrng>
+      <sumStat type="vald">
+        1755
+      </sumStat>
+      <sumStat type="invd">
+        24
+      </sumStat>
+      <catgry>
+        <catValu>
+          1
+        </catValu>
+        <labl>
+          Never
+        </labl>
+        <catStat type="freq">
+          43
+        </catStat>
+      </catgry>
+      <catgry>
+        <catValu>
+          2
+        </catValu>
+        <labl>
+          Rarely
+        </labl>
+        <catStat type="freq">
+          51
+        </catStat>
+      </catgry>
+      <catgry>
+        <catValu>
+          3
+        </catValu>
+        <labl>
+          Sometimes
+        </labl>
+        <catStat type="freq">
+          63
+        </catStat>
+      </catgry>
+      <catgry>
+        <catValu>
+          4
+        </catValu>
+        <labl>
+          Most of the time
+        </labl>
+        <catStat type="freq">
+          224
+        </catStat>
+      </catgry>
+      <catgry>
+        <catValu>
+          5
+        </catValu>
+        <labl>
+          Always
+        </labl>
+        <catStat type="freq">
+          1374
+        </catStat>
+      </catgry>
+      <catgry missing="Y">
+        <catValu>
+          Sysmiss
+        </catValu>
+        <catStat type="freq">
+          24
+        </catStat>
+      </catgry>
+      <varFormat type="numeric" schema="other"/>
+    </var>
+    <var ID="V14" name="Q14" files="F1" dcml="0" intrvl="discrete">
+      <location width="1"/>
+      <labl>
+        Used soap on hands past 30 days
+      </labl>
+      <qstn>
+        <preQTxt>
+          The next 4 questions ask about cleaning your teeth and washing your hands
+        </preQTxt>
+        <qstnLit>
+          During the past 30 days, how often did you use soap when washing your hands?
+        </qstnLit>
+      </qstn>
+      <valrng>
+        <range UNITS="REAL" min="1" max="5"/>
+      </valrng>
+      <invalrng>
+        <item UNITS="REAL" VALUE="-1.79769313486232e+308"/>
+      </invalrng>
+      <sumStat type="vald">
+        1752
+      </sumStat>
+      <sumStat type="invd">
+        27
+      </sumStat>
+      <catgry>
+        <catValu>
+          1
+        </catValu>
+        <labl>
+          Never
+        </labl>
+        <catStat type="freq">
+          767
+        </catStat>
+      </catgry>
+      <catgry>
+        <catValu>
+          2
+        </catValu>
+        <labl>
+          Rarely
+        </labl>
+        <catStat type="freq">
+          278
+        </catStat>
+      </catgry>
+      <catgry>
+        <catValu>
+          3
+        </catValu>
+        <labl>
+          Sometimes
+        </labl>
+        <catStat type="freq">
+          250
+        </catStat>
+      </catgry>
+      <catgry>
+        <catValu>
+          4
+        </catValu>
+        <labl>
+          Most of the time
+        </labl>
+        <catStat type="freq">
+          164
+        </catStat>
+      </catgry>
+      <catgry>
+        <catValu>
+          5
+        </catValu>
+        <labl>
+          Always
+        </labl>
+        <catStat type="freq">
+          293
+        </catStat>
+      </catgry>
+      <catgry missing="Y">
+        <catValu>
+          Sysmiss
+        </catValu>
+        <catStat type="freq">
+          27
+        </catStat>
+      </catgry>
+      <varFormat type="numeric" schema="other"/>
+    </var>
+    <var ID="V15" name="Q15" files="F1" dcml="0" intrvl="discrete">
+      <location width="1"/>
+      <labl>
+        Times attacked past 12 mo.
+      </labl>
+      <qstn>
+        <preQTxt>
+          The next question asks about physical attacks. A physical attack occurs when one or more people hit or strike someone, or when one or more people hurt another person with a weapon (such as a stick, knife, or gun). It is not a physical attack when two students of about the same strength or power choose to fight each other.
+        </preQTxt>
+        <qstnLit>
+          During the past 12 months, how many times were you physically attacked?
+        </qstnLit>
+      </qstn>
+      <valrng>
+        <range UNITS="REAL" min="1" max="8"/>
+      </valrng>
+      <invalrng>
+        <item UNITS="REAL" VALUE="-1.79769313486232e+308"/>
+      </invalrng>
+      <sumStat type="vald">
+        1775
+      </sumStat>
+      <sumStat type="invd">
+        4
+      </sumStat>
+      <catgry>
+        <catValu>
+          1
+        </catValu>
+        <labl>
+          0 times
+        </labl>
+        <catStat type="freq">
+          1411
+        </catStat>
+      </catgry>
+      <catgry>
+        <catValu>
+          2
+        </catValu>
+        <labl>
+          1 time
+        </labl>
+        <catStat type="freq">
+          184
+        </catStat>
+      </catgry>
+      <catgry>
+        <catValu>
+          3
+        </catValu>
+        <labl>
+          2 or 3 times
+        </labl>
+        <catStat type="freq">
+          100
+        </catStat>
+      </catgry>
+      <catgry>
+        <catValu>
+          4
+        </catValu>
+        <labl>
+          4 or 5 times
+        </labl>
+        <catStat type="freq">
+          19
+        </catStat>
+      </catgry>
+      <catgry>
+        <catValu>
+          5
+        </catValu>
+        <labl>
+          6 or 7 times
+        </labl>
+        <catStat type="freq">
+          27
+        </catStat>
+      </catgry>
+      <catgry>
+        <catValu>
+          6
+        </catValu>
+        <labl>
+          8 or 9 times
+        </labl>
+        <catStat type="freq">
+          5
+        </catStat>
+      </catgry>
+      <catgry>
+        <catValu>
+          7
+        </catValu>
+        <labl>
+          10 or 11 times
+        </labl>
+        <catStat type="freq">
+          5
+        </catStat>
+      </catgry>
+      <catgry>
+        <catValu>
+          8
+        </catValu>
+        <labl>
+          12 or more times
+        </labl>
+        <catStat type="freq">
+          24
+        </catStat>
+      </catgry>
+      <catgry missing="Y">
+        <catValu>
+          Sysmiss
+        </catValu>
+        <catStat type="freq">
+          4
+        </catStat>
+      </catgry>
+      <varFormat type="numeric" schema="other"/>
+    </var>
+    <var ID="V16" name="Q16" files="F1" dcml="0" intrvl="discrete">
+      <location width="1"/>
+      <labl>
+        How many times in fight 12 mos
+      </labl>
+      <qstn>
+        <preQTxt>
+          The next question asks about physical fights. A physical fight occurs when two students of about the same strength or power choose to fight each other.
+        </preQTxt>
+        <qstnLit>
+          During the past 12 months, how many times were you in a physical fight?
+        </qstnLit>
+      </qstn>
+      <valrng>
+        <range UNITS="REAL" min="1" max="8"/>
+      </valrng>
+      <invalrng>
+        <item UNITS="REAL" VALUE="-1.79769313486232e+308"/>
+      </invalrng>
+      <sumStat type="vald">
+        1744
+      </sumStat>
+      <sumStat type="invd">
+        35
+      </sumStat>
+      <catgry>
+        <catValu>
+          1
+        </catValu>
+        <labl>
+          0 times
+        </labl>
+        <catStat type="freq">
+          1266
+        </catStat>
+      </catgry>
+      <catgry>
+        <catValu>
+          2
+        </catValu>
+        <labl>
+          1 time
+        </labl>
+        <catStat type="freq">
+          257
+        </catStat>
+      </catgry>
+      <catgry>
+        <catValu>
+          3
+        </catValu>
+        <labl>
+          2 or 3 times
+        </labl>
+        <catStat type="freq">
+          137
+        </catStat>
+      </catgry>
+      <catgry>
+        <catValu>
+          4
+        </catValu>
+        <labl>
+          4 or 5 times
+        </labl>
+        <catStat type="freq">
+          32
+        </catStat>
+      </catgry>
+      <catgry>
+        <catValu>
+          5
+        </catValu>
+        <labl>
+          6 or 7 times
+        </labl>
+        <catStat type="freq">
+          15
+        </catStat>
+      </catgry>
+      <catgry>
+        <catValu>
+          6
+        </catValu>
+        <labl>
+          8 or 9 times
+        </labl>
+        <catStat type="freq">
+          7
+        </catStat>
+      </catgry>
+      <catgry>
+        <catValu>
+          7
+        </catValu>
+        <labl>
+          10 or 11 times
+        </labl>
+        <catStat type="freq">
+          5
+        </catStat>
+      </catgry>
+      <catgry>
+        <catValu>
+          8
+        </catValu>
+        <labl>
+          12 or more times
+        </labl>
+        <catStat type="freq">
+          25
+        </catStat>
+      </catgry>
+      <catgry missing="Y">
+        <catValu>
+          Sysmiss
+        </catValu>
+        <catStat type="freq">
+          35
+        </catStat>
+      </catgry>
+      <varFormat type="numeric" schema="other"/>
+    </var>
+    <var ID="V17" name="Q17" files="F1" dcml="0" intrvl="discrete">
+      <location width="1"/>
+      <labl>
+        How many times injured past 12 months
+      </labl>
+      <qstn>
+        <preQTxt>
+          The next 3 questions ask about serious injuries that happened to you. An injury is serious when it makes you miss at least one full day of usual activities (such as school, sports, or a job) or requires treatment by a doctor or nurse.
+        </preQTxt>
+        <qstnLit>
+          During the past 12 months, how many times were you seriously injured?
+        </qstnLit>
+      </qstn>
+      <valrng>
+        <range UNITS="REAL" min="1" max="8"/>
+      </valrng>
+      <invalrng>
+        <item UNITS="REAL" VALUE="-1.79769313486232e+308"/>
+      </invalrng>
+      <sumStat type="vald">
+        1599
+      </sumStat>
+      <sumStat type="invd">
+        180
+      </sumStat>
+      <catgry>
+        <catValu>
+          1
+        </catValu>
+        <labl>
+          0 times
+        </labl>
+        <catStat type="freq">
+          1036
+        </catStat>
+      </catgry>
+      <catgry>
+        <catValu>
+          2
+        </catValu>
+        <labl>
+          1 time
+        </labl>
+        <catStat type="freq">
+          383
+        </catStat>
+      </catgry>
+      <catgry>
+        <catValu>
+          3
+        </catValu>
+        <labl>
+          2 or 3 times
+        </labl>
+        <catStat type="freq">
+          129
+        </catStat>
+      </catgry>
+      <catgry>
+        <catValu>
+          4
+        </catValu>
+        <labl>
+          4 or 5 times
+        </labl>
+        <catStat type="freq">
+          20
+        </catStat>
+      </catgry>
+      <catgry>
+        <catValu>
+          5
+        </catValu>
+        <labl>
+          6 or 7 times
+        </labl>
+        <catStat type="freq">
+          10
+        </catStat>
+      </catgry>
+      <catgry>
+        <catValu>
+          6
+        </catValu>
+        <labl>
+          8 or 9 times
+        </labl>
+        <catStat type="freq">
+          4
+        </catStat>
+      </catgry>
+      <catgry>
+        <catValu>
+          7
+        </catValu>
+        <labl>
+          10 or 11 times
+        </labl>
+        <catStat type="freq">
+          1
+        </catStat>
+      </catgry>
+      <catgry>
+        <catValu>
+          8
+        </catValu>
+        <labl>
+          12 or more times
+        </labl>
+        <catStat type="freq">
+          16
+        </catStat>
+      </catgry>
+      <catgry missing="Y">
+        <catValu>
+          Sysmiss
+        </catValu>
+        <catStat type="freq">
+          180
+        </catStat>
+      </catgry>
+      <varFormat type="numeric" schema="other"/>
+    </var>
+    <var ID="V18" name="Q18" files="F1" dcml="0" intrvl="discrete">
+      <location width="1"/>
+      <labl>
+        What was serious injury past 12 mo.
+      </labl>
+      <qstn>
+        <preQTxt>
+          The next 3 questions ask about serious injuries that happened to you. An injury is serious when it makes you miss at least one full day of usual activities (such as school, sports, or a job) or requires treatment by a doctor or nurse.
+        </preQTxt>
+        <qstnLit>
+          During the past 12 months, what was the most serious injury that happened to you?
+        </qstnLit>
+      </qstn>
+      <valrng>
+        <range UNITS="REAL" min="1" max="8"/>
+      </valrng>
+      <invalrng>
+        <item UNITS="REAL" VALUE="-1.79769313486232e+308"/>
+      </invalrng>
+      <sumStat type="vald">
+        1663
+      </sumStat>
+      <sumStat type="invd">
+        116
+      </sumStat>
+      <catgry>
+        <catValu>
+          1
+        </catValu>
+        <labl>
+          Not seriously injured
+        </labl>
+        <catStat type="freq">
+          1235
+        </catStat>
+      </catgry>
+      <catgry>
+        <catValu>
+          2
+        </catValu>
+        <labl>
+          Broken bone/dislocated joint
+        </labl>
+        <catStat type="freq">
+          95
+        </catStat>
+      </catgry>
+      <catgry>
+        <catValu>
+          3
+        </catValu>
+        <labl>
+          I had a cut or stab wound
+        </labl>
+        <catStat type="freq">
+          33
+        </catStat>
+      </catgry>
+      <catgry>
+        <catValu>
+          4
+        </catValu>
+        <labl>
+          Concussion/head injury
+        </labl>
+        <catStat type="freq">
+          46
+        </catStat>
+      </catgry>
+      <catgry>
+        <catValu>
+          5
+        </catValu>
+        <labl>
+          I had a gunshot wound
+        </labl>
+        <catStat type="freq">
+          8
+        </catStat>
+      </catgry>
+      <catgry>
+        <catValu>
+          6
+        </catValu>
+        <labl>
+          I had a bad burn
+        </labl>
+        <catStat type="freq">
+          24
+        </catStat>
+      </catgry>
+      <catgry>
+        <catValu>
+          7
+        </catValu>
+        <labl>
+          I was poisoned
+        </labl>
+        <catStat type="freq">
+          12
+        </catStat>
+      </catgry>
+      <catgry>
+        <catValu>
+          8
+        </catValu>
+        <labl>
+          Something else happened to me
+        </labl>
+        <catStat type="freq">
+          210
+        </catStat>
+      </catgry>
+      <catgry missing="Y">
+        <catValu>
+          Sysmiss
+        </catValu>
+        <catStat type="freq">
+          116
+        </catStat>
+      </catgry>
+      <varFormat type="numeric" schema="other"/>
+    </var>
+    <var ID="V19" name="Q19" files="F1" dcml="0" intrvl="discrete">
+      <location width="1"/>
+      <labl>
+        Cause of injury past 12 mo.
+      </labl>
+      <qstn>
+        <preQTxt>
+          The next 3 questions ask about serious injuries that happened to you. An injury is serious when it makes you miss at least one full day of usual activities (such as school, sports, or a job) or requires treatment by a doctor or nurse.
+        </preQTxt>
+        <qstnLit>
+          During the past 12 months, what was the major cause of the most serious injury that happened to you?
+        </qstnLit>
+      </qstn>
+      <valrng>
+        <range UNITS="REAL" min="1" max="8"/>
+      </valrng>
+      <invalrng>
+        <item UNITS="REAL" VALUE="-1.79769313486232e+308"/>
+      </invalrng>
+      <sumStat type="vald">
+        1601
+      </sumStat>
+      <sumStat type="invd">
+        178
+      </sumStat>
+      <catgry>
+        <catValu>
+          1
+        </catValu>
+        <labl>
+          Not seriously injured
+        </labl>
+        <catStat type="freq">
+          1172
+        </catStat>
+      </catgry>
+      <catgry>
+        <catValu>
+          2
+        </catValu>
+        <labl>
+          Motor vehicle accident
+        </labl>
+        <catStat type="freq">
+          25
+        </catStat>
+      </catgry>
+      <catgry>
+        <catValu>
+          3
+        </catValu>
+        <labl>
+          I fell
+        </labl>
+        <catStat type="freq">
+          178
+        </catStat>
+      </catgry>
+      <catgry>
+        <catValu>
+          4
+        </catValu>
+        <labl>
+          Something fell on me or hit me
+        </labl>
+        <catStat type="freq">
+          27
+        </catStat>
+      </catgry>
+      <catgry>
+        <catValu>
+          5
+        </catValu>
+        <labl>
+          I was attacked
+        </labl>
+        <catStat type="freq">
+          16
+        </catStat>
+      </catgry>
+      <catgry>
+        <catValu>
+          6
+        </catValu>
+        <labl>
+          Was in a fire
+        </labl>
+        <catStat type="freq">
+          11
+        </catStat>
+      </catgry>
+      <catgry>
+        <catValu>
+          7
+        </catValu>
+        <labl>
+          breathed something bad
+        </labl>
+        <catStat type="freq">
+          11
+        </catStat>
+      </catgry>
+      <catgry>
+        <catValu>
+          8
+        </catValu>
+        <labl>
+          Something else
+        </labl>
+        <catStat type="freq">
+          161
+        </catStat>
+      </catgry>
+      <catgry missing="Y">
+        <catValu>
+          Sysmiss
+        </catValu>
+        <catStat type="freq">
+          178
+        </catStat>
+      </catgry>
+      <varFormat type="numeric" schema="other"/>
+    </var>
+    <var ID="V20" name="Q20" files="F1" dcml="0" intrvl="discrete">
+      <location width="1"/>
+      <labl>
+        How many days bullied past 30 days
+      </labl>
+      <qstn>
+        <preQTxt>
+          The next 2 questions ask about bullying. Bullying occurs when a student or group of students say or do bad and unpleasant things to another student. It is also bullying when a student is teased a lot in an unpleasant way or when a student is left out of things on purpose. It is not bullying when two students of about the same strength or power argue or fight or when teasing is done in a friendly and fun way.
+        </preQTxt>
+        <qstnLit>
+          During the past 30 days, on how many days were you bullied?
+        </qstnLit>
+      </qstn>
+      <valrng>
+        <range UNITS="REAL" min="1" max="7"/>
+      </valrng>
+      <invalrng>
+        <item UNITS="REAL" VALUE="-1.79769313486232e+308"/>
+      </invalrng>
+      <sumStat type="vald">
+        1700
+      </sumStat>
+      <sumStat type="invd">
+        79
+      </sumStat>
+      <catgry>
+        <catValu>
+          1
+        </catValu>
+        <labl>
+          0 days
+        </labl>
+        <catStat type="freq">
+          1175
+        </catStat>
+      </catgry>
+      <catgry>
+        <catValu>
+          2
+        </catValu>
+        <labl>
+          1 or 2 days
+        </labl>
+        <catStat type="freq">
+          346
+        </catStat>
+      </catgry>
+      <catgry>
+        <catValu>
+          3
+        </catValu>
+        <labl>
+          3 to 5 days
+        </labl>
+        <catStat type="freq">
+          97
+        </catStat>
+      </catgry>
+      <catgry>
+        <catValu>
+          4
+        </catValu>
+        <labl>
+          6 to 9 days
+        </labl>
+        <catStat type="freq">
+          30
+        </catStat>
+      </catgry>
+      <catgry>
+        <catValu>
+          5
+        </catValu>
+        <labl>
+          10 to 19 days
+        </labl>
+        <catStat type="freq">
+          10
+        </catStat>
+      </catgry>
+      <catgry>
+        <catValu>
+          6
+        </catValu>
+        <labl>
+          20 to 29 days
+        </labl>
+        <catStat type="freq">
+          11
+        </catStat>
+      </catgry>
+      <catgry>
+        <catValu>
+          7
+        </catValu>
+        <labl>
+          All 30 days
+        </labl>
+        <catStat type="freq">
+          31
+        </catStat>
+      </catgry>
+      <catgry missing="Y">
+        <catValu>
+          Sysmiss
+        </catValu>
+        <catStat type="freq">
+          79
+        </catStat>
+      </catgry>
+      <varFormat type="numeric" schema="other"/>
+    </var>
+    <var ID="V21" name="Q21" files="F1" dcml="0" intrvl="discrete">
+      <location width="1"/>
+      <labl>
+        How bullied past 30 days
+      </labl>
+      <qstn>
+        <preQTxt>
+          The next 2 questions ask about bullying. Bullying occurs when a student or group of students say or do bad and unpleasant things to another student. It is also bullying when a student is teased a lot in an unpleasant way or when a student is left out of things on purpose. It is not bullying when two students of about the same strength or power argue or fight or when teasing is done in a friendly and fun way.
+        </preQTxt>
+        <qstnLit>
+          During the past 30 days, how were you bullied most often?
+        </qstnLit>
+      </qstn>
+      <valrng>
+        <range UNITS="REAL" min="1" max="8"/>
+      </valrng>
+      <invalrng>
+        <item UNITS="REAL" VALUE="-1.79769313486232e+308"/>
+      </invalrng>
+      <sumStat type="vald">
+        1696
+      </sumStat>
+      <sumStat type="invd">
+        83
+      </sumStat>
+      <catgry>
+        <catValu>
+          1
+        </catValu>
+        <labl>
+          Not bullied
+        </labl>
+        <catStat type="freq">
+          1257
+        </catStat>
+      </catgry>
+      <catgry>
+        <catValu>
+          2
+        </catValu>
+        <labl>
+          Kicked, pushed, or shoved
+        </labl>
+        <catStat type="freq">
+          37
+        </catStat>
+      </catgry>
+      <catgry>
+        <catValu>
+          3
+        </catValu>
+        <labl>
+          Made fun of race
+        </labl>
+        <catStat type="freq">
+          44
+        </catStat>
+      </catgry>
+      <catgry>
+        <catValu>
+          4
+        </catValu>
+        <labl>
+          Made fun because of religion
+        </labl>
+        <catStat type="freq">
+          23
+        </catStat>
+      </catgry>
+      <catgry>
+        <catValu>
+          5
+        </catValu>
+        <labl>
+          Made fun of about sex
+        </labl>
+        <catStat type="freq">
+          61
+        </catStat>
+      </catgry>
+      <catgry>
+        <catValu>
+          6
+        </catValu>
+        <labl>
+          Left out of activities
+        </labl>
+        <catStat type="freq">
+          44
+        </catStat>
+      </catgry>
+      <catgry>
+        <catValu>
+          7
+        </catValu>
+        <labl>
+          Made fun of about body
+        </labl>
+        <catStat type="freq">
+          74
+        </catStat>
+      </catgry>
+      <catgry>
+        <catValu>
+          8
+        </catValu>
+        <labl>
+          Some other way
+        </labl>
+        <catStat type="freq">
+          156
+        </catStat>
+      </catgry>
+      <catgry missing="Y">
+        <catValu>
+          Sysmiss
+        </catValu>
+        <catStat type="freq">
+          83
+        </catStat>
+      </catgry>
+      <varFormat type="numeric" schema="other"/>
+    </var>
+    <var ID="V22" name="Q22" files="F1" dcml="0" intrvl="discrete">
+      <location width="1"/>
+      <labl>
+        Times felt lonely past 12 mo.
+      </labl>
+      <qstn>
+        <preQTxt>
+          The next 6 questions ask about your feelings and friendships.
+        </preQTxt>
+        <qstnLit>
+          During the past 12 months, how often have you felt lonely?
+        </qstnLit>
+      </qstn>
+      <valrng>
+        <range UNITS="REAL" min="1" max="5"/>
+      </valrng>
+      <invalrng>
+        <item UNITS="REAL" VALUE="-1.79769313486232e+308"/>
+      </invalrng>
+      <sumStat type="vald">
+        1732
+      </sumStat>
+      <sumStat type="invd">
+        47
+      </sumStat>
+      <catgry>
+        <catValu>
+          1
+        </catValu>
+        <labl>
+          Never
+        </labl>
+        <catStat type="freq">
+          688
+        </catStat>
+      </catgry>
+      <catgry>
+        <catValu>
+          2
+        </catValu>
+        <labl>
+          Rarely
+        </labl>
+        <catStat type="freq">
+          506
+        </catStat>
+      </catgry>
+      <catgry>
+        <catValu>
+          3
+        </catValu>
+        <labl>
+          Sometimes
+        </labl>
+        <catStat type="freq">
+          356
+        </catStat>
+      </catgry>
+      <catgry>
+        <catValu>
+          4
+        </catValu>
+        <labl>
+          Most of the time
+        </labl>
+        <catStat type="freq">
+          112
+        </catStat>
+      </catgry>
+      <catgry>
+        <catValu>
+          5
+        </catValu>
+        <labl>
+          Always
+        </labl>
+        <catStat type="freq">
+          70
+        </catStat>
+      </catgry>
+      <catgry missing="Y">
+        <catValu>
+          Sysmiss
+        </catValu>
+        <catStat type="freq">
+          47
+        </catStat>
+      </catgry>
+      <varFormat type="numeric" schema="other"/>
+    </var>
+    <var ID="V23" name="Q23" files="F1" dcml="0" intrvl="discrete">
+      <location width="1"/>
+      <labl>
+        Times could not sleep past 12 mo.
+      </labl>
+      <qstn>
+        <preQTxt>
+          The next 6 questions ask about your feelings and friendships.
+        </preQTxt>
+        <qstnLit>
+          During the past 12 months, how often have you been so worried about something that you could not sleep at night?
+        </qstnLit>
+      </qstn>
+      <valrng>
+        <range UNITS="REAL" min="1" max="5"/>
+      </valrng>
+      <invalrng>
+        <item UNITS="REAL" VALUE="-1.79769313486232e+308"/>
+      </invalrng>
+      <sumStat type="vald">
+        1769
+      </sumStat>
+      <sumStat type="invd">
+        10
+      </sumStat>
+      <catgry>
+        <catValu>
+          1
+        </catValu>
+        <labl>
+          Never
+        </labl>
+        <catStat type="freq">
+          662
+        </catStat>
+      </catgry>
+      <catgry>
+        <catValu>
+          2
+        </catValu>
+        <labl>
+          Rarely
+        </labl>
+        <catStat type="freq">
+          577
+        </catStat>
+      </catgry>
+      <catgry>
+        <catValu>
+          3
+        </catValu>
+        <labl>
+          Sometimes
+        </labl>
+        <catStat type="freq">
+          422
+        </catStat>
+      </catgry>
+      <catgry>
+        <catValu>
+          4
+        </catValu>
+        <labl>
+          Most of the time
+        </labl>
+        <catStat type="freq">
+          79
+        </catStat>
+      </catgry>
+      <catgry>
+        <catValu>
+          5
+        </catValu>
+        <labl>
+          Always
+        </labl>
+        <catStat type="freq">
+          29
+        </catStat>
+      </catgry>
+      <catgry missing="Y">
+        <catValu>
+          Sysmiss
+        </catValu>
+        <catStat type="freq">
+          10
+        </catStat>
+      </catgry>
+      <varFormat type="numeric" schema="other"/>
+    </var>
+    <var ID="V24" name="Q24" files="F1" dcml="0" intrvl="discrete">
+      <location width="1"/>
+      <labl>
+        Ever considered suicide 12 mos
+      </labl>
+      <qstn>
+        <preQTxt>
+          The next 6 questions ask about your feelings and friendships.
+        </preQTxt>
+        <qstnLit>
+          During the past 12 months, did you ever seriously consider attempting suicide?
+        </qstnLit>
+      </qstn>
+      <valrng>
+        <range UNITS="REAL" min="1" max="2"/>
+      </valrng>
+      <invalrng>
+        <item UNITS="REAL" VALUE="-1.79769313486232e+308"/>
+      </invalrng>
+      <sumStat type="vald">
+        1734
+      </sumStat>
+      <sumStat type="invd">
+        45
+      </sumStat>
+      <catgry>
+        <catValu>
+          1
+        </catValu>
+        <labl>
+          Yes
+        </labl>
+        <catStat type="freq">
+          328
+        </catStat>
+      </catgry>
+      <catgry>
+        <catValu>
+          2
+        </catValu>
+        <labl>
+          No
+        </labl>
+        <catStat type="freq">
+          1406
+        </catStat>
+      </catgry>
+      <catgry missing="Y">
+        <catValu>
+          Sysmiss
+        </catValu>
+        <catStat type="freq">
+          45
+        </catStat>
+      </catgry>
+      <varFormat type="numeric" schema="other"/>
+    </var>
+    <var ID="V25" name="Q25" files="F1" dcml="0" intrvl="discrete">
+      <location width="1"/>
+      <labl>
+        Ever make suicide plan 12 mos
+      </labl>
+      <qstn>
+        <preQTxt>
+          The next 6 questions ask about your feelings and friendships.
+        </preQTxt>
+        <qstnLit>
+          During the past 12 months, did you make a plan about how you would attempt suicide?
+        </qstnLit>
+      </qstn>
+      <valrng>
+        <range UNITS="REAL" min="1" max="2"/>
+      </valrng>
+      <invalrng>
+        <item UNITS="REAL" VALUE="-1.79769313486232e+308"/>
+      </invalrng>
+      <sumStat type="vald">
+        1739
+      </sumStat>
+      <sumStat type="invd">
+        40
+      </sumStat>
+      <catgry>
+        <catValu>
+          1
+        </catValu>
+        <labl>
+          Yes
+        </labl>
+        <catStat type="freq">
+          323
+        </catStat>
+      </catgry>
+      <catgry>
+        <catValu>
+          2
+        </catValu>
+        <labl>
+          No
+        </labl>
+        <catStat type="freq">
+          1416
+        </catStat>
+      </catgry>
+      <catgry missing="Y">
+        <catValu>
+          Sysmiss
+        </catValu>
+        <catStat type="freq">
+          40
+        </catStat>
+      </catgry>
+      <varFormat type="numeric" schema="other"/>
+    </var>
+    <var ID="V26" name="Q26" files="F1" dcml="0" intrvl="discrete">
+      <location width="1"/>
+      <labl>
+        Times attempted suicide 12 mos.
+      </labl>
+      <qstn>
+        <preQTxt>
+          The next 6 questions ask about your feelings and friendships.
+        </preQTxt>
+        <qstnLit>
+          During the past 12 months, how many times did you actually attempt suicide?
+        </qstnLit>
+      </qstn>
+      <valrng>
+        <range UNITS="REAL" min="1" max="5"/>
+      </valrng>
+      <invalrng>
+        <item UNITS="REAL" VALUE="-1.79769313486232e+308"/>
+      </invalrng>
+      <sumStat type="vald">
+        1769
+      </sumStat>
+      <sumStat type="invd">
+        10
+      </sumStat>
+      <catgry>
+        <catValu>
+          1
+        </catValu>
+        <labl>
+          0 times
+        </labl>
+        <catStat type="freq">
+          1472
+        </catStat>
+      </catgry>
+      <catgry>
+        <catValu>
+          2
+        </catValu>
+        <labl>
+          1 time
+        </labl>
+        <catStat type="freq">
+          175
+        </catStat>
+      </catgry>
+      <catgry>
+        <catValu>
+          3
+        </catValu>
+        <labl>
+          2 or 3 times
+        </labl>
+        <catStat type="freq">
+          76
+        </catStat>
+      </catgry>
+      <catgry>
+        <catValu>
+          4
+        </catValu>
+        <labl>
+          4 or 5 times
+        </labl>
+        <catStat type="freq">
+          26
+        </catStat>
+      </catgry>
+      <catgry>
+        <catValu>
+          5
+        </catValu>
+        <labl>
+          6 or more times
+        </labl>
+        <catStat type="freq">
+          20
+        </catStat>
+      </catgry>
+      <catgry missing="Y">
+        <catValu>
+          Sysmiss
+        </catValu>
+        <catStat type="freq">
+          10
+        </catStat>
+      </catgry>
+      <varFormat type="numeric" schema="other"/>
+    </var>
+    <var ID="V27" name="Q27" files="F1" dcml="0" intrvl="discrete">
+      <location width="1"/>
+      <labl>
+        Number close friends
+      </labl>
+      <qstn>
+        <preQTxt>
+          The next 6 questions ask about your feelings and friendships.
+        </preQTxt>
+        <qstnLit>
+          How many close friends do you have?
+        </qstnLit>
+      </qstn>
+      <valrng>
+        <range UNITS="REAL" min="1" max="4"/>
+      </valrng>
+      <invalrng>
+        <item UNITS="REAL" VALUE="-1.79769313486232e+308"/>
+      </invalrng>
+      <sumStat type="vald">
+        1750
+      </sumStat>
+      <sumStat type="invd">
+        29
+      </sumStat>
+      <catgry>
+        <catValu>
+          1
+        </catValu>
+        <labl>
+          0
+        </labl>
+        <catStat type="freq">
+          118
+        </catStat>
+      </catgry>
+      <catgry>
+        <catValu>
+          2
+        </catValu>
+        <labl>
+          1
+        </labl>
+        <catStat type="freq">
+          166
+        </catStat>
+      </catgry>
+      <catgry>
+        <catValu>
+          3
+        </catValu>
+        <labl>
+          2
+        </labl>
+        <catStat type="freq">
+          188
+        </catStat>
+      </catgry>
+      <catgry>
+        <catValu>
+          4
+        </catValu>
+        <labl>
+          3 or more
+        </labl>
+        <catStat type="freq">
+          1278
+        </catStat>
+      </catgry>
+      <catgry missing="Y">
+        <catValu>
+          Sysmiss
+        </catValu>
+        <catStat type="freq">
+          29
+        </catStat>
+      </catgry>
+      <varFormat type="numeric" schema="other"/>
+    </var>
+    <var ID="V28" name="Q28" files="F1" dcml="0" intrvl="discrete">
+      <location width="1"/>
+      <labl>
+        Age first tried cigarette
+      </labl>
+      <qstn>
+        <preQTxt>
+          The next 6 questions ask about cigarette and other tobacco use.
+        </preQTxt>
+        <qstnLit>
+          How old were you when you first tried a cigarette?
+        </qstnLit>
+      </qstn>
+      <valrng>
+        <range UNITS="REAL" min="1" max="7"/>
+      </valrng>
+      <invalrng>
+        <item UNITS="REAL" VALUE="-1.79769313486232e+308"/>
+      </invalrng>
+      <sumStat type="vald">
+        1688
+      </sumStat>
+      <sumStat type="invd">
+        91
+      </sumStat>
+      <catgry>
+        <catValu>
+          1
+        </catValu>
+        <labl>
+          I have never smoked cigarettes
+        </labl>
+        <catStat type="freq">
+          1257
+        </catStat>
+      </catgry>
+      <catgry>
+        <catValu>
+          2
+        </catValu>
+        <labl>
+          7 years old or younger
+        </labl>
+        <catStat type="freq">
+          63
+        </catStat>
+      </catgry>
+      <catgry>
+        <catValu>
+          3
+        </catValu>
+        <labl>
+          8 or 9 years old
+        </labl>
+        <catStat type="freq">
+          55
+        </catStat>
+      </catgry>
+      <catgry>
+        <catValu>
+          4
+        </catValu>
+        <labl>
+          10 or 11 years old
+        </labl>
+        <catStat type="freq">
+          82
+        </catStat>
+      </catgry>
+      <catgry>
+        <catValu>
+          5
+        </catValu>
+        <labl>
+          12 or 13 years old
+        </labl>
+        <catStat type="freq">
+          135
+        </catStat>
+      </catgry>
+      <catgry>
+        <catValu>
+          6
+        </catValu>
+        <labl>
+          14 or 15 years old
+        </labl>
+        <catStat type="freq">
+          86
+        </catStat>
+      </catgry>
+      <catgry>
+        <catValu>
+          7
+        </catValu>
+        <labl>
+          16 years old or older
+        </labl>
+        <catStat type="freq">
+          10
+        </catStat>
+      </catgry>
+      <catgry missing="Y">
+        <catValu>
+          Sysmiss
+        </catValu>
+        <catStat type="freq">
+          91
+        </catStat>
+      </catgry>
+      <varFormat type="numeric" schema="other"/>
+    </var>
+    <var ID="V29" name="Q29" files="F1" dcml="0" intrvl="discrete">
+      <location width="1"/>
+      <labl>
+        How many days smoked 30 days
+      </labl>
+      <qstn>
+        <preQTxt>
+          The next 6 questions ask about cigarette and other tobacco use.
+        </preQTxt>
+        <qstnLit>
+          During the past 30 days, on how many days did you smoke cigarettes?
+        </qstnLit>
+      </qstn>
+      <valrng>
+        <range UNITS="REAL" min="1" max="7"/>
+      </valrng>
+      <invalrng>
+        <item UNITS="REAL" VALUE="-1.79769313486232e+308"/>
+      </invalrng>
+      <sumStat type="vald">
+        1761
+      </sumStat>
+      <sumStat type="invd">
+        18
+      </sumStat>
+      <catgry>
+        <catValu>
+          1
+        </catValu>
+        <labl>
+          0 days
+        </labl>
+        <catStat type="freq">
+          1537
+        </catStat>
+      </catgry>
+      <catgry>
+        <catValu>
+          2
+        </catValu>
+        <labl>
+          1 or 2 days
+        </labl>
+        <catStat type="freq">
+          136
+        </catStat>
+      </catgry>
+      <catgry>
+        <catValu>
+          3
+        </catValu>
+        <labl>
+          3 to 5 days
+        </labl>
+        <catStat type="freq">
+          35
+        </catStat>
+      </catgry>
+      <catgry>
+        <catValu>
+          4
+        </catValu>
+        <labl>
+          6 to 9 days
+        </labl>
+        <catStat type="freq">
+          26
+        </catStat>
+      </catgry>
+      <catgry>
+        <catValu>
+          5
+        </catValu>
+        <labl>
+          10 to 19 days
+        </labl>
+        <catStat type="freq">
+          9
+        </catStat>
+      </catgry>
+      <catgry>
+        <catValu>
+          6
+        </catValu>
+        <labl>
+          20 to 29 days
+        </labl>
+        <catStat type="freq">
+          5
+        </catStat>
+      </catgry>
+      <catgry>
+        <catValu>
+          7
+        </catValu>
+        <labl>
+          All 30 days
+        </labl>
+        <catStat type="freq">
+          13
+        </catStat>
+      </catgry>
+      <catgry missing="Y">
+        <catValu>
+          Sysmiss
+        </catValu>
+        <catStat type="freq">
+          18
+        </catStat>
+      </catgry>
+      <varFormat type="numeric" schema="other"/>
+    </var>
+    <var ID="V30" name="Q30" files="F1" dcml="0" intrvl="discrete">
+      <location width="1"/>
+      <labl>
+        Other tobacco past 30 days
+      </labl>
+      <qstn>
+        <preQTxt>
+          The next 6 questions ask about cigarette and other tobacco use.
+        </preQTxt>
+        <qstnLit>
+          During the past 30 days, on how many days did you use any tobacco products other than cigarettes, such as COUNTRY SPECIFIC EXAMPLES?
+        </qstnLit>
+      </qstn>
+      <valrng>
+        <range UNITS="REAL" min="1" max="7"/>
+      </valrng>
+      <invalrng>
+        <item UNITS="REAL" VALUE="-1.79769313486232e+308"/>
+      </invalrng>
+      <sumStat type="vald">
+        1763
+      </sumStat>
+      <sumStat type="invd">
+        16
+      </sumStat>
+      <catgry>
+        <catValu>
+          1
+        </catValu>
+        <labl>
+          0 days
+        </labl>
+        <catStat type="freq">
+          1681
+        </catStat>
+      </catgry>
+      <catgry>
+        <catValu>
+          2
+        </catValu>
+        <labl>
+          1 or 2 days
+        </labl>
+        <catStat type="freq">
+          45
+        </catStat>
+      </catgry>
+      <catgry>
+        <catValu>
+          3
+        </catValu>
+        <labl>
+          3 to 5 days
+        </labl>
+        <catStat type="freq">
+          19
+        </catStat>
+      </catgry>
+      <catgry>
+        <catValu>
+          4
+        </catValu>
+        <labl>
+          6 to 9 days
+        </labl>
+        <catStat type="freq">
+          3
+        </catStat>
+      </catgry>
+      <catgry>
+        <catValu>
+          5
+        </catValu>
+        <labl>
+          10 to 19 days
+        </labl>
+        <catStat type="freq">
+          8
+        </catStat>
+      </catgry>
+      <catgry>
+        <catValu>
+          6
+        </catValu>
+        <labl>
+          20 to 29 days
+        </labl>
+        <catStat type="freq">
+          3
+        </catStat>
+      </catgry>
+      <catgry>
+        <catValu>
+          7
+        </catValu>
+        <labl>
+          All 30 days
+        </labl>
+        <catStat type="freq">
+          4
+        </catStat>
+      </catgry>
+      <catgry missing="Y">
+        <catValu>
+          Sysmiss
+        </catValu>
+        <catStat type="freq">
+          16
+        </catStat>
+      </catgry>
+      <varFormat type="numeric" schema="other"/>
+    </var>
+    <var ID="V31" name="Q31" files="F1" dcml="0" intrvl="discrete">
+      <location width="1"/>
+      <labl>
+        Try stop smoking past 12 mo.
+      </labl>
+      <qstn>
+        <preQTxt>
+          The next 6 questions ask about cigarette and other tobacco use.
+        </preQTxt>
+        <qstnLit>
+          During the past 12 months, have you ever tried to stop smoking cigarettes?
+        </qstnLit>
+      </qstn>
+      <valrng>
+        <range UNITS="REAL" min="1" max="4"/>
+      </valrng>
+      <invalrng>
+        <item UNITS="REAL" VALUE="-1.79769313486232e+308"/>
+      </invalrng>
+      <sumStat type="vald">
+        1704
+      </sumStat>
+      <sumStat type="invd">
+        75
+      </sumStat>
+      <catgry>
+        <catValu>
+          1
+        </catValu>
+        <labl>
+          I have never smoked cigarettes
+        </labl>
+        <catStat type="freq">
+          1361
+        </catStat>
+      </catgry>
+      <catgry>
+        <catValu>
+          2
+        </catValu>
+        <labl>
+          Did not smoke cigarettes
+        </labl>
+        <catStat type="freq">
+          170
+        </catStat>
+      </catgry>
+      <catgry>
+        <catValu>
+          3
+        </catValu>
+        <labl>
+          Yes
+        </labl>
+        <catStat type="freq">
+          132
+        </catStat>
+      </catgry>
+      <catgry>
+        <catValu>
+          4
+        </catValu>
+        <labl>
+          No
+        </labl>
+        <catStat type="freq">
+          41
+        </catStat>
+      </catgry>
+      <catgry missing="Y">
+        <catValu>
+          Sysmiss
+        </catValu>
+        <catStat type="freq">
+          75
+        </catStat>
+      </catgry>
+      <varFormat type="numeric" schema="other"/>
+    </var>
+    <var ID="V32" name="Q32" files="F1" dcml="0" intrvl="discrete">
+      <location width="1"/>
+      <labl>
+        Others present smoking past 7 days
+      </labl>
+      <qstn>
+        <preQTxt>
+          The next 6 questions ask about cigarette and other tobacco use.
+        </preQTxt>
+        <qstnLit>
+          During the past 7 days, on how many days have people smoked in your presence?
+        </qstnLit>
+      </qstn>
+      <valrng>
+        <range UNITS="REAL" min="1" max="5"/>
+      </valrng>
+      <invalrng>
+        <item UNITS="REAL" VALUE="-1.79769313486232e+308"/>
+      </invalrng>
+      <sumStat type="vald">
+        1768
+      </sumStat>
+      <sumStat type="invd">
+        11
+      </sumStat>
+      <catgry>
+        <catValu>
+          1
+        </catValu>
+        <labl>
+          0 days
+        </labl>
+        <catStat type="freq">
+          878
+        </catStat>
+      </catgry>
+      <catgry>
+        <catValu>
+          2
+        </catValu>
+        <labl>
+          1 or 2 days
+        </labl>
+        <catStat type="freq">
+          478
+        </catStat>
+      </catgry>
+      <catgry>
+        <catValu>
+          3
+        </catValu>
+        <labl>
+          3 or 4 days
+        </labl>
+        <catStat type="freq">
+          138
+        </catStat>
+      </catgry>
+      <catgry>
+        <catValu>
+          4
+        </catValu>
+        <labl>
+          5 or 6 days
+        </labl>
+        <catStat type="freq">
+          65
+        </catStat>
+      </catgry>
+      <catgry>
+        <catValu>
+          5
+        </catValu>
+        <labl>
+          All 7 days
+        </labl>
+        <catStat type="freq">
+          209
+        </catStat>
+      </catgry>
+      <catgry missing="Y">
+        <catValu>
+          Sysmiss
+        </catValu>
+        <catStat type="freq">
+          11
+        </catStat>
+      </catgry>
+      <varFormat type="numeric" schema="other"/>
+    </var>
+    <var ID="V33" name="Q33" files="F1" dcml="0" intrvl="discrete">
+      <location width="1"/>
+      <labl>
+        Parents who use tobacco
+      </labl>
+      <qstn>
+        <preQTxt>
+          The next 6 questions ask about cigarette and other tobacco use.
+        </preQTxt>
+        <qstnLit>
+          Which of your parents or guardians use any form of tobacco?
+        </qstnLit>
+      </qstn>
+      <valrng>
+        <range UNITS="REAL" min="1" max="5"/>
+      </valrng>
+      <invalrng>
+        <item UNITS="REAL" VALUE="-1.79769313486232e+308"/>
+      </invalrng>
+      <sumStat type="vald">
+        1768
+      </sumStat>
+      <sumStat type="invd">
+        11
+      </sumStat>
+      <catgry>
+        <catValu>
+          1
+        </catValu>
+        <labl>
+          Neither
+        </labl>
+        <catStat type="freq">
+          1495
+        </catStat>
+      </catgry>
+      <catgry>
+        <catValu>
+          2
+        </catValu>
+        <labl>
+          My father or male guardian
+        </labl>
+        <catStat type="freq">
+          152
+        </catStat>
+      </catgry>
+      <catgry>
+        <catValu>
+          3
+        </catValu>
+        <labl>
+          My mother or female guardian
+        </labl>
+        <catStat type="freq">
+          27
+        </catStat>
+      </catgry>
+      <catgry>
+        <catValu>
+          4
+        </catValu>
+        <labl>
+          Both
+        </labl>
+        <catStat type="freq">
+          24
+        </catStat>
+      </catgry>
+      <catgry>
+        <catValu>
+          5
+        </catValu>
+        <labl>
+          I do not know
+        </labl>
+        <catStat type="freq">
+          70
+        </catStat>
+      </catgry>
+      <catgry missing="Y">
+        <catValu>
+          Sysmiss
+        </catValu>
+        <catStat type="freq">
+          11
+        </catStat>
+      </catgry>
+      <varFormat type="numeric" schema="other"/>
+    </var>
+    <var ID="V34" name="Q34" files="F1" dcml="0" intrvl="discrete">
+      <location width="1"/>
+      <labl>
+        Age first drink alcohol
+      </labl>
+      <qstn>
+        <preQTxt>
+          The next 6 questions ask about drinking alcohol. This includes drinking COUNTRY SPECIFIC EXAMPLES. Drinking alcohol does not include drinking a few sips of wine for religious purposes. A "drink" is a glass of wine, a bottle of beer, a small glass of liquor, or a mixed drink.
+        </preQTxt>
+        <qstnLit>
+          How old were you when you had your first drink of alcohol other than a few sips?
+        </qstnLit>
+      </qstn>
+      <valrng>
+        <range UNITS="REAL" min="1" max="7"/>
+      </valrng>
+      <invalrng>
+        <item UNITS="REAL" VALUE="-1.79769313486232e+308"/>
+      </invalrng>
+      <sumStat type="vald">
+        1554
+      </sumStat>
+      <sumStat type="invd">
+        225
+      </sumStat>
+      <catgry>
+        <catValu>
+          1
+        </catValu>
+        <labl>
+          Never drank alcohol
+        </labl>
+        <catStat type="freq">
+          1028
+        </catStat>
+      </catgry>
+      <catgry>
+        <catValu>
+          2
+        </catValu>
+        <labl>
+          7 years old or younger
+        </labl>
+        <catStat type="freq">
+          65
+        </catStat>
+      </catgry>
+      <catgry>
+        <catValu>
+          3
+        </catValu>
+        <labl>
+          8 or 9 years old
+        </labl>
+        <catStat type="freq">
+          46
+        </catStat>
+      </catgry>
+      <catgry>
+        <catValu>
+          4
+        </catValu>
+        <labl>
+          10 or 11 years old
+        </labl>
+        <catStat type="freq">
+          72
+        </catStat>
+      </catgry>
+      <catgry>
+        <catValu>
+          5
+        </catValu>
+        <labl>
+          12 or 13 years old
+        </labl>
+        <catStat type="freq">
+          181
+        </catStat>
+      </catgry>
+      <catgry>
+        <catValu>
+          6
+        </catValu>
+        <labl>
+          14 or 15 years old
+        </labl>
+        <catStat type="freq">
+          133
+        </catStat>
+      </catgry>
+      <catgry>
+        <catValu>
+          7
+        </catValu>
+        <labl>
+          16 years old or older
+        </labl>
+        <catStat type="freq">
+          29
+        </catStat>
+      </catgry>
+      <catgry missing="Y">
+        <catValu>
+          Sysmiss
+        </catValu>
+        <catStat type="freq">
+          225
+        </catStat>
+      </catgry>
+      <varFormat type="numeric" schema="other"/>
+    </var>
+    <var ID="V35" name="Q35" files="F1" dcml="0" intrvl="discrete">
+      <location width="1"/>
+      <labl>
+        Days one drink or more past 30 days
+      </labl>
+      <qstn>
+        <preQTxt>
+          The next 6 questions ask about drinking alcohol. This includes drinking COUNTRY SPECIFIC EXAMPLES. Drinking alcohol does not include drinking a few sips of wine for religious purposes. A "drink" is a glass of wine, a bottle of beer, a small glass of liquor, or a mixed drink.
+        </preQTxt>
+        <qstnLit>
+          During the past 30 days, on how many days did you have at least one drink containing alcohol?
+        </qstnLit>
+      </qstn>
+      <valrng>
+        <range UNITS="REAL" min="1" max="7"/>
+      </valrng>
+      <invalrng>
+        <item UNITS="REAL" VALUE="-1.79769313486232e+308"/>
+      </invalrng>
+      <sumStat type="vald">
+        1702
+      </sumStat>
+      <sumStat type="invd">
+        77
+      </sumStat>
+      <catgry>
+        <catValu>
+          1
+        </catValu>
+        <labl>
+          0 days
+        </labl>
+        <catStat type="freq">
+          1430
+        </catStat>
+      </catgry>
+      <catgry>
+        <catValu>
+          2
+        </catValu>
+        <labl>
+          1 or 2 days
+        </labl>
+        <catStat type="freq">
+          183
+        </catStat>
+      </catgry>
+      <catgry>
+        <catValu>
+          3
+        </catValu>
+        <labl>
+          3 to 5 days
+        </labl>
+        <catStat type="freq">
+          38
+        </catStat>
+      </catgry>
+      <catgry>
+        <catValu>
+          4
+        </catValu>
+        <labl>
+          6 to 9 days
+        </labl>
+        <catStat type="freq">
+          21
+        </catStat>
+      </catgry>
+      <catgry>
+        <catValu>
+          5
+        </catValu>
+        <labl>
+          10 to 19 days
+        </labl>
+        <catStat type="freq">
+          15
+        </catStat>
+      </catgry>
+      <catgry>
+        <catValu>
+          6
+        </catValu>
+        <labl>
+          20 to 29 days
+        </labl>
+        <catStat type="freq">
+          3
+        </catStat>
+      </catgry>
+      <catgry>
+        <catValu>
+          7
+        </catValu>
+        <labl>
+          All 30 days
+        </labl>
+        <catStat type="freq">
+          12
+        </catStat>
+      </catgry>
+      <catgry missing="Y">
+        <catValu>
+          Sysmiss
+        </catValu>
+        <catStat type="freq">
+          77
+        </catStat>
+      </catgry>
+      <varFormat type="numeric" schema="other"/>
+    </var>
+    <var ID="V36" name="Q36" files="F1" dcml="0" intrvl="discrete">
+      <location width="1"/>
+      <labl>
+        Number of drinks past 30 days
+      </labl>
+      <qstn>
+        <preQTxt>
+          The next 6 questions ask about drinking alcohol. This includes drinking COUNTRY SPECIFIC EXAMPLES. Drinking alcohol does not include drinking a few sips of wine for religious purposes. A "drink" is a glass of wine, a bottle of beer, a small glass of liquor, or a mixed drink.
+        </preQTxt>
+        <qstnLit>
+          During the past 30 days, on the days you drank alcohol, how many drinks did you usually drink per day?
+        </qstnLit>
+      </qstn>
+      <valrng>
+        <range UNITS="REAL" min="1" max="7"/>
+      </valrng>
+      <invalrng>
+        <item UNITS="REAL" VALUE="-1.79769313486232e+308"/>
+      </invalrng>
+      <sumStat type="vald">
+        1734
+      </sumStat>
+      <sumStat type="invd">
+        45
+      </sumStat>
+      <catgry>
+        <catValu>
+          1
+        </catValu>
+        <labl>
+          Did not drink in past 30 days
+        </labl>
+        <catStat type="freq">
+          1407
+        </catStat>
+      </catgry>
+      <catgry>
+        <catValu>
+          2
+        </catValu>
+        <labl>
+          Less than one drink
+        </labl>
+        <catStat type="freq">
+          100
+        </catStat>
+      </catgry>
+      <catgry>
+        <catValu>
+          3
+        </catValu>
+        <labl>
+          1 drink
+        </labl>
+        <catStat type="freq">
+          59
+        </catStat>
+      </catgry>
+      <catgry>
+        <catValu>
+          4
+        </catValu>
+        <labl>
+          2 drinks
+        </labl>
+        <catStat type="freq">
+          52
+        </catStat>
+      </catgry>
+      <catgry>
+        <catValu>
+          5
+        </catValu>
+        <labl>
+          3 drinks
+        </labl>
+        <catStat type="freq">
+          39
+        </catStat>
+      </catgry>
+      <catgry>
+        <catValu>
+          6
+        </catValu>
+        <labl>
+          4 drinks
+        </labl>
+        <catStat type="freq">
+          23
+        </catStat>
+      </catgry>
+      <catgry>
+        <catValu>
+          7
+        </catValu>
+        <labl>
+          5 or more drinks
+        </labl>
+        <catStat type="freq">
+          54
+        </catStat>
+      </catgry>
+      <catgry missing="Y">
+        <catValu>
+          Sysmiss
+        </catValu>
+        <catStat type="freq">
+          45
+        </catStat>
+      </catgry>
+      <varFormat type="numeric" schema="other"/>
+    </var>
+    <var ID="V37" name="Q37" files="F1" dcml="0" intrvl="discrete">
+      <location width="1"/>
+      <labl>
+        How got drinks past 30 days
+      </labl>
+      <qstn>
+        <preQTxt>
+          The next 6 questions ask about drinking alcohol. This includes drinking COUNTRY SPECIFIC EXAMPLES. Drinking alcohol does not include drinking a few sips of wine for religious purposes. A "drink" is a glass of wine, a bottle of beer, a small glass of liquor, or a mixed drink.
+        </preQTxt>
+        <qstnLit>
+          During the past 30 days, how did you usually get the alcohol you drank? SELECT ONLY ONE RESPONSE.
+        </qstnLit>
+      </qstn>
+      <valrng>
+        <range UNITS="REAL" min="1" max="7"/>
+      </valrng>
+      <invalrng>
+        <item UNITS="REAL" VALUE="-1.79769313486232e+308"/>
+      </invalrng>
+      <sumStat type="vald">
+        1697
+      </sumStat>
+      <sumStat type="invd">
+        82
+      </sumStat>
+      <catgry>
+        <catValu>
+          1
+        </catValu>
+        <labl>
+          Did not drink in past 30 days
+        </labl>
+        <catStat type="freq">
+          1406
+        </catStat>
+      </catgry>
+      <catgry>
+        <catValu>
+          2
+        </catValu>
+        <labl>
+          I bought in a store
+        </labl>
+        <catStat type="freq">
+          46
+        </catStat>
+      </catgry>
+      <catgry>
+        <catValu>
+          3
+        </catValu>
+        <labl>
+          I gave someone money to buy
+        </labl>
+        <catStat type="freq">
+          24
+        </catStat>
+      </catgry>
+      <catgry>
+        <catValu>
+          4
+        </catValu>
+        <labl>
+          I got it from my friends
+        </labl>
+        <catStat type="freq">
+          112
+        </catStat>
+      </catgry>
+      <catgry>
+        <catValu>
+          5
+        </catValu>
+        <labl>
+          I got it from my family
+        </labl>
+        <catStat type="freq">
+          46
+        </catStat>
+      </catgry>
+      <catgry>
+        <catValu>
+          6
+        </catValu>
+        <labl>
+          I stole it
+        </labl>
+        <catStat type="freq">
+          10
+        </catStat>
+      </catgry>
+      <catgry>
+        <catValu>
+          7
+        </catValu>
+        <labl>
+          I got it some other way
+        </labl>
+        <catStat type="freq">
+          53
+        </catStat>
+      </catgry>
+      <catgry missing="Y">
+        <catValu>
+          Sysmiss
+        </catValu>
+        <catStat type="freq">
+          82
+        </catStat>
+      </catgry>
+      <varFormat type="numeric" schema="other"/>
+    </var>
+    <var ID="V38" name="Q38" files="F1" dcml="0" intrvl="discrete">
+      <location width="1"/>
+      <labl>
+        Times drunk during life
+      </labl>
+      <qstn>
+        <preQTxt>
+          The next 6 questions ask about drinking alcohol. This includes drinking COUNTRY SPECIFIC EXAMPLES. Drinking alcohol does not include drinking a few sips of wine for religious purposes. A "drink" is a glass of wine, a bottle of beer, a small glass of liquor, or a mixed drink.
+        </preQTxt>
+        <qstnLit>
+          During your life, how many times did you drink so much alcohol that you were really drunk?
+        </qstnLit>
+      </qstn>
+      <valrng>
+        <range UNITS="REAL" min="1" max="4"/>
+      </valrng>
+      <invalrng>
+        <item UNITS="REAL" VALUE="-1.79769313486232e+308"/>
+      </invalrng>
+      <sumStat type="vald">
+        1733
+      </sumStat>
+      <sumStat type="invd">
+        46
+      </sumStat>
+      <catgry>
+        <catValu>
+          1
+        </catValu>
+        <labl>
+          0 times
+        </labl>
+        <catStat type="freq">
+          1542
+        </catStat>
+      </catgry>
+      <catgry>
+        <catValu>
+          2
+        </catValu>
+        <labl>
+          1 or 2 times
+        </labl>
+        <catStat type="freq">
+          139
+        </catStat>
+      </catgry>
+      <catgry>
+        <catValu>
+          3
+        </catValu>
+        <labl>
+          3 to 9 times
+        </labl>
+        <catStat type="freq">
+          31
+        </catStat>
+      </catgry>
+      <catgry>
+        <catValu>
+          4
+        </catValu>
+        <labl>
+          10 or more times
+        </labl>
+        <catStat type="freq">
+          21
+        </catStat>
+      </catgry>
+      <catgry missing="Y">
+        <catValu>
+          Sysmiss
+        </catValu>
+        <catStat type="freq">
+          46
+        </catStat>
+      </catgry>
+      <varFormat type="numeric" schema="other"/>
+    </var>
+    <var ID="V39" name="Q39" files="F1" dcml="0" intrvl="discrete">
+      <location width="1"/>
+      <labl>
+        Number of troubles as result of drinking
+      </labl>
+      <qstn>
+        <preQTxt>
+          The next 6 questions ask about drinking alcohol. This includes drinking COUNTRY SPECIFIC EXAMPLES. Drinking alcohol does not include drinking a few sips of wine for religious purposes. A "drink" is a glass of wine, a bottle of beer, a small glass of liquor, or a mixed drink.
+        </preQTxt>
+        <qstnLit>
+          During your life, how many times have you got into trouble with your family or friends, missed school, or got into fights, as a result of drinking alcohol?
+        </qstnLit>
+      </qstn>
+      <valrng>
+        <range UNITS="REAL" min="1" max="4"/>
+      </valrng>
+      <invalrng>
+        <item UNITS="REAL" VALUE="-1.79769313486232e+308"/>
+      </invalrng>
+      <sumStat type="vald">
+        1663
+      </sumStat>
+      <sumStat type="invd">
+        116
+      </sumStat>
+      <catgry>
+        <catValu>
+          1
+        </catValu>
+        <labl>
+          0 times
+        </labl>
+        <catStat type="freq">
+          1545
+        </catStat>
+      </catgry>
+      <catgry>
+        <catValu>
+          2
+        </catValu>
+        <labl>
+          1 or 2 times
+        </labl>
+        <catStat type="freq">
+          84
+        </catStat>
+      </catgry>
+      <catgry>
+        <catValu>
+          3
+        </catValu>
+        <labl>
+          3 to 9 times
+        </labl>
+        <catStat type="freq">
+          16
+        </catStat>
+      </catgry>
+      <catgry>
+        <catValu>
+          4
+        </catValu>
+        <labl>
+          10 or more times
+        </labl>
+        <catStat type="freq">
+          18
+        </catStat>
+      </catgry>
+      <catgry missing="Y">
+        <catValu>
+          Sysmiss
+        </catValu>
+        <catStat type="freq">
+          116
+        </catStat>
+      </catgry>
+      <varFormat type="numeric" schema="other"/>
+    </var>
+    <var ID="V44" name="Q44" files="F1" dcml="0" intrvl="discrete">
+      <location width="1"/>
+      <labl>
+        Ever had sex
+      </labl>
+      <qstn>
+        <preQTxt>
+          The next 5 questions ask about sexual intercourse.
+        </preQTxt>
+        <qstnLit>
+          Have you ever had sexual intercourse?
+        </qstnLit>
+      </qstn>
+      <valrng>
+        <range UNITS="REAL" min="1" max="2"/>
+      </valrng>
+      <invalrng>
+        <item UNITS="REAL" VALUE="-1.79769313486232e+308"/>
+      </invalrng>
+      <sumStat type="vald">
+        1668
+      </sumStat>
+      <sumStat type="invd">
+        111
+      </sumStat>
+      <catgry>
+        <catValu>
+          1
+        </catValu>
+        <labl>
+          Yes
+        </labl>
+        <catStat type="freq">
+          434
+        </catStat>
+      </catgry>
+      <catgry>
+        <catValu>
+          2
+        </catValu>
+        <labl>
+          No
+        </labl>
+        <catStat type="freq">
+          1234
+        </catStat>
+      </catgry>
+      <catgry missing="Y">
+        <catValu>
+          Sysmiss
+        </catValu>
+        <catStat type="freq">
+          111
+        </catStat>
+      </catgry>
+      <varFormat type="numeric" schema="other"/>
+    </var>
+    <var ID="V45" name="Q45" files="F1" dcml="0" intrvl="discrete">
+      <location width="1"/>
+      <labl>
+        Age first sexual intercourse
+      </labl>
+      <qstn>
+        <preQTxt>
+          The next 5 questions ask about sexual intercourse.
+        </preQTxt>
+        <qstnLit>
+          How old were you when you had sexual intercourse for the first time?
+        </qstnLit>
+      </qstn>
+      <valrng>
+        <range UNITS="REAL" min="1" max="7"/>
+      </valrng>
+      <invalrng>
+        <item UNITS="REAL" VALUE="-1.79769313486232e+308"/>
+      </invalrng>
+      <sumStat type="vald">
+        1721
+      </sumStat>
+      <sumStat type="invd">
+        58
+      </sumStat>
+      <catgry>
+        <catValu>
+          1
+        </catValu>
+        <labl>
+          Never had sex
+        </labl>
+        <catStat type="freq">
+          1397
+        </catStat>
+      </catgry>
+      <catgry>
+        <catValu>
+          2
+        </catValu>
+        <labl>
+          11 years old or younger
+        </labl>
+        <catStat type="freq">
+          87
+        </catStat>
+      </catgry>
+      <catgry>
+        <catValu>
+          3
+        </catValu>
+        <labl>
+          12 years old
+        </labl>
+        <catStat type="freq">
+          42
+        </catStat>
+      </catgry>
+      <catgry>
+        <catValu>
+          4
+        </catValu>
+        <labl>
+          13 years old
+        </labl>
+        <catStat type="freq">
+          49
+        </catStat>
+      </catgry>
+      <catgry>
+        <catValu>
+          5
+        </catValu>
+        <labl>
+          14 years old
+        </labl>
+        <catStat type="freq">
+          60
+        </catStat>
+      </catgry>
+      <catgry>
+        <catValu>
+          6
+        </catValu>
+        <labl>
+          15 years old
+        </labl>
+        <catStat type="freq">
+          62
+        </catStat>
+      </catgry>
+      <catgry>
+        <catValu>
+          7
+        </catValu>
+        <labl>
+          16 years old or older
+        </labl>
+        <catStat type="freq">
+          24
+        </catStat>
+      </catgry>
+      <catgry missing="Y">
+        <catValu>
+          Sysmiss
+        </catValu>
+        <catStat type="freq">
+          58
+        </catStat>
+      </catgry>
+      <varFormat type="numeric" schema="other"/>
+    </var>
+    <var ID="V46" name="Q46" files="F1" dcml="0" intrvl="discrete">
+      <location width="1"/>
+      <labl>
+        How many sex partners
+      </labl>
+      <qstn>
+        <preQTxt>
+          The next 5 questions ask about sexual intercourse.
+        </preQTxt>
+        <qstnLit>
+          During your life, with how many people have you had sexual intercourse?
+        </qstnLit>
+      </qstn>
+      <valrng>
+        <range UNITS="REAL" min="1" max="7"/>
+      </valrng>
+      <invalrng>
+        <item UNITS="REAL" VALUE="-1.79769313486232e+308"/>
+      </invalrng>
+      <sumStat type="vald">
+        1739
+      </sumStat>
+      <sumStat type="invd">
+        40
+      </sumStat>
+      <catgry>
+        <catValu>
+          1
+        </catValu>
+        <labl>
+          Never had sex
+        </labl>
+        <catStat type="freq">
+          1412
+        </catStat>
+      </catgry>
+      <catgry>
+        <catValu>
+          2
+        </catValu>
+        <labl>
+          1 person
+        </labl>
+        <catStat type="freq">
+          164
+        </catStat>
+      </catgry>
+      <catgry>
+        <catValu>
+          3
+        </catValu>
+        <labl>
+          2 people
+        </labl>
+        <catStat type="freq">
+          69
+        </catStat>
+      </catgry>
+      <catgry>
+        <catValu>
+          4
+        </catValu>
+        <labl>
+          3 people
+        </labl>
+        <catStat type="freq">
+          45
+        </catStat>
+      </catgry>
+      <catgry>
+        <catValu>
+          5
+        </catValu>
+        <labl>
+          4 people
+        </labl>
+        <catStat type="freq">
+          18
+        </catStat>
+      </catgry>
+      <catgry>
+        <catValu>
+          6
+        </catValu>
+        <labl>
+          5 people
+        </labl>
+        <catStat type="freq">
+          10
+        </catStat>
+      </catgry>
+      <catgry>
+        <catValu>
+          7
+        </catValu>
+        <labl>
+          6 or more people
+        </labl>
+        <catStat type="freq">
+          21
+        </catStat>
+      </catgry>
+      <catgry missing="Y">
+        <catValu>
+          Sysmiss
+        </catValu>
+        <catStat type="freq">
+          40
+        </catStat>
+      </catgry>
+      <varFormat type="numeric" schema="other"/>
+    </var>
+    <var ID="V47" name="Q47" files="F1" dcml="0" intrvl="discrete">
+      <location width="1"/>
+      <labl>
+        Used condom at last intercourse
+      </labl>
+      <qstn>
+        <preQTxt>
+          The next 5 questions ask about sexual intercourse.
+        </preQTxt>
+        <qstnLit>
+          The last time you had sexual intercourse, did you or your partner use a condom or [COUNTRY SPECIFIC SLANG TERM FOR CONDOM]?
+        </qstnLit>
+      </qstn>
+      <valrng>
+        <range UNITS="REAL" min="1" max="3"/>
+      </valrng>
+      <invalrng>
+        <item UNITS="REAL" VALUE="-1.79769313486232e+308"/>
+      </invalrng>
+      <sumStat type="vald">
+        1699
+      </sumStat>
+      <sumStat type="invd">
+        80
+      </sumStat>
+      <catgry>
+        <catValu>
+          1
+        </catValu>
+        <labl>
+          Never had sex
+        </labl>
+        <catStat type="freq">
+          1376
+        </catStat>
+      </catgry>
+      <catgry>
+        <catValu>
+          2
+        </catValu>
+        <labl>
+          Yes
+        </labl>
+        <catStat type="freq">
+          216
+        </catStat>
+      </catgry>
+      <catgry>
+        <catValu>
+          3
+        </catValu>
+        <labl>
+          No
+        </labl>
+        <catStat type="freq">
+          107
+        </catStat>
+      </catgry>
+      <catgry missing="Y">
+        <catValu>
+          Sysmiss
+        </catValu>
+        <catStat type="freq">
+          80
+        </catStat>
+      </catgry>
+      <varFormat type="numeric" schema="other"/>
+    </var>
+    <var ID="V48" name="Q48" files="F1" dcml="0" intrvl="discrete">
+      <location width="1"/>
+      <labl>
+        Used birth control last intercourse
+      </labl>
+      <qstn>
+        <preQTxt>
+          The next 5 questions ask about sexual intercourse.
+        </preQTxt>
+        <qstnLit>
+          The last time you had sexual intercourse, did you or your partner use any other method of birth control, such as withdrawal, rhythm (safe time), birth control pills, or any other method to prevent pregnancy?
+        </qstnLit>
+      </qstn>
+      <valrng>
+        <range UNITS="REAL" min="1" max="4"/>
+      </valrng>
+      <invalrng>
+        <item UNITS="REAL" VALUE="-1.79769313486232e+308"/>
+      </invalrng>
+      <sumStat type="vald">
+        1682
+      </sumStat>
+      <sumStat type="invd">
+        97
+      </sumStat>
+      <catgry>
+        <catValu>
+          1
+        </catValu>
+        <labl>
+          Never had sex
+        </labl>
+        <catStat type="freq">
+          1359
+        </catStat>
+      </catgry>
+      <catgry>
+        <catValu>
+          2
+        </catValu>
+        <labl>
+          Yes
+        </labl>
+        <catStat type="freq">
+          138
+        </catStat>
+      </catgry>
+      <catgry>
+        <catValu>
+          3
+        </catValu>
+        <labl>
+          No
+        </labl>
+        <catStat type="freq">
+          124
+        </catStat>
+      </catgry>
+      <catgry>
+        <catValu>
+          4
+        </catValu>
+        <labl>
+          I do not know
+        </labl>
+        <catStat type="freq">
+          61
+        </catStat>
+      </catgry>
+      <catgry missing="Y">
+        <catValu>
+          Sysmiss
+        </catValu>
+        <catStat type="freq">
+          97
+        </catStat>
+      </catgry>
+      <varFormat type="numeric" schema="other"/>
+    </var>
+    <var ID="V49" name="Q49" files="F1" dcml="0" intrvl="discrete">
+      <location width="1"/>
+      <labl>
+        Days active 60 min plus past 7 days
+      </labl>
+      <qstn>
+        <preQTxt>
+          The next 3 questions ask about physical activity. Physical activity is any activity that increases your heart rate and makes you breathe hard. Physical activity can be done in sports, playing with friends, or walking to school. Some examples of physical activity are running, fast walking, biking, dancing, football, and COUNTRY SPECIFIC EXAMPLES.
+        </preQTxt>
+        <qstnLit>
+          During the past 7 days, on how many days were you physically active for a total of at least 60 minutes per day? ADD UP ALL THE TIME YOU SPENT IN ANY KIND OF PHYSICAL ACTIVITY EACH DAY.
+        </qstnLit>
+      </qstn>
+      <valrng>
+        <range UNITS="REAL" min="1" max="8"/>
+      </valrng>
+      <invalrng>
+        <item UNITS="REAL" VALUE="-1.79769313486232e+308"/>
+      </invalrng>
+      <sumStat type="vald">
+        1741
+      </sumStat>
+      <sumStat type="invd">
+        38
+      </sumStat>
+      <catgry>
+        <catValu>
+          1
+        </catValu>
+        <labl>
+          0 days
+        </labl>
+        <catStat type="freq">
+          505
+        </catStat>
+      </catgry>
+      <catgry>
+        <catValu>
+          2
+        </catValu>
+        <labl>
+          1 day
+        </labl>
+        <catStat type="freq">
+          422
+        </catStat>
+      </catgry>
+      <catgry>
+        <catValu>
+          3
+        </catValu>
+        <labl>
+          2 days
+        </labl>
+        <catStat type="freq">
+          226
+        </catStat>
+      </catgry>
+      <catgry>
+        <catValu>
+          4
+        </catValu>
+        <labl>
+          3 days
+        </labl>
+        <catStat type="freq">
+          138
+        </catStat>
+      </catgry>
+      <catgry>
+        <catValu>
+          5
+        </catValu>
+        <labl>
+          4 days
+        </labl>
+        <catStat type="freq">
+          76
+        </catStat>
+      </catgry>
+      <catgry>
+        <catValu>
+          6
+        </catValu>
+        <labl>
+          5 days
+        </labl>
+        <catStat type="freq">
+          76
+        </catStat>
+      </catgry>
+      <catgry>
+        <catValu>
+          7
+        </catValu>
+        <labl>
+          6 days
+        </labl>
+        <catStat type="freq">
+          25
+        </catStat>
+      </catgry>
+      <catgry>
+        <catValu>
+          8
+        </catValu>
+        <labl>
+          7 days
+        </labl>
+        <catStat type="freq">
+          273
+        </catStat>
+      </catgry>
+      <catgry missing="Y">
+        <catValu>
+          Sysmiss
+        </catValu>
+        <catStat type="freq">
+          38
+        </catStat>
+      </catgry>
+      <varFormat type="numeric" schema="other"/>
+    </var>
+    <var ID="V50" name="Q50" files="F1" dcml="0" intrvl="discrete">
+      <location width="1"/>
+      <labl>
+        Walk or bike to school past 7 days
+      </labl>
+      <qstn>
+        <preQTxt>
+          The next 3 questions ask about physical activity. Physical activity is any activity that increases your heart rate and makes you breathe hard. Physical activity can be done in sports, playing with friends, or walking to school. Some examples of physical activity are running, fast walking, biking, dancing, football, and COUNTRY SPECIFIC EXAMPLES.
+        </preQTxt>
+        <qstnLit>
+          During the past 7 days, on how many days did you walk or ride a bicycle to or from school?
+        </qstnLit>
+      </qstn>
+      <valrng>
+        <range UNITS="REAL" min="1" max="8"/>
+      </valrng>
+      <invalrng>
+        <item UNITS="REAL" VALUE="-1.79769313486232e+308"/>
+      </invalrng>
+      <sumStat type="vald">
+        1754
+      </sumStat>
+      <sumStat type="invd">
+        25
+      </sumStat>
+      <catgry>
+        <catValu>
+          1
+        </catValu>
+        <labl>
+          0 days
+        </labl>
+        <catStat type="freq">
+          649
+        </catStat>
+      </catgry>
+      <catgry>
+        <catValu>
+          2
+        </catValu>
+        <labl>
+          1 day
+        </labl>
+        <catStat type="freq">
+          214
+        </catStat>
+      </catgry>
+      <catgry>
+        <catValu>
+          3
+        </catValu>
+        <labl>
+          2 days
+        </labl>
+        <catStat type="freq">
+          70
+        </catStat>
+      </catgry>
+      <catgry>
+        <catValu>
+          4
+        </catValu>
+        <labl>
+          3 days
+        </labl>
+        <catStat type="freq">
+          57
+        </catStat>
+      </catgry>
+      <catgry>
+        <catValu>
+          5
+        </catValu>
+        <labl>
+          4 days
+        </labl>
+        <catStat type="freq">
+          48
+        </catStat>
+      </catgry>
+      <catgry>
+        <catValu>
+          6
+        </catValu>
+        <labl>
+          5 days
+        </labl>
+        <catStat type="freq">
+          220
+        </catStat>
+      </catgry>
+      <catgry>
+        <catValu>
+          7
+        </catValu>
+        <labl>
+          6 days
+        </labl>
+        <catStat type="freq">
+          37
+        </catStat>
+      </catgry>
+      <catgry>
+        <catValu>
+          8
+        </catValu>
+        <labl>
+          7 days
+        </labl>
+        <catStat type="freq">
+          459
+        </catStat>
+      </catgry>
+      <catgry missing="Y">
+        <catValu>
+          Sysmiss
+        </catValu>
+        <catStat type="freq">
+          25
+        </catStat>
+      </catgry>
+      <varFormat type="numeric" schema="other"/>
+    </var>
+    <var ID="V51" name="Q51" files="F1" dcml="0" intrvl="discrete">
+      <location width="1"/>
+      <labl>
+        Days went to PE each week
+      </labl>
+      <qstn>
+        <preQTxt>
+          The next 3 questions ask about physical activity. Physical activity is any activity that increases your heart rate and makes you breathe hard. Physical activity can be done in sports, playing with friends, or walking to school. Some examples of physical activity are running, fast walking, biking, dancing, football, and COUNTRY SPECIFIC EXAMPLES.
+        </preQTxt>
+        <qstnLit>
+          During this school year, on how many days did you go to physical education (PE) class each week?
+        </qstnLit>
+      </qstn>
+      <valrng>
+        <range UNITS="REAL" min="1" max="6"/>
+      </valrng>
+      <invalrng>
+        <item UNITS="REAL" VALUE="-1.79769313486232e+308"/>
+      </invalrng>
+      <sumStat type="vald">
+        1723
+      </sumStat>
+      <sumStat type="invd">
+        56
+      </sumStat>
+      <catgry>
+        <catValu>
+          1
+        </catValu>
+        <labl>
+          0 days
+        </labl>
+        <catStat type="freq">
+          155
+        </catStat>
+      </catgry>
+      <catgry>
+        <catValu>
+          2
+        </catValu>
+        <labl>
+          1 day
+        </labl>
+        <catStat type="freq">
+          626
+        </catStat>
+      </catgry>
+      <catgry>
+        <catValu>
+          3
+        </catValu>
+        <labl>
+          2 days
+        </labl>
+        <catStat type="freq">
+          422
+        </catStat>
+      </catgry>
+      <catgry>
+        <catValu>
+          4
+        </catValu>
+        <labl>
+          3 days
+        </labl>
+        <catStat type="freq">
+          37
+        </catStat>
+      </catgry>
+      <catgry>
+        <catValu>
+          5
+        </catValu>
+        <labl>
+          4 days
+        </labl>
+        <catStat type="freq">
+          36
+        </catStat>
+      </catgry>
+      <catgry>
+        <catValu>
+          6
+        </catValu>
+        <labl>
+          5 or more days
+        </labl>
+        <catStat type="freq">
+          447
+        </catStat>
+      </catgry>
+      <catgry missing="Y">
+        <catValu>
+          Sysmiss
+        </catValu>
+        <catStat type="freq">
+          56
+        </catStat>
+      </catgry>
+      <varFormat type="numeric" schema="other"/>
+    </var>
+    <var ID="V52" name="Q52" files="F1" dcml="0" intrvl="discrete">
+      <location width="1"/>
+      <labl>
+        Time spent sitting on usual day
+      </labl>
+      <qstn>
+        <preQTxt>
+          The next question asks about the time you spend mostly sitting when you are not in school or doing homework.
+        </preQTxt>
+        <qstnLit>
+          How much time do you spend during a typical or usual day sitting and watching television, playing computer games, talking with friends, or doing other sitting activities, such as COUNTRY SPECIFIC EXAMPLES?
+        </qstnLit>
+      </qstn>
+      <valrng>
+        <range UNITS="REAL" min="1" max="6"/>
+      </valrng>
+      <invalrng>
+        <item UNITS="REAL" VALUE="-1.79769313486232e+308"/>
+      </invalrng>
+      <sumStat type="vald">
+        1742
+      </sumStat>
+      <sumStat type="invd">
+        37
+      </sumStat>
+      <catgry>
+        <catValu>
+          1
+        </catValu>
+        <labl>
+          Less than 1 hour per day
+        </labl>
+        <catStat type="freq">
+          637
+        </catStat>
+      </catgry>
+      <catgry>
+        <catValu>
+          2
+        </catValu>
+        <labl>
+          1 to 2 hours per day
+        </labl>
+        <catStat type="freq">
+          593
+        </catStat>
+      </catgry>
+      <catgry>
+        <catValu>
+          3
+        </catValu>
+        <labl>
+          3 to 4 hours per day
+        </labl>
+        <catStat type="freq">
+          299
+        </catStat>
+      </catgry>
+      <catgry>
+        <catValu>
+          4
+        </catValu>
+        <labl>
+          5 to 6 hours per day
+        </labl>
+        <catStat type="freq">
+          97
+        </catStat>
+      </catgry>
+      <catgry>
+        <catValu>
+          5
+        </catValu>
+        <labl>
+          7 to 8 hours per day
+        </labl>
+        <catStat type="freq">
+          48
+        </catStat>
+      </catgry>
+      <catgry>
+        <catValu>
+          6
+        </catValu>
+        <labl>
+          More than 8 hours per day
+        </labl>
+        <catStat type="freq">
+          68
+        </catStat>
+      </catgry>
+      <catgry missing="Y">
+        <catValu>
+          Sysmiss
+        </catValu>
+        <catStat type="freq">
+          37
+        </catStat>
+      </catgry>
+      <varFormat type="numeric" schema="other"/>
+    </var>
+    <var ID="V53" name="Q53" files="F1" dcml="0" intrvl="discrete">
+      <location width="1"/>
+      <labl>
+        Miss school no permission past 30 days
+      </labl>
+      <qstn>
+        <preQTxt>
+          The next 6 questions ask about your experiences at school and at home.
+        </preQTxt>
+        <qstnLit>
+          During the past 30 days, on how many days did you miss classes or school without permission?
+        </qstnLit>
+      </qstn>
+      <valrng>
+        <range UNITS="REAL" min="1" max="5"/>
+      </valrng>
+      <invalrng>
+        <item UNITS="REAL" VALUE="-1.79769313486232e+308"/>
+      </invalrng>
+      <sumStat type="vald">
+        1740
+      </sumStat>
+      <sumStat type="invd">
+        39
+      </sumStat>
+      <catgry>
+        <catValu>
+          1
+        </catValu>
+        <labl>
+          0 days
+        </labl>
+        <catStat type="freq">
+          1267
+        </catStat>
+      </catgry>
+      <catgry>
+        <catValu>
+          2
+        </catValu>
+        <labl>
+          1 or 2 days
+        </labl>
+        <catStat type="freq">
+          336
+        </catStat>
+      </catgry>
+      <catgry>
+        <catValu>
+          3
+        </catValu>
+        <labl>
+          3 to 5 days
+        </labl>
+        <catStat type="freq">
+          79
+        </catStat>
+      </catgry>
+      <catgry>
+        <catValu>
+          4
+        </catValu>
+        <labl>
+          6 to 9 days
+        </labl>
+        <catStat type="freq">
+          26
+        </catStat>
+      </catgry>
+      <catgry>
+        <catValu>
+          5
+        </catValu>
+        <labl>
+          10 or more days
+        </labl>
+        <catStat type="freq">
+          32
+        </catStat>
+      </catgry>
+      <catgry missing="Y">
+        <catValu>
+          Sysmiss
+        </catValu>
+        <catStat type="freq">
+          39
+        </catStat>
+      </catgry>
+      <varFormat type="numeric" schema="other"/>
+    </var>
+    <var ID="V54" name="Q54" files="F1" dcml="0" intrvl="discrete">
+      <location width="1"/>
+      <labl>
+        Others helpful in school past 30 days
+      </labl>
+      <qstn>
+        <preQTxt>
+          The next 6 questions ask about your experiences at school and at home.
+        </preQTxt>
+        <qstnLit>
+          During the past 30 days, how often were most of the students in your school kind and helpful?
+        </qstnLit>
+      </qstn>
+      <valrng>
+        <range UNITS="REAL" min="1" max="5"/>
+      </valrng>
+      <invalrng>
+        <item UNITS="REAL" VALUE="-1.79769313486232e+308"/>
+      </invalrng>
+      <sumStat type="vald">
+        1730
+      </sumStat>
+      <sumStat type="invd">
+        49
+      </sumStat>
+      <catgry>
+        <catValu>
+          1
+        </catValu>
+        <labl>
+          Never
+        </labl>
+        <catStat type="freq">
+          250
+        </catStat>
+      </catgry>
+      <catgry>
+        <catValu>
+          2
+        </catValu>
+        <labl>
+          Rarely
+        </labl>
+        <catStat type="freq">
+          349
+        </catStat>
+      </catgry>
+      <catgry>
+        <catValu>
+          3
+        </catValu>
+        <labl>
+          Sometimes
+        </labl>
+        <catStat type="freq">
+          337
+        </catStat>
+      </catgry>
+      <catgry>
+        <catValu>
+          4
+        </catValu>
+        <labl>
+          Most of the time
+        </labl>
+        <catStat type="freq">
+          348
+        </catStat>
+      </catgry>
+      <catgry>
+        <catValu>
+          5
+        </catValu>
+        <labl>
+          Always
+        </labl>
+        <catStat type="freq">
+          446
+        </catStat>
+      </catgry>
+      <catgry missing="Y">
+        <catValu>
+          Sysmiss
+        </catValu>
+        <catStat type="freq">
+          49
+        </catStat>
+      </catgry>
+      <varFormat type="numeric" schema="other"/>
+    </var>
+    <var ID="V55" name="Q55" files="F1" dcml="0" intrvl="discrete">
+      <location width="1"/>
+      <labl>
+        Parents check homework past 30 days
+      </labl>
+      <qstn>
+        <preQTxt>
+          The next 6 questions ask about your experiences at school and at home.
+        </preQTxt>
+        <qstnLit>
+          During the past 30 days, how often did your parents or guardians check to see if your homework was done?
+        </qstnLit>
+      </qstn>
+      <valrng>
+        <range UNITS="REAL" min="1" max="5"/>
+      </valrng>
+      <invalrng>
+        <item UNITS="REAL" VALUE="-1.79769313486232e+308"/>
+      </invalrng>
+      <sumStat type="vald">
+        1755
+      </sumStat>
+      <sumStat type="invd">
+        24
+      </sumStat>
+      <catgry>
+        <catValu>
+          1
+        </catValu>
+        <labl>
+          Never
+        </labl>
+        <catStat type="freq">
+          353
+        </catStat>
+      </catgry>
+      <catgry>
+        <catValu>
+          2
+        </catValu>
+        <labl>
+          Rarely
+        </labl>
+        <catStat type="freq">
+          279
+        </catStat>
+      </catgry>
+      <catgry>
+        <catValu>
+          3
+        </catValu>
+        <labl>
+          Sometimes
+        </labl>
+        <catStat type="freq">
+          221
+        </catStat>
+      </catgry>
+      <catgry>
+        <catValu>
+          4
+        </catValu>
+        <labl>
+          Most of the time
+        </labl>
+        <catStat type="freq">
+          281
+        </catStat>
+      </catgry>
+      <catgry>
+        <catValu>
+          5
+        </catValu>
+        <labl>
+          Always
+        </labl>
+        <catStat type="freq">
+          621
+        </catStat>
+      </catgry>
+      <catgry missing="Y">
+        <catValu>
+          Sysmiss
+        </catValu>
+        <catStat type="freq">
+          24
+        </catStat>
+      </catgry>
+      <varFormat type="numeric" schema="other"/>
+    </var>
+    <var ID="V56" name="Q56" files="F1" dcml="0" intrvl="discrete">
+      <location width="1"/>
+      <labl>
+        Parent understand troubles past 30 days
+      </labl>
+      <qstn>
+        <preQTxt>
+          The next 6 questions ask about your experiences at school and at home.
+        </preQTxt>
+        <qstnLit>
+          During the past 30 days, how often did your parents or guardians understand your problems and worries?
+        </qstnLit>
+      </qstn>
+      <valrng>
+        <range UNITS="REAL" min="1" max="5"/>
+      </valrng>
+      <invalrng>
+        <item UNITS="REAL" VALUE="-1.79769313486232e+308"/>
+      </invalrng>
+      <sumStat type="vald">
+        1744
+      </sumStat>
+      <sumStat type="invd">
+        35
+      </sumStat>
+      <catgry>
+        <catValu>
+          1
+        </catValu>
+        <labl>
+          Never
+        </labl>
+        <catStat type="freq">
+          389
+        </catStat>
+      </catgry>
+      <catgry>
+        <catValu>
+          2
+        </catValu>
+        <labl>
+          Rarely
+        </labl>
+        <catStat type="freq">
+          312
+        </catStat>
+      </catgry>
+      <catgry>
+        <catValu>
+          3
+        </catValu>
+        <labl>
+          Sometimes
+        </labl>
+        <catStat type="freq">
+          236
+        </catStat>
+      </catgry>
+      <catgry>
+        <catValu>
+          4
+        </catValu>
+        <labl>
+          Most of the time
+        </labl>
+        <catStat type="freq">
+          255
+        </catStat>
+      </catgry>
+      <catgry>
+        <catValu>
+          5
+        </catValu>
+        <labl>
+          Always
+        </labl>
+        <catStat type="freq">
+          552
+        </catStat>
+      </catgry>
+      <catgry missing="Y">
+        <catValu>
+          Sysmiss
+        </catValu>
+        <catStat type="freq">
+          35
+        </catStat>
+      </catgry>
+      <varFormat type="numeric" schema="other"/>
+    </var>
+    <var ID="V57" name="Q57" files="F1" dcml="0" intrvl="discrete">
+      <location width="1"/>
+      <labl>
+        Parent know what you do past 30 days
+      </labl>
+      <qstn>
+        <preQTxt>
+          The next 6 questions ask about your experiences at school and at home.
+        </preQTxt>
+        <qstnLit>
+          During the past 30 days, how often did your parents or guardians really know what you were doing with your free time?
+        </qstnLit>
+      </qstn>
+      <valrng>
+        <range UNITS="REAL" min="1" max="5"/>
+      </valrng>
+      <invalrng>
+        <item UNITS="REAL" VALUE="-1.79769313486232e+308"/>
+      </invalrng>
+      <sumStat type="vald">
+        1733
+      </sumStat>
+      <sumStat type="invd">
+        46
+      </sumStat>
+      <catgry>
+        <catValu>
+          1
+        </catValu>
+        <labl>
+          Never
+        </labl>
+        <catStat type="freq">
+          329
+        </catStat>
+      </catgry>
+      <catgry>
+        <catValu>
+          2
+        </catValu>
+        <labl>
+          Rarely
+        </labl>
+        <catStat type="freq">
+          231
+        </catStat>
+      </catgry>
+      <catgry>
+        <catValu>
+          3
+        </catValu>
+        <labl>
+          Sometimes
+        </labl>
+        <catStat type="freq">
+          223
+        </catStat>
+      </catgry>
+      <catgry>
+        <catValu>
+          4
+        </catValu>
+        <labl>
+          Most of the time
+        </labl>
+        <catStat type="freq">
+          272
+        </catStat>
+      </catgry>
+      <catgry>
+        <catValu>
+          5
+        </catValu>
+        <labl>
+          Always
+        </labl>
+        <catStat type="freq">
+          678
+        </catStat>
+      </catgry>
+      <catgry missing="Y">
+        <catValu>
+          Sysmiss
+        </catValu>
+        <catStat type="freq">
+          46
+        </catStat>
+      </catgry>
+      <varFormat type="numeric" schema="other"/>
+    </var>
+    <var ID="V58" name="Q58" files="F1" dcml="0" intrvl="discrete">
+      <location width="1"/>
+      <labl>
+        Parent go through things past 30 days
+      </labl>
+      <qstn>
+        <preQTxt>
+          The next 6 questions ask about your experiences at school and at home.
+        </preQTxt>
+        <qstnLit>
+          During the past 30 days, how often did your parents or guardians go through your things without your approval?
+        </qstnLit>
+      </qstn>
+      <valrng>
+        <range UNITS="REAL" min="1" max="5"/>
+      </valrng>
+      <invalrng>
+        <item UNITS="REAL" VALUE="-1.79769313486232e+308"/>
+      </invalrng>
+      <sumStat type="vald">
+        1742
+      </sumStat>
+      <sumStat type="invd">
+        37
+      </sumStat>
+      <catgry>
+        <catValu>
+          1
+        </catValu>
+        <catStat type="freq">
+          1124
+        </catStat>
+      </catgry>
+      <catgry>
+        <catValu>
+          2
+        </catValu>
+        <catStat type="freq">
+          290
+        </catStat>
+      </catgry>
+      <catgry>
+        <catValu>
+          3
+        </catValu>
+        <catStat type="freq">
+          165
+        </catStat>
+      </catgry>
+      <catgry>
+        <catValu>
+          4
+        </catValu>
+        <catStat type="freq">
+          62
+        </catStat>
+      </catgry>
+      <catgry>
+        <catValu>
+          5
+        </catValu>
+        <catStat type="freq">
+          101
+        </catStat>
+      </catgry>
+      <catgry missing="Y">
+        <catValu>
+          Sysmiss
+        </catValu>
+        <catStat type="freq">
+          37
+        </catStat>
+      </catgry>
+      <varFormat type="numeric" schema="other"/>
+    </var>
+    <var ID="V59" name="QN6" files="F1" dcml="0" intrvl="discrete">
+      <location width="1"/>
+      <labl>
+        Went hungry most of time/always past 30 days
+      </labl>
+      <qstn>
+        <qstnLit>
+          Percentage of students who went hungry most of the time or always because there was not enough food in their home during the past 30 days
+        </qstnLit>
+      </qstn>
+      <valrng>
+        <range UNITS="REAL" min="1" max="2"/>
+      </valrng>
+      <sumStat type="vald">
+        1767
+      </sumStat>
+      <sumStat type="invd">
+        12
+      </sumStat>
+      <catgry>
+        <catValu>
+          1
+        </catValu>
+        <labl>
+          Yes
+        </labl>
+        <catStat type="freq">
+          69
+        </catStat>
+      </catgry>
+      <catgry>
+        <catValu>
+          2
+        </catValu>
+        <labl>
+          No
+        </labl>
+        <catStat type="freq">
+          1698
+        </catStat>
+      </catgry>
+      <catgry missing="Y">
+        <catValu>
+          Sysmiss
+        </catValu>
+        <catStat type="freq">
+          12
+        </catStat>
+      </catgry>
+      <varFormat type="numeric" schema="other"/>
+    </var>
+    <var ID="V60" name="QN7" files="F1" dcml="0" intrvl="discrete">
+      <location width="1"/>
+      <labl>
+        Ate fruit 2+ times per day past 30 days
+      </labl>
+      <qstn>
+        <qstnLit>
+          Percentage of students who usually ate fruit two or more times per day during the past 30 days
+        </qstnLit>
+      </qstn>
+      <valrng>
+        <range UNITS="REAL" min="1" max="2"/>
+      </valrng>
+      <sumStat type="vald">
+        1772
+      </sumStat>
+      <sumStat type="invd">
+        7
+      </sumStat>
+      <catgry>
+        <catValu>
+          1
+        </catValu>
+        <labl>
+          Yes
+        </labl>
+        <catStat type="freq">
+          750
+        </catStat>
+      </catgry>
+      <catgry>
+        <catValu>
+          2
+        </catValu>
+        <labl>
+          No
+        </labl>
+        <catStat type="freq">
+          1022
+        </catStat>
+      </catgry>
+      <catgry missing="Y">
+        <catValu>
+          Sysmiss
+        </catValu>
+        <catStat type="freq">
+          7
+        </catStat>
+      </catgry>
+      <varFormat type="numeric" schema="other"/>
+    </var>
+    <var ID="V61" name="QN8" files="F1" dcml="0" intrvl="discrete">
+      <location width="1"/>
+      <labl>
+        Ate vegetables 3+ times per day past 30 day
+      </labl>
+      <qstn>
+        <qstnLit>
+          Percentage of students who usually ate vegetables three or more times per day during the past 30 days
+        </qstnLit>
+      </qstn>
+      <valrng>
+        <range UNITS="REAL" min="1" max="2"/>
+      </valrng>
+      <sumStat type="vald">
+        1756
+      </sumStat>
+      <sumStat type="invd">
+        23
+      </sumStat>
+      <catgry>
+        <catValu>
+          1
+        </catValu>
+        <labl>
+          Yes
+        </labl>
+        <catStat type="freq">
+          349
+        </catStat>
+      </catgry>
+      <catgry>
+        <catValu>
+          2
+        </catValu>
+        <labl>
+          No
+        </labl>
+        <catStat type="freq">
+          1407
+        </catStat>
+      </catgry>
+      <catgry missing="Y">
+        <catValu>
+          Sysmiss
+        </catValu>
+        <catStat type="freq">
+          23
+        </catStat>
+      </catgry>
+      <varFormat type="numeric" schema="other"/>
+    </var>
+    <var ID="V62" name="QN9" files="F1" dcml="0" intrvl="discrete">
+      <location width="1"/>
+      <labl>
+        Drank soft drinks 1+ times per day past 30 day
+      </labl>
+      <qstn>
+        <qstnLit>
+          Percentage of students who usually drank carbonated soft drinks one or more times per day during the past 30 days
+        </qstnLit>
+      </qstn>
+      <valrng>
+        <range UNITS="REAL" min="1" max="2"/>
+      </valrng>
+      <sumStat type="vald">
+        1762
+      </sumStat>
+      <sumStat type="invd">
+        17
+      </sumStat>
+      <catgry>
+        <catValu>
+          1
+        </catValu>
+        <labl>
+          Yes
+        </labl>
+        <catStat type="freq">
+          1305
+        </catStat>
+      </catgry>
+      <catgry>
+        <catValu>
+          2
+        </catValu>
+        <labl>
+          No
+        </labl>
+        <catStat type="freq">
+          457
+        </catStat>
+      </catgry>
+      <catgry missing="Y">
+        <catValu>
+          Sysmiss
+        </catValu>
+        <catStat type="freq">
+          17
+        </catStat>
+      </catgry>
+      <varFormat type="numeric" schema="other"/>
+    </var>
+    <var ID="V63" name="QN10" files="F1" dcml="0" intrvl="discrete">
+      <location width="1"/>
+      <labl>
+        Ate fast food 3+ days past 7 day
+      </labl>
+      <qstn>
+        <qstnLit>
+          Percentage of students who ate food from a fast food restaurant on three or more days during the past 7 days
+        </qstnLit>
+      </qstn>
+      <valrng>
+        <range UNITS="REAL" min="1" max="2"/>
+      </valrng>
+      <sumStat type="vald">
+        1753
+      </sumStat>
+      <sumStat type="invd">
+        26
+      </sumStat>
+      <catgry>
+        <catValu>
+          1
+        </catValu>
+        <labl>
+          Yes
+        </labl>
+        <catStat type="freq">
+          229
+        </catStat>
+      </catgry>
+      <catgry>
+        <catValu>
+          2
+        </catValu>
+        <labl>
+          No
+        </labl>
+        <catStat type="freq">
+          1524
+        </catStat>
+      </catgry>
+      <catgry missing="Y">
+        <catValu>
+          Sysmiss
+        </catValu>
+        <catStat type="freq">
+          26
+        </catStat>
+      </catgry>
+      <varFormat type="numeric" schema="other"/>
+    </var>
+    <var ID="V64" name="QN11" files="F1" dcml="0" intrvl="discrete">
+      <location width="1"/>
+      <labl>
+        Cleaned/brushed teeth &lt;1 time/day past 30 days
+      </labl>
+      <qstn>
+        <qstnLit>
+          Percentage of students who usually cleaned or brushed their teeth less than one time per day during the past 30 days
+        </qstnLit>
+      </qstn>
+      <valrng>
+        <range UNITS="REAL" min="1" max="2"/>
+      </valrng>
+      <sumStat type="vald">
+        1772
+      </sumStat>
+      <sumStat type="invd">
+        7
+      </sumStat>
+      <catgry>
+        <catValu>
+          1
+        </catValu>
+        <labl>
+          Yes
+        </labl>
+        <catStat type="freq">
+          77
+        </catStat>
+      </catgry>
+      <catgry>
+        <catValu>
+          2
+        </catValu>
+        <labl>
+          No
+        </labl>
+        <catStat type="freq">
+          1695
+        </catStat>
+      </catgry>
+      <catgry missing="Y">
+        <catValu>
+          Sysmiss
+        </catValu>
+        <catStat type="freq">
+          7
+        </catStat>
+      </catgry>
+      <varFormat type="numeric" schema="other"/>
+    </var>
+    <var ID="V65" name="QN12" files="F1" dcml="0" intrvl="discrete">
+      <location width="1"/>
+      <labl>
+        Never/rarely wash hands before eating past 30 days
+      </labl>
+      <qstn>
+        <qstnLit>
+          Percentage of students who never or rarely washed their hands before eating during the past 30 days
+        </qstnLit>
+      </qstn>
+      <valrng>
+        <range UNITS="REAL" min="1" max="2"/>
+      </valrng>
+      <sumStat type="vald">
+        1770
+      </sumStat>
+      <sumStat type="invd">
+        9
+      </sumStat>
+      <catgry>
+        <catValu>
+          1
+        </catValu>
+        <labl>
+          Yes
+        </labl>
+        <catStat type="freq">
+          131
+        </catStat>
+      </catgry>
+      <catgry>
+        <catValu>
+          2
+        </catValu>
+        <labl>
+          No
+        </labl>
+        <catStat type="freq">
+          1639
+        </catStat>
+      </catgry>
+      <catgry missing="Y">
+        <catValu>
+          Sysmiss
+        </catValu>
+        <catStat type="freq">
+          9
+        </catStat>
+      </catgry>
+      <varFormat type="numeric" schema="other"/>
+    </var>
+    <var ID="V66" name="QN13" files="F1" dcml="0" intrvl="discrete">
+      <location width="1"/>
+      <labl>
+        Never/rarely wash hands after toilet past 30 days
+      </labl>
+      <qstn>
+        <qstnLit>
+          Percentage of students who never or rarely washed their hands after using the toilet or latrine during the past 30 days
+        </qstnLit>
+      </qstn>
+      <valrng>
+        <range UNITS="REAL" min="1" max="2"/>
+      </valrng>
+      <sumStat type="vald">
+        1755
+      </sumStat>
+      <sumStat type="invd">
+        24
+      </sumStat>
+      <catgry>
+        <catValu>
+          1
+        </catValu>
+        <labl>
+          Yes
+        </labl>
+        <catStat type="freq">
+          94
+        </catStat>
+      </catgry>
+      <catgry>
+        <catValu>
+          2
+        </catValu>
+        <labl>
+          No
+        </labl>
+        <catStat type="freq">
+          1661
+        </catStat>
+      </catgry>
+      <catgry missing="Y">
+        <catValu>
+          Sysmiss
+        </catValu>
+        <catStat type="freq">
+          24
+        </catStat>
+      </catgry>
+      <varFormat type="numeric" schema="other"/>
+    </var>
+    <var ID="V67" name="QN14" files="F1" dcml="0" intrvl="discrete">
+      <location width="1"/>
+      <labl>
+        Never/rarely use soap on hands past 30 days
+      </labl>
+      <qstn>
+        <qstnLit>
+          Percentage of students who never or rarely used soap when washing their hands during the past 30 days
+        </qstnLit>
+      </qstn>
+      <valrng>
+        <range UNITS="REAL" min="1" max="2"/>
+      </valrng>
+      <sumStat type="vald">
+        1752
+      </sumStat>
+      <sumStat type="invd">
+        27
+      </sumStat>
+      <catgry>
+        <catValu>
+          1
+        </catValu>
+        <labl>
+          Yes
+        </labl>
+        <catStat type="freq">
+          1045
+        </catStat>
+      </catgry>
+      <catgry>
+        <catValu>
+          2
+        </catValu>
+        <labl>
+          No
+        </labl>
+        <catStat type="freq">
+          707
+        </catStat>
+      </catgry>
+      <catgry missing="Y">
+        <catValu>
+          Sysmiss
+        </catValu>
+        <catStat type="freq">
+          27
+        </catStat>
+      </catgry>
+      <varFormat type="numeric" schema="other"/>
+    </var>
+    <var ID="V68" name="QN15" files="F1" dcml="0" intrvl="discrete">
+      <location width="1"/>
+      <labl>
+        Attacked 1+ times past 12 months
+      </labl>
+      <qstn>
+        <qstnLit>
+          Percentage of students who were physically attacked one or more times during the past 12 months
+        </qstnLit>
+      </qstn>
+      <valrng>
+        <range UNITS="REAL" min="1" max="2"/>
+      </valrng>
+      <sumStat type="vald">
+        1775
+      </sumStat>
+      <sumStat type="invd">
+        4
+      </sumStat>
+      <catgry>
+        <catValu>
+          1
+        </catValu>
+        <labl>
+          Yes
+        </labl>
+        <catStat type="freq">
+          364
+        </catStat>
+      </catgry>
+      <catgry>
+        <catValu>
+          2
+        </catValu>
+        <labl>
+          No
+        </labl>
+        <catStat type="freq">
+          1411
+        </catStat>
+      </catgry>
+      <catgry missing="Y">
+        <catValu>
+          Sysmiss
+        </catValu>
+        <catStat type="freq">
+          4
+        </catStat>
+      </catgry>
+      <varFormat type="numeric" schema="other"/>
+    </var>
+    <var ID="V69" name="QN16" files="F1" dcml="0" intrvl="discrete">
+      <location width="1"/>
+      <labl>
+        In fight 1+ times past 12 months
+      </labl>
+      <qstn>
+        <qstnLit>
+          Percentage of students who were in a physical fight one or more times during the past 12 months
+        </qstnLit>
+      </qstn>
+      <valrng>
+        <range UNITS="REAL" min="1" max="2"/>
+      </valrng>
+      <sumStat type="vald">
+        1744
+      </sumStat>
+      <sumStat type="invd">
+        35
+      </sumStat>
+      <catgry>
+        <catValu>
+          1
+        </catValu>
+        <labl>
+          Yes
+        </labl>
+        <catStat type="freq">
+          478
+        </catStat>
+      </catgry>
+      <catgry>
+        <catValu>
+          2
+        </catValu>
+        <labl>
+          No
+        </labl>
+        <catStat type="freq">
+          1266
+        </catStat>
+      </catgry>
+      <catgry missing="Y">
+        <catValu>
+          Sysmiss
+        </catValu>
+        <catStat type="freq">
+          35
+        </catStat>
+      </catgry>
+      <varFormat type="numeric" schema="other"/>
+    </var>
+    <var ID="V70" name="QN17" files="F1" dcml="0" intrvl="discrete">
+      <location width="1"/>
+      <labl>
+        Seriously injured 1+ times past 12 months
+      </labl>
+      <qstn>
+        <qstnLit>
+          Percentage of students who were seriously injured one or more times during the past 12 months
+        </qstnLit>
+      </qstn>
+      <valrng>
+        <range UNITS="REAL" min="1" max="2"/>
+      </valrng>
+      <sumStat type="vald">
+        1599
+      </sumStat>
+      <sumStat type="invd">
+        180
+      </sumStat>
+      <catgry>
+        <catValu>
+          1
+        </catValu>
+        <labl>
+          Yes
+        </labl>
+        <catStat type="freq">
+          563
+        </catStat>
+      </catgry>
+      <catgry>
+        <catValu>
+          2
+        </catValu>
+        <labl>
+          No
+        </labl>
+        <catStat type="freq">
+          1036
+        </catStat>
+      </catgry>
+      <catgry missing="Y">
+        <catValu>
+          Sysmiss
+        </catValu>
+        <catStat type="freq">
+          180
+        </catStat>
+      </catgry>
+      <varFormat type="numeric" schema="other"/>
+    </var>
+    <var ID="V71" name="QN18" files="F1" dcml="0" intrvl="discrete">
+      <location width="1"/>
+      <labl>
+        Broken bone as most serious injury
+      </labl>
+      <qstn>
+        <qstnLit>
+          Among students who were seriously injured during the past 12 months, the percentage whose most serious injury was a broken bone or dislocated joint
+        </qstnLit>
+      </qstn>
+      <valrng>
+        <range UNITS="REAL" min="1" max="2"/>
+      </valrng>
+      <sumStat type="vald">
+        428
+      </sumStat>
+      <sumStat type="invd">
+        1351
+      </sumStat>
+      <catgry>
+        <catValu>
+          1
+        </catValu>
+        <labl>
+          Yes
+        </labl>
+        <catStat type="freq">
+          95
+        </catStat>
+      </catgry>
+      <catgry>
+        <catValu>
+          2
+        </catValu>
+        <labl>
+          No
+        </labl>
+        <catStat type="freq">
+          333
+        </catStat>
+      </catgry>
+      <catgry missing="Y">
+        <catValu>
+          Sysmiss
+        </catValu>
+        <catStat type="freq">
+          1351
+        </catStat>
+      </catgry>
+      <varFormat type="numeric" schema="other"/>
+    </var>
+    <var ID="V72" name="QN19" files="F1" dcml="0" intrvl="discrete">
+      <location width="1"/>
+      <labl>
+        Motor vehicle caused most serious injury
+      </labl>
+      <qstn>
+        <qstnLit>
+          Among students who were seriously injured during the past 12 months, the percentage whose most serious injury was caused by a motor vehicle accident or being hit by a motor vehicle
+        </qstnLit>
+      </qstn>
+      <valrng>
+        <range UNITS="REAL" min="1" max="2"/>
+      </valrng>
+      <sumStat type="vald">
+        429
+      </sumStat>
+      <sumStat type="invd">
+        1350
+      </sumStat>
+      <catgry>
+        <catValu>
+          1
+        </catValu>
+        <labl>
+          Yes
+        </labl>
+        <catStat type="freq">
+          25
+        </catStat>
+      </catgry>
+      <catgry>
+        <catValu>
+          2
+        </catValu>
+        <labl>
+          No
+        </labl>
+        <catStat type="freq">
+          404
+        </catStat>
+      </catgry>
+      <catgry missing="Y">
+        <catValu>
+          Sysmiss
+        </catValu>
+        <catStat type="freq">
+          1350
+        </catStat>
+      </catgry>
+      <varFormat type="numeric" schema="other"/>
+    </var>
+    <var ID="V73" name="QN20" files="F1" dcml="0" intrvl="discrete">
+      <location width="1"/>
+      <labl>
+        Bullied 1+ of past 30 days
+      </labl>
+      <qstn>
+        <qstnLit>
+          Percentage of students who were bullied on one or more days during the past 30 days
+        </qstnLit>
+      </qstn>
+      <valrng>
+        <range UNITS="REAL" min="1" max="2"/>
+      </valrng>
+      <sumStat type="vald">
+        1700
+      </sumStat>
+      <sumStat type="invd">
+        79
+      </sumStat>
+      <catgry>
+        <catValu>
+          1
+        </catValu>
+        <labl>
+          Yes
+        </labl>
+        <catStat type="freq">
+          525
+        </catStat>
+      </catgry>
+      <catgry>
+        <catValu>
+          2
+        </catValu>
+        <labl>
+          No
+        </labl>
+        <catStat type="freq">
+          1175
+        </catStat>
+      </catgry>
+      <catgry missing="Y">
+        <catValu>
+          Sysmiss
+        </catValu>
+        <catStat type="freq">
+          79
+        </catStat>
+      </catgry>
+      <varFormat type="numeric" schema="other"/>
+    </var>
+    <var ID="V74" name="QN21" files="F1" dcml="0" intrvl="discrete">
+      <location width="1"/>
+      <labl>
+        Of students bullied, most often hit, kicked, etc
+      </labl>
+      <qstn>
+        <qstnLit>
+          Among students who were bullied during the past 30 days, the percentage who were bullied most often by being hit, kicked, pushed, shoved around, or locked indoors
+        </qstnLit>
+      </qstn>
+      <valrng>
+        <range UNITS="REAL" min="1" max="2"/>
+      </valrng>
+      <sumStat type="vald">
+        439
+      </sumStat>
+      <sumStat type="invd">
+        1340
+      </sumStat>
+      <catgry>
+        <catValu>
+          1
+        </catValu>
+        <labl>
+          Yes
+        </labl>
+        <catStat type="freq">
+          37
+        </catStat>
+      </catgry>
+      <catgry>
+        <catValu>
+          2
+        </catValu>
+        <labl>
+          No
+        </labl>
+        <catStat type="freq">
+          402
+        </catStat>
+      </catgry>
+      <catgry missing="Y">
+        <catValu>
+          Sysmiss
+        </catValu>
+        <catStat type="freq">
+          1340
+        </catStat>
+      </catgry>
+      <varFormat type="numeric" schema="other"/>
+    </var>
+    <var ID="V75" name="QN22" files="F1" dcml="0" intrvl="discrete">
+      <location width="1"/>
+      <labl>
+        Lonely most times/always past 12 months
+      </labl>
+      <qstn>
+        <qstnLit>
+          Percentage of students who most of the time or always felt lonely during the past 12 months
+        </qstnLit>
+      </qstn>
+      <valrng>
+        <range UNITS="REAL" min="1" max="2"/>
+      </valrng>
+      <sumStat type="vald">
+        1732
+      </sumStat>
+      <sumStat type="invd">
+        47
+      </sumStat>
+      <catgry>
+        <catValu>
+          1
+        </catValu>
+        <labl>
+          Yes
+        </labl>
+        <catStat type="freq">
+          182
+        </catStat>
+      </catgry>
+      <catgry>
+        <catValu>
+          2
+        </catValu>
+        <labl>
+          No
+        </labl>
+        <catStat type="freq">
+          1550
+        </catStat>
+      </catgry>
+      <catgry missing="Y">
+        <catValu>
+          Sysmiss
+        </catValu>
+        <catStat type="freq">
+          47
+        </catStat>
+      </catgry>
+      <varFormat type="numeric" schema="other"/>
+    </var>
+    <var ID="V76" name="QN23" files="F1" dcml="0" intrvl="discrete">
+      <location width="1"/>
+      <labl>
+        Worry prevented sleep most time/always past 12 mos
+      </labl>
+      <qstn>
+        <qstnLit>
+          Percentage of students who most of the time or always were so worried about something that they could not sleep at night during the past 12 months
+        </qstnLit>
+      </qstn>
+      <valrng>
+        <range UNITS="REAL" min="1" max="2"/>
+      </valrng>
+      <sumStat type="vald">
+        1769
+      </sumStat>
+      <sumStat type="invd">
+        10
+      </sumStat>
+      <catgry>
+        <catValu>
+          1
+        </catValu>
+        <labl>
+          Yes
+        </labl>
+        <catStat type="freq">
+          108
+        </catStat>
+      </catgry>
+      <catgry>
+        <catValu>
+          2
+        </catValu>
+        <labl>
+          No
+        </labl>
+        <catStat type="freq">
+          1661
+        </catStat>
+      </catgry>
+      <catgry missing="Y">
+        <catValu>
+          Sysmiss
+        </catValu>
+        <catStat type="freq">
+          10
+        </catStat>
+      </catgry>
+      <varFormat type="numeric" schema="other"/>
+    </var>
+    <var ID="V77" name="QN24" files="F1" dcml="0" intrvl="discrete">
+      <location width="1"/>
+      <labl>
+        Considered suicide past 12 months
+      </labl>
+      <qstn>
+        <qstnLit>
+          Percentage of students who ever seriously considered attempting suicide during the past 12 months
+        </qstnLit>
+      </qstn>
+      <valrng>
+        <range UNITS="REAL" min="1" max="2"/>
+      </valrng>
+      <sumStat type="vald">
+        1734
+      </sumStat>
+      <sumStat type="invd">
+        45
+      </sumStat>
+      <catgry>
+        <catValu>
+          1
+        </catValu>
+        <labl>
+          Yes
+        </labl>
+        <catStat type="freq">
+          328
+        </catStat>
+      </catgry>
+      <catgry>
+        <catValu>
+          2
+        </catValu>
+        <labl>
+          No
+        </labl>
+        <catStat type="freq">
+          1406
+        </catStat>
+      </catgry>
+      <catgry missing="Y">
+        <catValu>
+          Sysmiss
+        </catValu>
+        <catStat type="freq">
+          45
+        </catStat>
+      </catgry>
+      <varFormat type="numeric" schema="other"/>
+    </var>
+    <var ID="V78" name="QN25" files="F1" dcml="0" intrvl="discrete">
+      <location width="1"/>
+      <labl>
+        Made suicide plan past 12 months
+      </labl>
+      <qstn>
+        <qstnLit>
+          Percentage of students who made a plan about how they would attempt suicide during the past 12 months
+        </qstnLit>
+      </qstn>
+      <valrng>
+        <range UNITS="REAL" min="1" max="2"/>
+      </valrng>
+      <sumStat type="vald">
+        1739
+      </sumStat>
+      <sumStat type="invd">
+        40
+      </sumStat>
+      <catgry>
+        <catValu>
+          1
+        </catValu>
+        <labl>
+          Yes
+        </labl>
+        <catStat type="freq">
+          323
+        </catStat>
+      </catgry>
+      <catgry>
+        <catValu>
+          2
+        </catValu>
+        <labl>
+          No
+        </labl>
+        <catStat type="freq">
+          1416
+        </catStat>
+      </catgry>
+      <catgry missing="Y">
+        <catValu>
+          Sysmiss
+        </catValu>
+        <catStat type="freq">
+          40
+        </catStat>
+      </catgry>
+      <varFormat type="numeric" schema="other"/>
+    </var>
+    <var ID="V79" name="QN26" files="F1" dcml="0" intrvl="discrete">
+      <location width="1"/>
+      <labl>
+        1+ times attempt suicide 12 mos.
+      </labl>
+      <qstn>
+        <qstnLit>
+          Percentage of students who actually attempted suicide one or more times during the past 12 months
+        </qstnLit>
+      </qstn>
+      <valrng>
+        <range UNITS="REAL" min="1" max="2"/>
+      </valrng>
+      <sumStat type="vald">
+        1769
+      </sumStat>
+      <sumStat type="invd">
+        10
+      </sumStat>
+      <catgry>
+        <catValu>
+          1
+        </catValu>
+        <labl>
+          Yes
+        </labl>
+        <catStat type="freq">
+          297
+        </catStat>
+      </catgry>
+      <catgry>
+        <catValu>
+          2
+        </catValu>
+        <labl>
+          No
+        </labl>
+        <catStat type="freq">
+          1472
+        </catStat>
+      </catgry>
+      <catgry missing="Y">
+        <catValu>
+          Sysmiss
+        </catValu>
+        <catStat type="freq">
+          10
+        </catStat>
+      </catgry>
+      <varFormat type="numeric" schema="other"/>
+    </var>
+    <var ID="V80" name="QN27" files="F1" dcml="0" intrvl="discrete">
+      <location width="1"/>
+      <labl>
+        No close friends
+      </labl>
+      <qstn>
+        <qstnLit>
+          Percentage of students who had no close friends
+        </qstnLit>
+      </qstn>
+      <valrng>
+        <range UNITS="REAL" min="1" max="2"/>
+      </valrng>
+      <sumStat type="vald">
+        1750
+      </sumStat>
+      <sumStat type="invd">
+        29
+      </sumStat>
+      <catgry>
+        <catValu>
+          1
+        </catValu>
+        <labl>
+          Yes
+        </labl>
+        <catStat type="freq">
+          118
+        </catStat>
+      </catgry>
+      <catgry>
+        <catValu>
+          2
+        </catValu>
+        <labl>
+          No
+        </labl>
+        <catStat type="freq">
+          1632
+        </catStat>
+      </catgry>
+      <catgry missing="Y">
+        <catValu>
+          Sysmiss
+        </catValu>
+        <catStat type="freq">
+          29
+        </catStat>
+      </catgry>
+      <varFormat type="numeric" schema="other"/>
+    </var>
+    <var ID="V81" name="QN28" files="F1" dcml="0" intrvl="discrete">
+      <location width="1"/>
+      <labl>
+        Age first cigarette before 14
+      </labl>
+      <qstn>
+        <qstnLit>
+          Among students who ever smoked cigarettes, the percentage who first tried a cigarette before age 14 years
+        </qstnLit>
+      </qstn>
+      <valrng>
+        <range UNITS="REAL" min="1" max="2"/>
+      </valrng>
+      <sumStat type="vald">
+        431
+      </sumStat>
+      <sumStat type="invd">
+        1348
+      </sumStat>
+      <catgry>
+        <catValu>
+          1
+        </catValu>
+        <labl>
+          Yes
+        </labl>
+        <catStat type="freq">
+          335
+        </catStat>
+      </catgry>
+      <catgry>
+        <catValu>
+          2
+        </catValu>
+        <labl>
+          No
+        </labl>
+        <catStat type="freq">
+          96
+        </catStat>
+      </catgry>
+      <catgry missing="Y">
+        <catValu>
+          Sysmiss
+        </catValu>
+        <catStat type="freq">
+          1348
+        </catStat>
+      </catgry>
+      <varFormat type="numeric" schema="other"/>
+    </var>
+    <var ID="V82" name="QN29" files="F1" dcml="0" intrvl="discrete">
+      <location width="1"/>
+      <labl>
+        Smoked cigarettes 1+ of past 30 days
+      </labl>
+      <qstn>
+        <qstnLit>
+          Percentage of students who smoked cigarettes on one or more days during the past 30 days
+        </qstnLit>
+      </qstn>
+      <valrng>
+        <range UNITS="REAL" min="1" max="2"/>
+      </valrng>
+      <sumStat type="vald">
+        1761
+      </sumStat>
+      <sumStat type="invd">
+        18
+      </sumStat>
+      <catgry>
+        <catValu>
+          1
+        </catValu>
+        <labl>
+          Yes
+        </labl>
+        <catStat type="freq">
+          224
+        </catStat>
+      </catgry>
+      <catgry>
+        <catValu>
+          2
+        </catValu>
+        <labl>
+          No
+        </labl>
+        <catStat type="freq">
+          1537
+        </catStat>
+      </catgry>
+      <catgry missing="Y">
+        <catValu>
+          Sysmiss
+        </catValu>
+        <catStat type="freq">
+          18
+        </catStat>
+      </catgry>
+      <varFormat type="numeric" schema="other"/>
+    </var>
+    <var ID="V83" name="QN30" files="F1" dcml="0" intrvl="discrete">
+      <location width="1"/>
+      <labl>
+        Used other tobacco 1+ of past 30 days
+      </labl>
+      <qstn>
+        <qstnLit>
+          Percentage of students who used any tobacco products other than cigarettes on one or more days during the past 30 days
+        </qstnLit>
+      </qstn>
+      <valrng>
+        <range UNITS="REAL" min="1" max="2"/>
+      </valrng>
+      <sumStat type="vald">
+        1763
+      </sumStat>
+      <sumStat type="invd">
+        16
+      </sumStat>
+      <catgry>
+        <catValu>
+          1
+        </catValu>
+        <labl>
+          Yes
+        </labl>
+        <catStat type="freq">
+          82
+        </catStat>
+      </catgry>
+      <catgry>
+        <catValu>
+          2
+        </catValu>
+        <labl>
+          No
+        </labl>
+        <catStat type="freq">
+          1681
+        </catStat>
+      </catgry>
+      <catgry missing="Y">
+        <catValu>
+          Sysmiss
+        </catValu>
+        <catStat type="freq">
+          16
+        </catStat>
+      </catgry>
+      <varFormat type="numeric" schema="other"/>
+    </var>
+    <var ID="V84" name="QN31" files="F1" dcml="0" intrvl="discrete">
+      <location width="1"/>
+      <labl>
+        Tried to quit smoking past 12 months
+      </labl>
+      <qstn>
+        <qstnLit>
+          Among students who smoked cigarettes during the past 12 months, the percentage who tried to stop smoking cigarettes during the past 12 months
+        </qstnLit>
+      </qstn>
+      <valrng>
+        <range UNITS="REAL" min="1" max="2"/>
+      </valrng>
+      <sumStat type="vald">
+        173
+      </sumStat>
+      <sumStat type="invd">
+        1606
+      </sumStat>
+      <catgry>
+        <catValu>
+          1
+        </catValu>
+        <labl>
+          Yes
+        </labl>
+        <catStat type="freq">
+          132
+        </catStat>
+      </catgry>
+      <catgry>
+        <catValu>
+          2
+        </catValu>
+        <labl>
+          No
+        </labl>
+        <catStat type="freq">
+          41
+        </catStat>
+      </catgry>
+      <catgry missing="Y">
+        <catValu>
+          Sysmiss
+        </catValu>
+        <catStat type="freq">
+          1606
+        </catStat>
+      </catgry>
+      <varFormat type="numeric" schema="other"/>
+    </var>
+    <var ID="V85" name="QN32" files="F1" dcml="0" intrvl="discrete">
+      <location width="1"/>
+      <labl>
+        Others present smoking 1+ of past 7 days
+      </labl>
+      <qstn>
+        <qstnLit>
+          Percentage of students who reported people smoked in their presence on one or more days during the past seven days
+        </qstnLit>
+      </qstn>
+      <valrng>
+        <range UNITS="REAL" min="1" max="2"/>
+      </valrng>
+      <sumStat type="vald">
+        1768
+      </sumStat>
+      <sumStat type="invd">
+        11
+      </sumStat>
+      <catgry>
+        <catValu>
+          1
+        </catValu>
+        <labl>
+          Yes
+        </labl>
+        <catStat type="freq">
+          890
+        </catStat>
+      </catgry>
+      <catgry>
+        <catValu>
+          2
+        </catValu>
+        <labl>
+          No
+        </labl>
+        <catStat type="freq">
+          878
+        </catStat>
+      </catgry>
+      <catgry missing="Y">
+        <catValu>
+          Sysmiss
+        </catValu>
+        <catStat type="freq">
+          11
+        </catStat>
+      </catgry>
+      <varFormat type="numeric" schema="other"/>
+    </var>
+    <var ID="V86" name="QN33" files="F1" dcml="0" intrvl="discrete">
+      <location width="1"/>
+      <labl>
+        Either/Both parents use tobacco
+      </labl>
+      <qstn>
+        <qstnLit>
+          Percentage of students who had parents or guardians who used any form of tobacco
+        </qstnLit>
+      </qstn>
+      <valrng>
+        <range UNITS="REAL" min="1" max="2"/>
+      </valrng>
+      <sumStat type="vald">
+        1768
+      </sumStat>
+      <sumStat type="invd">
+        11
+      </sumStat>
+      <catgry>
+        <catValu>
+          1
+        </catValu>
+        <labl>
+          Yes
+        </labl>
+        <catStat type="freq">
+          203
+        </catStat>
+      </catgry>
+      <catgry>
+        <catValu>
+          2
+        </catValu>
+        <labl>
+          No
+        </labl>
+        <catStat type="freq">
+          1565
+        </catStat>
+      </catgry>
+      <catgry missing="Y">
+        <catValu>
+          Sysmiss
+        </catValu>
+        <catStat type="freq">
+          11
+        </catStat>
+      </catgry>
+      <varFormat type="numeric" schema="other"/>
+    </var>
+    <var ID="V87" name="QN34" files="F1" dcml="0" intrvl="discrete">
+      <location width="1"/>
+      <labl>
+        Age first alcohol before 14
+      </labl>
+      <qstn>
+        <qstnLit>
+          Among students who ever had a drink of alcohol (other than a few sips), the percentage who had their first drink of alcohol before age 14 years
+        </qstnLit>
+      </qstn>
+      <valrng>
+        <range UNITS="REAL" min="1" max="2"/>
+      </valrng>
+      <sumStat type="vald">
+        526
+      </sumStat>
+      <sumStat type="invd">
+        1253
+      </sumStat>
+      <catgry>
+        <catValu>
+          1
+        </catValu>
+        <labl>
+          Yes
+        </labl>
+        <catStat type="freq">
+          364
+        </catStat>
+      </catgry>
+      <catgry>
+        <catValu>
+          2
+        </catValu>
+        <labl>
+          No
+        </labl>
+        <catStat type="freq">
+          162
+        </catStat>
+      </catgry>
+      <catgry missing="Y">
+        <catValu>
+          Sysmiss
+        </catValu>
+        <catStat type="freq">
+          1253
+        </catStat>
+      </catgry>
+      <varFormat type="numeric" schema="other"/>
+    </var>
+    <var ID="V88" name="QN35" files="F1" dcml="0" intrvl="discrete">
+      <location width="1"/>
+      <labl>
+        Drank 1+ days past 30 days
+      </labl>
+      <qstn>
+        <qstnLit>
+          Percentage of students who drank at least one drink containing alcohol on one or more of the past 30 days
+        </qstnLit>
+      </qstn>
+      <valrng>
+        <range UNITS="REAL" min="1" max="2"/>
+      </valrng>
+      <sumStat type="vald">
+        1702
+      </sumStat>
+      <sumStat type="invd">
+        77
+      </sumStat>
+      <catgry>
+        <catValu>
+          1
+        </catValu>
+        <labl>
+          Yes
+        </labl>
+        <catStat type="freq">
+          272
+        </catStat>
+      </catgry>
+      <catgry>
+        <catValu>
+          2
+        </catValu>
+        <labl>
+          No
+        </labl>
+        <catStat type="freq">
+          1430
+        </catStat>
+      </catgry>
+      <catgry missing="Y">
+        <catValu>
+          Sysmiss
+        </catValu>
+        <catStat type="freq">
+          77
+        </catStat>
+      </catgry>
+      <varFormat type="numeric" schema="other"/>
+    </var>
+    <var ID="V89" name="QN36" files="F1" dcml="0" intrvl="discrete">
+      <location width="1"/>
+      <labl>
+        Of current drinkers, drank 2+ drinks/day 30 days
+      </labl>
+      <qstn>
+        <qstnLit>
+          Among students who drank alcohol during the past 30 days, the percentage who usually drank two or more drinks per day on the days they drank alcohol
+        </qstnLit>
+      </qstn>
+      <valrng>
+        <range UNITS="REAL" min="1" max="2"/>
+      </valrng>
+      <sumStat type="vald">
+        327
+      </sumStat>
+      <sumStat type="invd">
+        1452
+      </sumStat>
+      <catgry>
+        <catValu>
+          1
+        </catValu>
+        <labl>
+          Yes
+        </labl>
+        <catStat type="freq">
+          168
+        </catStat>
+      </catgry>
+      <catgry>
+        <catValu>
+          2
+        </catValu>
+        <labl>
+          No
+        </labl>
+        <catStat type="freq">
+          159
+        </catStat>
+      </catgry>
+      <catgry missing="Y">
+        <catValu>
+          Sysmiss
+        </catValu>
+        <catStat type="freq">
+          1452
+        </catStat>
+      </catgry>
+      <varFormat type="numeric" schema="other"/>
+    </var>
+    <var ID="V90" name="QN37" files="F1" dcml="0" intrvl="discrete">
+      <location width="1"/>
+      <labl>
+        Of current drinkers, got alcohol from friends
+      </labl>
+      <qstn>
+        <qstnLit>
+          Among students who drank alcohol during the past 30 days, the percentage who usually got the alcohol they drank from their friends
+        </qstnLit>
+      </qstn>
+      <valrng>
+        <range UNITS="REAL" min="1" max="2"/>
+      </valrng>
+      <sumStat type="vald">
+        291
+      </sumStat>
+      <sumStat type="invd">
+        1488
+      </sumStat>
+      <catgry>
+        <catValu>
+          1
+        </catValu>
+        <labl>
+          Yes
+        </labl>
+        <catStat type="freq">
+          112
+        </catStat>
+      </catgry>
+      <catgry>
+        <catValu>
+          2
+        </catValu>
+        <labl>
+          No
+        </labl>
+        <catStat type="freq">
+          179
+        </catStat>
+      </catgry>
+      <catgry missing="Y">
+        <catValu>
+          Sysmiss
+        </catValu>
+        <catStat type="freq">
+          1488
+        </catStat>
+      </catgry>
+      <varFormat type="numeric" schema="other"/>
+    </var>
+    <var ID="V91" name="QN38" files="F1" dcml="0" intrvl="discrete">
+      <location width="1"/>
+      <labl>
+        1+ times drunk in lifetime
+      </labl>
+      <qstn>
+        <qstnLit>
+          Percentage of students who drank so much alcohol that they were really drunk one or more times during their life
+        </qstnLit>
+      </qstn>
+      <valrng>
+        <range UNITS="REAL" min="1" max="2"/>
+      </valrng>
+      <sumStat type="vald">
+        1733
+      </sumStat>
+      <sumStat type="invd">
+        46
+      </sumStat>
+      <catgry>
+        <catValu>
+          1
+        </catValu>
+        <labl>
+          Yes
+        </labl>
+        <catStat type="freq">
+          191
+        </catStat>
+      </catgry>
+      <catgry>
+        <catValu>
+          2
+        </catValu>
+        <labl>
+          No
+        </labl>
+        <catStat type="freq">
+          1542
+        </catStat>
+      </catgry>
+      <catgry missing="Y">
+        <catValu>
+          Sysmiss
+        </catValu>
+        <catStat type="freq">
+          46
+        </catStat>
+      </catgry>
+      <varFormat type="numeric" schema="other"/>
+    </var>
+    <var ID="V92" name="QN39" files="F1" dcml="0" intrvl="discrete">
+      <location width="1"/>
+      <labl>
+        Alcohol trouble 1+ times in lifetime
+      </labl>
+      <qstn>
+        <qstnLit>
+          Percentage of students who got into trouble with their family or friends, missed school, or got into fights one or more times during their life as a result of drinking alcohol
+        </qstnLit>
+      </qstn>
+      <valrng>
+        <range UNITS="REAL" min="1" max="2"/>
+      </valrng>
+      <sumStat type="vald">
+        1663
+      </sumStat>
+      <sumStat type="invd">
+        116
+      </sumStat>
+      <catgry>
+        <catValu>
+          1
+        </catValu>
+        <labl>
+          Yes
+        </labl>
+        <catStat type="freq">
+          118
+        </catStat>
+      </catgry>
+      <catgry>
+        <catValu>
+          2
+        </catValu>
+        <labl>
+          No
+        </labl>
+        <catStat type="freq">
+          1545
+        </catStat>
+      </catgry>
+      <catgry missing="Y">
+        <catValu>
+          Sysmiss
+        </catValu>
+        <catStat type="freq">
+          116
+        </catStat>
+      </catgry>
+      <varFormat type="numeric" schema="other"/>
+    </var>
+    <var ID="V97" name="QN44" files="F1" dcml="0" intrvl="discrete">
+      <location width="1"/>
+      <labl>
+        Ever had sex
+      </labl>
+      <qstn>
+        <qstnLit>
+          Percentage of students who ever had sexual intercourse
+        </qstnLit>
+      </qstn>
+      <valrng>
+        <range UNITS="REAL" min="1" max="2"/>
+      </valrng>
+      <sumStat type="vald">
+        1668
+      </sumStat>
+      <sumStat type="invd">
+        111
+      </sumStat>
+      <catgry>
+        <catValu>
+          1
+        </catValu>
+        <labl>
+          Yes
+        </labl>
+        <catStat type="freq">
+          434
+        </catStat>
+      </catgry>
+      <catgry>
+        <catValu>
+          2
+        </catValu>
+        <labl>
+          No
+        </labl>
+        <catStat type="freq">
+          1234
+        </catStat>
+      </catgry>
+      <catgry missing="Y">
+        <catValu>
+          Sysmiss
+        </catValu>
+        <catStat type="freq">
+          111
+        </catStat>
+      </catgry>
+      <varFormat type="numeric" schema="other"/>
+    </var>
+    <var ID="V98" name="QN45" files="F1" dcml="0" intrvl="discrete">
+      <location width="1"/>
+      <labl>
+        Age first sexual intercourse before 14
+      </labl>
+      <qstn>
+        <qstnLit>
+          Among students who ever had sexual intercourse, the percentage who had sexual intercourse for the first time before age 14 years
+        </qstnLit>
+      </qstn>
+      <valrng>
+        <range UNITS="REAL" min="1" max="2"/>
+      </valrng>
+      <sumStat type="vald">
+        324
+      </sumStat>
+      <sumStat type="invd">
+        1455
+      </sumStat>
+      <catgry>
+        <catValu>
+          1
+        </catValu>
+        <labl>
+          Yes
+        </labl>
+        <catStat type="freq">
+          178
+        </catStat>
+      </catgry>
+      <catgry>
+        <catValu>
+          2
+        </catValu>
+        <labl>
+          No
+        </labl>
+        <catStat type="freq">
+          146
+        </catStat>
+      </catgry>
+      <catgry missing="Y">
+        <catValu>
+          Sysmiss
+        </catValu>
+        <catStat type="freq">
+          1455
+        </catStat>
+      </catgry>
+      <varFormat type="numeric" schema="other"/>
+    </var>
+    <var ID="V99" name="QN46" files="F1" dcml="0" intrvl="discrete">
+      <location width="1"/>
+      <labl>
+        2+ sex partners lifetime
+      </labl>
+      <qstn>
+        <qstnLit>
+          Percentage of students who had sexual intercourse with two or more people during their life
+        </qstnLit>
+      </qstn>
+      <valrng>
+        <range UNITS="REAL" min="1" max="2"/>
+      </valrng>
+      <sumStat type="vald">
+        1739
+      </sumStat>
+      <sumStat type="invd">
+        40
+      </sumStat>
+      <catgry>
+        <catValu>
+          1
+        </catValu>
+        <labl>
+          Yes
+        </labl>
+        <catStat type="freq">
+          163
+        </catStat>
+      </catgry>
+      <catgry>
+        <catValu>
+          2
+        </catValu>
+        <labl>
+          No
+        </labl>
+        <catStat type="freq">
+          1576
+        </catStat>
+      </catgry>
+      <catgry missing="Y">
+        <catValu>
+          Sysmiss
+        </catValu>
+        <catStat type="freq">
+          40
+        </catStat>
+      </catgry>
+      <varFormat type="numeric" schema="other"/>
+    </var>
+    <var ID="V100" name="QN47" files="F1" dcml="0" intrvl="discrete">
+      <location width="1"/>
+      <labl>
+        Used condom at last sex
+      </labl>
+      <qstn>
+        <qstnLit>
+          Among students who ever had sexual intercourse, the percentage who used a condom the last time they had sexual intercourse
+        </qstnLit>
+      </qstn>
+      <valrng>
+        <range UNITS="REAL" min="1" max="2"/>
+      </valrng>
+      <sumStat type="vald">
+        323
+      </sumStat>
+      <sumStat type="invd">
+        1456
+      </sumStat>
+      <catgry>
+        <catValu>
+          1
+        </catValu>
+        <labl>
+          Yes
+        </labl>
+        <catStat type="freq">
+          216
+        </catStat>
+      </catgry>
+      <catgry>
+        <catValu>
+          2
+        </catValu>
+        <labl>
+          No
+        </labl>
+        <catStat type="freq">
+          107
+        </catStat>
+      </catgry>
+      <catgry missing="Y">
+        <catValu>
+          Sysmiss
+        </catValu>
+        <catStat type="freq">
+          1456
+        </catStat>
+      </catgry>
+      <varFormat type="numeric" schema="other"/>
+    </var>
+    <var ID="V101" name="QN48" files="F1" dcml="0" intrvl="discrete">
+      <location width="1"/>
+      <labl>
+        Used birth control at last sex
+      </labl>
+      <qstn>
+        <qstnLit>
+          Among students who ever had sexual intercourse, the percentage who used any other method of birth control the last time they had sexual intercourse
+        </qstnLit>
+      </qstn>
+      <valrng>
+        <range UNITS="REAL" min="1" max="2"/>
+      </valrng>
+      <sumStat type="vald">
+        323
+      </sumStat>
+      <sumStat type="invd">
+        1456
+      </sumStat>
+      <catgry>
+        <catValu>
+          1
+        </catValu>
+        <labl>
+          Yes
+        </labl>
+        <catStat type="freq">
+          138
+        </catStat>
+      </catgry>
+      <catgry>
+        <catValu>
+          2
+        </catValu>
+        <labl>
+          No
+        </labl>
+        <catStat type="freq">
+          185
+        </catStat>
+      </catgry>
+      <catgry missing="Y">
+        <catValu>
+          Sysmiss
+        </catValu>
+        <catStat type="freq">
+          1456
+        </catStat>
+      </catgry>
+      <varFormat type="numeric" schema="other"/>
+    </var>
+    <var ID="V102" name="QN49" files="F1" dcml="0" intrvl="discrete">
+      <location width="1"/>
+      <labl>
+        Active 60+ mins/day for 5+ of past 7 days
+      </labl>
+      <qstn>
+        <qstnLit>
+          Percentage of students who were physically active for a total of at least 60 minutes per day on five or more days during the past seven days
+        </qstnLit>
+      </qstn>
+      <valrng>
+        <range UNITS="REAL" min="1" max="2"/>
+      </valrng>
+      <sumStat type="vald">
+        1741
+      </sumStat>
+      <sumStat type="invd">
+        38
+      </sumStat>
+      <catgry>
+        <catValu>
+          1
+        </catValu>
+        <labl>
+          Yes
+        </labl>
+        <catStat type="freq">
+          374
+        </catStat>
+      </catgry>
+      <catgry>
+        <catValu>
+          2
+        </catValu>
+        <labl>
+          No
+        </labl>
+        <catStat type="freq">
+          1367
+        </catStat>
+      </catgry>
+      <catgry missing="Y">
+        <catValu>
+          Sysmiss
+        </catValu>
+        <catStat type="freq">
+          38
+        </catStat>
+      </catgry>
+      <varFormat type="numeric" schema="other"/>
+    </var>
+    <var ID="V103" name="QN50" files="F1" dcml="0" intrvl="discrete">
+      <location width="1"/>
+      <labl>
+        Walk/Bike to/from school 0 of past 7 days
+      </labl>
+      <qstn>
+        <qstnLit>
+          Percentage of students who did not walk or ride a bicycle to or from school during the past seven days
+        </qstnLit>
+      </qstn>
+      <valrng>
+        <range UNITS="REAL" min="1" max="2"/>
+      </valrng>
+      <sumStat type="vald">
+        1754
+      </sumStat>
+      <sumStat type="invd">
+        25
+      </sumStat>
+      <catgry>
+        <catValu>
+          1
+        </catValu>
+        <labl>
+          Yes
+        </labl>
+        <catStat type="freq">
+          649
+        </catStat>
+      </catgry>
+      <catgry>
+        <catValu>
+          2
+        </catValu>
+        <labl>
+          No
+        </labl>
+        <catStat type="freq">
+          1105
+        </catStat>
+      </catgry>
+      <catgry missing="Y">
+        <catValu>
+          Sysmiss
+        </catValu>
+        <catStat type="freq">
+          25
+        </catStat>
+      </catgry>
+      <varFormat type="numeric" schema="other"/>
+    </var>
+    <var ID="V104" name="QN51" files="F1" dcml="0" intrvl="discrete">
+      <location width="1"/>
+      <labl>
+        3+ days PE each week
+      </labl>
+      <qstn>
+        <qstnLit>
+          Percentage of students who went to physical education (PE) class on three or more days each week during this school year
+        </qstnLit>
+      </qstn>
+      <valrng>
+        <range UNITS="REAL" min="1" max="2"/>
+      </valrng>
+      <sumStat type="vald">
+        1723
+      </sumStat>
+      <sumStat type="invd">
+        56
+      </sumStat>
+      <catgry>
+        <catValu>
+          1
+        </catValu>
+        <labl>
+          Yes
+        </labl>
+        <catStat type="freq">
+          520
+        </catStat>
+      </catgry>
+      <catgry>
+        <catValu>
+          2
+        </catValu>
+        <labl>
+          No
+        </labl>
+        <catStat type="freq">
+          1203
+        </catStat>
+      </catgry>
+      <catgry missing="Y">
+        <catValu>
+          Sysmiss
+        </catValu>
+        <catStat type="freq">
+          56
+        </catStat>
+      </catgry>
+      <varFormat type="numeric" schema="other"/>
+    </var>
+    <var ID="V105" name="QN52" files="F1" dcml="0" intrvl="discrete">
+      <location width="1"/>
+      <labl>
+        Sitting activities 3+ hours/day of usual day
+      </labl>
+      <qstn>
+        <qstnLit>
+          Percentage of students who spent three or more hours per day during a typical or usual day doing sitting activities
+        </qstnLit>
+      </qstn>
+      <valrng>
+        <range UNITS="REAL" min="1" max="2"/>
+      </valrng>
+      <sumStat type="vald">
+        1742
+      </sumStat>
+      <sumStat type="invd">
+        37
+      </sumStat>
+      <catgry>
+        <catValu>
+          1
+        </catValu>
+        <labl>
+          Yes
+        </labl>
+        <catStat type="freq">
+          512
+        </catStat>
+      </catgry>
+      <catgry>
+        <catValu>
+          2
+        </catValu>
+        <labl>
+          No
+        </labl>
+        <catStat type="freq">
+          1230
+        </catStat>
+      </catgry>
+      <catgry missing="Y">
+        <catValu>
+          Sysmiss
+        </catValu>
+        <catStat type="freq">
+          37
+        </catStat>
+      </catgry>
+      <varFormat type="numeric" schema="other"/>
+    </var>
+    <var ID="V106" name="QN53" files="F1" dcml="0" intrvl="discrete">
+      <location width="1"/>
+      <labl>
+        Miss school no permission 1+ of past 30 days
+      </labl>
+      <qstn>
+        <qstnLit>
+          Percentage of students who missed classes or school without permission on one or more of the past 30 days
+        </qstnLit>
+      </qstn>
+      <valrng>
+        <range UNITS="REAL" min="1" max="2"/>
+      </valrng>
+      <sumStat type="vald">
+        1740
+      </sumStat>
+      <sumStat type="invd">
+        39
+      </sumStat>
+      <catgry>
+        <catValu>
+          1
+        </catValu>
+        <labl>
+          Yes
+        </labl>
+        <catStat type="freq">
+          473
+        </catStat>
+      </catgry>
+      <catgry>
+        <catValu>
+          2
+        </catValu>
+        <labl>
+          No
+        </labl>
+        <catStat type="freq">
+          1267
+        </catStat>
+      </catgry>
+      <catgry missing="Y">
+        <catValu>
+          Sysmiss
+        </catValu>
+        <catStat type="freq">
+          39
+        </catStat>
+      </catgry>
+      <varFormat type="numeric" schema="other"/>
+    </var>
+    <var ID="V107" name="QN54" files="F1" dcml="0" intrvl="discrete">
+      <location width="1"/>
+      <labl>
+        Students most/always kind 30 days
+      </labl>
+      <qstn>
+        <qstnLit>
+          Percentage of students who reported most of the students in their school were kind and helpful most of the time or always during the past 30 days
+        </qstnLit>
+      </qstn>
+      <valrng>
+        <range UNITS="REAL" min="1" max="2"/>
+      </valrng>
+      <sumStat type="vald">
+        1730
+      </sumStat>
+      <sumStat type="invd">
+        49
+      </sumStat>
+      <catgry>
+        <catValu>
+          1
+        </catValu>
+        <labl>
+          Yes
+        </labl>
+        <catStat type="freq">
+          794
+        </catStat>
+      </catgry>
+      <catgry>
+        <catValu>
+          2
+        </catValu>
+        <labl>
+          No
+        </labl>
+        <catStat type="freq">
+          936
+        </catStat>
+      </catgry>
+      <catgry missing="Y">
+        <catValu>
+          Sysmiss
+        </catValu>
+        <catStat type="freq">
+          49
+        </catStat>
+      </catgry>
+      <varFormat type="numeric" schema="other"/>
+    </var>
+    <var ID="V108" name="QN55" files="F1" dcml="0" intrvl="discrete">
+      <location width="1"/>
+      <labl>
+        Parents most/always check homework
+      </labl>
+      <qstn>
+        <qstnLit>
+          Percentage of students whose parents or guardians checked to see if their homework was done most of the time or always during the past 30 days
+        </qstnLit>
+      </qstn>
+      <valrng>
+        <range UNITS="REAL" min="1" max="2"/>
+      </valrng>
+      <sumStat type="vald">
+        1755
+      </sumStat>
+      <sumStat type="invd">
+        24
+      </sumStat>
+      <catgry>
+        <catValu>
+          1
+        </catValu>
+        <labl>
+          Yes
+        </labl>
+        <catStat type="freq">
+          902
+        </catStat>
+      </catgry>
+      <catgry>
+        <catValu>
+          2
+        </catValu>
+        <labl>
+          No
+        </labl>
+        <catStat type="freq">
+          853
+        </catStat>
+      </catgry>
+      <catgry missing="Y">
+        <catValu>
+          Sysmiss
+        </catValu>
+        <catStat type="freq">
+          24
+        </catStat>
+      </catgry>
+      <varFormat type="numeric" schema="other"/>
+    </var>
+    <var ID="V109" name="QN56" files="F1" dcml="0" intrvl="discrete">
+      <location width="1"/>
+      <labl>
+        Parents most/always understand problems
+      </labl>
+      <qstn>
+        <qstnLit>
+          Percentage of students whose parents or guardians understood their problems and worries most of the time or always during the past 30 days
+        </qstnLit>
+      </qstn>
+      <valrng>
+        <range UNITS="REAL" min="1" max="2"/>
+      </valrng>
+      <sumStat type="vald">
+        1744
+      </sumStat>
+      <sumStat type="invd">
+        35
+      </sumStat>
+      <catgry>
+        <catValu>
+          1
+        </catValu>
+        <labl>
+          Yes
+        </labl>
+        <catStat type="freq">
+          807
+        </catStat>
+      </catgry>
+      <catgry>
+        <catValu>
+          2
+        </catValu>
+        <labl>
+          No
+        </labl>
+        <catStat type="freq">
+          937
+        </catStat>
+      </catgry>
+      <catgry missing="Y">
+        <catValu>
+          Sysmiss
+        </catValu>
+        <catStat type="freq">
+          35
+        </catStat>
+      </catgry>
+      <varFormat type="numeric" schema="other"/>
+    </var>
+    <var ID="V110" name="QN57" files="F1" dcml="0" intrvl="discrete">
+      <location width="1"/>
+      <labl>
+        Parents most/always know about free time
+      </labl>
+      <qstn>
+        <qstnLit>
+          Percentage of students whose parents or guardians really knew what they were doing with their free time most of the time or always during the past 30 days
+        </qstnLit>
+      </qstn>
+      <valrng>
+        <range UNITS="REAL" min="1" max="2"/>
+      </valrng>
+      <sumStat type="vald">
+        1733
+      </sumStat>
+      <sumStat type="invd">
+        46
+      </sumStat>
+      <catgry>
+        <catValu>
+          1
+        </catValu>
+        <labl>
+          Yes
+        </labl>
+        <catStat type="freq">
+          950
+        </catStat>
+      </catgry>
+      <catgry>
+        <catValu>
+          2
+        </catValu>
+        <labl>
+          No
+        </labl>
+        <catStat type="freq">
+          783
+        </catStat>
+      </catgry>
+      <catgry missing="Y">
+        <catValu>
+          Sysmiss
+        </catValu>
+        <catStat type="freq">
+          46
+        </catStat>
+      </catgry>
+      <varFormat type="numeric" schema="other"/>
+    </var>
+    <var ID="V111" name="QN58" files="F1" dcml="0" intrvl="discrete">
+      <location width="1"/>
+      <labl>
+        Parents never/rarely go thru things
+      </labl>
+      <qstn>
+        <qstnLit>
+          Percentage of students whose parents or guardians went through their things without their approval never or rarely during the past 30 days
+        </qstnLit>
+      </qstn>
+      <valrng>
+        <range UNITS="REAL" min="1" max="2"/>
+      </valrng>
+      <sumStat type="vald">
+        1742
+      </sumStat>
+      <sumStat type="invd">
+        37
+      </sumStat>
+      <catgry>
+        <catValu>
+          1
+        </catValu>
+        <labl>
+          Yes
+        </labl>
+        <catStat type="freq">
+          1414
+        </catStat>
+      </catgry>
+      <catgry>
+        <catValu>
+          2
+        </catValu>
+        <labl>
+          No
+        </labl>
+        <catStat type="freq">
+          328
+        </catStat>
+      </catgry>
+      <catgry missing="Y">
+        <catValu>
+          Sysmiss
+        </catValu>
+        <catStat type="freq">
+          37
+        </catStat>
+      </catgry>
+      <varFormat type="numeric" schema="other"/>
+    </var>
+    <var ID="V115" name="qnowtg" files="F1" dcml="0" intrvl="discrete">
+      <location width="1"/>
+      <labl>
+        Overweight
+      </labl>
+      <qstn>
+        <qstnLit>
+          Percentage of students who were overweight (&gt;+1SD from median for BMI by age and sex)
+        </qstnLit>
+      </qstn>
+      <valrng>
+        <range UNITS="REAL" min="1" max="2"/>
+      </valrng>
+      <sumStat type="vald">
+        1679
+      </sumStat>
+      <sumStat type="invd">
+        100
+      </sumStat>
+      <catgry>
+        <catValu>
+          1
+        </catValu>
+        <labl>
+          Yes
+        </labl>
+        <catStat type="freq">
+          309
+        </catStat>
+      </catgry>
+      <catgry>
+        <catValu>
+          2
+        </catValu>
+        <labl>
+          No
+        </labl>
+        <catStat type="freq">
+          1370
+        </catStat>
+      </catgry>
+      <catgry missing="Y">
+        <catValu>
+          Sysmiss
+        </catValu>
+        <catStat type="freq">
+          100
+        </catStat>
+      </catgry>
+      <varFormat type="numeric" schema="other"/>
+    </var>
+    <var ID="V116" name="qnobeseg" files="F1" dcml="0" intrvl="discrete">
+      <location width="1"/>
+      <labl>
+        Obese
+      </labl>
+      <qstn>
+        <qstnLit>
+          Percentage of students who were obese (&gt;+2SD from median for BMI by age and sex)
+        </qstnLit>
+      </qstn>
+      <valrng>
+        <range UNITS="REAL" min="1" max="2"/>
+      </valrng>
+      <sumStat type="vald">
+        1679
+      </sumStat>
+      <sumStat type="invd">
+        100
+      </sumStat>
+      <catgry>
+        <catValu>
+          1
+        </catValu>
+        <labl>
+          Yes
+        </labl>
+        <catStat type="freq">
+          92
+        </catStat>
+      </catgry>
+      <catgry>
+        <catValu>
+          2
+        </catValu>
+        <labl>
+          No
+        </labl>
+        <catStat type="freq">
+          1587
+        </catStat>
+      </catgry>
+      <catgry missing="Y">
+        <catValu>
+          Sysmiss
+        </catValu>
+        <catStat type="freq">
+          100
+        </catStat>
+      </catgry>
+      <varFormat type="numeric" schema="other"/>
+    </var>
+    <var ID="V117" name="qnunwtg" files="F1" dcml="0" intrvl="discrete">
+      <location width="1"/>
+      <labl>
+        Underweight
+      </labl>
+      <qstn>
+        <qstnLit>
+          Percentage of students who were underweight (&lt;-2SD from median for BMI by age and sex)
+        </qstnLit>
+      </qstn>
+      <valrng>
+        <range UNITS="REAL" min="1" max="2"/>
+      </valrng>
+      <sumStat type="vald">
+        1679
+      </sumStat>
+      <sumStat type="invd">
+        100
+      </sumStat>
+      <catgry>
+        <catValu>
+          1
+        </catValu>
+        <labl>
+          Yes
+        </labl>
+        <catStat type="freq">
+          40
+        </catStat>
+      </catgry>
+      <catgry>
+        <catValu>
+          2
+        </catValu>
+        <labl>
+          No
+        </labl>
+        <catStat type="freq">
+          1639
+        </catStat>
+      </catgry>
+      <catgry missing="Y">
+        <catValu>
+          Sysmiss
+        </catValu>
+        <catStat type="freq">
+          100
+        </catStat>
+      </catgry>
+      <varFormat type="numeric" schema="other"/>
+    </var>
+    <var ID="V118" name="qnfrvgg" files="F1" dcml="0" intrvl="discrete">
+      <location width="1"/>
+      <labl>
+        Ate 5+ fruits/vegetables 30 days
+      </labl>
+      <qstn>
+        <qstnLit>
+          Percentage of students who usually ate fruits and vegetables five or more times per day during the past 30 days
+        </qstnLit>
+      </qstn>
+      <valrng>
+        <range UNITS="REAL" min="1" max="2"/>
+      </valrng>
+      <sumStat type="vald">
+        1751
+      </sumStat>
+      <sumStat type="invd">
+        28
+      </sumStat>
+      <catgry>
+        <catValu>
+          1
+        </catValu>
+        <labl>
+          Yes
+        </labl>
+        <catStat type="freq">
+          444
+        </catStat>
+      </catgry>
+      <catgry>
+        <catValu>
+          2
+        </catValu>
+        <labl>
+          No
+        </labl>
+        <catStat type="freq">
+          1307
+        </catStat>
+      </catgry>
+      <catgry missing="Y">
+        <catValu>
+          Sysmiss
+        </catValu>
+        <catStat type="freq">
+          28
+        </catStat>
+      </catgry>
+      <varFormat type="numeric" schema="other"/>
+    </var>
+    <var ID="V119" name="qnanytbg" files="F1" dcml="0" intrvl="discrete">
+      <location width="1"/>
+      <labl>
+        Used any tobacco past 30 days
+      </labl>
+      <qstn>
+        <qstnLit>
+          Percentage of students who used any tobacco on one or more days during the past 30 days
+        </qstnLit>
+      </qstn>
+      <valrng>
+        <range UNITS="REAL" min="1" max="2"/>
+      </valrng>
+      <sumStat type="vald">
+        1751
+      </sumStat>
+      <sumStat type="invd">
+        28
+      </sumStat>
+      <catgry>
+        <catValu>
+          1
+        </catValu>
+        <labl>
+          Yes
+        </labl>
+        <catStat type="freq">
+          241
+        </catStat>
+      </catgry>
+      <catgry>
+        <catValu>
+          2
+        </catValu>
+        <labl>
+          No
+        </labl>
+        <catStat type="freq">
+          1510
+        </catStat>
+      </catgry>
+      <catgry missing="Y">
+        <catValu>
+          Sysmiss
+        </catValu>
+        <catStat type="freq">
+          28
+        </catStat>
+      </catgry>
+      <varFormat type="numeric" schema="other"/>
+    </var>
+    <var ID="V120" name="qnpa7g" files="F1" dcml="0" intrvl="discrete">
+      <location width="1"/>
+      <labl>
+        Physically active all past 7 days
+      </labl>
+      <qstn>
+        <qstnLit>
+          Percentage of students who were physically active for a total of at least 60 minutes per day on all seven days during the past seven days
+        </qstnLit>
+      </qstn>
+      <valrng>
+        <range UNITS="REAL" min="1" max="2"/>
+      </valrng>
+      <sumStat type="vald">
+        1741
+      </sumStat>
+      <sumStat type="invd">
+        38
+      </sumStat>
+      <catgry>
+        <catValu>
+          1
+        </catValu>
+        <labl>
+          Yes
+        </labl>
+        <catStat type="freq">
+          273
+        </catStat>
+      </catgry>
+      <catgry>
+        <catValu>
+          2
+        </catValu>
+        <labl>
+          No
+        </labl>
+        <catStat type="freq">
+          1468
+        </catStat>
+      </catgry>
+      <catgry missing="Y">
+        <catValu>
+          Sysmiss
+        </catValu>
+        <catStat type="freq">
+          38
+        </catStat>
+      </catgry>
+      <varFormat type="numeric" schema="other"/>
+    </var>
+    <var ID="V121" name="qnpe5g" files="F1" dcml="0" intrvl="discrete">
+      <location width="1"/>
+      <labl>
+        Attended PE 5+ days each week
+      </labl>
+      <qstn>
+        <qstnLit>
+          Percentage of students who went to physical education (PE) class on five or more days each week during this school year
+        </qstnLit>
+      </qstn>
+      <valrng>
+        <range UNITS="REAL" min="1" max="2"/>
+      </valrng>
+      <sumStat type="vald">
+        1723
+      </sumStat>
+      <sumStat type="invd">
+        56
+      </sumStat>
+      <catgry>
+        <catValu>
+          1
+        </catValu>
+        <labl>
+          Yes
+        </labl>
+        <catStat type="freq">
+          447
+        </catStat>
+      </catgry>
+      <catgry>
+        <catValu>
+          2
+        </catValu>
+        <labl>
+          No
+        </labl>
+        <catStat type="freq">
+          1276
+        </catStat>
+      </catgry>
+      <catgry missing="Y">
+        <catValu>
+          Sysmiss
+        </catValu>
+        <catStat type="freq">
+          56
+        </catStat>
+      </catgry>
+      <varFormat type="numeric" schema="other"/>
+    </var>
+    <var ID="V122" name="qnc1g" files="F1" dcml="0" intrvl="discrete">
+      <location width="1"/>
+      <labl>
+        Among heavy drinkers, ever sex
+      </labl>
+      <qstn>
+        <qstnLit>
+          Among students who drank so much alcohol they were really drunk one or more times during their life, the percentage who had ever had sexual intercourse
+        </qstnLit>
+      </qstn>
+      <valrng>
+        <range UNITS="REAL" min="1" max="2"/>
+      </valrng>
+      <sumStat type="vald">
+        173
+      </sumStat>
+      <sumStat type="invd">
+        1606
+      </sumStat>
+      <catgry>
+        <catValu>
+          1
+        </catValu>
+        <labl>
+          Yes
+        </labl>
+        <catStat type="freq">
+          88
+        </catStat>
+      </catgry>
+      <catgry>
+        <catValu>
+          2
+        </catValu>
+        <labl>
+          No
+        </labl>
+        <catStat type="freq">
+          85
+        </catStat>
+      </catgry>
+      <catgry missing="Y">
+        <catValu>
+          Sysmiss
+        </catValu>
+        <catStat type="freq">
+          1606
+        </catStat>
+      </catgry>
+      <varFormat type="numeric" schema="other"/>
+    </var>
+    <var ID="V123" name="qnc2g" files="F1" dcml="0" intrvl="discrete">
+      <location width="1"/>
+      <labl>
+        Among those worried, currently bullied
+      </labl>
+      <qstn>
+        <qstnLit>
+          Among students who most of the time or always had been so worried about something that they could not sleep at night during the past 12 months, the percentage who were bullied on one or more days during the past 30 days
+        </qstnLit>
+      </qstn>
+      <valrng>
+        <range UNITS="REAL" min="1" max="2"/>
+      </valrng>
+      <sumStat type="vald">
+        97
+      </sumStat>
+      <sumStat type="invd">
+        1682
+      </sumStat>
+      <catgry>
+        <catValu>
+          1
+        </catValu>
+        <labl>
+          Yes
+        </labl>
+        <catStat type="freq">
+          63
+        </catStat>
+      </catgry>
+      <catgry>
+        <catValu>
+          2
+        </catValu>
+        <labl>
+          No
+        </labl>
+        <catStat type="freq">
+          34
+        </catStat>
+      </catgry>
+      <catgry missing="Y">
+        <catValu>
+          Sysmiss
+        </catValu>
+        <catStat type="freq">
+          1682
+        </catStat>
+      </catgry>
+      <varFormat type="numeric" schema="other"/>
+    </var>
+    <var ID="V124" name="weight" files="F1" dcml="0" intrvl="contin">
+      <location width="10"/>
+      <labl>
+        Weight
+      </labl>
+      <valrng>
+        <range UNITS="REAL" min="147.0638" max="560.6916"/>
+      </valrng>
+      <sumStat type="vald">
+        1779
+      </sumStat>
+      <sumStat type="invd">
+        0
+      </sumStat>
+      <sumStat type="min">
+        147.064
+      </sumStat>
+      <sumStat type="max">
+        560.692
+      </sumStat>
+      <sumStat type="mean">
+        227.009
+      </sumStat>
+      <sumStat type="stdev">
+        61.109
+      </sumStat>
+      <varFormat type="numeric" schema="other"/>
+    </var>
+    <var ID="V125" name="stratum" files="F1" dcml="0" intrvl="contin">
+      <location width="9"/>
+      <labl>
+        Stratum
+      </labl>
+      <valrng>
+        <range UNITS="REAL" min="201201001" max="201201016"/>
+      </valrng>
+      <sumStat type="vald">
+        1779
+      </sumStat>
+      <sumStat type="invd">
+        0
+      </sumStat>
+      <sumStat type="min">
+        201201001
+      </sumStat>
+      <sumStat type="max">
+        201201016
+      </sumStat>
+      <sumStat type="mean">
+        201201008.808
+      </sumStat>
+      <sumStat type="stdev">
+        10.068
+      </sumStat>
+      <varFormat type="numeric" schema="other"/>
+    </var>
+    <var ID="V126" name="psu" files="F1" dcml="0" intrvl="contin">
+      <location width="5"/>
+      <labl>
+        Primary Sampling Unit
+      </labl>
+      <valrng>
+        <range UNITS="REAL" min="1" max="32"/>
+      </valrng>
+      <sumStat type="vald">
+        1779
+      </sumStat>
+      <sumStat type="invd">
+        0
+      </sumStat>
+      <sumStat type="min">
+        1
+      </sumStat>
+      <sumStat type="max">
+        32
+      </sumStat>
+      <sumStat type="mean">
+        17.183
+      </sumStat>
+      <sumStat type="stdev">
+        9.232
+      </sumStat>
+      <varFormat type="numeric" schema="other"/>
+    </var>
+  </dataDscr>
+</codeBook>

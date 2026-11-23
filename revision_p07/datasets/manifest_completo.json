@@ -1,0 +1,754 @@
+[
+  {
+    "file": "XXH2021_YRBS_Data.dat",
+    "url": "https://www.cdc.gov/yrbs/files/2021/XXH2021_YRBS_Data.dat",
+    "bytes": 7289136,
+    "sha256": "0a8605d7843fba9cb50e7c0c4094089b0ce2793a9988506971fdae3d9f2a04ae",
+    "status": "descargado",
+    "verified_date": "2026-11-17"
+  },
+  {
+    "file": "2021XXH-SAS-Input-Program.sas",
+    "url": "https://www.cdc.gov/yrbs/files/2021/2021XXH-SAS-Input-Program.sas",
+    "bytes": 17031,
+    "sha256": "f5bd4bfaef2c0e6244178649a1b251cef7910ba2f8379a7c97339712b5a00b0d",
+    "status": "descargado",
+    "verified_date": "2026-11-17"
+  },
+  {
+    "file": "2021XXH-Formats-Program.sas",
+    "url": "https://www.cdc.gov/yrbs/files/2021/2021XXH-Formats-Program.sas",
+    "bytes": 17121,
+    "sha256": "11f3895710ca4bac72f6aaa0c3ed50a1b65b525c7ea56971e51a8490dbf71d65",
+    "status": "descargado",
+    "verified_date": "2026-11-17"
+  },
+  {
+    "file": "XXH2023_YRBS_Data.dat",
+    "url": "https://www.cdc.gov/yrbs/files/2023/XXH2023_YRBS_Data.dat",
+    "bytes": 8503569,
+    "sha256": "0a83cba11dc8a0cdf0043aacf0b80478f86cf93a91a8ecb81a276518e486241a",
+    "status": "descargado",
+    "verified_date": "2026-11-17"
+  },
+  {
+    "file": "2023XXH-SAS-Input-Program.sas",
+    "url": "https://www.cdc.gov/yrbs/files/2023/2023XXH-SAS-Input-Program.sas",
+    "bytes": 18559,
+    "sha256": "89a7d57d9658bb8233d892544b436b8931c2b1d18dce7d8af52080465114771f",
+    "status": "descargado",
+    "verified_date": "2026-11-17"
+  },
+  {
+    "file": "2023XXH-Formats-Program.sas",
+    "url": "https://www.cdc.gov/yrbs/files/2023/2023XXH-Formats-Program.sas",
+    "bytes": 18033,
+    "sha256": "6e5d1ab02070a352733c870cb50b9ecf3158c64b4aa01bf33dfa65d51890cd12",
+    "status": "descargado",
+    "verified_date": "2026-11-17"
+  },
+  {
+    "file": "XXH2025_YRBS_Data.dat",
+    "url": "https://www.cdc.gov/yrbs/files/2025/XXH2025_YRBS_Data.dat",
+    "bytes": 4594590,
+    "sha256": "7857d9419a43a27a5630baecf7513823c1bc93730fc2bc11989dc0e766a50c33",
+    "status": "descargado",
+    "verified_date": "2026-11-17"
+  },
+  {
+    "file": "2025XXH-SAS-Input-Program.sas",
+    "url": "https://www.cdc.gov/yrbs/files/2025/2025XXH-SAS-Input-Program.sas",
+    "bytes": 18876,
+    "sha256": "dbe4283e88139f3afe162258b70361d8dfba4882029c3f2a8cc024f9d07baeaf",
+    "status": "descargado",
+    "verified_date": "2026-11-17"
+  },
+  {
+    "file": "2025XXH-Formats-Program.sas",
+    "url": "https://www.cdc.gov/yrbs/files/2025/2025XXH-Formats-Program.sas",
+    "bytes": 18092,
+    "sha256": "4fcef1a8e121e21218437e690249818b14cefa7dba7492ddc9d44575fbe6f5bc",
+    "status": "descargado",
+    "verified_date": "2026-11-17"
+  },
+  {
+    "file": "PER2010_PER2010_Public_Use.csv",
+    "url": "https://extranet.who.int/ncdsmicrodata/index.php/catalog/204/download/1622",
+    "bytes": 733072,
+    "sha256": "c265d49c3c6c3c602fc1a2d8580557bf1c0378a1bed1ea677fcef0319ab73ea6",
+    "status": "descargado",
+    "verified_date": "2026-11-17"
+  },
+  {
+    "file": "PER2010_PER2010_Public_Use.dta",
+    "url": "https://extranet.who.int/ncdsmicrodata/index.php/catalog/204/download/1623",
+    "bytes": 440211,
+    "sha256": "1665b4ea51481b5f4d266fe72b0b14f6f5de07a837625dc7ca616f108c4bb038",
+    "status": "descargado",
+    "verified_date": "2026-11-17"
+  },
+  {
+    "file": "ARG2018_National.csv",
+    "url": "https://extranet.who.int/ncdsmicrodata/index.php/catalog/866/download/6149",
+    "bytes": 14705501,
+    "sha256": "78230452bd403a85ce3af20c283a5334a9a2fb4d3bab7f23dfffd8e892410893",
+    "status": "descargado",
+    "verified_date": "2026-11-17"
+  },
+  {
+    "file": "ARG2018_National.dta",
+    "url": "https://extranet.who.int/ncdsmicrodata/index.php/catalog/866/download/6131",
+    "bytes": 8352912,
+    "sha256": "b6e6348c5b2ae3ad51a5d5606ea9b82747c323dd2c775f49776d5a518f238564",
+    "status": "descargado",
+    "verified_date": "2026-11-17"
+  },
+  {
+    "file": "ARG2018_Buenos Aires.csv",
+    "url": "https://extranet.who.int/ncdsmicrodata/index.php/catalog/866/download/6138",
+    "bytes": 585293,
+    "sha256": "f9eb34a80d70c31d2f342db72b2b92d7fa224479f4bac51923d9673d517d0019",
+    "status": "descargado",
+    "verified_date": "2026-11-17"
+  },
+  {
+    "file": "ARG2018_Catamarca.csv",
+    "url": "https://extranet.who.int/ncdsmicrodata/index.php/catalog/866/download/6139",
+    "bytes": 599931,
+    "sha256": "c7235322484c0d5296a67c9feb548dfcc2409b4cf97e78dc5a742e1e3b693551",
+    "status": "descargado",
+    "verified_date": "2026-11-17"
+  },
+  {
+    "file": "ARG2018_Chaco.csv",
+    "url": "https://extranet.who.int/ncdsmicrodata/index.php/catalog/866/download/6732",
+    "bytes": 661752,
+    "sha256": "8f39e08b4df4e37c7d2ddcfd517e9a80d200db626eff5df0b663f4f974800269",
+    "status": "descargado",
+    "verified_date": "2026-11-17"
+  },
+  {
+    "file": "ARG2018_Chubut.csv",
+    "url": "https://extranet.who.int/ncdsmicrodata/index.php/catalog/866/download/6141",
+    "bytes": 628564,
+    "sha256": "1a761186b322ef4fbe4361c74f6117f05b52664ef2fb2813b64d991fb76ddb31",
+    "status": "descargado",
+    "verified_date": "2026-11-17"
+  },
+  {
+    "file": "ARG2018_Cordoba.csv",
+    "url": "https://extranet.who.int/ncdsmicrodata/index.php/catalog/866/download/6142",
+    "bytes": 558816,
+    "sha256": "78d1f02b33a6777383921ca05cfd68a4eed02ddc56cc153567e01f1b2cf34a8a",
+    "status": "descargado",
+    "verified_date": "2026-11-17"
+  },
+  {
+    "file": "ARG2018_Corrientes.csv",
+    "url": "https://extranet.who.int/ncdsmicrodata/index.php/catalog/866/download/6143",
+    "bytes": 612984,
+    "sha256": "7a2e50454f663b422ec22da3afdb9218d0adc26e1ac5c0dc68651a84570f919b",
+    "status": "descargado",
+    "verified_date": "2026-11-17"
+  },
+  {
+    "file": "ARG2018_Entre Rios.csv",
+    "url": "https://extranet.who.int/ncdsmicrodata/index.php/catalog/866/download/6144",
+    "bytes": 654300,
+    "sha256": "d75278598b52f6aa3a7da2a8c73ebe528e80c06a31720780a9979e3feed9ae9f",
+    "status": "descargado",
+    "verified_date": "2026-11-17"
+  },
+  {
+    "file": "ARG2018_Jujuy.csv",
+    "url": "https://extranet.who.int/ncdsmicrodata/index.php/catalog/866/download/6145",
+    "bytes": 781897,
+    "sha256": "aaf632576717225105d4ac94397ca7fb183dc2b91dc8d80cbf07bf067a605c8a",
+    "status": "descargado",
+    "verified_date": "2026-11-17"
+  },
+  {
+    "file": "ARG2018_La Rioja.csv",
+    "url": "https://extranet.who.int/ncdsmicrodata/index.php/catalog/866/download/6146",
+    "bytes": 584566,
+    "sha256": "2640603f2f5f1363d809abea8fca20e93aa9e43827b0483e52d2dee7e0b8e101",
+    "status": "descargado",
+    "verified_date": "2026-11-17"
+  },
+  {
+    "file": "ARG2018_Mendoza.csv",
+    "url": "https://extranet.who.int/ncdsmicrodata/index.php/catalog/866/download/6147",
+    "bytes": 773681,
+    "sha256": "901f27a65be2d0a23e5c2a27667fceca1407040bcdf399a5e7fb264d0247bc01",
+    "status": "descargado",
+    "verified_date": "2026-11-17"
+  },
+  {
+    "file": "ARG2018_Misiones.csv",
+    "url": "https://extranet.who.int/ncdsmicrodata/index.php/catalog/866/download/6148",
+    "bytes": 747460,
+    "sha256": "e251e616ace699df40d3f24839dccef39303e50220180a5905737ba8166ba450",
+    "status": "descargado",
+    "verified_date": "2026-11-17"
+  },
+  {
+    "file": "ARG2018_Salta.csv",
+    "url": "https://extranet.who.int/ncdsmicrodata/index.php/catalog/866/download/6150",
+    "bytes": 609503,
+    "sha256": "0b6c0433ccec059a0adea52f17b382aa7a2cdfdde92511a9a28de433ae05076a",
+    "status": "descargado",
+    "verified_date": "2026-11-17"
+  },
+  {
+    "file": "ARG2018_San Juan.csv",
+    "url": "https://extranet.who.int/ncdsmicrodata/index.php/catalog/866/download/6151",
+    "bytes": 626297,
+    "sha256": "0067717c57a637e427b684f1e4ae213dc80f2a5b32085d8ad64ddf417a32d758",
+    "status": "descargado",
+    "verified_date": "2026-11-17"
+  },
+  {
+    "file": "ARG2018_Santa Cruz.csv",
+    "url": "https://extranet.who.int/ncdsmicrodata/index.php/catalog/866/download/6152",
+    "bytes": 704741,
+    "sha256": "022c0c349e2c1870d20239495e0b00bf773370652513143c6d9071aefada27af",
+    "status": "descargado",
+    "verified_date": "2026-11-17"
+  },
+  {
+    "file": "ARG2018_Santa Fe.csv",
+    "url": "https://extranet.who.int/ncdsmicrodata/index.php/catalog/866/download/6153",
+    "bytes": 994542,
+    "sha256": "2fbd4a64d072ccb5e8c8e2655bac1429e74455f5a624dc97c47134a34c82dbce",
+    "status": "descargado",
+    "verified_date": "2026-11-17"
+  },
+  {
+    "file": "ARG2018_Santiago del Estero.csv",
+    "url": "https://extranet.who.int/ncdsmicrodata/index.php/catalog/866/download/6154",
+    "bytes": 742953,
+    "sha256": "9d57faea58d1cd6917066534b5d98a82d9363fbe23b11478cbc1c3e4891d9c33",
+    "status": "descargado",
+    "verified_date": "2026-11-17"
+  },
+  {
+    "file": "ARG2018_Tierra del Fuego.csv",
+    "url": "https://extranet.who.int/ncdsmicrodata/index.php/catalog/866/download/6155",
+    "bytes": 640038,
+    "sha256": "0b8ffbe28e7aa69ad4a41e4faac03125cb77fa9fbe46220aa29a1febb3dc244f",
+    "status": "descargado",
+    "verified_date": "2026-11-17"
+  },
+  {
+    "file": "ARG2018_Tucuman.csv",
+    "url": "https://extranet.who.int/ncdsmicrodata/index.php/catalog/866/download/6156",
+    "bytes": 649558,
+    "sha256": "2bb62446b5cb704485345bf0a74449d27f7315e273e45f55134bd20925337957",
+    "status": "descargado",
+    "verified_date": "2026-11-17"
+  },
+  {
+    "file": "ARG2018_Buenos Aires.dta",
+    "url": "https://extranet.who.int/ncdsmicrodata/index.php/catalog/866/download/6733",
+    "bytes": 360516,
+    "sha256": "d6a2df724781b92d6b22f2cca2e79b1673ee26525ac28c6bded7136b96cc49b5",
+    "status": "descargado",
+    "verified_date": "2026-11-17"
+  },
+  {
+    "file": "ARG2018_Catamarca.dta",
+    "url": "https://extranet.who.int/ncdsmicrodata/index.php/catalog/866/download/6734",
+    "bytes": 373929,
+    "sha256": "7258d148748b32624c806878f7300cc101e6305c18195924dbdea154c6c6fb7f",
+    "status": "descargado",
+    "verified_date": "2026-11-17"
+  },
+  {
+    "file": "ARG2018_Chaco.dta",
+    "url": "https://extranet.who.int/ncdsmicrodata/index.php/catalog/866/download/6735",
+    "bytes": 405176,
+    "sha256": "fbf217867a7b3941181a11fba377324cc1ab9a742f97af578c4c1ac70867d4e2",
+    "status": "descargado",
+    "verified_date": "2026-11-17"
+  },
+  {
+    "file": "ARG2018_Chubut.dta",
+    "url": "https://extranet.who.int/ncdsmicrodata/index.php/catalog/866/download/6736",
+    "bytes": 386425,
+    "sha256": "5eabe0ece3e5ecaa5e4f38871466f89fce503fe7bcfd3f0415328fabc964c24c",
+    "status": "descargado",
+    "verified_date": "2026-11-17"
+  },
+  {
+    "file": "ARG2018_Cordoba.dta",
+    "url": "https://extranet.who.int/ncdsmicrodata/index.php/catalog/866/download/6737",
+    "bytes": 346596,
+    "sha256": "6ee0d52cfeb52d2e834ce684652f3b0b7d7af5eb90430f566cbb61450a2f01e0",
+    "status": "descargado",
+    "verified_date": "2026-11-17"
+  },
+  {
+    "file": "ARG2018_Corrientes.dta",
+    "url": "https://extranet.who.int/ncdsmicrodata/index.php/catalog/866/download/6738",
+    "bytes": 377678,
+    "sha256": "a3eec3c1ca6cf3a37c790be8a7a39757e8bf3fa8fcbf5e436f7ae40a07049eef",
+    "status": "descargado",
+    "verified_date": "2026-11-17"
+  },
+  {
+    "file": "ARG2018_Entre Rios.dta",
+    "url": "https://extranet.who.int/ncdsmicrodata/index.php/catalog/866/download/6739",
+    "bytes": 399231,
+    "sha256": "a588916e42b665cf3c552a591c52f6085deefc26479e8374cde504579c313a60",
+    "status": "descargado",
+    "verified_date": "2026-11-17"
+  },
+  {
+    "file": "ARG2018_Jujuy.dta",
+    "url": "https://extranet.who.int/ncdsmicrodata/index.php/catalog/866/download/6741",
+    "bytes": 473616,
+    "sha256": "c4b7ab3278a584574ed303f1f1060c0ede330a3693138c89d521e0dac402ba79",
+    "status": "descargado",
+    "verified_date": "2026-11-17"
+  },
+  {
+    "file": "ARG2018_La Rioja.dta",
+    "url": "https://extranet.who.int/ncdsmicrodata/index.php/catalog/866/download/6742",
+    "bytes": 362111,
+    "sha256": "0548d6f67ee4dc401d45ab94df43bff7ac803be18f6793255555540e1f07bc58",
+    "status": "descargado",
+    "verified_date": "2026-11-17"
+  },
+  {
+    "file": "ARG2018_Mendoza.dta",
+    "url": "https://extranet.who.int/ncdsmicrodata/index.php/catalog/866/download/6743",
+    "bytes": 463901,
+    "sha256": "4d52d339dcb47c078aed882ce6bb254455c268d82002ed1f4954b2af113031f2",
+    "status": "descargado",
+    "verified_date": "2026-11-17"
+  },
+  {
+    "file": "ARG2018_Misiones.dta",
+    "url": "https://extranet.who.int/ncdsmicrodata/index.php/catalog/866/download/6744",
+    "bytes": 455491,
+    "sha256": "168a4a3343c0d4d4b0f17c7acdc4a9db78a13f4771861374970cf8a691509179",
+    "status": "descargado",
+    "verified_date": "2026-11-17"
+  },
+  {
+    "file": "ARG2018_Salta.dta",
+    "url": "https://extranet.who.int/ncdsmicrodata/index.php/catalog/866/download/6740",
+    "bytes": 375306,
+    "sha256": "413869bc4c462310710c49415adb95ab259d137e25da7f67b665697bd8691e56",
+    "status": "descargado",
+    "verified_date": "2026-11-17"
+  },
+  {
+    "file": "ARG2018_San Juan.dta",
+    "url": "https://extranet.who.int/ncdsmicrodata/index.php/catalog/866/download/6745",
+    "bytes": 384876,
+    "sha256": "f03df2a80bb20b1ab4285e4629eb80a0fb7fa589f7d9810ad31c6fc34af32310",
+    "status": "descargado",
+    "verified_date": "2026-11-17"
+  },
+  {
+    "file": "ARG2018_Santa Cruz.dta",
+    "url": "https://extranet.who.int/ncdsmicrodata/index.php/catalog/866/download/6746",
+    "bytes": 429536,
+    "sha256": "2eca85f6930459d859059e68356359b3c3b8bfa8fcaacbe9600f81440444f203",
+    "status": "descargado",
+    "verified_date": "2026-11-17"
+  },
+  {
+    "file": "ARG2018_Santa Fe.dta",
+    "url": "https://extranet.who.int/ncdsmicrodata/index.php/catalog/866/download/6747",
+    "bytes": 589326,
+    "sha256": "c51119c6570863f08ec5f29894abe79e35fac341825e1376e55d5977c7300c72",
+    "status": "descargado",
+    "verified_date": "2026-11-17"
+  },
+  {
+    "file": "ARG2018_Santiago del Estero.dta",
+    "url": "https://extranet.who.int/ncdsmicrodata/index.php/catalog/866/download/6748",
+    "bytes": 454869,
+    "sha256": "9132bcd893ff53abbc2a5e51a0d44037bd89beaa9fa18af01b935ba3555188fc",
+    "status": "descargado",
+    "verified_date": "2026-11-17"
+  },
+  {
+    "file": "ARG2018_Tierra del Fuego.dta",
+    "url": "https://extranet.who.int/ncdsmicrodata/index.php/catalog/866/download/6749",
+    "bytes": 392247,
+    "sha256": "33649296cfea52c9058f949403f9d758e97c7d2310dd26310e12bd9664859055",
+    "status": "descargado",
+    "verified_date": "2026-11-17"
+  },
+  {
+    "file": "ARG2018_Tucuman.dta",
+    "url": "https://extranet.who.int/ncdsmicrodata/index.php/catalog/866/download/6750",
+    "bytes": 401696,
+    "sha256": "81f8025cb36002e68ded498e302623f30addad3638200ebbe27b647e8bb20869",
+    "status": "descargado",
+    "verified_date": "2026-11-17"
+  },
+  {
+    "file": "PRY2017_PYH2017.csv",
+    "url": "https://extranet.who.int/ncdsmicrodata/index.php/catalog/651/download/4674",
+    "bytes": 846088,
+    "sha256": "0c8e2240ee1f9e80ad6a953cdcec711485dc129a592c3b6fa58c668ae190870d",
+    "status": "descargado",
+    "verified_date": "2026-11-17"
+  },
+  {
+    "file": "PRY2017_PYH2017.dta",
+    "url": "https://extranet.who.int/ncdsmicrodata/index.php/catalog/651/download/4675",
+    "bytes": 533204,
+    "sha256": "b02893a507847e0da86a0fad357a383f4918feea5218ff443fcca6987f5dce00",
+    "status": "descargado",
+    "verified_date": "2026-11-17"
+  },
+  {
+    "file": "URY2019_URY2019 (Montevideo).csv",
+    "url": "https://extranet.who.int/ncdsmicrodata/index.php/catalog/945/download/6684",
+    "bytes": 350383,
+    "sha256": "4ac28826695f3294a9af59aeaa16bbcf654edb8ac3eac1316c7c8c6bfad7202b",
+    "status": "descargado",
+    "verified_date": "2026-11-17"
+  },
+  {
+    "file": "URY2019_URY2019 (Montevideo).dta",
+    "url": "https://extranet.who.int/ncdsmicrodata/index.php/catalog/945/download/6685",
+    "bytes": 226021,
+    "sha256": "d5699b3e5c5a819d608e8c16b5df4a32de4f717d792ed2791ddaf31eecab9dba",
+    "status": "descargado",
+    "verified_date": "2026-11-17"
+  },
+  {
+    "file": "URY2019_URY2019.csv",
+    "url": "https://extranet.who.int/ncdsmicrodata/index.php/catalog/945/download/6688",
+    "bytes": 712500,
+    "sha256": "e5b48d583227c2529ef10cdce6ef2366f1771d914b65aead98de9c796185995f",
+    "status": "descargado",
+    "verified_date": "2026-11-17"
+  },
+  {
+    "file": "URY2019_URY2019.dta",
+    "url": "https://extranet.who.int/ncdsmicrodata/index.php/catalog/945/download/6689",
+    "bytes": 426948,
+    "sha256": "b3c06ab0e450347c04d8d364037d1159ce50ee34fb634b212f8274f7bf277a41",
+    "status": "descargado",
+    "verified_date": "2026-11-17"
+  },
+  {
+    "file": "URY2019_URY2019 (Rest of country).csv",
+    "url": "https://extranet.who.int/ncdsmicrodata/index.php/catalog/945/download/6686",
+    "bytes": 364693,
+    "sha256": "2c8d0608cb088bee701d6c05fb0db46d25a58d1ca40973bbc3b29c94ab9802e7",
+    "status": "descargado",
+    "verified_date": "2026-11-17"
+  },
+  {
+    "file": "URY2019_URY2019 (Rest of country).dta",
+    "url": "https://extranet.who.int/ncdsmicrodata/index.php/catalog/945/download/6687",
+    "bytes": 232625,
+    "sha256": "c82f96a9b4b89487d2b9a62094667309e2618c83487e01189b6c181318d8a1d8",
+    "status": "descargado",
+    "verified_date": "2026-11-17"
+  },
+  {
+    "file": "BOL2018_Highland Dataset.csv",
+    "url": "https://extranet.who.int/ncdsmicrodata/index.php/catalog/881/download/6256",
+    "bytes": 606779,
+    "sha256": "236b1b777fa95979f32ed58573ac392d96f3c0a3f5480546ae966acdf09acf69",
+    "status": "descargado",
+    "verified_date": "2026-11-17"
+  },
+  {
+    "file": "BOL2018_Highland Dataset.dta",
+    "url": "https://extranet.who.int/ncdsmicrodata/index.php/catalog/881/download/6257",
+    "bytes": 378081,
+    "sha256": "01973435eac3bde49353dc6a6e47c63b667accdd05c11f84ec5dadd74b2727d7",
+    "status": "descargado",
+    "verified_date": "2026-11-17"
+  },
+  {
+    "file": "BOL2018_National Dataset.csv",
+    "url": "https://extranet.who.int/ncdsmicrodata/index.php/catalog/881/download/6254",
+    "bytes": 1878942,
+    "sha256": "60de87326109e9343b73e55f71bce99173bdcce1660a694deb95b75eeed738f9",
+    "status": "descargado",
+    "verified_date": "2026-11-17"
+  },
+  {
+    "file": "BOL2018_National Dataset.dta",
+    "url": "https://extranet.who.int/ncdsmicrodata/index.php/catalog/881/download/6255",
+    "bytes": 1101966,
+    "sha256": "8b0ed5bc70357efdcd2c25e7510feca54a4b5787107bf9199b9fcf2f58aeef2a",
+    "status": "descargado",
+    "verified_date": "2026-11-17"
+  },
+  {
+    "file": "BOL2018_Plains Dataset.csv",
+    "url": "https://extranet.who.int/ncdsmicrodata/index.php/catalog/881/download/6258",
+    "bytes": 682783,
+    "sha256": "24a99e66668c5389ce9c4fb18209dec0b155689f69618b18b12f05f0855490fb",
+    "status": "descargado",
+    "verified_date": "2026-11-17"
+  },
+  {
+    "file": "BOL2018_Plains Dataset.dta",
+    "url": "https://extranet.who.int/ncdsmicrodata/index.php/catalog/881/download/6259",
+    "bytes": 419017,
+    "sha256": "15cddad50a9f137fcda2d0faeaac4298763e7790f5b9053ee9366f860c5d4043",
+    "status": "descargado",
+    "verified_date": "2026-11-17"
+  },
+  {
+    "file": "BOL2018_Valley Dataset.csv",
+    "url": "https://extranet.who.int/ncdsmicrodata/index.php/catalog/881/download/6260",
+    "bytes": 596186,
+    "sha256": "611d560f34a428abca79f9f0469dd96156ea9caa969efff8a5c528b97682202b",
+    "status": "descargado",
+    "verified_date": "2026-11-17"
+  },
+  {
+    "file": "BOL2018_Valley Dataset.dta",
+    "url": "https://extranet.who.int/ncdsmicrodata/index.php/catalog/881/download/6261",
+    "bytes": 375361,
+    "sha256": "a699793a3b35c9e74cca7b19d7df925ecbfcb9ffcf584e2ba3664bdaf954adc4",
+    "status": "descargado",
+    "verified_date": "2026-11-17"
+  },
+  {
+    "file": "PENSE2019_Documentacao.zip",
+    "url": "https://ftp.ibge.gov.br/pense/2019/microdados/Documentacao.zip",
+    "bytes": 52901,
+    "sha256": "6a1a09385ac3a04229a9939e55940bdacc357cad111db0c0b58a471601975835",
+    "status": "descargado",
+    "verified_date": "2026-11-17"
+  },
+  {
+    "file": "PENSE2019_Dados.zip",
+    "url": "https://ftp.ibge.gov.br/pense/2019/microdados/Dados.zip",
+    "bytes": 122757880,
+    "sha256": "a0f7ddd2b961299ef5eab078cb01f32af967c35ba987a42507838b3589275adf",
+    "status": "descargado",
+    "verified_date": "2026-11-17"
+  },
+  {
+    "file": "PENSE2024_Documentacao.zip",
+    "url": "https://ftp.ibge.gov.br/pense/2024/microdados/Documentacao.zip",
+    "bytes": 49093,
+    "sha256": "10bf2ede81fd7baf9ef2c17682a265666e706075a677bd1276ea120e467a8b19",
+    "status": "descargado",
+    "verified_date": "2026-11-17"
+  },
+  {
+    "file": "PENSE2024_Dados.zip",
+    "url": "https://ftp.ibge.gov.br/pense/2024/microdados/Dados.zip",
+    "bytes": 156845946,
+    "sha256": "7b3bf4d0b7d87e0bf2d81c9cc74a1194f66b653c97ae93e6bcb002b2d91d2070",
+    "status": "descargado",
+    "verified_date": "2026-11-17"
+  },
+  {
+    "file": "WDI_NY.GDP.PCAP.PP.KD.json",
+    "url": "https://api.worldbank.org/v2/country/PER;ARG;PRY;URY;BOL;BRA;USA/indicator/NY.GDP.PCAP.PP.KD?date=2009:2025&format=json&per_page=20000",
+    "bytes": 29199,
+    "sha256": "0a833615c54f2a23683c2b7e38a4afa55258afd1ea830c35ae482754d570fa8f",
+    "status": "descargado",
+    "verified_date": "2026-11-17"
+  },
+  {
+    "file": "WDI_SI.POV.GINI.json",
+    "url": "https://api.worldbank.org/v2/country/PER;ARG;PRY;URY;BOL;BRA;USA/indicator/SI.POV.GINI?date=2009:2025&format=json&per_page=20000",
+    "bytes": 22185,
+    "sha256": "ef1710d67bdef8d457b1823a45dd0cae8897bac81702d9ef94a8ae41eb5a4709",
+    "status": "descargado",
+    "verified_date": "2026-11-17"
+  },
+  {
+    "file": "WDI_SH.XPD.CHEX.GD.ZS.json",
+    "url": "https://api.worldbank.org/v2/country/PER;ARG;PRY;URY;BOL;BRA;USA/indicator/SH.XPD.CHEX.GD.ZS?date=2009:2025&format=json&per_page=20000",
+    "bytes": 26759,
+    "sha256": "3211032ad1a6fb1226ea15e477a7d284f43d54095caec94cfd7a0f1089e89b90",
+    "status": "descargado",
+    "verified_date": "2026-11-17"
+  },
+  {
+    "file": "WDI_SL.UEM.1524.ZS.json",
+    "url": "https://api.worldbank.org/v2/country/PER;ARG;PRY;URY;BOL;BRA;USA/indicator/SL.UEM.1524.ZS?date=2009:2025&format=json&per_page=20000",
+    "bytes": 31540,
+    "sha256": "94db205c59a99cfdbf16aba7fb57a0475eb7f138fe3ccee9e2aed10e1a39cdf8",
+    "status": "descargado",
+    "verified_date": "2026-11-17"
+  },
+  {
+    "file": "YRBS2025_guia.pdf",
+    "url": "https://www.cdc.gov/yrbs/files/2025/2025-YRBS-Data-Users-Guide-Final.pdf",
+    "bytes": 802320,
+    "sha256": "d9014fae532bb9e5418c01ed5e24aebd97220348ece8155618cccf3152c1d31a",
+    "status": "descargado",
+    "verified_date": "2026-11-17"
+  },
+  {
+    "file": "YRBS2023_guia.pdf",
+    "url": "https://www.cdc.gov/yrbs/media/pdf/2023/2023_National_YRBS_Data_Users_Guide508.pdf",
+    "bytes": 1036445,
+    "sha256": "54b081c797873c1a16d7b6d4be728591667fb7781e799ee2bec9fa6ae3f90a61",
+    "status": "descargado",
+    "verified_date": "2026-11-17"
+  },
+  {
+    "file": "YRBS2021_guia.pdf",
+    "url": "https://www.cdc.gov/yrbs/files/2021/pdf/2021_YRBS_Data_Users_Guide_508.pdf",
+    "bytes": 2215399,
+    "sha256": "e758264daa61b0e8750401f98c7485ed98eb21983afa87b7fe5f32aa50e2cfe2",
+    "status": "descargado",
+    "verified_date": "2026-11-17"
+  },
+  {
+    "file": "tabulares/ARG2018_diccionario.csv",
+    "bytes": 509466,
+    "sha256": "e8d4315e2e9fbfffe5646b605cd5ca96a70c2af667b44571563854a3fef610a4",
+    "status": "derivado local"
+  },
+  {
+    "file": "tabulares/BOL2018_diccionario.csv",
+    "bytes": 98484,
+    "sha256": "63c8ed4bdca068e916d96a0655d255b76c90dcc6e087bd15cb8dda4b78685254",
+    "status": "derivado local"
+  },
+  {
+    "file": "tabulares/GSHS_5paises_13a15_base.csv",
+    "bytes": 5813863,
+    "sha256": "a52a676870df0beabb404c36f602f41a6e1619a9827981813c76ab488c71f251",
+    "status": "derivado local"
+  },
+  {
+    "file": "tabulares/GSHS_factibilidad.csv",
+    "bytes": 370,
+    "sha256": "ea41dd50ecbd856a01f461cddd00548feae0a4b5859ed6bca310304f4d741ecd",
+    "status": "derivado local"
+  },
+  {
+    "file": "tabulares/GSHS_faltantes.csv",
+    "bytes": 2810,
+    "sha256": "523f36e5e9cb6d95f0350121549c1571c32ffabcf67d091354d19820406fde8b",
+    "status": "derivado local"
+  },
+  {
+    "file": "tabulares/GSHS_mapeo_predictores.csv",
+    "bytes": 16596,
+    "sha256": "23acb1c601d334ee86c6e884433c310ae7a644f11d4e63dca868338f45e17a02",
+    "status": "derivado local"
+  },
+  {
+    "file": "tabulares/PENSE2019_Dados_PENSE2019_MICRODADOS.csv",
+    "bytes": 118915250,
+    "sha256": "6473f6f4392ddf33cc866d351f6757a4a6574b229b700af9c8c591be30d0f733",
+    "status": "derivado local"
+  },
+  {
+    "file": "tabulares/PENSE2019_Documentacao_Dicionario_PENSE2019_Microdados_diccionario.csv",
+    "bytes": 19145,
+    "sha256": "5b745366365096f3fd9831a94bc95f87d074665b85468f72bcd836bb5a108cbe",
+    "status": "derivado local"
+  },
+  {
+    "file": "tabulares/PENSE2019_Documentacao_Dicionario_PENSE2019_Microdados_Question\u00e1rio ALUNO.csv",
+    "bytes": 47056,
+    "sha256": "a89e986657b6a786e874a21cbb098aaaf7c1c60b38601d1310d43004a0ec01c4",
+    "status": "derivado local"
+  },
+  {
+    "file": "tabulares/PENSE2019_Documentacao_Dicionario_PENSE2019_Microdados_Question\u00e1rio ESCOLA.csv",
+    "bytes": 19145,
+    "sha256": "5b745366365096f3fd9831a94bc95f87d074665b85468f72bcd836bb5a108cbe",
+    "status": "derivado local"
+  },
+  {
+    "file": "tabulares/PENSE2019_Documentacao_Dicionario_PENSE2019_Microdados_Vari\u00e1veis cadastrais e amostra.csv",
+    "bytes": 3486,
+    "sha256": "8f3e9ebbc7a29c8809d7f3463af8ed8d093303f1d10a7ba443c8e4e1089a80b6",
+    "status": "derivado local"
+  },
+  {
+    "file": "tabulares/PENSE2024_Dados_PENSE2024_MICRODADOS.csv",
+    "bytes": 154563662,
+    "sha256": "77eb75284172ac88e2717152bc7477f621c30b5a9dde7d2c5a222930f6a203dd",
+    "status": "derivado local"
+  },
+  {
+    "file": "tabulares/PENSE2024_Documentacao_Dicion\u00e1rio Microdados PeNSE2024_PeNSE2024.csv",
+    "bytes": 90878,
+    "sha256": "640749b9ce7ad33f03fdcb473a55d40960c10b296a0d2905fcd627c244a59d4f",
+    "status": "derivado local"
+  },
+  {
+    "file": "tabulares/PER2010_diccionario.csv",
+    "bytes": 27426,
+    "sha256": "84400cf5417cc71ced442f6c427cc0dd7d67b722c5baba700b882c707be8339a",
+    "status": "derivado local"
+  },
+  {
+    "file": "tabulares/PRY2017_diccionario.csv",
+    "bytes": 32595,
+    "sha256": "1743ca8ce38eae850eec8eda975ba6c320e6da24d9c4ed1aa344dd0b27af494c",
+    "status": "derivado local"
+  },
+  {
+    "file": "tabulares/URY2019_diccionario.csv",
+    "bytes": 65074,
+    "sha256": "e13ff1e45412a1971e9f406d43f3bc44793105e34ed00f3aad68b233ba43be74",
+    "status": "derivado local"
+  },
+  {
+    "file": "tabulares/WDI_cobertura_GSHS.csv",
+    "bytes": 326,
+    "sha256": "ad67388a445bf9dfe43230d1a95b635a223991a5e020f64aed42ec4eaf3a9674",
+    "status": "derivado local"
+  },
+  {
+    "file": "tabulares/WDI_contexto_largo.csv",
+    "bytes": 16806,
+    "sha256": "d35b1497955bd8d72f094f87e4bacbc1c21f4afdbc3b3e59251abf5edc089265",
+    "status": "derivado local"
+  },
+  {
+    "file": "tabulares/YRBS_2021_completo.csv",
+    "bytes": 11024066,
+    "sha256": "0675e64a393f13ac57c20b4f6a1a285535b23fbd25599a060d16923629450a39",
+    "status": "derivado local"
+  },
+  {
+    "file": "tabulares/YRBS_2021_diccionario.csv",
+    "bytes": 11279,
+    "sha256": "9451d13322e81641d53d3e9746a8fa6cd1d15b78b6015f535e9f7d1841538fa9",
+    "status": "derivado local"
+  },
+  {
+    "file": "tabulares/YRBS_2023_completo.csv",
+    "bytes": 13520694,
+    "sha256": "c7c2dc19cded0321f9ab2facaaa09e2032b5e3bf62b2a374edf58031bd727a05",
+    "status": "derivado local"
+  },
+  {
+    "file": "tabulares/YRBS_2023_diccionario.csv",
+    "bytes": 12745,
+    "sha256": "796c6f934e5355057472c6465b421e99d7d13988b22f0896a8d5fa71fad30011",
+    "status": "derivado local"
+  },
+  {
+    "file": "tabulares/YRBS_2025_completo.csv",
+    "bytes": 7612882,
+    "sha256": "cd6ee31d2847af5dc5df43638a3d3fd4cd1f07366b80666e83fab4b542365369",
+    "status": "derivado local"
+  },
+  {
+    "file": "tabulares/YRBS_2025_diccionario.csv",
+    "bytes": 13016,
+    "sha256": "9c482fc35b615831580dfa54f174a6d61e2bd222a0be587b674bae9133b13f0f",
+    "status": "derivado local"
+  }
+]

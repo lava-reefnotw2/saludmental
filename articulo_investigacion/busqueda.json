@@ -1,0 +1,12 @@
+{
+  "fecha": "2026-11-17",
+  "fuente": "Europe PMC MEDLINE",
+  "consultas": {
+    "adolescencia_ml": "TITLE_ABS:(adolescent OR adolescents) AND TITLE_ABS:(\"machine learning\") AND TITLE_ABS:(suicide OR suicidal) AND FIRST_PDATE:[2022-01-01 TO 2025-12-31]",
+    "sociales": "TITLE_ABS:(\"global school-based\" OR \"social determinants\" OR \"parental support\" OR \"food insecurity\") AND TITLE_ABS:(adolescent OR adolescents) AND TITLE_ABS:(suicide OR suicidal OR \"mental health\") AND FIRST_PDATE:[2022-01-01 TO 2025-12-31]",
+    "metodos": "TITLE:(\"TRIPOD\" OR \"PROBAST\" OR \"prediction models\" OR \"algorithmic fairness\") AND FIRST_PDATE:[2022-01-01 TO 2025-12-31]",
+    "guia": "TITLE:(\"TRIPOD+AI\" OR \"PROBAST+AI\" OR \"Rethinking explainability\" OR \"Minimum information about clinical artificial intelligence modeling\" OR \"DECIDE-AI\" OR \"clinical prediction models\" OR \"FUTURE-AI\") AND FIRST_PDATE:[2022-01-01 TO 2025-12-31]",
+    "contexto": "TITLE:(\"adolescent mental health\" OR \"social determinants of mental health\" OR \"school connectedness\" OR \"suicide risk prediction\") AND FIRST_PDATE:[2022-01-01 TO 2025-12-31]"
+  },
+  "restriccion": "No se accedió a Scopus ni Web of Science; búsqueda narrativa, no revisión sistemática."
+}

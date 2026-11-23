@@ -1,0 +1,58 @@
+[
+  {
+    "file": "PENSE2019_Documentacao.zip",
+    "url": "https://ftp.ibge.gov.br/pense/2019/microdados/Documentacao.zip",
+    "bytes": 52901,
+    "sha256": "6a1a09385ac3a04229a9939e55940bdacc357cad111db0c0b58a471601975835",
+    "status": "descargado"
+  },
+  {
+    "file": "PENSE2019_Dados.zip",
+    "url": "https://ftp.ibge.gov.br/pense/2019/microdados/Dados.zip",
+    "bytes": 122757880,
+    "sha256": "a0f7ddd2b961299ef5eab078cb01f32af967c35ba987a42507838b3589275adf",
+    "status": "descargado"
+  },
+  {
+    "file": "PENSE2024_Documentacao.zip",
+    "url": "https://ftp.ibge.gov.br/pense/2024/microdados/Documentacao.zip",
+    "bytes": 49093,
+    "sha256": "10bf2ede81fd7baf9ef2c17682a265666e706075a677bd1276ea120e467a8b19",
+    "status": "descargado"
+  },
+  {
+    "file": "PENSE2024_Dados.zip",
+    "url": "https://ftp.ibge.gov.br/pense/2024/microdados/Dados.zip",
+    "bytes": 156845946,
+    "sha256": "7b3bf4d0b7d87e0bf2d81c9cc74a1194f66b653c97ae93e6bcb002b2d91d2070",
+    "status": "descargado"
+  },
+  {
+    "file": "WDI_NY.GDP.PCAP.PP.KD.json",
+    "url": "https://api.worldbank.org/v2/country/PER;ARG;PRY;URY;BOL;BRA;USA/indicator/NY.GDP.PCAP.PP.KD?date=2009:2025&format=json&per_page=20000",
+    "bytes": 29199,
+    "sha256": "0a833615c54f2a23683c2b7e38a4afa55258afd1ea830c35ae482754d570fa8f",
+    "status": "descargado"
+  },
+  {
+    "file": "WDI_SI.POV.GINI.json",
+    "url": "https://api.worldbank.org/v2/country/PER;ARG;PRY;URY;BOL;BRA;USA/indicator/SI.POV.GINI?date=2009:2025&format=json&per_page=20000",
+    "bytes": 22185,
+    "sha256": "ef1710d67bdef8d457b1823a45dd0cae8897bac81702d9ef94a8ae41eb5a4709",
+    "status": "descargado"
+  },
+  {
+    "file": "WDI_SH.XPD.CHEX.GD.ZS.json",
+    "url": "https://api.worldbank.org/v2/country/PER;ARG;PRY;URY;BOL;BRA;USA/indicator/SH.XPD.CHEX.GD.ZS?date=2009:2025&format=json&per_page=20000",
+    "bytes": 26759,
+    "sha256": "3211032ad1a6fb1226ea15e477a7d284f43d54095caec94cfd7a0f1089e89b90",
+    "status": "descargado"
+  },
+  {
+    "file": "WDI_SL.UEM.1524.ZS.json",
+    "url": "https://api.worldbank.org/v2/country/PER;ARG;PRY;URY;BOL;BRA;USA/indicator/SL.UEM.1524.ZS?date=2009:2025&format=json&per_page=20000",
+    "bytes": 31540,
+    "sha256": "94db205c59a99cfdbf16aba7fb57a0475eb7f138fe3ccee9e2aed10e1a39cdf8",
+    "status": "descargado"
+  }
+]

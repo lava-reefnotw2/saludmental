@@ -1,0 +1,4626 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<codeBook version="1.2.2" ID="PAN_2018_GSHS_v01" xml-lang="en" xmlns="http://www.icpsr.umich.edu/DDI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.icpsr.umich.edu/DDI http://www.icpsr.umich.edu/DDI/Version1-2-2.xsd">
+<docDscr>
+  <citation>
+    <titlStmt>
+      <IDNo>DDI_PAN_2018_GSHS_v01_M</IDNo>
+    </titlStmt>
+    <prodStmt>
+      <producer abbr="" affiliation="World Health Organization" role="Documentation of data">Melanie Cowan</producer>
+      <prodDate date="2021-09-07">2021-09-07</prodDate>
+      <software version="v5">NADA</software>
+    </prodStmt>
+    <verStmt>
+      <version>Version 1.0 (September 2021).</version>
+    </verStmt>
+  </citation>
+</docDscr>
+<stdyDscr>
+  <citation>
+    <titlStmt>
+      <titl>Global School-Based Student Health Survey 2018</titl>
+      <subTitl/>
+      <altTitl>GSHS 2018</altTitl>
+      <parTitl/>
+      <IDNo>PAN_2018_GSHS_v01</IDNo>
+    </titlStmt>
+    <rspStmt>
+      <AuthEnty affiliation="">Ministerio de Salud</AuthEnty>
+    </rspStmt>
+    <prodStmt>
+      <copyright/>
+      <software version="5.0" date="2021-09-08">NADA</software>
+      <fundAg abbr="WHO" role="">World Health Organization</fundAg>
+      <fundAg abbr="CDC" role="">US Centers for Disease Control and Prevention</fundAg>
+      <grantNo/>
+    </prodStmt>
+    <distStmt>
+      <contact affiliation="World Health Organization" URI="https://www.who.int/teams/noncommunicable-diseases/surveillance/systems-tools/global-school-based-student-health-survey" email="ncdmonitoring@who.int">NCD Surveillance Team</contact>
+      <depDate date=""/>
+      <distDate date=""/>
+    </distStmt>
+    <serStmt>
+      <serName>Global School-Based Student Health Survey</serName>
+      <serInfo>This is the first GSHS conducted by Panama.</serInfo>
+    </serStmt>
+    <verStmt>
+      <version date="">Public-use dataset</version>
+      <verResp/>
+      <notes/>
+    </verStmt>
+    <biblCit format=""/>
+    <notes/>
+  </citation>
+  <stdyInfo>
+    <studyBudget/>
+    <subject>
+      <keyword vocab="" vocabURI="">adolescents</keyword>
+      <keyword vocab="" vocabURI="">school health</keyword>
+      <keyword vocab="" vocabURI="">noncommunicable diseases</keyword>
+      <keyword vocab="" vocabURI="">risk factors</keyword>
+      <keyword vocab="" vocabURI="">protective factors</keyword>
+      <keyword vocab="" vocabURI="">health surveys</keyword>
+      <keyword vocab="" vocabURI="">alcohol use</keyword>
+      <keyword vocab="" vocabURI="">diet</keyword>
+      <keyword vocab="" vocabURI="">nutrition</keyword>
+      <keyword vocab="" vocabURI="">drug use</keyword>
+      <keyword vocab="" vocabURI="">hygiene</keyword>
+      <keyword vocab="" vocabURI="">mental health</keyword>
+      <keyword vocab="" vocabURI="">physical activity</keyword>
+      <keyword vocab="" vocabURI="">sexual behaviours</keyword>
+      <keyword vocab="" vocabURI="">HIV</keyword>
+      <keyword vocab="" vocabURI="">tobacco use</keyword>
+      <keyword vocab="" vocabURI="">violence and unintentional injury</keyword>
+      <keyword vocab="" vocabURI="">overweight</keyword>
+      <keyword vocab="" vocabURI="">obesity</keyword>
+      <keyword vocab="" vocabURI="">bullying</keyword>
+      <topcClas vocab="Survey" vocabURI="">Global School-based Student Health Survey (GSHS)</topcClas>
+    </subject>
+    <abstract>The GSHS is a school-based survey which uses a self-administered questionnaire to obtain data on young people's health behaviour and protective factors related to the leading causes of morbidity and mortality among children and adults worldwide.</abstract>
+    <sumDscr>
+      <collDate date="2018" event="start" cycle=""/>
+      <collDate date="" event="end" cycle=""/>
+      <nation abbr="PAN">Panama</nation>
+      <geogCover>National</geogCover>
+      <geogUnit/>
+      <anlyUnit>Individuals</anlyUnit>
+      <universe>School-going adolescents aged 13-17 years.</universe>
+      <dataKind>Sample survey data [ssd]</dataKind>
+    </sumDscr>
+    <!-- qualityStatement - ddi2.5 - complex type
+     
+     This structure consists of two parts, standardsCompliance and otherQualityStatements. 
+     In standardsCompliance list all specific standards complied with during the execution of this 
+     study. Note the standard name and producer and how the study complied with the standard. 
+     Enter any additional quality statements in otherQualityStatements.
+     
+     -->
+    <qualityStatement>
+      <standardsCompliance>
+        <standard>
+          <standardName/>
+          <producer/>
+        </standard>
+        <complianceDescription/>
+      </standardsCompliance>
+      <otherQualityStatement/>
+    </qualityStatement>
+    <notes>The following core modules were included in the survey:
+alcohol use
+dietary behaviours
+drug use
+hygiene
+mental health
+physical activity
+protective factors
+sexual behaviours
+tobacco use
+violence and unintentional injury</notes>
+    <!-- exPostEvaluation ddi2.5
+      Use this section to describe evaluation procedures not address in data evaluation processes. 
+      These may include issues such as timing of the study, sequencing issues, cost/budget issues, 
+      relevance, instituional or legal arrangments etc. of the study. 
+      
+      The completionDate attribute holds the date the evaluation was completed. 
+      The type attribute is an optional type to identify the type of evaluation with or without 
+      the use of a controlled vocabulary.
+    -->
+    <exPostEvaluation completionDate="" type="">
+      <evaluationProcess/>
+      <outcomes/>
+    </exPostEvaluation>
+  </stdyInfo>
+  <method>
+    <dataColl>
+      <timeMeth/>
+      <!-- collectorTraining - DDI2.5
+        
+        Collector Training
+
+        Describes the training provided to data collectors including internviewer training, process testing, 
+        compliance with standards etc. This is repeatable for language and to capture different aspects of the 
+        training process. The type attribute allows specification of the type of training being described.
+        
+        -->
+      <collectorTraining type=""/>
+      <frequenc/>
+      <sampProc>The 2018 Panama GSHS was a school-based survey of students in Eighth - Twelfth grades, which are typically attended by students aged 13-17. A two-stage cluster sample design was used to produce data representative of all students in Eighth - Twelfth grades in Panama. At the first stage, schools were selected with probability proportional to enrollment size. At the second stage, classes were randomly selected and all students in selected classes were eligible to participate.</sampProc>
+      <sampleFrame>
+        <sampleFrameName/>
+        <custodian/>
+        <universe/>
+        <frameUnit isPrimary="">
+          <unitType numberOfUnits=""/>
+        </frameUnit>
+        <updateProcedure/>
+      </sampleFrame>
+      <deviat/>
+      <collMode>self-administered</collMode>
+      <resInstru>The following core modules were included in the survey:
+alcohol use
+dietary behaviours
+drug use
+hygiene
+mental health
+physical activity
+protective factors
+sexual behaviours
+tobacco use
+violence and unintentional injury</resInstru>
+      <!-- instrumentDevelopment - DDI2.5             
+        Describe any development work on the data collection instrument. Type attribute allows for the optional use of a defined development type with or without use of a controlled vocabulary.
+        -->
+      <instrumentDevelopment type=""/>
+      <collSitu/>
+      <actMin/>
+      <ConOps/>
+      <weight>The weighting formula used is:
+W=W1 * W2 * f1 * f2 * f3.
+The list below shows what each variable in the formula represents.
+W1 - The inverse of the probability of selecting each school
+W2 - The inverse of the probability of selecting each classroom
+f1 - A school-level non response adjustment factor
+f2 - A student-level non response adjustment factor calculated by classroom
+f3 - A post stratification adjustment factor calculated by sex within grade</weight>
+      <cleanOps>All data processing (scanning, cleaning, editing, and weighting) was conducted at the US Centers for Disease Control.</cleanOps>
+    </dataColl>
+    <notes/>
+    <anlyInfo>
+      <respRate>The school response rate was 91%, the student response rate was 78%, and the overall response rate was 71%. A total of 2,948 students participated in the survey.</respRate>
+      <EstSmpErr/>
+      <dataAppr/>
+    </anlyInfo>
+    <stdyClas/>
+    <dataProcessing type=""/>
+    <codingInstructions relatedProcesses="" type="">
+      <txt/>
+      <command formalLanguage=""/>
+    </codingInstructions>
+  </method>
+  <dataAccs>
+    <setAvail>
+      <accsPlac URI=""/>
+      <origArch/>
+      <avlStatus/>
+      <collSize/>
+      <complete/>
+      <fileQnty/>
+      <notes/>
+    </setAvail>
+    <useStmt>
+      <restrctn/>
+      <citReq>Publications based on GSHS data should use the following acknowledgement:
+"This paper uses data from the Global School-Based Student Health Survey (GSHS). GSHS is supported by the World Health Organization and the US Centers for Disease Control and Prevention."</citReq>
+      <deposReq/>
+      <conditions>The user undertakes: 
+(1) to acknowledge the data source. 
+(2) to share any planned publications with WHO prior to publication.
+(3) to offer co-authorship of any reports or publications using the survey results  to the coordinator of the survey.
+(4) to use the data for non-commercial, not-for-profit public health purposes only.</conditions>
+      <disclaimer>The data is being distributed without warranty of any kind. The responsibility for the use of the data lies with the user. In no event shall the World Health Organization be liable for damages arising from its use.</disclaimer>
+    </useStmt>
+    <notes/>
+  </dataAccs>
+  <notes/>
+</stdyDscr>
+<fileDscr ID="F1">
+  <fileTxt>
+    <fileName>PNMHq</fileName>
+    <fileCont></fileCont>
+    <dimensns>
+      <caseQnty>2948</caseQnty>
+      <varQnty>132</varQnty>
+    </dimensns>
+    <dataChck></dataChck>
+    <dataMsng></dataMsng>
+    <verStmt>
+      <version></version>
+    </verStmt>
+  </fileTxt>
+  <notes></notes>
+</fileDscr>
+<dataDscr>
+<var ID="V1" name="site" files="F1" intrvl="discrete">
+  <labl>site</labl>
+  <imputation>site</imputation>
+  <security>site</security>
+  <embargo>site</embargo>
+  <respUnit>site</respUnit>
+  <sumStat type="vald">2948</sumStat>
+  <sumStat type="invd"/>
+  <catgry>
+    <catValu>PNM</catValu>
+    <catStat type="vald"/>
+  </catgry>
+  <varFormat type="character"/>
+</var>
+<var ID="V2" name="record" files="F1" intrvl="discrete">
+  <labl>record</labl>
+  <imputation>record</imputation>
+  <security>record</security>
+  <embargo>record</embargo>
+  <respUnit>record</respUnit>
+  <sumStat type="vald">2948</sumStat>
+  <sumStat type="invd"/>
+  <varFormat type="numeric"/>
+</var>
+<var ID="V3" name="q1" files="F1" intrvl="discrete">
+  <labl>Custom Age</labl>
+  <imputation>Custom Age</imputation>
+  <security>Custom Age</security>
+  <embargo>Custom Age</embargo>
+  <respUnit>Custom Age</respUnit>
+  <qstn>
+    <qstnLit>How old are you?</qstnLit>
+  </qstn>
+  <sumStat type="vald">2932</sumStat>
+  <sumStat type="invd">16</sumStat>
+  <catgry>
+    <catValu>1</catValu>
+    <labl>11 years old or younger</labl>
+    <catStat type="vald"/>
+  </catgry>
+  <catgry>
+    <catValu>2</catValu>
+    <labl>12 years old</labl>
+    <catStat type="invd"/>
+  </catgry>
+  <catgry>
+    <catValu>3</catValu>
+    <labl>13 years old</labl>
+  </catgry>
+  <catgry>
+    <catValu>4</catValu>
+    <labl>14 years old</labl>
+  </catgry>
+  <catgry>
+    <catValu>5</catValu>
+    <labl>15 years old</labl>
+  </catgry>
+  <catgry>
+    <catValu>6</catValu>
+    <labl>16 years old</labl>
+  </catgry>
+  <catgry>
+    <catValu>7</catValu>
+    <labl>17 years old</labl>
+  </catgry>
+  <catgry>
+    <catValu>8</catValu>
+    <labl>18 years old or older</labl>
+  </catgry>
+  <catgry>
+    <catValu>Sysmiss</catValu>
+  </catgry>
+  <varFormat type="numeric"/>
+</var>
+<var ID="V4" name="q2" files="F1" intrvl="discrete">
+  <labl>Sex</labl>
+  <imputation>Sex</imputation>
+  <security>Sex</security>
+  <embargo>Sex</embargo>
+  <respUnit>Sex</respUnit>
+  <qstn>
+    <qstnLit>What is your sex?</qstnLit>
+  </qstn>
+  <sumStat type="vald">2911</sumStat>
+  <sumStat type="invd">37</sumStat>
+  <catgry>
+    <catValu>1</catValu>
+    <labl>Male</labl>
+    <catStat type="vald"/>
+  </catgry>
+  <catgry>
+    <catValu>2</catValu>
+    <labl>Female</labl>
+    <catStat type="invd"/>
+  </catgry>
+  <catgry>
+    <catValu>Sysmiss</catValu>
+  </catgry>
+  <varFormat type="numeric"/>
+</var>
+<var ID="V5" name="q3" files="F1" intrvl="discrete">
+  <labl>In what grade are you</labl>
+  <imputation>In what grade are you</imputation>
+  <security>In what grade are you</security>
+  <embargo>In what grade are you</embargo>
+  <respUnit>In what grade are you</respUnit>
+  <qstn>
+    <qstnLit>In what grade/class/ standard are you? COUNTRY SPECIFIC RESPONSE OPTIONS</qstnLit>
+  </qstn>
+  <sumStat type="vald">2925</sumStat>
+  <sumStat type="invd">23</sumStat>
+  <catgry>
+    <catValu>1</catValu>
+    <labl>option 1</labl>
+    <catStat type="vald"/>
+  </catgry>
+  <catgry>
+    <catValu>2</catValu>
+    <labl>option 2</labl>
+    <catStat type="invd"/>
+  </catgry>
+  <catgry>
+    <catValu>3</catValu>
+    <labl>option 3</labl>
+  </catgry>
+  <catgry>
+    <catValu>4</catValu>
+    <labl>option 4</labl>
+  </catgry>
+  <catgry>
+    <catValu>5</catValu>
+    <labl>option 5</labl>
+  </catgry>
+  <catgry>
+    <catValu>Sysmiss</catValu>
+  </catgry>
+  <varFormat type="numeric"/>
+</var>
+<var ID="V6" name="q4" files="F1" dcml="2" intrvl="contin">
+  <labl>How tall are you</labl>
+  <imputation>How tall are you</imputation>
+  <security>How tall are you</security>
+  <embargo>How tall are you</embargo>
+  <respUnit>How tall are you</respUnit>
+  <qstn>
+    <preQTxt>The next 3 questions ask about your height, weight, and going hungry.</preQTxt>
+    <qstnLit>How tall are you without your shoes on? ON THE ANSWER SHEET, WRITE YOUR HEIGHT IN THE SHADED BOXES AT THE TOP OF THE GRID. THEN FILL IN THE OVAL BELOW EACH NUMBER.</qstnLit>
+  </qstn>
+  <sumStat type="vald">2784</sumStat>
+  <sumStat type="invd">164</sumStat>
+  <sumStat type="min">1.33</sumStat>
+  <sumStat type="max">1.96</sumStat>
+  <sumStat type="mean">1.599</sumStat>
+  <sumStat type="stdev">0.0877</sumStat>
+  <varFormat type="numeric"/>
+</var>
+<var ID="V7" name="q5" files="F1" dcml="2" intrvl="contin">
+  <labl>How much do you weigh</labl>
+  <imputation>How much do you weigh</imputation>
+  <security>How much do you weigh</security>
+  <embargo>How much do you weigh</embargo>
+  <respUnit>How much do you weigh</respUnit>
+  <qstn>
+    <preQTxt>The next 3 questions ask about your height, weight, and going hungry.</preQTxt>
+    <qstnLit>How much do you weigh without your shoes on? ON THE ANSWER SHEET, WRITE YOUR WEIGHT IN THE SHADED BOXES AT THE TOP OF THE GRID. THEN FILL IN THE OVAL BELOW EACH NUMBER.</qstnLit>
+  </qstn>
+  <sumStat type="vald">2784</sumStat>
+  <sumStat type="invd">164</sumStat>
+  <sumStat type="min">31</sumStat>
+  <sumStat type="max">171</sumStat>
+  <sumStat type="mean">57.968</sumStat>
+  <sumStat type="stdev">14.237</sumStat>
+  <varFormat type="numeric"/>
+</var>
+<var ID="V8" name="q6" files="F1" intrvl="discrete">
+  <labl>How often went hungry</labl>
+  <imputation>How often went hungry</imputation>
+  <security>How often went hungry</security>
+  <embargo>How often went hungry</embargo>
+  <respUnit>How often went hungry</respUnit>
+  <qstn>
+    <preQTxt>The next 3 questions ask about your height, weight, and going hungry.</preQTxt>
+    <qstnLit>During the past 30 days, how often did you go hungry because there was not enough food in your home?</qstnLit>
+  </qstn>
+  <sumStat type="vald">2902</sumStat>
+  <sumStat type="invd">46</sumStat>
+  <catgry>
+    <catValu>1</catValu>
+    <labl>Never</labl>
+    <catStat type="vald"/>
+  </catgry>
+  <catgry>
+    <catValu>2</catValu>
+    <labl>Rarely</labl>
+    <catStat type="invd"/>
+  </catgry>
+  <catgry>
+    <catValu>3</catValu>
+    <labl>Sometimes</labl>
+  </catgry>
+  <catgry>
+    <catValu>4</catValu>
+    <labl>Most of the time</labl>
+  </catgry>
+  <catgry>
+    <catValu>5</catValu>
+    <labl>Always</labl>
+  </catgry>
+  <catgry>
+    <catValu>Sysmiss</catValu>
+  </catgry>
+  <varFormat type="numeric"/>
+</var>
+<var ID="V9" name="q10" files="F1" intrvl="discrete">
+  <labl>Fast food eating</labl>
+  <imputation>Fast food eating</imputation>
+  <security>Fast food eating</security>
+  <embargo>Fast food eating</embargo>
+  <respUnit>Fast food eating</respUnit>
+  <qstn>
+    <preQTxt>The next 4 questions ask about what you might eat and drink.</preQTxt>
+    <qstnLit>During the past 7 days, on how many days did you eat food from a fast food restaurant, such as COUNTRY SPECIFIC EXAMPLES?</qstnLit>
+  </qstn>
+  <sumStat type="vald">2933</sumStat>
+  <sumStat type="invd">15</sumStat>
+  <catgry>
+    <catValu>1</catValu>
+    <labl>0 days</labl>
+    <catStat type="vald"/>
+  </catgry>
+  <catgry>
+    <catValu>2</catValu>
+    <labl>1 day</labl>
+    <catStat type="invd"/>
+  </catgry>
+  <catgry>
+    <catValu>3</catValu>
+    <labl>2 days</labl>
+  </catgry>
+  <catgry>
+    <catValu>4</catValu>
+    <labl>3 days</labl>
+  </catgry>
+  <catgry>
+    <catValu>5</catValu>
+    <labl>4 days</labl>
+  </catgry>
+  <catgry>
+    <catValu>6</catValu>
+    <labl>5 days</labl>
+  </catgry>
+  <catgry>
+    <catValu>7</catValu>
+    <labl>6 days</labl>
+  </catgry>
+  <catgry>
+    <catValu>8</catValu>
+    <labl>7 days</labl>
+  </catgry>
+  <catgry>
+    <catValu>Sysmiss</catValu>
+  </catgry>
+  <varFormat type="numeric"/>
+</var>
+<var ID="V10" name="q11" files="F1" intrvl="discrete">
+  <labl>Tooth brushing</labl>
+  <imputation>Tooth brushing</imputation>
+  <security>Tooth brushing</security>
+  <embargo>Tooth brushing</embargo>
+  <respUnit>Tooth brushing</respUnit>
+  <qstn>
+    <qstnLit>During the past 30 days, how many times per day did you usually clean or brush your teeth?</qstnLit>
+  </qstn>
+  <sumStat type="vald">2918</sumStat>
+  <sumStat type="invd">30</sumStat>
+  <catgry>
+    <catValu>1</catValu>
+    <labl>I did not clean or brush my teeth during</labl>
+    <catStat type="vald"/>
+  </catgry>
+  <catgry>
+    <catValu>2</catValu>
+    <labl>Less than 1 time per day</labl>
+    <catStat type="invd"/>
+  </catgry>
+  <catgry>
+    <catValu>3</catValu>
+    <labl>1 time per day</labl>
+  </catgry>
+  <catgry>
+    <catValu>4</catValu>
+    <labl>2 times per day</labl>
+  </catgry>
+  <catgry>
+    <catValu>5</catValu>
+    <labl>3 times per day</labl>
+  </catgry>
+  <catgry>
+    <catValu>6</catValu>
+    <labl>4 or more times per day</labl>
+  </catgry>
+  <catgry>
+    <catValu>Sysmiss</catValu>
+  </catgry>
+  <varFormat type="numeric"/>
+</var>
+<var ID="V11" name="q12" files="F1" intrvl="discrete">
+  <labl>Hand washing before eating</labl>
+  <imputation>Hand washing before eating</imputation>
+  <security>Hand washing before eating</security>
+  <embargo>Hand washing before eating</embargo>
+  <respUnit>Hand washing before eating</respUnit>
+  <qstn>
+    <qstnLit>During the past 30 days, how often did you wash your hands before eating?</qstnLit>
+  </qstn>
+  <sumStat type="vald">2933</sumStat>
+  <sumStat type="invd">15</sumStat>
+  <catgry>
+    <catValu>1</catValu>
+    <labl>Never</labl>
+    <catStat type="vald"/>
+  </catgry>
+  <catgry>
+    <catValu>2</catValu>
+    <labl>Rarely</labl>
+    <catStat type="invd"/>
+  </catgry>
+  <catgry>
+    <catValu>3</catValu>
+    <labl>Sometimes</labl>
+  </catgry>
+  <catgry>
+    <catValu>4</catValu>
+    <labl>Most of the time</labl>
+  </catgry>
+  <catgry>
+    <catValu>5</catValu>
+    <labl>Always</labl>
+  </catgry>
+  <catgry>
+    <catValu>Sysmiss</catValu>
+  </catgry>
+  <varFormat type="numeric"/>
+</var>
+<var ID="V12" name="q13" files="F1" intrvl="discrete">
+  <labl>Hand washing after toilet</labl>
+  <imputation>Hand washing after toilet</imputation>
+  <security>Hand washing after toilet</security>
+  <embargo>Hand washing after toilet</embargo>
+  <respUnit>Hand washing after toilet</respUnit>
+  <qstn>
+    <qstnLit>During the past 30 days, how often did you wash your hands after using the toilet or latrine?</qstnLit>
+  </qstn>
+  <sumStat type="vald">2918</sumStat>
+  <sumStat type="invd">30</sumStat>
+  <catgry>
+    <catValu>1</catValu>
+    <labl>Never</labl>
+    <catStat type="vald"/>
+  </catgry>
+  <catgry>
+    <catValu>2</catValu>
+    <labl>Rarely</labl>
+    <catStat type="invd"/>
+  </catgry>
+  <catgry>
+    <catValu>3</catValu>
+    <labl>Sometimes</labl>
+  </catgry>
+  <catgry>
+    <catValu>4</catValu>
+    <labl>Most of the time</labl>
+  </catgry>
+  <catgry>
+    <catValu>5</catValu>
+    <labl>Always</labl>
+  </catgry>
+  <catgry>
+    <catValu>Sysmiss</catValu>
+  </catgry>
+  <varFormat type="numeric"/>
+</var>
+<var ID="V13" name="q14" files="F1" intrvl="discrete">
+  <labl>Hand washing with soap</labl>
+  <imputation>Hand washing with soap</imputation>
+  <security>Hand washing with soap</security>
+  <embargo>Hand washing with soap</embargo>
+  <respUnit>Hand washing with soap</respUnit>
+  <qstn>
+    <qstnLit>During the past 30 days, how often did you use soap when washing your hands?</qstnLit>
+  </qstn>
+  <sumStat type="vald">2923</sumStat>
+  <sumStat type="invd">25</sumStat>
+  <catgry>
+    <catValu>1</catValu>
+    <labl>Never</labl>
+    <catStat type="vald"/>
+  </catgry>
+  <catgry>
+    <catValu>2</catValu>
+    <labl>Rarely</labl>
+    <catStat type="invd"/>
+  </catgry>
+  <catgry>
+    <catValu>3</catValu>
+    <labl>Sometimes</labl>
+  </catgry>
+  <catgry>
+    <catValu>4</catValu>
+    <labl>Most of the time</labl>
+  </catgry>
+  <catgry>
+    <catValu>5</catValu>
+    <labl>Always</labl>
+  </catgry>
+  <catgry>
+    <catValu>Sysmiss</catValu>
+  </catgry>
+  <varFormat type="numeric"/>
+</var>
+<var ID="V14" name="q15" files="F1" intrvl="discrete">
+  <labl>Physically attacked</labl>
+  <imputation>Physically attacked</imputation>
+  <security>Physically attacked</security>
+  <embargo>Physically attacked</embargo>
+  <respUnit>Physically attacked</respUnit>
+  <qstn>
+    <preQTxt>The next question asks about physical attacks. A physical attack occurs when one or more people hit or strike someone, or when one or more people hurt another person with a weapon (such as a stick, knife, or gun). It is not a physical attack when two students of about the same strength or power choose to fight each other.</preQTxt>
+    <qstnLit>During the past 12 months, how many times were you physically attacked?</qstnLit>
+  </qstn>
+  <sumStat type="vald">2938</sumStat>
+  <sumStat type="invd">10</sumStat>
+  <catgry>
+    <catValu>1</catValu>
+    <labl>0 times</labl>
+    <catStat type="vald"/>
+  </catgry>
+  <catgry>
+    <catValu>2</catValu>
+    <labl>1 time</labl>
+    <catStat type="invd"/>
+  </catgry>
+  <catgry>
+    <catValu>3</catValu>
+    <labl>2 or 3 times</labl>
+  </catgry>
+  <catgry>
+    <catValu>4</catValu>
+    <labl>4 or 5 times</labl>
+  </catgry>
+  <catgry>
+    <catValu>5</catValu>
+    <labl>6 or 7 times</labl>
+  </catgry>
+  <catgry>
+    <catValu>6</catValu>
+    <labl>8 or 9 times</labl>
+  </catgry>
+  <catgry>
+    <catValu>7</catValu>
+    <labl>10 or 11 times</labl>
+  </catgry>
+  <catgry>
+    <catValu>8</catValu>
+    <labl>12 or more times</labl>
+  </catgry>
+  <catgry>
+    <catValu>Sysmiss</catValu>
+  </catgry>
+  <varFormat type="numeric"/>
+</var>
+<var ID="V15" name="q16" files="F1" intrvl="discrete">
+  <labl>Physical fighting</labl>
+  <imputation>Physical fighting</imputation>
+  <security>Physical fighting</security>
+  <embargo>Physical fighting</embargo>
+  <respUnit>Physical fighting</respUnit>
+  <qstn>
+    <preQTxt>The next question asks about physical fights. A physical fight occurs when two students of about the same strength or power choose to fight each other.</preQTxt>
+    <qstnLit>During the past 12 months, how many times were you in a physical fight?</qstnLit>
+  </qstn>
+  <sumStat type="vald">2940</sumStat>
+  <sumStat type="invd">8</sumStat>
+  <catgry>
+    <catValu>1</catValu>
+    <labl>0 times</labl>
+    <catStat type="vald"/>
+  </catgry>
+  <catgry>
+    <catValu>2</catValu>
+    <labl>1 time</labl>
+    <catStat type="invd"/>
+  </catgry>
+  <catgry>
+    <catValu>3</catValu>
+    <labl>2 or 3 times</labl>
+  </catgry>
+  <catgry>
+    <catValu>4</catValu>
+    <labl>4 or 5 times</labl>
+  </catgry>
+  <catgry>
+    <catValu>5</catValu>
+    <labl>6 or 7 times</labl>
+  </catgry>
+  <catgry>
+    <catValu>6</catValu>
+    <labl>8 or 9 times</labl>
+  </catgry>
+  <catgry>
+    <catValu>7</catValu>
+    <labl>10 or 11 times</labl>
+  </catgry>
+  <catgry>
+    <catValu>8</catValu>
+    <labl>12 or more times</labl>
+  </catgry>
+  <catgry>
+    <catValu>Sysmiss</catValu>
+  </catgry>
+  <varFormat type="numeric"/>
+</var>
+<var ID="V16" name="q17" files="F1" intrvl="discrete">
+  <labl>Seriously injured</labl>
+  <imputation>Seriously injured</imputation>
+  <security>Seriously injured</security>
+  <embargo>Seriously injured</embargo>
+  <respUnit>Seriously injured</respUnit>
+  <qstn>
+    <preQTxt>The next 3 questions ask about serious injuries that happened to you. An injury is serious when it makes you miss at least one full day of usual activities (such as school, sports, or a job) or requires treatment by a doctor or nurse.</preQTxt>
+    <qstnLit>During the past 12 months, how many times were you seriously injured?</qstnLit>
+  </qstn>
+  <sumStat type="vald">2704</sumStat>
+  <sumStat type="invd">244</sumStat>
+  <catgry>
+    <catValu>1</catValu>
+    <labl>0 times</labl>
+    <catStat type="vald"/>
+  </catgry>
+  <catgry>
+    <catValu>2</catValu>
+    <labl>1 time</labl>
+    <catStat type="invd"/>
+  </catgry>
+  <catgry>
+    <catValu>3</catValu>
+    <labl>2 or 3 times</labl>
+  </catgry>
+  <catgry>
+    <catValu>4</catValu>
+    <labl>4 or 5 times</labl>
+  </catgry>
+  <catgry>
+    <catValu>5</catValu>
+    <labl>6 or 7 times</labl>
+  </catgry>
+  <catgry>
+    <catValu>6</catValu>
+    <labl>8 or 9 times</labl>
+  </catgry>
+  <catgry>
+    <catValu>7</catValu>
+    <labl>10 or 11 times</labl>
+  </catgry>
+  <catgry>
+    <catValu>8</catValu>
+    <labl>12 or more times</labl>
+  </catgry>
+  <catgry>
+    <catValu>Sysmiss</catValu>
+  </catgry>
+  <varFormat type="numeric"/>
+</var>
+<var ID="V17" name="q18" files="F1" intrvl="discrete">
+  <labl>Serious injury type</labl>
+  <imputation>Serious injury type</imputation>
+  <security>Serious injury type</security>
+  <embargo>Serious injury type</embargo>
+  <respUnit>Serious injury type</respUnit>
+  <qstn>
+    <preQTxt>The next 3 questions ask about serious injuries that happened to you. An injury is serious when it makes you miss at least one full day of usual activities (such as school, sports, or a job) or requires treatment by a doctor or nurse.</preQTxt>
+    <qstnLit>During the past 12 months, what was the most serious injury that happened to you?</qstnLit>
+  </qstn>
+  <sumStat type="vald">2751</sumStat>
+  <sumStat type="invd">197</sumStat>
+  <catgry>
+    <catValu>1</catValu>
+    <labl>Not seriously injured</labl>
+    <catStat type="vald"/>
+  </catgry>
+  <catgry>
+    <catValu>2</catValu>
+    <labl>Broken bone/dislocated joint</labl>
+    <catStat type="invd"/>
+  </catgry>
+  <catgry>
+    <catValu>3</catValu>
+    <labl>I had a cut or stab wound</labl>
+  </catgry>
+  <catgry>
+    <catValu>4</catValu>
+    <labl>Concussion/head injury</labl>
+  </catgry>
+  <catgry>
+    <catValu>5</catValu>
+    <labl>I had a gunshot wound</labl>
+  </catgry>
+  <catgry>
+    <catValu>6</catValu>
+    <labl>I had a bad burn</labl>
+  </catgry>
+  <catgry>
+    <catValu>7</catValu>
+    <labl>I was poisoned</labl>
+  </catgry>
+  <catgry>
+    <catValu>8</catValu>
+    <labl>Something else happened to me</labl>
+  </catgry>
+  <catgry>
+    <catValu>Sysmiss</catValu>
+  </catgry>
+  <varFormat type="numeric"/>
+</var>
+<var ID="V18" name="q19" files="F1" intrvl="discrete">
+  <labl>Serious injury cause</labl>
+  <imputation>Serious injury cause</imputation>
+  <security>Serious injury cause</security>
+  <embargo>Serious injury cause</embargo>
+  <respUnit>Serious injury cause</respUnit>
+  <qstn>
+    <preQTxt>The next 3 questions ask about serious injuries that happened to you. An injury is serious when it makes you miss at least one full day of usual activities (such as school, sports, or a job) or requires treatment by a doctor or nurse.</preQTxt>
+    <qstnLit>During the past 12 months, what was the major cause of the most serious injury that happened to you?</qstnLit>
+  </qstn>
+  <sumStat type="vald">2704</sumStat>
+  <sumStat type="invd">244</sumStat>
+  <catgry>
+    <catValu>1</catValu>
+    <labl>Not seriously injured</labl>
+    <catStat type="vald"/>
+  </catgry>
+  <catgry>
+    <catValu>2</catValu>
+    <labl>Motor vehicle accident</labl>
+    <catStat type="invd"/>
+  </catgry>
+  <catgry>
+    <catValu>3</catValu>
+    <labl>I fell</labl>
+  </catgry>
+  <catgry>
+    <catValu>4</catValu>
+    <labl>Something fell on me or hit me</labl>
+  </catgry>
+  <catgry>
+    <catValu>5</catValu>
+    <labl>I was attacked</labl>
+  </catgry>
+  <catgry>
+    <catValu>6</catValu>
+    <labl>Was in a fire</labl>
+  </catgry>
+  <catgry>
+    <catValu>7</catValu>
+    <labl>breathed something bad</labl>
+  </catgry>
+  <catgry>
+    <catValu>8</catValu>
+    <labl>Something else</labl>
+  </catgry>
+  <catgry>
+    <catValu>Sysmiss</catValu>
+  </catgry>
+  <varFormat type="numeric"/>
+</var>
+<var ID="V19" name="q22" files="F1" intrvl="discrete">
+  <labl>Felt lonely</labl>
+  <imputation>Felt lonely</imputation>
+  <security>Felt lonely</security>
+  <embargo>Felt lonely</embargo>
+  <respUnit>Felt lonely</respUnit>
+  <qstn>
+    <preQTxt>The next 6 questions ask about your feelings and friendships.</preQTxt>
+    <qstnLit>During the past 12 months, how often have you felt lonely?</qstnLit>
+  </qstn>
+  <sumStat type="vald">2935</sumStat>
+  <sumStat type="invd">13</sumStat>
+  <catgry>
+    <catValu>1</catValu>
+    <labl>Never</labl>
+    <catStat type="vald"/>
+  </catgry>
+  <catgry>
+    <catValu>2</catValu>
+    <labl>Rarely</labl>
+    <catStat type="invd"/>
+  </catgry>
+  <catgry>
+    <catValu>3</catValu>
+    <labl>Sometimes</labl>
+  </catgry>
+  <catgry>
+    <catValu>4</catValu>
+    <labl>Most of the time</labl>
+  </catgry>
+  <catgry>
+    <catValu>5</catValu>
+    <labl>Always</labl>
+  </catgry>
+  <catgry>
+    <catValu>Sysmiss</catValu>
+  </catgry>
+  <varFormat type="numeric"/>
+</var>
+<var ID="V20" name="q23" files="F1" intrvl="discrete">
+  <labl>Could not sleep</labl>
+  <imputation>Could not sleep</imputation>
+  <security>Could not sleep</security>
+  <embargo>Could not sleep</embargo>
+  <respUnit>Could not sleep</respUnit>
+  <qstn>
+    <preQTxt>The next 6 questions ask about your feelings and friendships.</preQTxt>
+    <qstnLit>During the past 12 months, how often have you been so worried about something that you could not sleep at night?</qstnLit>
+  </qstn>
+  <sumStat type="vald">2931</sumStat>
+  <sumStat type="invd">17</sumStat>
+  <catgry>
+    <catValu>1</catValu>
+    <labl>Never</labl>
+    <catStat type="vald"/>
+  </catgry>
+  <catgry>
+    <catValu>2</catValu>
+    <labl>Rarely</labl>
+    <catStat type="invd"/>
+  </catgry>
+  <catgry>
+    <catValu>3</catValu>
+    <labl>Sometimes</labl>
+  </catgry>
+  <catgry>
+    <catValu>4</catValu>
+    <labl>Most of the time</labl>
+  </catgry>
+  <catgry>
+    <catValu>5</catValu>
+    <labl>Always</labl>
+  </catgry>
+  <catgry>
+    <catValu>Sysmiss</catValu>
+  </catgry>
+  <varFormat type="numeric"/>
+</var>
+<var ID="V21" name="q24" files="F1" intrvl="discrete">
+  <labl>Considered suicide</labl>
+  <imputation>Considered suicide</imputation>
+  <security>Considered suicide</security>
+  <embargo>Considered suicide</embargo>
+  <respUnit>Considered suicide</respUnit>
+  <qstn>
+    <preQTxt>The next 6 questions ask about your feelings and friendships.</preQTxt>
+    <qstnLit>During the past 12 months, did you ever seriously consider attempting suicide?</qstnLit>
+  </qstn>
+  <sumStat type="vald">2881</sumStat>
+  <sumStat type="invd">67</sumStat>
+  <catgry>
+    <catValu>1</catValu>
+    <labl>Yes</labl>
+    <catStat type="vald"/>
+  </catgry>
+  <catgry>
+    <catValu>2</catValu>
+    <labl>No</labl>
+    <catStat type="invd"/>
+  </catgry>
+  <catgry>
+    <catValu>Sysmiss</catValu>
+  </catgry>
+  <varFormat type="numeric"/>
+</var>
+<var ID="V22" name="q25" files="F1" intrvl="discrete">
+  <labl>Made a suicide plan</labl>
+  <imputation>Made a suicide plan</imputation>
+  <security>Made a suicide plan</security>
+  <embargo>Made a suicide plan</embargo>
+  <respUnit>Made a suicide plan</respUnit>
+  <qstn>
+    <preQTxt>The next 6 questions ask about your feelings and friendships.</preQTxt>
+    <qstnLit>During the past 12 months, did you make a plan about how you would attempt suicide?</qstnLit>
+  </qstn>
+  <sumStat type="vald">2922</sumStat>
+  <sumStat type="invd">26</sumStat>
+  <catgry>
+    <catValu>1</catValu>
+    <labl>Yes</labl>
+    <catStat type="vald"/>
+  </catgry>
+  <catgry>
+    <catValu>2</catValu>
+    <labl>No</labl>
+    <catStat type="invd"/>
+  </catgry>
+  <catgry>
+    <catValu>Sysmiss</catValu>
+  </catgry>
+  <varFormat type="numeric"/>
+</var>
+<var ID="V23" name="q26" files="F1" intrvl="discrete">
+  <labl>Attempted suicide</labl>
+  <imputation>Attempted suicide</imputation>
+  <security>Attempted suicide</security>
+  <embargo>Attempted suicide</embargo>
+  <respUnit>Attempted suicide</respUnit>
+  <qstn>
+    <preQTxt>The next 6 questions ask about your feelings and friendships.</preQTxt>
+    <qstnLit>During the past 12 months, how many times did you actually attempt suicide?</qstnLit>
+  </qstn>
+  <sumStat type="vald">2927</sumStat>
+  <sumStat type="invd">21</sumStat>
+  <catgry>
+    <catValu>1</catValu>
+    <labl>0 times</labl>
+    <catStat type="vald"/>
+  </catgry>
+  <catgry>
+    <catValu>2</catValu>
+    <labl>1 time</labl>
+    <catStat type="invd"/>
+  </catgry>
+  <catgry>
+    <catValu>3</catValu>
+    <labl>2 or 3 times</labl>
+  </catgry>
+  <catgry>
+    <catValu>4</catValu>
+    <labl>4 or 5 times</labl>
+  </catgry>
+  <catgry>
+    <catValu>5</catValu>
+    <labl>6 or more times</labl>
+  </catgry>
+  <catgry>
+    <catValu>Sysmiss</catValu>
+  </catgry>
+  <varFormat type="numeric"/>
+</var>
+<var ID="V24" name="q27" files="F1" intrvl="discrete">
+  <labl>Close friends</labl>
+  <imputation>Close friends</imputation>
+  <security>Close friends</security>
+  <embargo>Close friends</embargo>
+  <respUnit>Close friends</respUnit>
+  <qstn>
+    <preQTxt>The next 6 questions ask about your feelings and friendships.</preQTxt>
+    <qstnLit>How many close friends do you have?</qstnLit>
+  </qstn>
+  <sumStat type="vald">2935</sumStat>
+  <sumStat type="invd">13</sumStat>
+  <catgry>
+    <catValu>1</catValu>
+    <catStat type="vald"/>
+  </catgry>
+  <catgry>
+    <catValu>2</catValu>
+    <labl>1</labl>
+    <catStat type="invd"/>
+  </catgry>
+  <catgry>
+    <catValu>3</catValu>
+    <labl>2</labl>
+  </catgry>
+  <catgry>
+    <catValu>4</catValu>
+    <labl>3 or more</labl>
+  </catgry>
+  <catgry>
+    <catValu>Sysmiss</catValu>
+  </catgry>
+  <varFormat type="numeric"/>
+</var>
+<var ID="V25" name="q28" files="F1" intrvl="discrete">
+  <labl>Initiation of cigarette use</labl>
+  <imputation>Initiation of cigarette use</imputation>
+  <security>Initiation of cigarette use</security>
+  <embargo>Initiation of cigarette use</embargo>
+  <respUnit>Initiation of cigarette use</respUnit>
+  <qstn>
+    <preQTxt>The next 6 questions ask about cigarette and other tobacco use.</preQTxt>
+    <qstnLit>How old were you when you first tried a cigarette?</qstnLit>
+  </qstn>
+  <sumStat type="vald">2870</sumStat>
+  <sumStat type="invd">78</sumStat>
+  <catgry>
+    <catValu>1</catValu>
+    <labl>I have never smoked cigarettes</labl>
+    <catStat type="vald"/>
+  </catgry>
+  <catgry>
+    <catValu>2</catValu>
+    <labl>7 years old or younger</labl>
+    <catStat type="invd"/>
+  </catgry>
+  <catgry>
+    <catValu>3</catValu>
+    <labl>8 or 9 years old</labl>
+  </catgry>
+  <catgry>
+    <catValu>4</catValu>
+    <labl>10 or 11 years old</labl>
+  </catgry>
+  <catgry>
+    <catValu>5</catValu>
+    <labl>12 or 13 years old</labl>
+  </catgry>
+  <catgry>
+    <catValu>6</catValu>
+    <labl>14 or 15 years old</labl>
+  </catgry>
+  <catgry>
+    <catValu>7</catValu>
+    <labl>16 or 17 years old</labl>
+  </catgry>
+  <catgry>
+    <catValu>8</catValu>
+    <labl>18 years old or older</labl>
+  </catgry>
+  <catgry>
+    <catValu>Sysmiss</catValu>
+  </catgry>
+  <varFormat type="numeric"/>
+</var>
+<var ID="V26" name="q29" files="F1" intrvl="discrete">
+  <labl>Current cigarette use</labl>
+  <imputation>Current cigarette use</imputation>
+  <security>Current cigarette use</security>
+  <embargo>Current cigarette use</embargo>
+  <respUnit>Current cigarette use</respUnit>
+  <qstn>
+    <preQTxt>The next 6 questions ask about cigarette and other tobacco use.</preQTxt>
+    <qstnLit>During the past 30 days, on how many days did you smoke cigarettes?</qstnLit>
+  </qstn>
+  <sumStat type="vald">2925</sumStat>
+  <sumStat type="invd">23</sumStat>
+  <catgry>
+    <catValu>1</catValu>
+    <labl>0 days</labl>
+    <catStat type="vald"/>
+  </catgry>
+  <catgry>
+    <catValu>2</catValu>
+    <labl>1 or 2 days</labl>
+    <catStat type="invd"/>
+  </catgry>
+  <catgry>
+    <catValu>3</catValu>
+    <labl>3 to 5 days</labl>
+  </catgry>
+  <catgry>
+    <catValu>4</catValu>
+    <labl>6 to 9 days</labl>
+  </catgry>
+  <catgry>
+    <catValu>5</catValu>
+    <labl>10 to 19 days</labl>
+  </catgry>
+  <catgry>
+    <catValu>6</catValu>
+    <labl>20 to 29 days</labl>
+  </catgry>
+  <catgry>
+    <catValu>7</catValu>
+    <labl>All 30 days</labl>
+  </catgry>
+  <catgry>
+    <catValu>Sysmiss</catValu>
+  </catgry>
+  <varFormat type="numeric"/>
+</var>
+<var ID="V27" name="q30" files="F1" intrvl="discrete">
+  <labl>Other tobacco use</labl>
+  <imputation>Other tobacco use</imputation>
+  <security>Other tobacco use</security>
+  <embargo>Other tobacco use</embargo>
+  <respUnit>Other tobacco use</respUnit>
+  <qstn>
+    <preQTxt>The next 6 questions ask about cigarette and other tobacco use.</preQTxt>
+    <qstnLit>During the past 30 days, on how many days did you use any tobacco products other than cigarettes, such as COUNTRY SPECIFIC EXAMPLES?</qstnLit>
+  </qstn>
+  <sumStat type="vald">2930</sumStat>
+  <sumStat type="invd">18</sumStat>
+  <catgry>
+    <catValu>1</catValu>
+    <labl>0 days</labl>
+    <catStat type="vald"/>
+  </catgry>
+  <catgry>
+    <catValu>2</catValu>
+    <labl>1 or 2 days</labl>
+    <catStat type="invd"/>
+  </catgry>
+  <catgry>
+    <catValu>3</catValu>
+    <labl>3 to 5 days</labl>
+  </catgry>
+  <catgry>
+    <catValu>4</catValu>
+    <labl>6 to 9 days</labl>
+  </catgry>
+  <catgry>
+    <catValu>5</catValu>
+    <labl>10 to 19 days</labl>
+  </catgry>
+  <catgry>
+    <catValu>6</catValu>
+    <labl>20 to 29 days</labl>
+  </catgry>
+  <catgry>
+    <catValu>7</catValu>
+    <labl>All 30 days</labl>
+  </catgry>
+  <catgry>
+    <catValu>Sysmiss</catValu>
+  </catgry>
+  <varFormat type="numeric"/>
+</var>
+<var ID="V28" name="q31" files="F1" intrvl="discrete">
+  <labl>Smoking cessation</labl>
+  <imputation>Smoking cessation</imputation>
+  <security>Smoking cessation</security>
+  <embargo>Smoking cessation</embargo>
+  <respUnit>Smoking cessation</respUnit>
+  <qstn>
+    <preQTxt>The next 6 questions ask about cigarette and other tobacco use.</preQTxt>
+    <qstnLit>During the past 12 months, have you ever tried to stop smoking cigarettes?</qstnLit>
+  </qstn>
+  <sumStat type="vald">2840</sumStat>
+  <sumStat type="invd">108</sumStat>
+  <catgry>
+    <catValu>1</catValu>
+    <labl>I have never smoked cigarettes</labl>
+    <catStat type="vald"/>
+  </catgry>
+  <catgry>
+    <catValu>2</catValu>
+    <labl>Did not smoke cigarettes</labl>
+    <catStat type="invd"/>
+  </catgry>
+  <catgry>
+    <catValu>3</catValu>
+    <labl>Yes</labl>
+  </catgry>
+  <catgry>
+    <catValu>4</catValu>
+    <labl>No</labl>
+  </catgry>
+  <catgry>
+    <catValu>Sysmiss</catValu>
+  </catgry>
+  <varFormat type="numeric"/>
+</var>
+<var ID="V29" name="q32" files="F1" intrvl="discrete">
+  <labl>Smoking in their presence</labl>
+  <imputation>Smoking in their presence</imputation>
+  <security>Smoking in their presence</security>
+  <embargo>Smoking in their presence</embargo>
+  <respUnit>Smoking in their presence</respUnit>
+  <qstn>
+    <preQTxt>The next 6 questions ask about cigarette and other tobacco use.</preQTxt>
+    <qstnLit>During the past 7 days, on how many days have people smoked in your presence?</qstnLit>
+  </qstn>
+  <sumStat type="vald">2931</sumStat>
+  <sumStat type="invd">17</sumStat>
+  <catgry>
+    <catValu>1</catValu>
+    <labl>0 days</labl>
+    <catStat type="vald"/>
+  </catgry>
+  <catgry>
+    <catValu>2</catValu>
+    <labl>1 or 2 days</labl>
+    <catStat type="invd"/>
+  </catgry>
+  <catgry>
+    <catValu>3</catValu>
+    <labl>3 or 4 days</labl>
+  </catgry>
+  <catgry>
+    <catValu>4</catValu>
+    <labl>5 or 6 days</labl>
+  </catgry>
+  <catgry>
+    <catValu>5</catValu>
+    <labl>All 7 days</labl>
+  </catgry>
+  <catgry>
+    <catValu>Sysmiss</catValu>
+  </catgry>
+  <varFormat type="numeric"/>
+</var>
+<var ID="V30" name="q33" files="F1" intrvl="discrete">
+  <labl>Parental tobacco use</labl>
+  <imputation>Parental tobacco use</imputation>
+  <security>Parental tobacco use</security>
+  <embargo>Parental tobacco use</embargo>
+  <respUnit>Parental tobacco use</respUnit>
+  <qstn>
+    <preQTxt>The next 6 questions ask about cigarette and other tobacco use.</preQTxt>
+    <qstnLit>Which of your parents or guardians use any form of tobacco?</qstnLit>
+  </qstn>
+  <sumStat type="vald">2920</sumStat>
+  <sumStat type="invd">28</sumStat>
+  <catgry>
+    <catValu>1</catValu>
+    <labl>Neither</labl>
+    <catStat type="vald"/>
+  </catgry>
+  <catgry>
+    <catValu>2</catValu>
+    <labl>My father or male guardian</labl>
+    <catStat type="invd"/>
+  </catgry>
+  <catgry>
+    <catValu>3</catValu>
+    <labl>My mother or female guardian</labl>
+  </catgry>
+  <catgry>
+    <catValu>4</catValu>
+    <labl>Both</labl>
+  </catgry>
+  <catgry>
+    <catValu>5</catValu>
+    <labl>I do not know</labl>
+  </catgry>
+  <catgry>
+    <catValu>Sysmiss</catValu>
+  </catgry>
+  <varFormat type="numeric"/>
+</var>
+<var ID="V31" name="q34" files="F1" intrvl="discrete">
+  <labl>Initiation of alcohol use</labl>
+  <imputation>Initiation of alcohol use</imputation>
+  <security>Initiation of alcohol use</security>
+  <embargo>Initiation of alcohol use</embargo>
+  <respUnit>Initiation of alcohol use</respUnit>
+  <qstn>
+    <preQTxt>The next 6 questions ask about drinking alcohol. This includes drinking COUNTRY SPECIFIC EXAMPLES. Drinking alcohol does not include drinking a few sips of wine for religious purposes. A "drink" is a glass of wine, a bottle of beer, a small glass of liquor, or a mixed drink.</preQTxt>
+    <qstnLit>How old were you when you had your first drink of alcohol other than a few sips?</qstnLit>
+  </qstn>
+  <sumStat type="vald">2633</sumStat>
+  <sumStat type="invd">315</sumStat>
+  <catgry>
+    <catValu>1</catValu>
+    <labl>Never drank alcohol</labl>
+    <catStat type="vald"/>
+  </catgry>
+  <catgry>
+    <catValu>2</catValu>
+    <labl>7 years old or younger</labl>
+    <catStat type="invd"/>
+  </catgry>
+  <catgry>
+    <catValu>3</catValu>
+    <labl>8 or 9 years old</labl>
+  </catgry>
+  <catgry>
+    <catValu>4</catValu>
+    <labl>10 or 11 years old</labl>
+  </catgry>
+  <catgry>
+    <catValu>5</catValu>
+    <labl>12 or 13 years old</labl>
+  </catgry>
+  <catgry>
+    <catValu>6</catValu>
+    <labl>14 or 15 years old</labl>
+  </catgry>
+  <catgry>
+    <catValu>7</catValu>
+    <labl>16 or 17 years old</labl>
+  </catgry>
+  <catgry>
+    <catValu>8</catValu>
+    <labl>18 years old or older</labl>
+  </catgry>
+  <catgry>
+    <catValu>Sysmiss</catValu>
+  </catgry>
+  <varFormat type="numeric"/>
+</var>
+<var ID="V32" name="q35" files="F1" intrvl="discrete">
+  <labl>Current alcohol use</labl>
+  <imputation>Current alcohol use</imputation>
+  <security>Current alcohol use</security>
+  <embargo>Current alcohol use</embargo>
+  <respUnit>Current alcohol use</respUnit>
+  <qstn>
+    <preQTxt>The next 6 questions ask about drinking alcohol. This includes drinking COUNTRY SPECIFIC EXAMPLES. Drinking alcohol does not include drinking a few sips of wine for religious purposes. A "drink" is a glass of wine, a bottle of beer, a small glass of liquor, or a mixed drink.</preQTxt>
+    <qstnLit>During the past 30 days, on how many days did you have at least one drink containing alcohol?</qstnLit>
+  </qstn>
+  <sumStat type="vald">2831</sumStat>
+  <sumStat type="invd">117</sumStat>
+  <catgry>
+    <catValu>1</catValu>
+    <labl>0 days</labl>
+    <catStat type="vald"/>
+  </catgry>
+  <catgry>
+    <catValu>2</catValu>
+    <labl>1 or 2 days</labl>
+    <catStat type="invd"/>
+  </catgry>
+  <catgry>
+    <catValu>3</catValu>
+    <labl>3 to 5 days</labl>
+  </catgry>
+  <catgry>
+    <catValu>4</catValu>
+    <labl>6 to 9 days</labl>
+  </catgry>
+  <catgry>
+    <catValu>5</catValu>
+    <labl>10 to 19 days</labl>
+  </catgry>
+  <catgry>
+    <catValu>6</catValu>
+    <labl>20 to 29 days</labl>
+  </catgry>
+  <catgry>
+    <catValu>7</catValu>
+    <labl>All 30 days</labl>
+  </catgry>
+  <catgry>
+    <catValu>Sysmiss</catValu>
+  </catgry>
+  <varFormat type="numeric"/>
+</var>
+<var ID="V33" name="q36" files="F1" intrvl="discrete">
+  <labl>Number of drinks</labl>
+  <imputation>Number of drinks</imputation>
+  <security>Number of drinks</security>
+  <embargo>Number of drinks</embargo>
+  <respUnit>Number of drinks</respUnit>
+  <qstn>
+    <preQTxt>The next 6 questions ask about drinking alcohol. This includes drinking COUNTRY SPECIFIC EXAMPLES. Drinking alcohol does not include drinking a few sips of wine for religious purposes. A "drink" is a glass of wine, a bottle of beer, a small glass of liquor, or a mixed drink.</preQTxt>
+    <qstnLit>During the past 30 days, on the days you drank alcohol, how many drinks did you usually drink per day?</qstnLit>
+  </qstn>
+  <sumStat type="vald">2876</sumStat>
+  <sumStat type="invd">72</sumStat>
+  <catgry>
+    <catValu>1</catValu>
+    <labl>Did not drink in past 30 days</labl>
+    <catStat type="vald"/>
+  </catgry>
+  <catgry>
+    <catValu>2</catValu>
+    <labl>Less than one drink</labl>
+    <catStat type="invd"/>
+  </catgry>
+  <catgry>
+    <catValu>3</catValu>
+    <labl>1 drink</labl>
+  </catgry>
+  <catgry>
+    <catValu>4</catValu>
+    <labl>2 drinks</labl>
+  </catgry>
+  <catgry>
+    <catValu>5</catValu>
+    <labl>3 drinks</labl>
+  </catgry>
+  <catgry>
+    <catValu>6</catValu>
+    <labl>4 drinks</labl>
+  </catgry>
+  <catgry>
+    <catValu>7</catValu>
+    <labl>5 or more drinks</labl>
+  </catgry>
+  <catgry>
+    <catValu>Sysmiss</catValu>
+  </catgry>
+  <varFormat type="numeric"/>
+</var>
+<var ID="V34" name="q37" files="F1" intrvl="discrete">
+  <labl>Source of alchohol</labl>
+  <imputation>Source of alchohol</imputation>
+  <security>Source of alchohol</security>
+  <embargo>Source of alchohol</embargo>
+  <respUnit>Source of alchohol</respUnit>
+  <qstn>
+    <preQTxt>The next 6 questions ask about drinking alcohol. This includes drinking COUNTRY SPECIFIC EXAMPLES. Drinking alcohol does not include drinking a few sips of wine for religious purposes. A "drink" is a glass of wine, a bottle of beer, a small glass of liquor, or a mixed drink.</preQTxt>
+    <qstnLit>During the past 30 days, how did you usually get the alcohol you drank? SELECT ONLY ONE RESPONSE.</qstnLit>
+  </qstn>
+  <sumStat type="vald">2837</sumStat>
+  <sumStat type="invd">111</sumStat>
+  <catgry>
+    <catValu>1</catValu>
+    <labl>Did not drink in past 30 days</labl>
+    <catStat type="vald"/>
+  </catgry>
+  <catgry>
+    <catValu>2</catValu>
+    <labl>I bought in a store</labl>
+    <catStat type="invd"/>
+  </catgry>
+  <catgry>
+    <catValu>3</catValu>
+    <labl>I gave someone money to buy</labl>
+  </catgry>
+  <catgry>
+    <catValu>4</catValu>
+    <labl>I got it from my friends</labl>
+  </catgry>
+  <catgry>
+    <catValu>5</catValu>
+    <labl>I got it from my family</labl>
+  </catgry>
+  <catgry>
+    <catValu>6</catValu>
+    <labl>I stole it</labl>
+  </catgry>
+  <catgry>
+    <catValu>7</catValu>
+    <labl>Some other way</labl>
+  </catgry>
+  <catgry>
+    <catValu>Sysmiss</catValu>
+  </catgry>
+  <varFormat type="numeric"/>
+</var>
+<var ID="V35" name="q38" files="F1" intrvl="discrete">
+  <labl>Really drunk</labl>
+  <imputation>Really drunk</imputation>
+  <security>Really drunk</security>
+  <embargo>Really drunk</embargo>
+  <respUnit>Really drunk</respUnit>
+  <qstn>
+    <preQTxt>The next 6 questions ask about drinking alcohol. This includes drinking COUNTRY SPECIFIC EXAMPLES. Drinking alcohol does not include drinking a few sips of wine for religious purposes. A "drink" is a glass of wine, a bottle of beer, a small glass of liquor, or a mixed drink. 
+
+Staggering when walking, not being able to speak right, and throwing up are some signs of being really drunk.</preQTxt>
+    <qstnLit>During your life, how many times did you drink so much alcohol that you were really drunk?</qstnLit>
+  </qstn>
+  <sumStat type="vald">2882</sumStat>
+  <sumStat type="invd">66</sumStat>
+  <catgry>
+    <catValu>1</catValu>
+    <labl>0 times</labl>
+    <catStat type="vald"/>
+  </catgry>
+  <catgry>
+    <catValu>2</catValu>
+    <labl>1 or 2 times</labl>
+    <catStat type="invd"/>
+  </catgry>
+  <catgry>
+    <catValu>3</catValu>
+    <labl>3 to 9 times</labl>
+  </catgry>
+  <catgry>
+    <catValu>4</catValu>
+    <labl>10 or more times</labl>
+  </catgry>
+  <catgry>
+    <catValu>Sysmiss</catValu>
+  </catgry>
+  <varFormat type="numeric"/>
+</var>
+<var ID="V36" name="q39" files="F1" intrvl="discrete">
+  <labl>Trouble from drinking</labl>
+  <imputation>Trouble from drinking</imputation>
+  <security>Trouble from drinking</security>
+  <embargo>Trouble from drinking</embargo>
+  <respUnit>Trouble from drinking</respUnit>
+  <qstn>
+    <preQTxt>The next 6 questions ask about drinking alcohol. This includes drinking COUNTRY SPECIFIC EXAMPLES. Drinking alcohol does not include drinking a few sips of wine for religious purposes. A "drink" is a glass of wine, a bottle of beer, a small glass of liquor, or a mixed drink.</preQTxt>
+    <qstnLit>During your life, how many times have you got into trouble with your family or friends, missed school, or got into fights, as a result of drinking alcohol?</qstnLit>
+  </qstn>
+  <sumStat type="vald">2793</sumStat>
+  <sumStat type="invd">155</sumStat>
+  <catgry>
+    <catValu>1</catValu>
+    <labl>0 times</labl>
+    <catStat type="vald"/>
+  </catgry>
+  <catgry>
+    <catValu>2</catValu>
+    <labl>1 or 2 times</labl>
+    <catStat type="invd"/>
+  </catgry>
+  <catgry>
+    <catValu>3</catValu>
+    <labl>3 to 9 times</labl>
+  </catgry>
+  <catgry>
+    <catValu>4</catValu>
+    <labl>10 or more times</labl>
+  </catgry>
+  <catgry>
+    <catValu>Sysmiss</catValu>
+  </catgry>
+  <varFormat type="numeric"/>
+</var>
+<var ID="V37" name="q40" files="F1" intrvl="discrete">
+  <labl>Initiation of drug use</labl>
+  <imputation>Initiation of drug use</imputation>
+  <security>Initiation of drug use</security>
+  <embargo>Initiation of drug use</embargo>
+  <respUnit>Initiation of drug use</respUnit>
+  <qstn>
+    <preQTxt>The next 4 questions ask about drug use. This includes using marijuana, amphetamines, cocaine, inhalants, and COUNTRY SPECIFIC EXAMPLES.</preQTxt>
+    <qstnLit>How old were you when you first used drugs?</qstnLit>
+  </qstn>
+  <sumStat type="vald">2871</sumStat>
+  <sumStat type="invd">77</sumStat>
+  <catgry>
+    <catValu>1</catValu>
+    <labl>I have never used drugs</labl>
+    <catStat type="vald"/>
+  </catgry>
+  <catgry>
+    <catValu>2</catValu>
+    <labl>7 years old or younger</labl>
+    <catStat type="invd"/>
+  </catgry>
+  <catgry>
+    <catValu>3</catValu>
+    <labl>8 or 9 years old</labl>
+  </catgry>
+  <catgry>
+    <catValu>4</catValu>
+    <labl>10 or 11 years old</labl>
+  </catgry>
+  <catgry>
+    <catValu>5</catValu>
+    <labl>12 or 13 years old</labl>
+  </catgry>
+  <catgry>
+    <catValu>6</catValu>
+    <labl>14 or 15 years old</labl>
+  </catgry>
+  <catgry>
+    <catValu>7</catValu>
+    <labl>16 or 17 years old</labl>
+  </catgry>
+  <catgry>
+    <catValu>8</catValu>
+    <labl>18 years old or older</labl>
+  </catgry>
+  <catgry>
+    <catValu>Sysmiss</catValu>
+  </catgry>
+  <varFormat type="numeric"/>
+</var>
+<var ID="V38" name="q41" files="F1" intrvl="discrete">
+  <labl>Ever marijuana use</labl>
+  <imputation>Ever marijuana use</imputation>
+  <security>Ever marijuana use</security>
+  <embargo>Ever marijuana use</embargo>
+  <respUnit>Ever marijuana use</respUnit>
+  <qstn>
+    <preQTxt>The next 4 questions ask about drug use. This includes using marijuana, amphetamines, cocaine, inhalants, and COUNTRY SPECIFIC EXAMPLES.</preQTxt>
+    <qstnLit>During your life, how many times have you used marijuana (also called COUNTRY SPECIFIC SLANG TERMS FOR MARIJUANA)?</qstnLit>
+  </qstn>
+  <sumStat type="vald">2876</sumStat>
+  <sumStat type="invd">72</sumStat>
+  <catgry>
+    <catValu>1</catValu>
+    <labl>0 times</labl>
+    <catStat type="vald"/>
+  </catgry>
+  <catgry>
+    <catValu>2</catValu>
+    <labl>1 or 2 times</labl>
+    <catStat type="invd"/>
+  </catgry>
+  <catgry>
+    <catValu>3</catValu>
+    <labl>3 to 9 times</labl>
+  </catgry>
+  <catgry>
+    <catValu>4</catValu>
+    <labl>10 to 19 times</labl>
+  </catgry>
+  <catgry>
+    <catValu>5</catValu>
+    <labl>20 or more times</labl>
+  </catgry>
+  <catgry>
+    <catValu>Sysmiss</catValu>
+  </catgry>
+  <varFormat type="numeric"/>
+</var>
+<var ID="V39" name="q42" files="F1" intrvl="discrete">
+  <labl>Current marijuana use</labl>
+  <imputation>Current marijuana use</imputation>
+  <security>Current marijuana use</security>
+  <embargo>Current marijuana use</embargo>
+  <respUnit>Current marijuana use</respUnit>
+  <qstn>
+    <preQTxt>The next 4 questions ask about drug use. This includes using marijuana, amphetamines, cocaine, inhalants, and COUNTRY SPECIFIC EXAMPLES.</preQTxt>
+    <qstnLit>During the past 30 days, how many times have you used marijuana (also called COUNTRY SPECIFIC SLANG TERMS FOR MARIJUANA)?</qstnLit>
+  </qstn>
+  <sumStat type="vald">2873</sumStat>
+  <sumStat type="invd">75</sumStat>
+  <catgry>
+    <catValu>1</catValu>
+    <labl>0 times</labl>
+    <catStat type="vald"/>
+  </catgry>
+  <catgry>
+    <catValu>2</catValu>
+    <labl>1 or 2 times</labl>
+    <catStat type="invd"/>
+  </catgry>
+  <catgry>
+    <catValu>3</catValu>
+    <labl>3 to 9 times</labl>
+  </catgry>
+  <catgry>
+    <catValu>4</catValu>
+    <labl>10 to 19 times</labl>
+  </catgry>
+  <catgry>
+    <catValu>5</catValu>
+    <labl>20 or more times</labl>
+  </catgry>
+  <catgry>
+    <catValu>Sysmiss</catValu>
+  </catgry>
+  <varFormat type="numeric"/>
+</var>
+<var ID="V40" name="q43" files="F1" intrvl="discrete">
+  <labl>Amphethamine or methamphetamine use</labl>
+  <imputation>Amphethamine or methamphetamine use</imputation>
+  <security>Amphethamine or methamphetamine use</security>
+  <embargo>Amphethamine or methamphetamine use</embargo>
+  <respUnit>Amphethamine or methamphetamine use</respUnit>
+  <qstn>
+    <preQTxt>The next 4 questions ask about drug use. This includes using marijuana, amphetamines, cocaine, inhalants, and COUNTRY SPECIFIC EXAMPLES.</preQTxt>
+    <qstnLit>During your life, how many times have you used amphetamines or methamphetamines (also called COUNTRY SPECIFIC SLANG TERMS FOR AMPHETAMINES AND METHAMPHETAMINES)?</qstnLit>
+  </qstn>
+  <sumStat type="vald">2908</sumStat>
+  <sumStat type="invd">40</sumStat>
+  <catgry>
+    <catValu>1</catValu>
+    <labl>0 times</labl>
+    <catStat type="vald"/>
+  </catgry>
+  <catgry>
+    <catValu>2</catValu>
+    <labl>1 or 2 times</labl>
+    <catStat type="invd"/>
+  </catgry>
+  <catgry>
+    <catValu>3</catValu>
+    <labl>3 to 9 times</labl>
+  </catgry>
+  <catgry>
+    <catValu>4</catValu>
+    <labl>10 to 19 times</labl>
+  </catgry>
+  <catgry>
+    <catValu>5</catValu>
+    <labl>20 or more times</labl>
+  </catgry>
+  <catgry>
+    <catValu>Sysmiss</catValu>
+  </catgry>
+  <varFormat type="numeric"/>
+</var>
+<var ID="V41" name="q44" files="F1" intrvl="discrete">
+  <labl>Ever sexual intercourse</labl>
+  <imputation>Ever sexual intercourse</imputation>
+  <security>Ever sexual intercourse</security>
+  <embargo>Ever sexual intercourse</embargo>
+  <respUnit>Ever sexual intercourse</respUnit>
+  <qstn>
+    <preQTxt>The next 5 questions ask about sexual intercourse.</preQTxt>
+    <qstnLit>Have you ever had sexual intercourse?</qstnLit>
+  </qstn>
+  <sumStat type="vald">2772</sumStat>
+  <sumStat type="invd">176</sumStat>
+  <catgry>
+    <catValu>1</catValu>
+    <labl>Yes</labl>
+    <catStat type="vald"/>
+  </catgry>
+  <catgry>
+    <catValu>2</catValu>
+    <labl>No</labl>
+    <catStat type="invd"/>
+  </catgry>
+  <catgry>
+    <catValu>Sysmiss</catValu>
+  </catgry>
+  <varFormat type="numeric"/>
+</var>
+<var ID="V42" name="q45" files="F1" intrvl="discrete">
+  <labl>Age first had sex</labl>
+  <imputation>Age first had sex</imputation>
+  <security>Age first had sex</security>
+  <embargo>Age first had sex</embargo>
+  <respUnit>Age first had sex</respUnit>
+  <qstn>
+    <preQTxt>The next 5 questions ask about sexual intercourse.</preQTxt>
+    <qstnLit>How old were you when you had sexual intercourse for the first time?</qstnLit>
+  </qstn>
+  <sumStat type="vald">2846</sumStat>
+  <sumStat type="invd">102</sumStat>
+  <catgry>
+    <catValu>1</catValu>
+    <labl>Never had sex</labl>
+    <catStat type="vald"/>
+  </catgry>
+  <catgry>
+    <catValu>2</catValu>
+    <labl>11 years old or younger</labl>
+    <catStat type="invd"/>
+  </catgry>
+  <catgry>
+    <catValu>3</catValu>
+    <labl>12 years old</labl>
+  </catgry>
+  <catgry>
+    <catValu>4</catValu>
+    <labl>13 years old</labl>
+  </catgry>
+  <catgry>
+    <catValu>5</catValu>
+    <labl>14 years old</labl>
+  </catgry>
+  <catgry>
+    <catValu>6</catValu>
+    <labl>15 years old</labl>
+  </catgry>
+  <catgry>
+    <catValu>7</catValu>
+    <labl>16 or 17 years old</labl>
+  </catgry>
+  <catgry>
+    <catValu>8</catValu>
+    <labl>18 years old or older</labl>
+  </catgry>
+  <catgry>
+    <catValu>Sysmiss</catValu>
+  </catgry>
+  <varFormat type="numeric"/>
+</var>
+<var ID="V43" name="q46" files="F1" intrvl="discrete">
+  <labl>Number of sex partners</labl>
+  <imputation>Number of sex partners</imputation>
+  <security>Number of sex partners</security>
+  <embargo>Number of sex partners</embargo>
+  <respUnit>Number of sex partners</respUnit>
+  <qstn>
+    <preQTxt>The next 5 questions ask about sexual intercourse.</preQTxt>
+    <qstnLit>During your life, with how many people have you had sexual intercourse?</qstnLit>
+  </qstn>
+  <sumStat type="vald">2842</sumStat>
+  <sumStat type="invd">106</sumStat>
+  <catgry>
+    <catValu>1</catValu>
+    <labl>Never had sex</labl>
+    <catStat type="vald"/>
+  </catgry>
+  <catgry>
+    <catValu>2</catValu>
+    <labl>1 person</labl>
+    <catStat type="invd"/>
+  </catgry>
+  <catgry>
+    <catValu>3</catValu>
+    <labl>2 people</labl>
+  </catgry>
+  <catgry>
+    <catValu>4</catValu>
+    <labl>3 people</labl>
+  </catgry>
+  <catgry>
+    <catValu>5</catValu>
+    <labl>4 people</labl>
+  </catgry>
+  <catgry>
+    <catValu>6</catValu>
+    <labl>5 people</labl>
+  </catgry>
+  <catgry>
+    <catValu>7</catValu>
+    <labl>6 or more people</labl>
+  </catgry>
+  <catgry>
+    <catValu>Sysmiss</catValu>
+  </catgry>
+  <varFormat type="numeric"/>
+</var>
+<var ID="V44" name="q47" files="F1" intrvl="discrete">
+  <labl>Condom use</labl>
+  <imputation>Condom use</imputation>
+  <security>Condom use</security>
+  <embargo>Condom use</embargo>
+  <respUnit>Condom use</respUnit>
+  <qstn>
+    <preQTxt>The next 5 questions ask about sexual intercourse.</preQTxt>
+    <qstnLit>The last time you had sexual intercourse, did you or your partner use a condom or [COUNTRY SPECIFIC SLANG TERM FOR CONDOM]?</qstnLit>
+  </qstn>
+  <sumStat type="vald">2802</sumStat>
+  <sumStat type="invd">146</sumStat>
+  <catgry>
+    <catValu>1</catValu>
+    <labl>Never had sex</labl>
+    <catStat type="vald"/>
+  </catgry>
+  <catgry>
+    <catValu>2</catValu>
+    <labl>Yes</labl>
+    <catStat type="invd"/>
+  </catgry>
+  <catgry>
+    <catValu>3</catValu>
+    <labl>No</labl>
+  </catgry>
+  <catgry>
+    <catValu>Sysmiss</catValu>
+  </catgry>
+  <varFormat type="numeric"/>
+</var>
+<var ID="V45" name="q48" files="F1" intrvl="discrete">
+  <labl>Birth control used</labl>
+  <imputation>Birth control used</imputation>
+  <security>Birth control used</security>
+  <embargo>Birth control used</embargo>
+  <respUnit>Birth control used</respUnit>
+  <qstn>
+    <preQTxt>The next 5 questions ask about sexual intercourse.</preQTxt>
+    <qstnLit>The last time you had sexual intercourse, did you or your partner use any other method of birth control, such as withdrawal, rhythm (safe time), birth control pills, or any other method to prevent pregnancy?</qstnLit>
+  </qstn>
+  <sumStat type="vald">2831</sumStat>
+  <sumStat type="invd">117</sumStat>
+  <catgry>
+    <catValu>1</catValu>
+    <labl>Never had sex</labl>
+    <catStat type="vald"/>
+  </catgry>
+  <catgry>
+    <catValu>2</catValu>
+    <labl>Yes</labl>
+    <catStat type="invd"/>
+  </catgry>
+  <catgry>
+    <catValu>3</catValu>
+    <labl>No</labl>
+  </catgry>
+  <catgry>
+    <catValu>4</catValu>
+    <labl>I do not know</labl>
+  </catgry>
+  <catgry>
+    <catValu>Sysmiss</catValu>
+  </catgry>
+  <varFormat type="numeric"/>
+</var>
+<var ID="V46" name="q49" files="F1" intrvl="discrete">
+  <labl>Physical activity past 7 days</labl>
+  <imputation>Physical activity past 7 days</imputation>
+  <security>Physical activity past 7 days</security>
+  <embargo>Physical activity past 7 days</embargo>
+  <respUnit>Physical activity past 7 days</respUnit>
+  <qstn>
+    <preQTxt>The next 3 questions ask about physical activity. Physical activity is any activity that increases your heart rate and makes you breathe hard. Physical activity can be done in sports, playing with friends, or walking to school. Some examples of physical activity are running, fast walking, biking, dancing, football, and COUNTRY SPECIFIC EXAMPLES.</preQTxt>
+    <qstnLit>During the past 7 days, on how many days were you physically active for a total of at least 60 minutes per day? ADD UP ALL THE TIME YOU SPENT IN ANY KIND OF PHYSICAL ACTIVITY EACH DAY.</qstnLit>
+  </qstn>
+  <sumStat type="vald">2881</sumStat>
+  <sumStat type="invd">67</sumStat>
+  <catgry>
+    <catValu>1</catValu>
+    <labl>0 days</labl>
+    <catStat type="vald"/>
+  </catgry>
+  <catgry>
+    <catValu>2</catValu>
+    <labl>1 day</labl>
+    <catStat type="invd"/>
+  </catgry>
+  <catgry>
+    <catValu>3</catValu>
+    <labl>2 days</labl>
+  </catgry>
+  <catgry>
+    <catValu>4</catValu>
+    <labl>3 days</labl>
+  </catgry>
+  <catgry>
+    <catValu>5</catValu>
+    <labl>4 days</labl>
+  </catgry>
+  <catgry>
+    <catValu>6</catValu>
+    <labl>5 days</labl>
+  </catgry>
+  <catgry>
+    <catValu>7</catValu>
+    <labl>6 days</labl>
+  </catgry>
+  <catgry>
+    <catValu>8</catValu>
+    <labl>7 days</labl>
+  </catgry>
+  <catgry>
+    <catValu>Sysmiss</catValu>
+  </catgry>
+  <varFormat type="numeric"/>
+</var>
+<var ID="V47" name="q50" files="F1" intrvl="discrete">
+  <labl>Walk or bike to school</labl>
+  <imputation>Walk or bike to school</imputation>
+  <security>Walk or bike to school</security>
+  <embargo>Walk or bike to school</embargo>
+  <respUnit>Walk or bike to school</respUnit>
+  <qstn>
+    <preQTxt>The next 3 questions ask about physical activity. Physical activity is any activity that increases your heart rate and makes you breathe hard. Physical activity can be done in sports, playing with friends, or walking to school. Some examples of physical activity are running, fast walking, biking, dancing, football, and COUNTRY SPECIFIC EXAMPLES.</preQTxt>
+    <qstnLit>During the past 7 days, on how many days did you walk or ride a bicycle to or from school?</qstnLit>
+  </qstn>
+  <sumStat type="vald">2862</sumStat>
+  <sumStat type="invd">86</sumStat>
+  <catgry>
+    <catValu>1</catValu>
+    <labl>0 days</labl>
+    <catStat type="vald"/>
+  </catgry>
+  <catgry>
+    <catValu>2</catValu>
+    <labl>1 day</labl>
+    <catStat type="invd"/>
+  </catgry>
+  <catgry>
+    <catValu>3</catValu>
+    <labl>2 days</labl>
+  </catgry>
+  <catgry>
+    <catValu>4</catValu>
+    <labl>3 days</labl>
+  </catgry>
+  <catgry>
+    <catValu>5</catValu>
+    <labl>4 days</labl>
+  </catgry>
+  <catgry>
+    <catValu>6</catValu>
+    <labl>5 days</labl>
+  </catgry>
+  <catgry>
+    <catValu>7</catValu>
+    <labl>6 days</labl>
+  </catgry>
+  <catgry>
+    <catValu>8</catValu>
+    <labl>7 days</labl>
+  </catgry>
+  <catgry>
+    <catValu>Sysmiss</catValu>
+  </catgry>
+  <varFormat type="numeric"/>
+</var>
+<var ID="V48" name="q51" files="F1" intrvl="discrete">
+  <labl>PE attendance</labl>
+  <imputation>PE attendance</imputation>
+  <security>PE attendance</security>
+  <embargo>PE attendance</embargo>
+  <respUnit>PE attendance</respUnit>
+  <qstn>
+    <preQTxt>The next 3 questions ask about physical activity. Physical activity is any activity that increases your heart rate and makes you breathe hard. Physical activity can be done in sports, playing with friends, or walking to school. Some examples of physical activity are running, fast walking, biking, dancing, football, and COUNTRY SPECIFIC EXAMPLES.</preQTxt>
+    <qstnLit>During this school year, on how many days did you go to physical education (PE) class each week?</qstnLit>
+  </qstn>
+  <sumStat type="vald">2867</sumStat>
+  <sumStat type="invd">81</sumStat>
+  <catgry>
+    <catValu>1</catValu>
+    <labl>0 days</labl>
+    <catStat type="vald"/>
+  </catgry>
+  <catgry>
+    <catValu>2</catValu>
+    <labl>1 day</labl>
+    <catStat type="invd"/>
+  </catgry>
+  <catgry>
+    <catValu>3</catValu>
+    <labl>2 days</labl>
+  </catgry>
+  <catgry>
+    <catValu>4</catValu>
+    <labl>3 days</labl>
+  </catgry>
+  <catgry>
+    <catValu>5</catValu>
+    <labl>4 days</labl>
+  </catgry>
+  <catgry>
+    <catValu>6</catValu>
+    <labl>5 or more days</labl>
+  </catgry>
+  <catgry>
+    <catValu>Sysmiss</catValu>
+  </catgry>
+  <varFormat type="numeric"/>
+</var>
+<var ID="V49" name="q52" files="F1" intrvl="discrete">
+  <labl>Sitting activities</labl>
+  <imputation>Sitting activities</imputation>
+  <security>Sitting activities</security>
+  <embargo>Sitting activities</embargo>
+  <respUnit>Sitting activities</respUnit>
+  <qstn>
+    <preQTxt>The next question asks about the time you spend mostly sitting when you are not in school or doing homework.</preQTxt>
+    <qstnLit>How much time do you spend during a typical or usual day sitting and watching television, playing computer games, talking with friends, or doing other sitting activities, such as COUNTRY SPECIFIC EXAMPLES?</qstnLit>
+  </qstn>
+  <sumStat type="vald">2891</sumStat>
+  <sumStat type="invd">57</sumStat>
+  <catgry>
+    <catValu>1</catValu>
+    <labl>Less than 1 hour per day</labl>
+    <catStat type="vald"/>
+  </catgry>
+  <catgry>
+    <catValu>2</catValu>
+    <labl>1 to 2 hours per day</labl>
+    <catStat type="invd"/>
+  </catgry>
+  <catgry>
+    <catValu>3</catValu>
+    <labl>3 to 4 hours per day</labl>
+  </catgry>
+  <catgry>
+    <catValu>4</catValu>
+    <labl>5 to 6 hours per day</labl>
+  </catgry>
+  <catgry>
+    <catValu>5</catValu>
+    <labl>7 to 8 hours per day</labl>
+  </catgry>
+  <catgry>
+    <catValu>6</catValu>
+    <labl>More than 8 hours per day</labl>
+  </catgry>
+  <catgry>
+    <catValu>Sysmiss</catValu>
+  </catgry>
+  <varFormat type="numeric"/>
+</var>
+<var ID="V50" name="q53" files="F1" intrvl="discrete">
+  <labl>Miss school no permission</labl>
+  <imputation>Miss school no permission</imputation>
+  <security>Miss school no permission</security>
+  <embargo>Miss school no permission</embargo>
+  <respUnit>Miss school no permission</respUnit>
+  <qstn>
+    <preQTxt>The next 6 questions ask about your experiences at school and at home.</preQTxt>
+    <qstnLit>During the past 30 days, on how many days did you miss classes or school without permission?</qstnLit>
+  </qstn>
+  <sumStat type="vald">2913</sumStat>
+  <sumStat type="invd">35</sumStat>
+  <catgry>
+    <catValu>1</catValu>
+    <labl>0 days</labl>
+    <catStat type="vald"/>
+  </catgry>
+  <catgry>
+    <catValu>2</catValu>
+    <labl>1 or 2 days</labl>
+    <catStat type="invd"/>
+  </catgry>
+  <catgry>
+    <catValu>3</catValu>
+    <labl>3 to 5 days</labl>
+  </catgry>
+  <catgry>
+    <catValu>4</catValu>
+    <labl>6 to 9 days</labl>
+  </catgry>
+  <catgry>
+    <catValu>5</catValu>
+    <labl>10 or more days</labl>
+  </catgry>
+  <catgry>
+    <catValu>Sysmiss</catValu>
+  </catgry>
+  <varFormat type="numeric"/>
+</var>
+<var ID="V51" name="q54" files="F1" intrvl="discrete">
+  <labl>Other students kind and helpful</labl>
+  <imputation>Other students kind and helpful</imputation>
+  <security>Other students kind and helpful</security>
+  <embargo>Other students kind and helpful</embargo>
+  <respUnit>Other students kind and helpful</respUnit>
+  <qstn>
+    <preQTxt>The next 6 questions ask about your experiences at school and at home.</preQTxt>
+    <qstnLit>During the past 30 days, how often were most of the students in your school kind and helpful?</qstnLit>
+  </qstn>
+  <sumStat type="vald">2894</sumStat>
+  <sumStat type="invd">54</sumStat>
+  <catgry>
+    <catValu>1</catValu>
+    <labl>Never</labl>
+    <catStat type="vald"/>
+  </catgry>
+  <catgry>
+    <catValu>2</catValu>
+    <labl>Rarely</labl>
+    <catStat type="invd"/>
+  </catgry>
+  <catgry>
+    <catValu>3</catValu>
+    <labl>Sometimes</labl>
+  </catgry>
+  <catgry>
+    <catValu>4</catValu>
+    <labl>Most of the time</labl>
+  </catgry>
+  <catgry>
+    <catValu>5</catValu>
+    <labl>Always</labl>
+  </catgry>
+  <catgry>
+    <catValu>Sysmiss</catValu>
+  </catgry>
+  <varFormat type="numeric"/>
+</var>
+<var ID="V52" name="q55" files="F1" intrvl="discrete">
+  <labl>Parents check homework</labl>
+  <imputation>Parents check homework</imputation>
+  <security>Parents check homework</security>
+  <embargo>Parents check homework</embargo>
+  <respUnit>Parents check homework</respUnit>
+  <qstn>
+    <preQTxt>The next 6 questions ask about your experiences at school and at home.</preQTxt>
+    <qstnLit>During the past 30 days, how often did your parents or guardians check to see if your homework was done?</qstnLit>
+  </qstn>
+  <sumStat type="vald">2855</sumStat>
+  <sumStat type="invd">93</sumStat>
+  <catgry>
+    <catValu>1</catValu>
+    <labl>Never</labl>
+    <catStat type="vald"/>
+  </catgry>
+  <catgry>
+    <catValu>2</catValu>
+    <labl>Rarely</labl>
+    <catStat type="invd"/>
+  </catgry>
+  <catgry>
+    <catValu>3</catValu>
+    <labl>Sometimes</labl>
+  </catgry>
+  <catgry>
+    <catValu>4</catValu>
+    <labl>Most of the time</labl>
+  </catgry>
+  <catgry>
+    <catValu>5</catValu>
+    <labl>Always</labl>
+  </catgry>
+  <catgry>
+    <catValu>Sysmiss</catValu>
+  </catgry>
+  <varFormat type="numeric"/>
+</var>
+<var ID="V53" name="q56" files="F1" intrvl="discrete">
+  <labl>Parents understand problems</labl>
+  <imputation>Parents understand problems</imputation>
+  <security>Parents understand problems</security>
+  <embargo>Parents understand problems</embargo>
+  <respUnit>Parents understand problems</respUnit>
+  <qstn>
+    <preQTxt>The next 6 questions ask about your experiences at school and at home.</preQTxt>
+    <qstnLit>During the past 30 days, how often did your parents or guardians understand your problems and worries?</qstnLit>
+  </qstn>
+  <sumStat type="vald">2896</sumStat>
+  <sumStat type="invd">52</sumStat>
+  <catgry>
+    <catValu>1</catValu>
+    <labl>Never</labl>
+    <catStat type="vald"/>
+  </catgry>
+  <catgry>
+    <catValu>2</catValu>
+    <labl>Rarely</labl>
+    <catStat type="invd"/>
+  </catgry>
+  <catgry>
+    <catValu>3</catValu>
+    <labl>Sometimes</labl>
+  </catgry>
+  <catgry>
+    <catValu>4</catValu>
+    <labl>Most of the time</labl>
+  </catgry>
+  <catgry>
+    <catValu>5</catValu>
+    <labl>Always</labl>
+  </catgry>
+  <catgry>
+    <catValu>Sysmiss</catValu>
+  </catgry>
+  <varFormat type="numeric"/>
+</var>
+<var ID="V54" name="q57" files="F1" intrvl="discrete">
+  <labl>Parents know about free time</labl>
+  <imputation>Parents know about free time</imputation>
+  <security>Parents know about free time</security>
+  <embargo>Parents know about free time</embargo>
+  <respUnit>Parents know about free time</respUnit>
+  <qstn>
+    <preQTxt>The next 6 questions ask about your experiences at school and at home.</preQTxt>
+    <qstnLit>During the past 30 days, how often did your parents or guardians really know what you were doing with your free time?</qstnLit>
+  </qstn>
+  <sumStat type="vald">2884</sumStat>
+  <sumStat type="invd">64</sumStat>
+  <catgry>
+    <catValu>1</catValu>
+    <labl>Never</labl>
+    <catStat type="vald"/>
+  </catgry>
+  <catgry>
+    <catValu>2</catValu>
+    <labl>Rarely</labl>
+    <catStat type="invd"/>
+  </catgry>
+  <catgry>
+    <catValu>3</catValu>
+    <labl>Sometimes</labl>
+  </catgry>
+  <catgry>
+    <catValu>4</catValu>
+    <labl>Most of the time</labl>
+  </catgry>
+  <catgry>
+    <catValu>5</catValu>
+    <labl>Always</labl>
+  </catgry>
+  <catgry>
+    <catValu>Sysmiss</catValu>
+  </catgry>
+  <varFormat type="numeric"/>
+</var>
+<var ID="V55" name="q58" files="F1" intrvl="discrete">
+  <labl>Parents go through their things</labl>
+  <imputation>Parents go through their things</imputation>
+  <security>Parents go through their things</security>
+  <embargo>Parents go through their things</embargo>
+  <respUnit>Parents go through their things</respUnit>
+  <qstn>
+    <preQTxt>The next 6 questions ask about your experiences at school and at home.</preQTxt>
+    <qstnLit>During the past 30 days, how often did your parents or guardians go through your things without your approval?</qstnLit>
+  </qstn>
+  <sumStat type="vald">2847</sumStat>
+  <sumStat type="invd">101</sumStat>
+  <sumStat type="mean">1.863</sumStat>
+  <sumStat type="stdev">1.168</sumStat>
+  <catgry>
+    <catValu>1</catValu>
+    <labl>Never</labl>
+    <catStat type="vald"/>
+  </catgry>
+  <catgry>
+    <catValu>2</catValu>
+    <labl>Rarely</labl>
+    <catStat type="invd"/>
+  </catgry>
+  <catgry>
+    <catValu>3</catValu>
+    <labl>Sometimes</labl>
+    <catStat type="mean"/>
+  </catgry>
+  <catgry>
+    <catValu>4</catValu>
+    <labl>Most of the time</labl>
+    <catStat type="stdev"/>
+  </catgry>
+  <catgry>
+    <catValu>5</catValu>
+    <labl>Always</labl>
+  </catgry>
+  <catgry>
+    <catValu>Sysmiss</catValu>
+  </catgry>
+  <varFormat type="numeric"/>
+</var>
+<var ID="V56" name="q61" files="F1" intrvl="discrete">
+  <labl>Fruit consumption past 7 days</labl>
+  <imputation>Fruit consumption past 7 days</imputation>
+  <security>Fruit consumption past 7 days</security>
+  <embargo>Fruit consumption past 7 days</embargo>
+  <respUnit>Fruit consumption past 7 days</respUnit>
+  <qstn>
+    <preQTxt>The next 4 questions ask about what you might eat and drink.</preQTxt>
+    <qstnLit>During the past 7 days, how many times did you eat fruit, such as COUNTRY SPECIFIC EXAMPLES?</qstnLit>
+  </qstn>
+  <sumStat type="vald">2934</sumStat>
+  <sumStat type="invd">14</sumStat>
+  <catgry>
+    <catValu>1</catValu>
+    <labl>I did not eat fruit during the past 7 days</labl>
+    <catStat type="vald"/>
+  </catgry>
+  <catgry>
+    <catValu>2</catValu>
+    <labl>1 to 3 times during the past 7 days</labl>
+    <catStat type="invd"/>
+  </catgry>
+  <catgry>
+    <catValu>3</catValu>
+    <labl>4 to 6 times during the past 7 days</labl>
+  </catgry>
+  <catgry>
+    <catValu>4</catValu>
+    <labl>1 time per day</labl>
+  </catgry>
+  <catgry>
+    <catValu>5</catValu>
+    <labl>2 times per day</labl>
+  </catgry>
+  <catgry>
+    <catValu>6</catValu>
+    <labl>3 times per day</labl>
+  </catgry>
+  <catgry>
+    <catValu>7</catValu>
+    <labl>4 or more times per day</labl>
+  </catgry>
+  <catgry>
+    <catValu>Sysmiss</catValu>
+  </catgry>
+  <varFormat type="numeric"/>
+</var>
+<var ID="V57" name="q62" files="F1" intrvl="discrete">
+  <labl>Vegetable consumption past 7 days</labl>
+  <imputation>Vegetable consumption past 7 days</imputation>
+  <security>Vegetable consumption past 7 days</security>
+  <embargo>Vegetable consumption past 7 days</embargo>
+  <respUnit>Vegetable consumption past 7 days</respUnit>
+  <qstn>
+    <qstnLit>During the past 7 days, how many times did you eat vegetables, such as COUNTRY SPECIFIC EXAMPLES?</qstnLit>
+  </qstn>
+  <sumStat type="vald">2923</sumStat>
+  <sumStat type="invd">25</sumStat>
+  <catgry>
+    <catValu>1</catValu>
+    <labl>I did not eat vegetables during the past 7</labl>
+    <catStat type="vald"/>
+  </catgry>
+  <catgry>
+    <catValu>2</catValu>
+    <labl>1 to 3 times during the past 7 days</labl>
+    <catStat type="invd"/>
+  </catgry>
+  <catgry>
+    <catValu>3</catValu>
+    <labl>4 to 6 times during the past 7 days</labl>
+  </catgry>
+  <catgry>
+    <catValu>4</catValu>
+    <labl>1 time per day</labl>
+  </catgry>
+  <catgry>
+    <catValu>5</catValu>
+    <labl>2 times per day</labl>
+  </catgry>
+  <catgry>
+    <catValu>6</catValu>
+    <labl>3 times per day</labl>
+  </catgry>
+  <catgry>
+    <catValu>7</catValu>
+    <labl>4 or more times per day</labl>
+  </catgry>
+  <catgry>
+    <catValu>Sysmiss</catValu>
+  </catgry>
+  <varFormat type="numeric"/>
+</var>
+<var ID="V58" name="q63" files="F1" intrvl="discrete">
+  <labl>Soft drink consumption past 7 days</labl>
+  <imputation>Soft drink consumption past 7 days</imputation>
+  <security>Soft drink consumption past 7 days</security>
+  <embargo>Soft drink consumption past 7 days</embargo>
+  <respUnit>Soft drink consumption past 7 days</respUnit>
+  <qstn>
+    <qstnLit>During the past 7 days, how many times did you drink a can, bottle or glass of a caarbonated soft drink, such as COUNTRY SPECIFIC EXAMPLES?</qstnLit>
+  </qstn>
+  <sumStat type="vald">2932</sumStat>
+  <sumStat type="invd">16</sumStat>
+  <catgry>
+    <catValu>1</catValu>
+    <labl>I did not drink carbonated soft drinks during the past 7 days</labl>
+    <catStat type="vald"/>
+  </catgry>
+  <catgry>
+    <catValu>2</catValu>
+    <labl>1 to 3 times during the past 7 days</labl>
+    <catStat type="invd"/>
+  </catgry>
+  <catgry>
+    <catValu>3</catValu>
+    <labl>4 to 6 times during the past 7 days</labl>
+  </catgry>
+  <catgry>
+    <catValu>4</catValu>
+    <labl>1 time per day</labl>
+  </catgry>
+  <catgry>
+    <catValu>5</catValu>
+    <labl>2 times per day</labl>
+  </catgry>
+  <catgry>
+    <catValu>6</catValu>
+    <labl>3 times per day</labl>
+  </catgry>
+  <catgry>
+    <catValu>7</catValu>
+    <labl>4 or more times per day</labl>
+  </catgry>
+  <catgry>
+    <catValu>Sysmiss</catValu>
+  </catgry>
+  <varFormat type="numeric"/>
+</var>
+<var ID="V59" name="q65" files="F1" intrvl="discrete">
+  <labl>Bullied at school in past 12 mos</labl>
+  <imputation>Bullied at school in past 12 mos</imputation>
+  <security>Bullied at school in past 12 mos</security>
+  <embargo>Bullied at school in past 12 mos</embargo>
+  <respUnit>Bullied at school in past 12 mos</respUnit>
+  <qstn>
+    <qstnLit>During the past 12 months, have you ever been bullied on school property?</qstnLit>
+  </qstn>
+  <sumStat type="vald">2862</sumStat>
+  <sumStat type="invd">86</sumStat>
+  <catgry>
+    <catValu>1</catValu>
+    <labl>Yes</labl>
+    <catStat type="vald"/>
+  </catgry>
+  <catgry>
+    <catValu>2</catValu>
+    <labl>No</labl>
+    <catStat type="invd"/>
+  </catgry>
+  <catgry>
+    <catValu>Sysmiss</catValu>
+  </catgry>
+  <varFormat type="numeric"/>
+</var>
+<var ID="V60" name="q66" files="F1" intrvl="discrete">
+  <labl>Bullied not at school in past 12 months</labl>
+  <imputation>Bullied not at school in past 12 months</imputation>
+  <security>Bullied not at school in past 12 months</security>
+  <embargo>Bullied not at school in past 12 months</embargo>
+  <respUnit>Bullied not at school in past 12 months</respUnit>
+  <qstn>
+    <qstnLit>During the past 12 months, have you ever been bullied when you were not on school property?</qstnLit>
+  </qstn>
+  <sumStat type="vald">2931</sumStat>
+  <sumStat type="invd">17</sumStat>
+  <catgry>
+    <catValu>1</catValu>
+    <labl>Yes</labl>
+    <catStat type="vald"/>
+  </catgry>
+  <catgry>
+    <catValu>2</catValu>
+    <labl>No</labl>
+    <catStat type="invd"/>
+  </catgry>
+  <catgry>
+    <catValu>Sysmiss</catValu>
+  </catgry>
+  <varFormat type="numeric"/>
+</var>
+<var ID="V61" name="q67" files="F1" intrvl="discrete">
+  <labl>Cyber bullied</labl>
+  <imputation>Cyber bullied</imputation>
+  <security>Cyber bullied</security>
+  <embargo>Cyber bullied</embargo>
+  <respUnit>Cyber bullied</respUnit>
+  <qstn>
+    <qstnLit>During the past 12 months, have you ever been cyber bullied?</qstnLit>
+  </qstn>
+  <sumStat type="vald">2670</sumStat>
+  <sumStat type="invd">278</sumStat>
+  <catgry>
+    <catValu>1</catValu>
+    <labl>Yes</labl>
+    <catStat type="vald"/>
+  </catgry>
+  <catgry>
+    <catValu>2</catValu>
+    <labl>No</labl>
+    <catStat type="invd"/>
+  </catgry>
+  <catgry>
+    <catValu>Sysmiss</catValu>
+  </catgry>
+  <varFormat type="numeric"/>
+</var>
+<var ID="V62" name="qn6" files="F1" intrvl="discrete">
+  <labl>Went hungry most of time or always</labl>
+  <imputation>Went hungry most of time or always</imputation>
+  <security>Went hungry most of time or always</security>
+  <embargo>Went hungry most of time or always</embargo>
+  <respUnit>Went hungry most of time or always</respUnit>
+  <qstn>
+    <qstnLit>Percentage of students who most of the time or always went hungry (because there was not enough food in their home during the 30 days before the survey)</qstnLit>
+  </qstn>
+  <sumStat type="vald">2902</sumStat>
+  <sumStat type="invd">46</sumStat>
+  <catgry>
+    <catValu>1</catValu>
+    <labl>Yes</labl>
+    <catStat type="vald"/>
+  </catgry>
+  <catgry>
+    <catValu>2</catValu>
+    <labl>No</labl>
+    <catStat type="invd"/>
+  </catgry>
+  <catgry>
+    <catValu>Sysmiss</catValu>
+  </catgry>
+  <varFormat type="numeric"/>
+</var>
+<var ID="V63" name="qn10" files="F1" intrvl="discrete">
+  <labl>Did not eat food from a fast food restaurant</labl>
+  <imputation>Did not eat food from a fast food restaurant</imputation>
+  <security>Did not eat food from a fast food restaurant</security>
+  <embargo>Did not eat food from a fast food restaurant</embargo>
+  <respUnit>Did not eat food from a fast food restaurant</respUnit>
+  <qstn>
+    <qstnLit>Percentage of students who did not eat food from a fast food restaurant (during the 7 days before the survey)</qstnLit>
+  </qstn>
+  <sumStat type="vald">2933</sumStat>
+  <sumStat type="invd">15</sumStat>
+  <sumStat type="mean">1.54</sumStat>
+  <sumStat type="stdev">0.498</sumStat>
+  <catgry>
+    <catValu>1</catValu>
+    <labl>Yes</labl>
+    <catStat type="vald"/>
+  </catgry>
+  <catgry>
+    <catValu>2</catValu>
+    <labl>No</labl>
+    <catStat type="invd"/>
+  </catgry>
+  <catgry>
+    <catValu>Sysmiss</catValu>
+    <catStat type="mean"/>
+  </catgry>
+  <varFormat type="numeric"/>
+</var>
+<var ID="V64" name="qn11" files="F1" intrvl="discrete">
+  <labl>Usually cleaned or brushed their teeth</labl>
+  <imputation>Usually cleaned or brushed their teeth</imputation>
+  <security>Usually cleaned or brushed their teeth</security>
+  <embargo>Usually cleaned or brushed their teeth</embargo>
+  <respUnit>Usually cleaned or brushed their teeth</respUnit>
+  <sumStat type="vald">2918</sumStat>
+  <sumStat type="invd">30</sumStat>
+  <catgry>
+    <catValu>1</catValu>
+    <labl>Yes</labl>
+    <catStat type="vald"/>
+  </catgry>
+  <catgry>
+    <catValu>2</catValu>
+    <labl>No</labl>
+    <catStat type="invd"/>
+  </catgry>
+  <catgry>
+    <catValu>Sysmiss</catValu>
+  </catgry>
+  <varFormat type="numeric"/>
+</var>
+<var ID="V65" name="qn12" files="F1" intrvl="discrete">
+  <labl>Never or rarely washed their hands before eating</labl>
+  <imputation>Never or rarely washed their hands before eating</imputation>
+  <security>Never or rarely washed their hands before eating</security>
+  <embargo>Never or rarely washed their hands before eating</embargo>
+  <respUnit>Never or rarely washed their hands before eating</respUnit>
+  <sumStat type="vald">2933</sumStat>
+  <sumStat type="invd">15</sumStat>
+  <catgry>
+    <catValu>1</catValu>
+    <labl>Yes</labl>
+    <catStat type="vald"/>
+  </catgry>
+  <catgry>
+    <catValu>2</catValu>
+    <labl>No</labl>
+    <catStat type="invd"/>
+  </catgry>
+  <catgry>
+    <catValu>Sysmiss</catValu>
+  </catgry>
+  <varFormat type="numeric"/>
+</var>
+<var ID="V66" name="qn13" files="F1" intrvl="discrete">
+  <labl>Never or rarely washed their hands after using the toilet or latrine</labl>
+  <imputation>Never or rarely washed their hands after using the toilet or latrine</imputation>
+  <security>Never or rarely washed their hands after using the toilet or latrine</security>
+  <embargo>Never or rarely washed their hands after using the toilet or latrine</embargo>
+  <respUnit>Never or rarely washed their hands after using the toilet or latrine</respUnit>
+  <sumStat type="vald">2918</sumStat>
+  <sumStat type="invd">30</sumStat>
+  <catgry>
+    <catValu>1</catValu>
+    <labl>Yes</labl>
+    <catStat type="vald"/>
+  </catgry>
+  <catgry>
+    <catValu>2</catValu>
+    <labl>No</labl>
+    <catStat type="invd"/>
+  </catgry>
+  <catgry>
+    <catValu>Sysmiss</catValu>
+  </catgry>
+  <varFormat type="numeric"/>
+</var>
+<var ID="V67" name="qn14" files="F1" intrvl="discrete">
+  <labl>Never or rarely used soap when washing their hands</labl>
+  <imputation>Never or rarely used soap when washing their hands</imputation>
+  <security>Never or rarely used soap when washing their hands</security>
+  <embargo>Never or rarely used soap when washing their hands</embargo>
+  <respUnit>Never or rarely used soap when washing their hands</respUnit>
+  <sumStat type="vald">2923</sumStat>
+  <sumStat type="invd">25</sumStat>
+  <catgry>
+    <catValu>1</catValu>
+    <labl>Yes</labl>
+    <catStat type="vald"/>
+  </catgry>
+  <catgry>
+    <catValu>2</catValu>
+    <labl>No</labl>
+    <catStat type="invd"/>
+  </catgry>
+  <catgry>
+    <catValu>Sysmiss</catValu>
+  </catgry>
+  <varFormat type="numeric"/>
+</var>
+<var ID="V68" name="qn15" files="F1" intrvl="discrete">
+  <labl>Were physically attacked</labl>
+  <imputation>Were physically attacked</imputation>
+  <security>Were physically attacked</security>
+  <embargo>Were physically attacked</embargo>
+  <respUnit>Were physically attacked</respUnit>
+  <qstn>
+    <qstnLit>Percentage of students who were physically attacked (one or more times during the 12 months before the survey)</qstnLit>
+  </qstn>
+  <sumStat type="vald">2938</sumStat>
+  <sumStat type="invd">10</sumStat>
+  <sumStat type="mean">1.864</sumStat>
+  <sumStat type="stdev">0.343</sumStat>
+  <catgry>
+    <catValu>1</catValu>
+    <labl>Yes</labl>
+    <catStat type="vald"/>
+  </catgry>
+  <catgry>
+    <catValu>2</catValu>
+    <labl>No</labl>
+    <catStat type="invd"/>
+  </catgry>
+  <catgry>
+    <catValu>Sysmiss</catValu>
+    <catStat type="mean"/>
+  </catgry>
+  <varFormat type="numeric"/>
+</var>
+<var ID="V69" name="qn16" files="F1" intrvl="discrete">
+  <labl>Were in a physical fight</labl>
+  <imputation>Were in a physical fight</imputation>
+  <security>Were in a physical fight</security>
+  <embargo>Were in a physical fight</embargo>
+  <respUnit>Were in a physical fight</respUnit>
+  <qstn>
+    <qstnLit>Percentage of students who were in a physical fight (one or more times during the 12 months before the survey)</qstnLit>
+  </qstn>
+  <sumStat type="vald">2940</sumStat>
+  <sumStat type="invd">8</sumStat>
+  <sumStat type="mean">1.811</sumStat>
+  <sumStat type="stdev">0.392</sumStat>
+  <catgry>
+    <catValu>1</catValu>
+    <labl>Yes</labl>
+    <catStat type="vald"/>
+  </catgry>
+  <catgry>
+    <catValu>2</catValu>
+    <labl>No</labl>
+    <catStat type="invd"/>
+  </catgry>
+  <catgry>
+    <catValu>Sysmiss</catValu>
+    <catStat type="mean"/>
+  </catgry>
+  <varFormat type="numeric"/>
+</var>
+<var ID="V70" name="qn17" files="F1" intrvl="discrete">
+  <labl>Were seriously injured</labl>
+  <imputation>Were seriously injured</imputation>
+  <security>Were seriously injured</security>
+  <embargo>Were seriously injured</embargo>
+  <respUnit>Were seriously injured</respUnit>
+  <qstn>
+    <qstnLit>Percentage of students who were seriously injured (one or more times during the 12 months before the survey)</qstnLit>
+  </qstn>
+  <sumStat type="vald">2704</sumStat>
+  <sumStat type="invd">244</sumStat>
+  <sumStat type="mean">1.549</sumStat>
+  <sumStat type="stdev">0.498</sumStat>
+  <catgry>
+    <catValu>1</catValu>
+    <labl>Yes</labl>
+    <catStat type="vald"/>
+  </catgry>
+  <catgry>
+    <catValu>2</catValu>
+    <labl>No</labl>
+    <catStat type="invd"/>
+  </catgry>
+  <catgry>
+    <catValu>Sysmiss</catValu>
+    <catStat type="mean"/>
+  </catgry>
+  <varFormat type="numeric"/>
+</var>
+<var ID="V71" name="qn18" files="F1" intrvl="discrete">
+  <labl>Reported that their most serious injury was a broken bone or dislocated joint</labl>
+  <imputation>Reported that their most serious injury was a broken bone or dislocated joint</imputation>
+  <security>Reported that their most serious injury was a broken bone or dislocated joint</security>
+  <embargo>Reported that their most serious injury was a broken bone or dislocated joint</embargo>
+  <respUnit>Reported that their most serious injury was a broken bone or dislocated joint</respUnit>
+  <qstn>
+    <qstnLit>Percentage of students who reported that their most serious injury was a broken bone or dislocated joint (among students who were seriously injured during the 12 months before the survey)</qstnLit>
+  </qstn>
+  <sumStat type="vald">999</sumStat>
+  <sumStat type="invd">1949</sumStat>
+  <sumStat type="mean">1.817</sumStat>
+  <sumStat type="stdev">0.387</sumStat>
+  <catgry>
+    <catValu>1</catValu>
+    <labl>Yes</labl>
+    <catStat type="vald"/>
+  </catgry>
+  <catgry>
+    <catValu>2</catValu>
+    <labl>No</labl>
+    <catStat type="invd"/>
+  </catgry>
+  <catgry>
+    <catValu>Sysmiss</catValu>
+    <catStat type="mean"/>
+  </catgry>
+  <varFormat type="numeric"/>
+</var>
+<var ID="V72" name="qn19" files="F1" intrvl="discrete">
+  <labl>Reported that their most serious injury was caused by a motor vehicle accident or being hit by a motor vehicle</labl>
+  <imputation>Reported that their most serious injury was caused by a motor vehicle accident or being hit by a motor vehicle</imputation>
+  <security>Reported that their most serious injury was caused by a motor vehicle accident or being hit by a motor vehicle</security>
+  <embargo>Reported that their most serious injury was caused by a motor vehicle accident or being hit by a motor vehicle</embargo>
+  <respUnit>Reported that their most serious injury was caused by a motor vehicle accident or being hit by a motor vehicle</respUnit>
+  <qstn>
+    <qstnLit>Percentage of students who reported that their most serious injury was caused by a motor vehicle accident or being hit by a motor vehicle (among students who were seriously injured during the 12 months before the survey)</qstnLit>
+  </qstn>
+  <sumStat type="vald">1025</sumStat>
+  <sumStat type="invd">1923</sumStat>
+  <sumStat type="mean">1.972</sumStat>
+  <sumStat type="stdev">0.166</sumStat>
+  <catgry>
+    <catValu>1</catValu>
+    <labl>Yes</labl>
+    <catStat type="vald"/>
+  </catgry>
+  <catgry>
+    <catValu>2</catValu>
+    <labl>No</labl>
+    <catStat type="invd"/>
+  </catgry>
+  <catgry>
+    <catValu>Sysmiss</catValu>
+    <catStat type="mean"/>
+  </catgry>
+  <varFormat type="numeric"/>
+</var>
+<var ID="V73" name="qn22" files="F1" intrvl="discrete">
+  <labl>Most of the time or always felt lonely</labl>
+  <imputation>Most of the time or always felt lonely</imputation>
+  <security>Most of the time or always felt lonely</security>
+  <embargo>Most of the time or always felt lonely</embargo>
+  <respUnit>Most of the time or always felt lonely</respUnit>
+  <qstn>
+    <qstnLit>Percentage of students who most of the time or always felt lonely (during the 12 months before the survey)</qstnLit>
+  </qstn>
+  <sumStat type="vald">2935</sumStat>
+  <sumStat type="invd">13</sumStat>
+  <sumStat type="mean">1.841</sumStat>
+  <sumStat type="stdev">0.366</sumStat>
+  <catgry>
+    <catValu>1</catValu>
+    <labl>Yes</labl>
+    <catStat type="vald"/>
+  </catgry>
+  <catgry>
+    <catValu>2</catValu>
+    <labl>No</labl>
+    <catStat type="invd"/>
+  </catgry>
+  <catgry>
+    <catValu>Sysmiss</catValu>
+    <catStat type="mean"/>
+  </catgry>
+  <varFormat type="numeric"/>
+</var>
+<var ID="V74" name="qn23" files="F1" intrvl="discrete">
+  <labl>Most of the time or always were so worried about something that they could not sleep at night</labl>
+  <imputation>Most of the time or always were so worried about something that they could not sleep at night</imputation>
+  <security>Most of the time or always were so worried about something that they could not sleep at night</security>
+  <embargo>Most of the time or always were so worried about something that they could not sleep at night</embargo>
+  <respUnit>Most of the time or always were so worried about something that they could not sleep at night</respUnit>
+  <qstn>
+    <qstnLit>Percentage of students who most of the time or always were so worried about something that they could not sleep at night (during the 12 months before the survey)</qstnLit>
+  </qstn>
+  <sumStat type="vald">2931</sumStat>
+  <sumStat type="invd">17</sumStat>
+  <sumStat type="mean">1.893</sumStat>
+  <sumStat type="stdev">0.309</sumStat>
+  <catgry>
+    <catValu>1</catValu>
+    <labl>Yes</labl>
+    <catStat type="vald"/>
+  </catgry>
+  <catgry>
+    <catValu>2</catValu>
+    <labl>No</labl>
+    <catStat type="invd"/>
+  </catgry>
+  <catgry>
+    <catValu>Sysmiss</catValu>
+    <catStat type="mean"/>
+  </catgry>
+  <varFormat type="numeric"/>
+</var>
+<var ID="V75" name="qn24" files="F1" intrvl="discrete">
+  <labl>Seriously considered attempting suicide</labl>
+  <imputation>Seriously considered attempting suicide</imputation>
+  <security>Seriously considered attempting suicide</security>
+  <embargo>Seriously considered attempting suicide</embargo>
+  <respUnit>Seriously considered attempting suicide</respUnit>
+  <qstn>
+    <qstnLit>Percentage of students who seriously considered attempting suicide (during the 12 months before the survey)</qstnLit>
+  </qstn>
+  <sumStat type="vald">2881</sumStat>
+  <sumStat type="invd">67</sumStat>
+  <sumStat type="mean">1.811</sumStat>
+  <sumStat type="stdev">0.392</sumStat>
+  <catgry>
+    <catValu>1</catValu>
+    <labl>Yes</labl>
+    <catStat type="vald"/>
+  </catgry>
+  <catgry>
+    <catValu>2</catValu>
+    <labl>No</labl>
+    <catStat type="invd"/>
+  </catgry>
+  <catgry>
+    <catValu>Sysmiss</catValu>
+    <catStat type="mean"/>
+  </catgry>
+  <varFormat type="numeric"/>
+</var>
+<var ID="V76" name="qn25" files="F1" intrvl="discrete">
+  <labl>Made a plan about how they would attempt suicide</labl>
+  <imputation>Made a plan about how they would attempt suicide</imputation>
+  <security>Made a plan about how they would attempt suicide</security>
+  <embargo>Made a plan about how they would attempt suicide</embargo>
+  <respUnit>Made a plan about how they would attempt suicide</respUnit>
+  <qstn>
+    <qstnLit>Percentage of students who made a plan about how they would attempt suicide (during the 12 months before the survey)</qstnLit>
+  </qstn>
+  <sumStat type="vald">2922</sumStat>
+  <sumStat type="invd">26</sumStat>
+  <sumStat type="mean">1.843</sumStat>
+  <sumStat type="stdev">0.364</sumStat>
+  <catgry>
+    <catValu>1</catValu>
+    <labl>Yes</labl>
+    <catStat type="vald"/>
+  </catgry>
+  <catgry>
+    <catValu>2</catValu>
+    <labl>No</labl>
+    <catStat type="invd"/>
+  </catgry>
+  <catgry>
+    <catValu>Sysmiss</catValu>
+    <catStat type="mean"/>
+  </catgry>
+  <varFormat type="numeric"/>
+</var>
+<var ID="V77" name="qn26" files="F1" intrvl="discrete">
+  <labl>Attempted suicide</labl>
+  <imputation>Attempted suicide</imputation>
+  <security>Attempted suicide</security>
+  <embargo>Attempted suicide</embargo>
+  <respUnit>Attempted suicide</respUnit>
+  <qstn>
+    <qstnLit>Percentage of students who attempted suicide (one or more times during the 12 months before the survey)</qstnLit>
+  </qstn>
+  <sumStat type="vald">2927</sumStat>
+  <sumStat type="invd">21</sumStat>
+  <sumStat type="mean">1.857</sumStat>
+  <sumStat type="stdev">0.351</sumStat>
+  <catgry>
+    <catValu>1</catValu>
+    <labl>Yes</labl>
+    <catStat type="vald"/>
+  </catgry>
+  <catgry>
+    <catValu>2</catValu>
+    <labl>No</labl>
+    <catStat type="invd"/>
+  </catgry>
+  <catgry>
+    <catValu>Sysmiss</catValu>
+    <catStat type="mean"/>
+  </catgry>
+  <varFormat type="numeric"/>
+</var>
+<var ID="V78" name="qn27" files="F1" intrvl="discrete">
+  <labl>Did not have any close friends</labl>
+  <imputation>Did not have any close friends</imputation>
+  <security>Did not have any close friends</security>
+  <embargo>Did not have any close friends</embargo>
+  <respUnit>Did not have any close friends</respUnit>
+  <qstn>
+    <qstnLit>Percentage of students who did not have any close friends</qstnLit>
+  </qstn>
+  <sumStat type="vald">2935</sumStat>
+  <sumStat type="invd">13</sumStat>
+  <sumStat type="mean">1.925</sumStat>
+  <sumStat type="stdev">0.263</sumStat>
+  <catgry>
+    <catValu>1</catValu>
+    <labl>Yes</labl>
+    <catStat type="vald"/>
+  </catgry>
+  <catgry>
+    <catValu>2</catValu>
+    <labl>No</labl>
+    <catStat type="invd"/>
+  </catgry>
+  <catgry>
+    <catValu>Sysmiss</catValu>
+    <catStat type="mean"/>
+  </catgry>
+  <varFormat type="numeric"/>
+</var>
+<var ID="V79" name="qn28" files="F1" intrvl="discrete">
+  <labl>Tried a cigarette before age 14 years</labl>
+  <imputation>Tried a cigarette before age 14 years</imputation>
+  <security>Tried a cigarette before age 14 years</security>
+  <embargo>Tried a cigarette before age 14 years</embargo>
+  <respUnit>Tried a cigarette before age 14 years</respUnit>
+  <qstn>
+    <qstnLit>Percentage of students who tried a cigarette before age 14 years (for the first time among students who ever smoked cigarettes)</qstnLit>
+  </qstn>
+  <sumStat type="vald">632</sumStat>
+  <sumStat type="invd">2316</sumStat>
+  <sumStat type="mean">1.484</sumStat>
+  <sumStat type="stdev">0.5</sumStat>
+  <catgry>
+    <catValu>1</catValu>
+    <labl>Yes</labl>
+    <catStat type="vald"/>
+  </catgry>
+  <catgry>
+    <catValu>2</catValu>
+    <labl>No</labl>
+    <catStat type="invd"/>
+  </catgry>
+  <catgry>
+    <catValu>Sysmiss</catValu>
+    <catStat type="mean"/>
+  </catgry>
+  <varFormat type="numeric"/>
+</var>
+<var ID="V80" name="qn29" files="F1" intrvl="discrete">
+  <labl>Currently smoked cigarettes</labl>
+  <imputation>Currently smoked cigarettes</imputation>
+  <security>Currently smoked cigarettes</security>
+  <embargo>Currently smoked cigarettes</embargo>
+  <respUnit>Currently smoked cigarettes</respUnit>
+  <qstn>
+    <qstnLit>Percentage of students who currently smoked cigarettes (on at least 1 day during the 30 days before the survey)</qstnLit>
+  </qstn>
+  <sumStat type="vald">2925</sumStat>
+  <sumStat type="invd">23</sumStat>
+  <sumStat type="mean">1.917</sumStat>
+  <sumStat type="stdev">0.276</sumStat>
+  <catgry>
+    <catValu>1</catValu>
+    <labl>Yes</labl>
+    <catStat type="vald"/>
+  </catgry>
+  <catgry>
+    <catValu>2</catValu>
+    <labl>No</labl>
+    <catStat type="invd"/>
+  </catgry>
+  <catgry>
+    <catValu>Sysmiss</catValu>
+    <catStat type="mean"/>
+  </catgry>
+  <varFormat type="numeric"/>
+</var>
+<var ID="V81" name="qn30" files="F1" intrvl="discrete">
+  <labl>Currently used any tobacco products other than cigarettes</labl>
+  <imputation>Currently used any tobacco products other than cigarettes</imputation>
+  <security>Currently used any tobacco products other than cigarettes</security>
+  <embargo>Currently used any tobacco products other than cigarettes</embargo>
+  <respUnit>Currently used any tobacco products other than cigarettes</respUnit>
+  <qstn>
+    <qstnLit>Percentage of students who currently used any tobacco products other than cigarettes (on at least 1 day during the 30 days before the survey)</qstnLit>
+  </qstn>
+  <sumStat type="vald">2930</sumStat>
+  <sumStat type="invd">18</sumStat>
+  <sumStat type="mean">1.956</sumStat>
+  <sumStat type="stdev">0.205</sumStat>
+  <catgry>
+    <catValu>1</catValu>
+    <labl>Yes</labl>
+    <catStat type="vald"/>
+  </catgry>
+  <catgry>
+    <catValu>2</catValu>
+    <labl>No</labl>
+    <catStat type="invd"/>
+  </catgry>
+  <catgry>
+    <catValu>Sysmiss</catValu>
+    <catStat type="mean"/>
+  </catgry>
+  <varFormat type="numeric"/>
+</var>
+<var ID="V82" name="qn31" files="F1" intrvl="discrete">
+  <labl>Tried to quit smoking cigarettes</labl>
+  <imputation>Tried to quit smoking cigarettes</imputation>
+  <security>Tried to quit smoking cigarettes</security>
+  <embargo>Tried to quit smoking cigarettes</embargo>
+  <respUnit>Tried to quit smoking cigarettes</respUnit>
+  <qstn>
+    <qstnLit>Percentage of students who tried to quit smoking cigarettes (among students who smoked cigarettes during the 12 months before the survey)</qstnLit>
+  </qstn>
+  <sumStat type="vald">274</sumStat>
+  <sumStat type="invd">2674</sumStat>
+  <sumStat type="mean">1.23</sumStat>
+  <sumStat type="stdev">0.422</sumStat>
+  <catgry>
+    <catValu>1</catValu>
+    <labl>Yes</labl>
+    <catStat type="vald"/>
+  </catgry>
+  <catgry>
+    <catValu>2</catValu>
+    <labl>No</labl>
+    <catStat type="invd"/>
+  </catgry>
+  <catgry>
+    <catValu>Sysmiss</catValu>
+    <catStat type="mean"/>
+  </catgry>
+  <varFormat type="numeric"/>
+</var>
+<var ID="V83" name="qn32" files="F1" intrvl="discrete">
+  <labl>Reported that people smoked in their presence</labl>
+  <imputation>Reported that people smoked in their presence</imputation>
+  <security>Reported that people smoked in their presence</security>
+  <embargo>Reported that people smoked in their presence</embargo>
+  <respUnit>Reported that people smoked in their presence</respUnit>
+  <qstn>
+    <qstnLit>Percentage of students who reported that people smoked in their presence (on one or more days during the 7 days before the survey)</qstnLit>
+  </qstn>
+  <sumStat type="vald">2931</sumStat>
+  <sumStat type="invd">17</sumStat>
+  <sumStat type="mean">1.569</sumStat>
+  <sumStat type="stdev">0.495</sumStat>
+  <catgry>
+    <catValu>1</catValu>
+    <labl>Yes</labl>
+    <catStat type="vald"/>
+  </catgry>
+  <catgry>
+    <catValu>2</catValu>
+    <labl>No</labl>
+    <catStat type="invd"/>
+  </catgry>
+  <catgry>
+    <catValu>Sysmiss</catValu>
+    <catStat type="mean"/>
+  </catgry>
+  <varFormat type="numeric"/>
+</var>
+<var ID="V84" name="qn33" files="F1" intrvl="discrete">
+  <labl>Had parents or guardians who used any form of tobacco</labl>
+  <imputation>Had parents or guardians who used any form of tobacco</imputation>
+  <security>Had parents or guardians who used any form of tobacco</security>
+  <embargo>Had parents or guardians who used any form of tobacco</embargo>
+  <respUnit>Had parents or guardians who used any form of tobacco</respUnit>
+  <qstn>
+    <qstnLit>Percentage of students who had parents or guardians who used any form of tobacco</qstnLit>
+  </qstn>
+  <sumStat type="vald">2920</sumStat>
+  <sumStat type="invd">28</sumStat>
+  <sumStat type="mean">1.918</sumStat>
+  <sumStat type="stdev">0.275</sumStat>
+  <catgry>
+    <catValu>1</catValu>
+    <labl>Yes</labl>
+    <catStat type="vald"/>
+  </catgry>
+  <catgry>
+    <catValu>2</catValu>
+    <labl>No</labl>
+    <catStat type="invd"/>
+  </catgry>
+  <catgry>
+    <catValu>Sysmiss</catValu>
+    <catStat type="mean"/>
+  </catgry>
+  <varFormat type="numeric"/>
+</var>
+<var ID="V85" name="qn34" files="F1" intrvl="discrete">
+  <labl>Drank alcohol before age 14 years</labl>
+  <imputation>Drank alcohol before age 14 years</imputation>
+  <security>Drank alcohol before age 14 years</security>
+  <embargo>Drank alcohol before age 14 years</embargo>
+  <respUnit>Drank alcohol before age 14 years</respUnit>
+  <qstn>
+    <qstnLit>Percentage of students who drank alcohol before age 14 years (for the first time among students who ever had a drink of alcohol other than a few sips)</qstnLit>
+  </qstn>
+  <sumStat type="vald">1509</sumStat>
+  <sumStat type="invd">1439</sumStat>
+  <sumStat type="mean">1.48</sumStat>
+  <sumStat type="stdev">0.5</sumStat>
+  <catgry>
+    <catValu>1</catValu>
+    <labl>Yes</labl>
+    <catStat type="vald"/>
+  </catgry>
+  <catgry>
+    <catValu>2</catValu>
+    <labl>No</labl>
+    <catStat type="invd"/>
+  </catgry>
+  <catgry>
+    <catValu>Sysmiss</catValu>
+    <catStat type="mean"/>
+  </catgry>
+  <varFormat type="numeric"/>
+</var>
+<var ID="V86" name="qn35" files="F1" intrvl="discrete">
+  <labl>Currently drank alcohol</labl>
+  <imputation>Currently drank alcohol</imputation>
+  <security>Currently drank alcohol</security>
+  <embargo>Currently drank alcohol</embargo>
+  <respUnit>Currently drank alcohol</respUnit>
+  <qstn>
+    <qstnLit>Percentage of students who currently drank alcohol (at least one drink of alcohol on at least 1 day during the 30 days before the survey)</qstnLit>
+  </qstn>
+  <sumStat type="vald">2831</sumStat>
+  <sumStat type="invd">117</sumStat>
+  <sumStat type="mean">1.702</sumStat>
+  <sumStat type="stdev">0.458</sumStat>
+  <catgry>
+    <catValu>1</catValu>
+    <labl>Yes</labl>
+    <catStat type="vald"/>
+  </catgry>
+  <catgry>
+    <catValu>2</catValu>
+    <labl>No</labl>
+    <catStat type="invd"/>
+  </catgry>
+  <catgry>
+    <catValu>Sysmiss</catValu>
+    <catStat type="mean"/>
+  </catgry>
+  <varFormat type="numeric"/>
+</var>
+<var ID="V87" name="qn36" files="F1" intrvl="discrete">
+  <labl>Usually drank two or more drinks per day</labl>
+  <imputation>Usually drank two or more drinks per day</imputation>
+  <security>Usually drank two or more drinks per day</security>
+  <embargo>Usually drank two or more drinks per day</embargo>
+  <respUnit>Usually drank two or more drinks per day</respUnit>
+  <qstn>
+    <qstnLit>Percentage of students who usually drank two or more drinks per day (on the days they drank alcohol among students who drank alcohol during the 30 days before the survey)</qstnLit>
+  </qstn>
+  <sumStat type="vald">922</sumStat>
+  <sumStat type="invd">2026</sumStat>
+  <sumStat type="mean">1.411</sumStat>
+  <sumStat type="stdev">0.492</sumStat>
+  <catgry>
+    <catValu>1</catValu>
+    <labl>Yes</labl>
+    <catStat type="vald"/>
+  </catgry>
+  <catgry>
+    <catValu>2</catValu>
+    <labl>No</labl>
+    <catStat type="invd"/>
+  </catgry>
+  <catgry>
+    <catValu>Sysmiss</catValu>
+    <catStat type="mean"/>
+  </catgry>
+  <varFormat type="numeric"/>
+</var>
+<var ID="V88" name="qn37" files="F1" intrvl="discrete">
+  <labl>Usually obtained the alcohol they drank from friends</labl>
+  <imputation>Usually obtained the alcohol they drank from friends</imputation>
+  <security>Usually obtained the alcohol they drank from friends</security>
+  <embargo>Usually obtained the alcohol they drank from friends</embargo>
+  <respUnit>Usually obtained the alcohol they drank from friends</respUnit>
+  <qstn>
+    <qstnLit>Percentage of students who usually obtained the alcohol they drank from friends (among students who drank alcohol during the 30 days before the survey)</qstnLit>
+  </qstn>
+  <sumStat type="vald">860</sumStat>
+  <sumStat type="invd">2088</sumStat>
+  <sumStat type="mean">1.699</sumStat>
+  <sumStat type="stdev">0.459</sumStat>
+  <catgry>
+    <catValu>1</catValu>
+    <labl>Yes</labl>
+    <catStat type="vald"/>
+  </catgry>
+  <catgry>
+    <catValu>2</catValu>
+    <labl>No</labl>
+    <catStat type="invd"/>
+  </catgry>
+  <catgry>
+    <catValu>Sysmiss</catValu>
+    <catStat type="mean"/>
+  </catgry>
+  <varFormat type="numeric"/>
+</var>
+<var ID="V89" name="qn38" files="F1" intrvl="discrete">
+  <labl>Ever drank so much alcohol that they were really drunk</labl>
+  <imputation>Ever drank so much alcohol that they were really drunk</imputation>
+  <security>Ever drank so much alcohol that they were really drunk</security>
+  <embargo>Ever drank so much alcohol that they were really drunk</embargo>
+  <respUnit>Ever drank so much alcohol that they were really drunk</respUnit>
+  <qstn>
+    <qstnLit>Percentage of students who ever drank so much alcohol that they were really drunk (one or more times during their life)</qstnLit>
+  </qstn>
+  <sumStat type="vald">2882</sumStat>
+  <sumStat type="invd">66</sumStat>
+  <sumStat type="mean">1.759</sumStat>
+  <sumStat type="stdev">0.428</sumStat>
+  <catgry>
+    <catValu>1</catValu>
+    <labl>Yes</labl>
+    <catStat type="vald"/>
+  </catgry>
+  <catgry>
+    <catValu>2</catValu>
+    <labl>No</labl>
+    <catStat type="invd"/>
+  </catgry>
+  <catgry>
+    <catValu>Sysmiss</catValu>
+    <catStat type="mean"/>
+  </catgry>
+  <varFormat type="numeric"/>
+</var>
+<var ID="V90" name="qn39" files="F1" intrvl="discrete">
+  <labl>Ever got into trouble with their family or friends, missed school, or got into fights as a result of drinking alcohol</labl>
+  <imputation>Ever got into trouble with their family or friends, missed school, or got into fights as a result of drinking alcohol</imputation>
+  <security>Ever got into trouble with their family or friends, missed school, or got into fights as a result of drinking alcohol</security>
+  <embargo>Ever got into trouble with their family or friends, missed school, or got into fights as a result of drinking alcohol</embargo>
+  <respUnit>Ever got into trouble with their family or friends, missed school, or got into fights as a result of drinking alcohol</respUnit>
+  <qstn>
+    <qstnLit>Percentage of students who ever got into trouble with their family or friends, missed school, or got into fights as a result of drinking alcohol (one or more times during their life)</qstnLit>
+  </qstn>
+  <sumStat type="vald">2793</sumStat>
+  <sumStat type="invd">155</sumStat>
+  <sumStat type="mean">1.903</sumStat>
+  <sumStat type="stdev">0.296</sumStat>
+  <catgry>
+    <catValu>1</catValu>
+    <labl>Yes</labl>
+    <catStat type="vald"/>
+  </catgry>
+  <catgry>
+    <catValu>2</catValu>
+    <labl>No</labl>
+    <catStat type="invd"/>
+  </catgry>
+  <catgry>
+    <catValu>Sysmiss</catValu>
+    <catStat type="mean"/>
+  </catgry>
+  <varFormat type="numeric"/>
+</var>
+<var ID="V91" name="qn40" files="F1" intrvl="discrete">
+  <labl>Used drugs before age 14 years</labl>
+  <imputation>Used drugs before age 14 years</imputation>
+  <security>Used drugs before age 14 years</security>
+  <embargo>Used drugs before age 14 years</embargo>
+  <respUnit>Used drugs before age 14 years</respUnit>
+  <qstn>
+    <qstnLit>Percentage of students who used drugs before age 14 years (for the first time among students who ever used drugs)</qstnLit>
+  </qstn>
+  <sumStat type="vald">295</sumStat>
+  <sumStat type="invd">2653</sumStat>
+  <sumStat type="mean">1.563</sumStat>
+  <sumStat type="stdev">0.497</sumStat>
+  <catgry>
+    <catValu>1</catValu>
+    <labl>Yes</labl>
+    <catStat type="vald"/>
+  </catgry>
+  <catgry>
+    <catValu>2</catValu>
+    <labl>No</labl>
+    <catStat type="invd"/>
+  </catgry>
+  <catgry>
+    <catValu>Sysmiss</catValu>
+    <catStat type="mean"/>
+  </catgry>
+  <varFormat type="numeric"/>
+</var>
+<var ID="V92" name="qn41" files="F1" intrvl="discrete">
+  <labl>Ever used marijuana</labl>
+  <imputation>Ever used marijuana</imputation>
+  <security>Ever used marijuana</security>
+  <embargo>Ever used marijuana</embargo>
+  <respUnit>Ever used marijuana</respUnit>
+  <qstn>
+    <qstnLit>Percentage of students who ever used marijuana (one or more times during their life)</qstnLit>
+  </qstn>
+  <sumStat type="vald">2876</sumStat>
+  <sumStat type="invd">72</sumStat>
+  <sumStat type="mean">1.91</sumStat>
+  <sumStat type="stdev">0.286</sumStat>
+  <catgry>
+    <catValu>1</catValu>
+    <labl>Yes</labl>
+    <catStat type="vald"/>
+  </catgry>
+  <catgry>
+    <catValu>2</catValu>
+    <labl>No</labl>
+    <catStat type="invd"/>
+  </catgry>
+  <catgry>
+    <catValu>Sysmiss</catValu>
+    <catStat type="mean"/>
+  </catgry>
+  <varFormat type="numeric"/>
+</var>
+<var ID="V93" name="qn42" files="F1" intrvl="discrete">
+  <labl>Currently used marijuana</labl>
+  <imputation>Currently used marijuana</imputation>
+  <security>Currently used marijuana</security>
+  <embargo>Currently used marijuana</embargo>
+  <respUnit>Currently used marijuana</respUnit>
+  <qstn>
+    <qstnLit>Percentage of students who currently used marijuana (one or more times during the 30 days before the survey)</qstnLit>
+  </qstn>
+  <sumStat type="vald">2873</sumStat>
+  <sumStat type="invd">75</sumStat>
+  <sumStat type="mean">1.958</sumStat>
+  <sumStat type="stdev">0.2</sumStat>
+  <catgry>
+    <catValu>1</catValu>
+    <labl>Yes</labl>
+    <catStat type="vald"/>
+  </catgry>
+  <catgry>
+    <catValu>2</catValu>
+    <labl>No</labl>
+    <catStat type="invd"/>
+  </catgry>
+  <catgry>
+    <catValu>Sysmiss</catValu>
+    <catStat type="mean"/>
+  </catgry>
+  <varFormat type="numeric"/>
+</var>
+<var ID="V94" name="qn43" files="F1" intrvl="discrete">
+  <labl>Ever used amphethamines or methamphetamines</labl>
+  <imputation>Ever used amphethamines or methamphetamines</imputation>
+  <security>Ever used amphethamines or methamphetamines</security>
+  <embargo>Ever used amphethamines or methamphetamines</embargo>
+  <respUnit>Ever used amphethamines or methamphetamines</respUnit>
+  <qstn>
+    <qstnLit>Percentage of students who ever used amphethamines or methamphetamines (one or more times during their life)</qstnLit>
+  </qstn>
+  <sumStat type="vald">2908</sumStat>
+  <sumStat type="invd">40</sumStat>
+  <sumStat type="mean">1.979</sumStat>
+  <sumStat type="stdev">0.142</sumStat>
+  <catgry>
+    <catValu>1</catValu>
+    <labl>Yes</labl>
+    <catStat type="vald"/>
+  </catgry>
+  <catgry>
+    <catValu>2</catValu>
+    <labl>No</labl>
+    <catStat type="invd"/>
+  </catgry>
+  <catgry>
+    <catValu>Sysmiss</catValu>
+    <catStat type="mean"/>
+  </catgry>
+  <varFormat type="numeric"/>
+</var>
+<var ID="V95" name="qn44" files="F1" intrvl="discrete">
+  <labl>Ever had sexual intercourse</labl>
+  <imputation>Ever had sexual intercourse</imputation>
+  <security>Ever had sexual intercourse</security>
+  <embargo>Ever had sexual intercourse</embargo>
+  <respUnit>Ever had sexual intercourse</respUnit>
+  <qstn>
+    <qstnLit>Percentage of students who ever had sexual intercourse</qstnLit>
+  </qstn>
+  <sumStat type="vald">2772</sumStat>
+  <sumStat type="invd">176</sumStat>
+  <sumStat type="mean">1.599</sumStat>
+  <sumStat type="stdev">0.49</sumStat>
+  <catgry>
+    <catValu>1</catValu>
+    <labl>Yes</labl>
+    <catStat type="vald"/>
+  </catgry>
+  <catgry>
+    <catValu>2</catValu>
+    <labl>No</labl>
+    <catStat type="invd"/>
+  </catgry>
+  <catgry>
+    <catValu>Sysmiss</catValu>
+    <catStat type="mean"/>
+  </catgry>
+  <varFormat type="numeric"/>
+</var>
+<var ID="V96" name="qn45" files="F1" intrvl="discrete">
+  <labl>Had sexual intercourse before age 14 years</labl>
+  <imputation>Had sexual intercourse before age 14 years</imputation>
+  <security>Had sexual intercourse before age 14 years</security>
+  <embargo>Had sexual intercourse before age 14 years</embargo>
+  <respUnit>Had sexual intercourse before age 14 years</respUnit>
+  <qstn>
+    <qstnLit>Percentage of students who had sexual intercourse before age 14 years (for the first time among students who ever had sexual intercourse)</qstnLit>
+  </qstn>
+  <sumStat type="vald">928</sumStat>
+  <sumStat type="invd">2020</sumStat>
+  <sumStat type="mean">1.684</sumStat>
+  <sumStat type="stdev">0.465</sumStat>
+  <catgry>
+    <catValu>1</catValu>
+    <labl>Yes</labl>
+    <catStat type="vald"/>
+  </catgry>
+  <catgry>
+    <catValu>2</catValu>
+    <labl>No</labl>
+    <catStat type="invd"/>
+  </catgry>
+  <catgry>
+    <catValu>Sysmiss</catValu>
+    <catStat type="mean"/>
+  </catgry>
+  <varFormat type="numeric"/>
+</var>
+<var ID="V97" name="qn46" files="F1" intrvl="discrete">
+  <labl>Had sexual intercourse with two or more persons</labl>
+  <imputation>Had sexual intercourse with two or more persons</imputation>
+  <security>Had sexual intercourse with two or more persons</security>
+  <embargo>Had sexual intercourse with two or more persons</embargo>
+  <respUnit>Had sexual intercourse with two or more persons</respUnit>
+  <qstn>
+    <qstnLit>Percentage of students who had sexual intercourse with two or more persons (during their life)</qstnLit>
+  </qstn>
+  <sumStat type="vald">2842</sumStat>
+  <sumStat type="invd">106</sumStat>
+  <sumStat type="mean">1.817</sumStat>
+  <sumStat type="stdev">0.387</sumStat>
+  <catgry>
+    <catValu>1</catValu>
+    <labl>Yes</labl>
+    <catStat type="vald"/>
+  </catgry>
+  <catgry>
+    <catValu>2</catValu>
+    <labl>No</labl>
+    <catStat type="invd"/>
+  </catgry>
+  <catgry>
+    <catValu>Sysmiss</catValu>
+    <catStat type="mean"/>
+  </catgry>
+  <varFormat type="numeric"/>
+</var>
+<var ID="V98" name="qn47" files="F1" intrvl="discrete">
+  <labl>Used a condom</labl>
+  <imputation>Used a condom</imputation>
+  <security>Used a condom</security>
+  <embargo>Used a condom</embargo>
+  <respUnit>Used a condom</respUnit>
+  <qstn>
+    <qstnLit>Percentage of students who used a condom (during last sexual intercourse among students who ever had sexual intercourse)</qstnLit>
+  </qstn>
+  <sumStat type="vald">901</sumStat>
+  <sumStat type="invd">2047</sumStat>
+  <sumStat type="mean">1.363</sumStat>
+  <sumStat type="stdev">0.481</sumStat>
+  <catgry>
+    <catValu>1</catValu>
+    <labl>Yes</labl>
+    <catStat type="vald"/>
+  </catgry>
+  <catgry>
+    <catValu>2</catValu>
+    <labl>No</labl>
+    <catStat type="invd"/>
+  </catgry>
+  <catgry>
+    <catValu>Sysmiss</catValu>
+    <catStat type="mean"/>
+  </catgry>
+  <varFormat type="numeric"/>
+</var>
+<var ID="V99" name="qn48" files="F1" intrvl="discrete">
+  <labl>Used a method of birth control other than condoms</labl>
+  <imputation>Used a method of birth control other than condoms</imputation>
+  <security>Used a method of birth control other than condoms</security>
+  <embargo>Used a method of birth control other than condoms</embargo>
+  <respUnit>Used a method of birth control other than condoms</respUnit>
+  <qstn>
+    <qstnLit>Percentage of students who used a method of birth control other than condoms (such as withdrawl, rhythm, or birth control pills to prevent pregnancy, during last sexual intercourse, among students who ever had sexual intercourse)</qstnLit>
+  </qstn>
+  <sumStat type="vald">918</sumStat>
+  <sumStat type="invd">2030</sumStat>
+  <sumStat type="mean">1.619</sumStat>
+  <sumStat type="stdev">0.486</sumStat>
+  <catgry>
+    <catValu>1</catValu>
+    <labl>Yes</labl>
+    <catStat type="vald"/>
+  </catgry>
+  <catgry>
+    <catValu>2</catValu>
+    <labl>No</labl>
+    <catStat type="invd"/>
+  </catgry>
+  <catgry>
+    <catValu>Sysmiss</catValu>
+    <catStat type="mean"/>
+  </catgry>
+  <varFormat type="numeric"/>
+</var>
+<var ID="V100" name="qn49" files="F1" intrvl="discrete">
+  <labl>Were not physically active</labl>
+  <imputation>Were not physically active</imputation>
+  <security>Were not physically active</security>
+  <embargo>Were not physically active</embargo>
+  <respUnit>Were not physically active</respUnit>
+  <qstn>
+    <qstnLit>Percentage of students who were not physically active (for at least 60 minutes per day on any day during the 7 days before the survey)</qstnLit>
+  </qstn>
+  <sumStat type="vald">2881</sumStat>
+  <sumStat type="invd">67</sumStat>
+  <sumStat type="mean">1.761</sumStat>
+  <sumStat type="stdev">0.427</sumStat>
+  <catgry>
+    <catValu>1</catValu>
+    <labl>Yes</labl>
+    <catStat type="vald"/>
+  </catgry>
+  <catgry>
+    <catValu>2</catValu>
+    <labl>No</labl>
+    <catStat type="invd"/>
+  </catgry>
+  <catgry>
+    <catValu>Sysmiss</catValu>
+    <catStat type="mean"/>
+  </catgry>
+  <varFormat type="numeric"/>
+</var>
+<var ID="V101" name="qn50" files="F1" intrvl="discrete">
+  <labl>Did not walk or ride a bicycle to or from school</labl>
+  <imputation>Did not walk or ride a bicycle to or from school</imputation>
+  <security>Did not walk or ride a bicycle to or from school</security>
+  <embargo>Did not walk or ride a bicycle to or from school</embargo>
+  <respUnit>Did not walk or ride a bicycle to or from school</respUnit>
+  <qstn>
+    <qstnLit>Percentage of students who did not walk or ride a bicycle to or from school (during the 7 days before the survey)</qstnLit>
+  </qstn>
+  <sumStat type="vald">2862</sumStat>
+  <sumStat type="invd">86</sumStat>
+  <sumStat type="mean">1.455</sumStat>
+  <sumStat type="stdev">0.498</sumStat>
+  <catgry>
+    <catValu>1</catValu>
+    <labl>Yes</labl>
+    <catStat type="vald"/>
+  </catgry>
+  <catgry>
+    <catValu>2</catValu>
+    <labl>No</labl>
+    <catStat type="invd"/>
+  </catgry>
+  <catgry>
+    <catValu>Sysmiss</catValu>
+    <catStat type="mean"/>
+  </catgry>
+  <varFormat type="numeric"/>
+</var>
+<var ID="V102" name="qn51" files="F1" intrvl="discrete">
+  <labl>Did not attend physical education classes</labl>
+  <imputation>Did not attend physical education classes</imputation>
+  <security>Did not attend physical education classes</security>
+  <embargo>Did not attend physical education classes</embargo>
+  <respUnit>Did not attend physical education classes</respUnit>
+  <qstn>
+    <qstnLit>Percentage of students who did not attend physical education classes (each week during this school year)</qstnLit>
+  </qstn>
+  <sumStat type="vald">2867</sumStat>
+  <sumStat type="invd">81</sumStat>
+  <sumStat type="mean">1.716</sumStat>
+  <sumStat type="stdev">0.451</sumStat>
+  <catgry>
+    <catValu>1</catValu>
+    <labl>Yes</labl>
+    <catStat type="vald"/>
+  </catgry>
+  <catgry>
+    <catValu>2</catValu>
+    <labl>No</labl>
+    <catStat type="invd"/>
+  </catgry>
+  <catgry>
+    <catValu>Sysmiss</catValu>
+    <catStat type="mean"/>
+  </catgry>
+  <varFormat type="numeric"/>
+</var>
+<var ID="V103" name="qn52" files="F1" intrvl="discrete">
+  <labl>Spent three or more hours per day doing sitting activities</labl>
+  <imputation>Spent three or more hours per day doing sitting activities</imputation>
+  <security>Spent three or more hours per day doing sitting activities</security>
+  <embargo>Spent three or more hours per day doing sitting activities</embargo>
+  <respUnit>Spent three or more hours per day doing sitting activities</respUnit>
+  <qstn>
+    <qstnLit>Percentage of students who spent three or more hours per day doing sitting activities (sitting and watching television, playing computer games, talking with friends when not in school or doing homework during a typical or usual day)</qstnLit>
+  </qstn>
+  <sumStat type="vald">2891</sumStat>
+  <sumStat type="invd">57</sumStat>
+  <sumStat type="mean">1.522</sumStat>
+  <sumStat type="stdev">0.5</sumStat>
+  <catgry>
+    <catValu>1</catValu>
+    <labl>Yes</labl>
+    <catStat type="vald"/>
+  </catgry>
+  <catgry>
+    <catValu>2</catValu>
+    <labl>No</labl>
+    <catStat type="invd"/>
+  </catgry>
+  <catgry>
+    <catValu>Sysmiss</catValu>
+    <catStat type="mean"/>
+  </catgry>
+  <varFormat type="numeric"/>
+</var>
+<var ID="V104" name="qn53" files="F1" intrvl="discrete">
+  <labl>Missed classes or school without permission</labl>
+  <imputation>Missed classes or school without permission</imputation>
+  <security>Missed classes or school without permission</security>
+  <embargo>Missed classes or school without permission</embargo>
+  <respUnit>Missed classes or school without permission</respUnit>
+  <qstn>
+    <qstnLit>Percentage of students who missed classes or school without permission (on one or more days during the 30 days before the survey)</qstnLit>
+  </qstn>
+  <sumStat type="vald">2913</sumStat>
+  <sumStat type="invd">35</sumStat>
+  <sumStat type="mean">1.746</sumStat>
+  <sumStat type="stdev">0.435</sumStat>
+  <catgry>
+    <catValu>1</catValu>
+    <labl>Yes</labl>
+    <catStat type="vald"/>
+  </catgry>
+  <catgry>
+    <catValu>2</catValu>
+    <labl>No</labl>
+    <catStat type="invd"/>
+  </catgry>
+  <catgry>
+    <catValu>Sysmiss</catValu>
+    <catStat type="mean"/>
+  </catgry>
+  <varFormat type="numeric"/>
+</var>
+<var ID="V105" name="qn54" files="F1" intrvl="discrete">
+  <labl>Reported that most of the students in their school were most of the time or always kind and helpful</labl>
+  <imputation>Reported that most of the students in their school were most of the time or always kind and helpful</imputation>
+  <security>Reported that most of the students in their school were most of the time or always kind and helpful</security>
+  <embargo>Reported that most of the students in their school were most of the time or always kind and helpful</embargo>
+  <respUnit>Reported that most of the students in their school were most of the time or always kind and helpful</respUnit>
+  <qstn>
+    <qstnLit>Percentage of students who reported that most of the students in their school were most of the time or always kind and helpful (during the 30 days before the survey)</qstnLit>
+  </qstn>
+  <sumStat type="vald">2894</sumStat>
+  <sumStat type="invd">54</sumStat>
+  <sumStat type="mean">1.499</sumStat>
+  <sumStat type="stdev">0.5</sumStat>
+  <catgry>
+    <catValu>1</catValu>
+    <labl>Yes</labl>
+    <catStat type="vald"/>
+  </catgry>
+  <catgry>
+    <catValu>2</catValu>
+    <labl>No</labl>
+    <catStat type="invd"/>
+  </catgry>
+  <catgry>
+    <catValu>Sysmiss</catValu>
+    <catStat type="mean"/>
+  </catgry>
+  <varFormat type="numeric"/>
+</var>
+<var ID="V106" name="qn55" files="F1" intrvl="discrete">
+  <labl>Reported that their parents or guardians most of the time or always checked to see if their homework was done</labl>
+  <imputation>Reported that their parents or guardians most of the time or always checked to see if their homework was done</imputation>
+  <security>Reported that their parents or guardians most of the time or always checked to see if their homework was done</security>
+  <embargo>Reported that their parents or guardians most of the time or always checked to see if their homework was done</embargo>
+  <respUnit>Reported that their parents or guardians most of the time or always checked to see if their homework was done</respUnit>
+  <qstn>
+    <qstnLit>Percentage of students who reported that their parents or guardians most of the time or always checked to see if their homework was done (during the 30 days before the survey)</qstnLit>
+  </qstn>
+  <sumStat type="vald">2855</sumStat>
+  <sumStat type="invd">93</sumStat>
+  <sumStat type="mean">1.576</sumStat>
+  <sumStat type="stdev">0.494</sumStat>
+  <catgry>
+    <catValu>1</catValu>
+    <labl>Yes</labl>
+    <catStat type="vald"/>
+  </catgry>
+  <catgry>
+    <catValu>2</catValu>
+    <labl>No</labl>
+    <catStat type="invd"/>
+  </catgry>
+  <catgry>
+    <catValu>Sysmiss</catValu>
+    <catStat type="mean"/>
+  </catgry>
+  <varFormat type="numeric"/>
+</var>
+<var ID="V107" name="qn56" files="F1" intrvl="discrete">
+  <labl>Reported that their parents or guardians most of the time or always understood their problems and worries</labl>
+  <imputation>Reported that their parents or guardians most of the time or always understood their problems and worries</imputation>
+  <security>Reported that their parents or guardians most of the time or always understood their problems and worries</security>
+  <embargo>Reported that their parents or guardians most of the time or always understood their problems and worries</embargo>
+  <respUnit>Reported that their parents or guardians most of the time or always understood their problems and worries</respUnit>
+  <qstn>
+    <qstnLit>Percentage of students who reported that their parents or guardians most of the time or always understood their problems and worries (during the 30 days before the survey)</qstnLit>
+  </qstn>
+  <sumStat type="vald">2896</sumStat>
+  <sumStat type="invd">52</sumStat>
+  <sumStat type="mean">1.603</sumStat>
+  <sumStat type="stdev">0.489</sumStat>
+  <catgry>
+    <catValu>1</catValu>
+    <labl>Yes</labl>
+    <catStat type="vald"/>
+  </catgry>
+  <catgry>
+    <catValu>2</catValu>
+    <labl>No</labl>
+    <catStat type="invd"/>
+  </catgry>
+  <catgry>
+    <catValu>Sysmiss</catValu>
+    <catStat type="mean"/>
+  </catgry>
+  <varFormat type="numeric"/>
+</var>
+<var ID="V108" name="qn57" files="F1" intrvl="discrete">
+  <labl>Reported that their parents or guardians most of the time or always really knew what they were doing with their free time</labl>
+  <imputation>Reported that their parents or guardians most of the time or always really knew what they were doing with their free time</imputation>
+  <security>Reported that their parents or guardians most of the time or always really knew what they were doing with their free time</security>
+  <embargo>Reported that their parents or guardians most of the time or always really knew what they were doing with their free time</embargo>
+  <respUnit>Reported that their parents or guardians most of the time or always really knew what they were doing with their free time</respUnit>
+  <qstn>
+    <qstnLit>Percentage of students who reported that their parents or guardians most of the time or always really knew what they were doing with their free time (during the 30 days before the survey)</qstnLit>
+  </qstn>
+  <sumStat type="vald">2884</sumStat>
+  <sumStat type="invd">64</sumStat>
+  <sumStat type="mean">1.469</sumStat>
+  <sumStat type="stdev">0.499</sumStat>
+  <catgry>
+    <catValu>1</catValu>
+    <labl>Yes</labl>
+    <catStat type="vald"/>
+  </catgry>
+  <catgry>
+    <catValu>2</catValu>
+    <labl>No</labl>
+    <catStat type="invd"/>
+  </catgry>
+  <catgry>
+    <catValu>Sysmiss</catValu>
+    <catStat type="mean"/>
+  </catgry>
+  <varFormat type="numeric"/>
+</var>
+<var ID="V109" name="qn58" files="F1" intrvl="discrete">
+  <labl>Reported that their parents or guardians never or rarely went through their things without their approval</labl>
+  <imputation>Reported that their parents or guardians never or rarely went through their things without their approval</imputation>
+  <security>Reported that their parents or guardians never or rarely went through their things without their approval</security>
+  <embargo>Reported that their parents or guardians never or rarely went through their things without their approval</embargo>
+  <respUnit>Reported that their parents or guardians never or rarely went through their things without their approval</respUnit>
+  <qstn>
+    <qstnLit>Percentage of students who reported that their parents or guardians never or rarely went through their things without their approval (during the 30 days before the survey)</qstnLit>
+  </qstn>
+  <sumStat type="vald">2847</sumStat>
+  <sumStat type="invd">101</sumStat>
+  <sumStat type="mean">1.24</sumStat>
+  <sumStat type="stdev">0.427</sumStat>
+  <catgry>
+    <catValu>1</catValu>
+    <labl>Yes</labl>
+    <catStat type="vald"/>
+  </catgry>
+  <catgry>
+    <catValu>2</catValu>
+    <labl>No</labl>
+    <catStat type="invd"/>
+  </catgry>
+  <catgry>
+    <catValu>Sysmiss</catValu>
+    <catStat type="mean"/>
+  </catgry>
+  <varFormat type="numeric"/>
+</var>
+<var ID="V110" name="qn61" files="F1" intrvl="discrete">
+  <labl>Ate fruit two or more times per day in past 7 days</labl>
+  <imputation>Ate fruit two or more times per day in past 7 days</imputation>
+  <security>Ate fruit two or more times per day in past 7 days</security>
+  <embargo>Ate fruit two or more times per day in past 7 days</embargo>
+  <respUnit>Ate fruit two or more times per day in past 7 days</respUnit>
+  <qstn>
+    <qstnLit>Percentage of students who usually ate fruit two or more times per day (during the 7 days before the survey)</qstnLit>
+  </qstn>
+  <sumStat type="vald">2934</sumStat>
+  <sumStat type="invd">14</sumStat>
+  <catgry>
+    <catValu>1</catValu>
+    <labl>Yes</labl>
+    <catStat type="vald"/>
+  </catgry>
+  <catgry>
+    <catValu>2</catValu>
+    <labl>No</labl>
+    <catStat type="invd"/>
+  </catgry>
+  <catgry>
+    <catValu>Sysmiss</catValu>
+  </catgry>
+  <varFormat type="numeric"/>
+</var>
+<var ID="V111" name="qn62" files="F1" intrvl="discrete">
+  <labl>Ate vegetables three or more times per day in past 7 days</labl>
+  <imputation>Ate vegetables three or more times per day in past 7 days</imputation>
+  <security>Ate vegetables three or more times per day in past 7 days</security>
+  <embargo>Ate vegetables three or more times per day in past 7 days</embargo>
+  <respUnit>Ate vegetables three or more times per day in past 7 days</respUnit>
+  <sumStat type="vald">2923</sumStat>
+  <sumStat type="invd">25</sumStat>
+  <catgry>
+    <catValu>1</catValu>
+    <labl>Yes</labl>
+    <catStat type="vald"/>
+  </catgry>
+  <catgry>
+    <catValu>2</catValu>
+    <labl>No</labl>
+    <catStat type="invd"/>
+  </catgry>
+  <catgry>
+    <catValu>Sysmiss</catValu>
+  </catgry>
+  <varFormat type="numeric"/>
+</var>
+<var ID="V112" name="qn63" files="F1" intrvl="discrete">
+  <labl>Drank soft drinks one or more times per day in past 7 days</labl>
+  <imputation>Drank soft drinks one or more times per day in past 7 days</imputation>
+  <security>Drank soft drinks one or more times per day in past 7 days</security>
+  <embargo>Drank soft drinks one or more times per day in past 7 days</embargo>
+  <respUnit>Drank soft drinks one or more times per day in past 7 days</respUnit>
+  <sumStat type="vald">2932</sumStat>
+  <sumStat type="invd">16</sumStat>
+  <catgry>
+    <catValu>1</catValu>
+    <labl>Yes</labl>
+    <catStat type="vald"/>
+  </catgry>
+  <catgry>
+    <catValu>2</catValu>
+    <labl>No</labl>
+    <catStat type="invd"/>
+  </catgry>
+  <catgry>
+    <catValu>Sysmiss</catValu>
+  </catgry>
+  <varFormat type="numeric"/>
+</var>
+<var ID="V113" name="qn65" files="F1" intrvl="discrete">
+  <labl>Bullied at school in past 12 mos</labl>
+  <imputation>Bullied at school in past 12 mos</imputation>
+  <security>Bullied at school in past 12 mos</security>
+  <embargo>Bullied at school in past 12 mos</embargo>
+  <respUnit>Bullied at school in past 12 mos</respUnit>
+  <sumStat type="vald">2862</sumStat>
+  <sumStat type="invd">86</sumStat>
+  <catgry>
+    <catValu>1</catValu>
+    <labl>Yes</labl>
+    <catStat type="vald"/>
+  </catgry>
+  <catgry>
+    <catValu>2</catValu>
+    <labl>No</labl>
+    <catStat type="invd"/>
+  </catgry>
+  <catgry>
+    <catValu>Sysmiss</catValu>
+  </catgry>
+  <varFormat type="numeric"/>
+</var>
+<var ID="V114" name="qn66" files="F1" intrvl="discrete">
+  <labl>Bullied not at school in past 12 mos</labl>
+  <imputation>Bullied not at school in past 12 mos</imputation>
+  <security>Bullied not at school in past 12 mos</security>
+  <embargo>Bullied not at school in past 12 mos</embargo>
+  <respUnit>Bullied not at school in past 12 mos</respUnit>
+  <sumStat type="vald">2931</sumStat>
+  <sumStat type="invd">17</sumStat>
+  <catgry>
+    <catValu>1</catValu>
+    <labl>Yes</labl>
+    <catStat type="vald"/>
+  </catgry>
+  <catgry>
+    <catValu>2</catValu>
+    <labl>No</labl>
+    <catStat type="invd"/>
+  </catgry>
+  <catgry>
+    <catValu>Sysmiss</catValu>
+  </catgry>
+  <varFormat type="numeric"/>
+</var>
+<var ID="V115" name="qn67" files="F1" intrvl="discrete">
+  <labl>Cyber bullied in past 12 mos</labl>
+  <imputation>Cyber bullied in past 12 mos</imputation>
+  <security>Cyber bullied in past 12 mos</security>
+  <embargo>Cyber bullied in past 12 mos</embargo>
+  <respUnit>Cyber bullied in past 12 mos</respUnit>
+  <sumStat type="vald">2670</sumStat>
+  <sumStat type="invd">278</sumStat>
+  <catgry>
+    <catValu>1</catValu>
+    <labl>Yes</labl>
+    <catStat type="vald"/>
+  </catgry>
+  <catgry>
+    <catValu>2</catValu>
+    <labl>No</labl>
+    <catStat type="invd"/>
+  </catgry>
+  <catgry>
+    <catValu>Sysmiss</catValu>
+  </catgry>
+  <varFormat type="numeric"/>
+</var>
+<var ID="V116" name="qnunwtg" files="F1" intrvl="discrete">
+  <labl>Were underweight</labl>
+  <imputation>Were underweight</imputation>
+  <security>Were underweight</security>
+  <embargo>Were underweight</embargo>
+  <respUnit>Were underweight</respUnit>
+  <qstn>
+    <qstnLit>Percentage of students who were underweight (&lt;-2SD from median for BMI by age and sex)</qstnLit>
+  </qstn>
+  <sumStat type="vald">2784</sumStat>
+  <sumStat type="invd">164</sumStat>
+  <sumStat type="mean">1.985</sumStat>
+  <sumStat type="stdev">0.122</sumStat>
+  <catgry>
+    <catValu>1</catValu>
+    <labl>Yes</labl>
+    <catStat type="vald"/>
+  </catgry>
+  <catgry>
+    <catValu>2</catValu>
+    <labl>No</labl>
+    <catStat type="invd"/>
+  </catgry>
+  <catgry>
+    <catValu>Sysmiss</catValu>
+    <catStat type="mean"/>
+  </catgry>
+  <varFormat type="numeric"/>
+</var>
+<var ID="V117" name="qnowtg" files="F1" intrvl="discrete">
+  <labl>Were overweight</labl>
+  <imputation>Were overweight</imputation>
+  <security>Were overweight</security>
+  <embargo>Were overweight</embargo>
+  <respUnit>Were overweight</respUnit>
+  <qstn>
+    <qstnLit>Percentage of students who were overweight (&gt;+1SD from median for BMI by age and sex)</qstnLit>
+  </qstn>
+  <sumStat type="vald">2784</sumStat>
+  <sumStat type="invd">164</sumStat>
+  <sumStat type="mean">1.689</sumStat>
+  <sumStat type="stdev">0.463</sumStat>
+  <catgry>
+    <catValu>1</catValu>
+    <labl>Yes</labl>
+    <catStat type="vald"/>
+  </catgry>
+  <catgry>
+    <catValu>2</catValu>
+    <labl>No</labl>
+    <catStat type="invd"/>
+  </catgry>
+  <catgry>
+    <catValu>Sysmiss</catValu>
+    <catStat type="mean"/>
+  </catgry>
+  <varFormat type="numeric"/>
+</var>
+<var ID="V118" name="qnobeseg" files="F1" intrvl="discrete">
+  <labl>Were obese</labl>
+  <imputation>Were obese</imputation>
+  <security>Were obese</security>
+  <embargo>Were obese</embargo>
+  <respUnit>Were obese</respUnit>
+  <qstn>
+    <qstnLit>Percentage of students who were obese (&gt;+2SD from median for BMI by age and sex)</qstnLit>
+  </qstn>
+  <sumStat type="vald">2784</sumStat>
+  <sumStat type="invd">164</sumStat>
+  <sumStat type="mean">1.9</sumStat>
+  <sumStat type="stdev">0.3</sumStat>
+  <catgry>
+    <catValu>1</catValu>
+    <labl>Yes</labl>
+    <catStat type="vald"/>
+  </catgry>
+  <catgry>
+    <catValu>2</catValu>
+    <labl>No</labl>
+    <catStat type="invd"/>
+  </catgry>
+  <catgry>
+    <catValu>Sysmiss</catValu>
+    <catStat type="mean"/>
+  </catgry>
+  <varFormat type="numeric"/>
+</var>
+<var ID="V119" name="qnff1g" files="F1" intrvl="discrete">
+  <labl>Ate food from a fast food restaurant one or more days</labl>
+  <imputation>Ate food from a fast food restaurant one or more days</imputation>
+  <security>Ate food from a fast food restaurant one or more days</security>
+  <embargo>Ate food from a fast food restaurant one or more days</embargo>
+  <respUnit>Ate food from a fast food restaurant one or more days</respUnit>
+  <qstn>
+    <qstnLit>Percentage of students who ate food from a fast food restaurant one or more days (during the 7 days before the survey)</qstnLit>
+  </qstn>
+  <sumStat type="vald">2933</sumStat>
+  <sumStat type="invd">15</sumStat>
+  <sumStat type="mean">1.46</sumStat>
+  <sumStat type="stdev">0.498</sumStat>
+  <catgry>
+    <catValu>1</catValu>
+    <labl>Yes</labl>
+    <catStat type="vald"/>
+  </catgry>
+  <catgry>
+    <catValu>2</catValu>
+    <labl>No</labl>
+    <catStat type="invd"/>
+  </catgry>
+  <catgry>
+    <catValu>Sysmiss</catValu>
+    <catStat type="mean"/>
+  </catgry>
+  <varFormat type="numeric"/>
+</var>
+<var ID="V120" name="qnff2g" files="F1" intrvl="discrete">
+  <labl>Ate food from a fast food restaurant two or more days</labl>
+  <imputation>Ate food from a fast food restaurant two or more days</imputation>
+  <security>Ate food from a fast food restaurant two or more days</security>
+  <embargo>Ate food from a fast food restaurant two or more days</embargo>
+  <respUnit>Ate food from a fast food restaurant two or more days</respUnit>
+  <qstn>
+    <qstnLit>Percentage of students who ate food from a fast food restaurant two or more days (during the 7 days before the survey)</qstnLit>
+  </qstn>
+  <sumStat type="vald">2933</sumStat>
+  <sumStat type="invd">15</sumStat>
+  <sumStat type="mean">1.72</sumStat>
+  <sumStat type="stdev">0.449</sumStat>
+  <catgry>
+    <catValu>1</catValu>
+    <labl>Yes</labl>
+    <catStat type="vald"/>
+  </catgry>
+  <catgry>
+    <catValu>2</catValu>
+    <labl>No</labl>
+    <catStat type="invd"/>
+  </catgry>
+  <catgry>
+    <catValu>Sysmiss</catValu>
+    <catStat type="mean"/>
+  </catgry>
+  <varFormat type="numeric"/>
+</var>
+<var ID="V121" name="qnff3g" files="F1" intrvl="discrete">
+  <labl>Ate food from a fast food restaurant three or more days</labl>
+  <imputation>Ate food from a fast food restaurant three or more days</imputation>
+  <security>Ate food from a fast food restaurant three or more days</security>
+  <embargo>Ate food from a fast food restaurant three or more days</embargo>
+  <respUnit>Ate food from a fast food restaurant three or more days</respUnit>
+  <qstn>
+    <qstnLit>Percentage of students who ate food from a fast food restaurant three or more days (during the 7 days before the survey)</qstnLit>
+  </qstn>
+  <sumStat type="vald">2933</sumStat>
+  <sumStat type="invd">15</sumStat>
+  <sumStat type="mean">1.85</sumStat>
+  <sumStat type="stdev">0.357</sumStat>
+  <catgry>
+    <catValu>1</catValu>
+    <labl>Yes</labl>
+    <catStat type="vald"/>
+  </catgry>
+  <catgry>
+    <catValu>2</catValu>
+    <labl>No</labl>
+    <catStat type="invd"/>
+  </catgry>
+  <catgry>
+    <catValu>Sysmiss</catValu>
+    <catStat type="mean"/>
+  </catgry>
+  <varFormat type="numeric"/>
+</var>
+<var ID="V122" name="qntob2g" files="F1" intrvl="discrete">
+  <labl>Currently used any tobacco product</labl>
+  <imputation>Currently used any tobacco product</imputation>
+  <security>Currently used any tobacco product</security>
+  <embargo>Currently used any tobacco product</embargo>
+  <respUnit>Currently used any tobacco product</respUnit>
+  <qstn>
+    <qstnLit>Percentage of students who currently used any tobacco product (on at least 1 day during the 30 days before the survey)</qstnLit>
+  </qstn>
+  <sumStat type="vald">2924</sumStat>
+  <sumStat type="invd">24</sumStat>
+  <sumStat type="mean">1.899</sumStat>
+  <sumStat type="stdev">0.301</sumStat>
+  <catgry>
+    <catValu>1</catValu>
+    <labl>Yes</labl>
+    <catStat type="vald"/>
+  </catgry>
+  <catgry>
+    <catValu>2</catValu>
+    <labl>No</labl>
+    <catStat type="invd"/>
+  </catgry>
+  <catgry>
+    <catValu>Sysmiss</catValu>
+    <catStat type="mean"/>
+  </catgry>
+  <varFormat type="numeric"/>
+</var>
+<var ID="V123" name="qnnotb2g" files="F1" intrvl="discrete">
+  <labl>Did not currently use any tobacco products</labl>
+  <imputation>Did not currently use any tobacco products</imputation>
+  <security>Did not currently use any tobacco products</security>
+  <embargo>Did not currently use any tobacco products</embargo>
+  <respUnit>Did not currently use any tobacco products</respUnit>
+  <qstn>
+    <qstnLit>Percentage of students who did not currently use any tobacco products (on at least 1 day during the 30 days before the survey)</qstnLit>
+  </qstn>
+  <sumStat type="vald">2920</sumStat>
+  <sumStat type="invd">28</sumStat>
+  <sumStat type="mean">1.1</sumStat>
+  <sumStat type="stdev">0.3</sumStat>
+  <catgry>
+    <catValu>1</catValu>
+    <labl>Yes</labl>
+    <catStat type="vald"/>
+  </catgry>
+  <catgry>
+    <catValu>2</catValu>
+    <labl>No</labl>
+    <catStat type="invd"/>
+  </catgry>
+  <catgry>
+    <catValu>Sysmiss</catValu>
+    <catStat type="mean"/>
+  </catgry>
+  <varFormat type="numeric"/>
+</var>
+<var ID="V124" name="qnbcanyg" files="F1" intrvl="discrete">
+  <labl>Used a method of birth control</labl>
+  <imputation>Used a method of birth control</imputation>
+  <security>Used a method of birth control</security>
+  <embargo>Used a method of birth control</embargo>
+  <respUnit>Used a method of birth control</respUnit>
+  <qstn>
+    <qstnLit>Percentage of students who used a method of birth control (such as condoms, withdrawal, rhythm, or birth control pills to prevent pregnancy, during last sexual intercourse, among students who ever had sexual intercourse)</qstnLit>
+  </qstn>
+  <sumStat type="vald">854</sumStat>
+  <sumStat type="invd">2094</sumStat>
+  <sumStat type="mean">1.231</sumStat>
+  <sumStat type="stdev">0.422</sumStat>
+  <catgry>
+    <catValu>1</catValu>
+    <labl>Yes</labl>
+    <catStat type="vald"/>
+  </catgry>
+  <catgry>
+    <catValu>2</catValu>
+    <labl>No</labl>
+    <catStat type="invd"/>
+  </catgry>
+  <catgry>
+    <catValu>Sysmiss</catValu>
+    <catStat type="mean"/>
+  </catgry>
+  <varFormat type="numeric"/>
+</var>
+<var ID="V125" name="qnc1g" files="F1" intrvl="discrete">
+  <labl>Ever had sexual intercourse among students who had drank so much alcohol that they were really drunk</labl>
+  <imputation>Ever had sexual intercourse among students who had drank so much alcohol that they were really drunk</imputation>
+  <security>Ever had sexual intercourse among students who had drank so much alcohol that they were really drunk</security>
+  <embargo>Ever had sexual intercourse among students who had drank so much alcohol that they were really drunk</embargo>
+  <respUnit>Ever had sexual intercourse among students who had drank so much alcohol that they were really drunk</respUnit>
+  <qstn>
+    <qstnLit>Percentage of students who ever had sexual intercourse among students who had drank so much alcohol that they were really drunk (one or more times during their life)</qstnLit>
+  </qstn>
+  <sumStat type="vald">659</sumStat>
+  <sumStat type="invd">2289</sumStat>
+  <sumStat type="mean">1.329</sumStat>
+  <sumStat type="stdev">0.47</sumStat>
+  <catgry>
+    <catValu>1</catValu>
+    <labl>Yes</labl>
+    <catStat type="vald"/>
+  </catgry>
+  <catgry>
+    <catValu>2</catValu>
+    <labl>No</labl>
+    <catStat type="invd"/>
+  </catgry>
+  <catgry>
+    <catValu>Sysmiss</catValu>
+    <catStat type="mean"/>
+  </catgry>
+  <varFormat type="numeric"/>
+</var>
+<var ID="V126" name="qnpa5g" files="F1" intrvl="discrete">
+  <labl>Were physically active at least 60 minutes per day on 5 or more days</labl>
+  <imputation>Were physically active at least 60 minutes per day on 5 or more days</imputation>
+  <security>Were physically active at least 60 minutes per day on 5 or more days</security>
+  <embargo>Were physically active at least 60 minutes per day on 5 or more days</embargo>
+  <respUnit>Were physically active at least 60 minutes per day on 5 or more days</respUnit>
+  <qstn>
+    <qstnLit>Percentage of students who were physically active at least 60 minutes per day on 5 or more days (during the 7 days before the survey)</qstnLit>
+  </qstn>
+  <sumStat type="vald">2881</sumStat>
+  <sumStat type="invd">67</sumStat>
+  <sumStat type="mean">1.758</sumStat>
+  <sumStat type="stdev">0.429</sumStat>
+  <catgry>
+    <catValu>1</catValu>
+    <labl>Yes</labl>
+    <catStat type="vald"/>
+  </catgry>
+  <catgry>
+    <catValu>2</catValu>
+    <labl>No</labl>
+    <catStat type="invd"/>
+  </catgry>
+  <catgry>
+    <catValu>Sysmiss</catValu>
+    <catStat type="mean"/>
+  </catgry>
+  <varFormat type="numeric"/>
+</var>
+<var ID="V127" name="qnpa7g" files="F1" intrvl="discrete">
+  <labl>Were physically active at least 60 minutes per day on all 7 days</labl>
+  <imputation>Were physically active at least 60 minutes per day on all 7 days</imputation>
+  <security>Were physically active at least 60 minutes per day on all 7 days</security>
+  <embargo>Were physically active at least 60 minutes per day on all 7 days</embargo>
+  <respUnit>Were physically active at least 60 minutes per day on all 7 days</respUnit>
+  <qstn>
+    <qstnLit>Percentage of students who were physically active at least 60 minutes per day on all 7 days (during the 7 days before the survey )</qstnLit>
+  </qstn>
+  <sumStat type="vald">2881</sumStat>
+  <sumStat type="invd">67</sumStat>
+  <sumStat type="mean">1.855</sumStat>
+  <sumStat type="stdev">0.352</sumStat>
+  <catgry>
+    <catValu>1</catValu>
+    <labl>Yes</labl>
+    <catStat type="vald"/>
+  </catgry>
+  <catgry>
+    <catValu>2</catValu>
+    <labl>No</labl>
+    <catStat type="invd"/>
+  </catgry>
+  <catgry>
+    <catValu>Sysmiss</catValu>
+    <catStat type="mean"/>
+  </catgry>
+  <varFormat type="numeric"/>
+</var>
+<var ID="V128" name="qnpe3g" files="F1" intrvl="discrete">
+  <labl>Attended physical education classes on three or more days</labl>
+  <imputation>Attended physical education classes on three or more days</imputation>
+  <security>Attended physical education classes on three or more days</security>
+  <embargo>Attended physical education classes on three or more days</embargo>
+  <respUnit>Attended physical education classes on three or more days</respUnit>
+  <qstn>
+    <qstnLit>Percentage of students who attended physical education classes on three or more days (each week during this school year)</qstnLit>
+  </qstn>
+  <sumStat type="vald">2867</sumStat>
+  <sumStat type="invd">81</sumStat>
+  <sumStat type="mean">1.648</sumStat>
+  <sumStat type="stdev">0.478</sumStat>
+  <catgry>
+    <catValu>1</catValu>
+    <labl>Yes</labl>
+    <catStat type="vald"/>
+  </catgry>
+  <catgry>
+    <catValu>2</catValu>
+    <labl>No</labl>
+    <catStat type="invd"/>
+  </catgry>
+  <catgry>
+    <catValu>Sysmiss</catValu>
+    <catStat type="mean"/>
+  </catgry>
+  <varFormat type="numeric"/>
+</var>
+<var ID="V129" name="qnpe5g" files="F1" intrvl="discrete">
+  <labl>Attended physical education classes on five or more days</labl>
+  <imputation>Attended physical education classes on five or more days</imputation>
+  <security>Attended physical education classes on five or more days</security>
+  <embargo>Attended physical education classes on five or more days</embargo>
+  <respUnit>Attended physical education classes on five or more days</respUnit>
+  <qstn>
+    <qstnLit>Percentage of students who attended physical education classes on five or more days (each week during this school year)</qstnLit>
+  </qstn>
+  <sumStat type="vald">2867</sumStat>
+  <sumStat type="invd">81</sumStat>
+  <sumStat type="mean">1.686</sumStat>
+  <sumStat type="stdev">0.464</sumStat>
+  <catgry>
+    <catValu>1</catValu>
+    <labl>Yes</labl>
+    <catStat type="vald"/>
+  </catgry>
+  <catgry>
+    <catValu>2</catValu>
+    <labl>No</labl>
+    <catStat type="invd"/>
+  </catgry>
+  <catgry>
+    <catValu>Sysmiss</catValu>
+    <catStat type="mean"/>
+  </catgry>
+  <varFormat type="numeric"/>
+</var>
+<var ID="V130" name="weight" files="F1" intrvl="contin">
+  <sumStat type="vald">2948</sumStat>
+  <sumStat type="invd"/>
+  <sumStat type="mean">63.679</sumStat>
+  <sumStat type="stdev">15.7</sumStat>
+  <varFormat type="numeric"/>
+</var>
+<var ID="V131" name="stratum" files="F1" intrvl="discrete">
+  <sumStat type="vald">2948</sumStat>
+  <sumStat type="invd"/>
+  <sumStat type="mean">201801007.568</sumStat>
+  <sumStat type="stdev">13.749</sumStat>
+  <catgry>
+    <catValu>201801001</catValu>
+    <catStat type="vald"/>
+  </catgry>
+  <catgry>
+    <catValu>201801002</catValu>
+    <catStat type="invd"/>
+  </catgry>
+  <catgry>
+    <catValu>201801003</catValu>
+    <catStat type="mean"/>
+  </catgry>
+  <catgry>
+    <catValu>201801004</catValu>
+    <catStat type="stdev"/>
+  </catgry>
+  <catgry>
+    <catValu>201801005</catValu>
+  </catgry>
+  <catgry>
+    <catValu>201801006</catValu>
+  </catgry>
+  <catgry>
+    <catValu>201801007</catValu>
+  </catgry>
+  <catgry>
+    <catValu>201801008</catValu>
+  </catgry>
+  <catgry>
+    <catValu>201801009</catValu>
+  </catgry>
+  <catgry>
+    <catValu>201801010</catValu>
+  </catgry>
+  <catgry>
+    <catValu>201801011</catValu>
+  </catgry>
+  <catgry>
+    <catValu>201801012</catValu>
+  </catgry>
+  <catgry>
+    <catValu>201801013</catValu>
+  </catgry>
+  <catgry>
+    <catValu>201801014</catValu>
+  </catgry>
+  <varFormat type="numeric"/>
+</var>
+<var ID="V132" name="psu" files="F1" intrvl="contin">
+  <sumStat type="vald">2948</sumStat>
+  <sumStat type="invd"/>
+  <sumStat type="mean">14.663</sumStat>
+  <sumStat type="stdev">8.066</sumStat>
+  <varFormat type="numeric"/>
+</var>
+</dataDscr></codeBook>

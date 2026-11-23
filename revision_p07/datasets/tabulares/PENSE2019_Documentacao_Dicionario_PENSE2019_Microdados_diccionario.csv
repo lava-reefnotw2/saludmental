@@ -1,0 +1,396 @@
+QUESTIONÁRIO DO AMBIENTE ESCOLAR,,,
+Código da Variável,Descrição da Variável,Categorias,
+,,Código,Descrição
+INFORMAÇÕES GERAIS,,,
+E01P29,Qual é o seu cargo ou função na escola?,1,Diretor(a) / Vice-diretor(a)
+,,2,Coordenador(a)
+,,3,Administrador(a)
+,,4,Secretário(a)
+,,5,Professor(a)
+,,6,Outro
+,,9,Sem resposta
+E01P30A01,A escola possui turmas em quais turnos? - Manhã,0,Não
+,,1,Sim
+,,9,Sem resposta
+E01P30A02,A escola possui turmas em quais turnos? - Tarde,0,Não
+,,1,Sim
+,,9,Sem resposta
+E01P30A03,A escola possui turmas em quais turnos? - Noite,0,Não
+,,1,Sim
+,,9,Sem resposta
+E01P03A01,"A escola atende a quais etapas de ensino? - Educação Infantil (creche, pré-escola)",0,Não
+,,1,Sim
+,,9,Sem resposta
+E01P03A02,A escola atende a quais etapas de ensino? - Ensino Fundamental,0,Não
+,,1,Sim
+,,9,Sem resposta
+E01P03A03,"A escola atende a quais etapas de ensino? - Ensino Médio (médio, integrado, normal/magistério, educação profissional)",0,Não
+,,1,Sim
+,,9,Sem resposta
+E01P03A04,"A escola atende a quais etapas de ensino? - Educação de Jovens e Adultos (fundamental, projovem urbano, médio)",0,Não
+,,1,Sim
+,,9,Sem resposta
+E01P01,"Qual a faixa de valor da mensalidade do 9º ano na escola? (se não houver 9º ano, considerar 1º ano do Ensino Médio)",-1,Pulo do questionário
+,,1,Não tem mensalidade
+,,2,"Até R$ 499,00"
+,,3,"Mais de R$ 499,00 até R$ 998,00"
+,,4,"Mais de R$ 998,00 até R$ 1.996,00"
+,,5,"Mais de R$ 1.996,00"
+,,9,Sem resposta
+E01P05B,A escola tem biblioteca para os(as) alunos(as) EM CONDIÇÕES DE USO?,1,Sim
+,,2,Não está em condições de uso
+,,3,Não tem biblioteca
+,,9,Sem resposta
+E01P33A,Quantos computadores e/ou tablets da escola EM CONDIÇÕES DE USO estão disponíveis para os(as) alunos(as) em sala de aula e/ou salas específicas de informática?,1,Não existem computadores e/ou tablets em condições de uso para os(as) alunos(as)
+,,2,Até 10
+,,3,De 11 a 20
+,,4,De 21 a 30
+,,5,De 31 a 40
+,,6,De 41 a 50
+,,7,Mais de 50
+,,9,Sem resposta
+E01P09A,Os(as) alunos(as) têm acesso à internet da escola?,-2,Abandono de questionário
+,,-1,Pulo do questionário
+,,1,Sim
+,,2,Não
+,,3,Não tem internet
+,,9,Sem resposta
+E01P10B,"A escola tem sala de recursos de mídia/comunicação para os(as) alunos(as) EM CONDIÇÕES DE USO? (Exemplos: televisão, dvd, projetor etc.)",1,Sim
+,,2,Não está em condições de uso
+,,3,Não tem sala de recursos de mídia/comunicação
+,,9,Sem resposta
+E01P7301,"NOS ÚLTIMOS 12 MESES, o conselho escolar teve alguma deliberação sobre os temas? - Prática de atividade física",-1,Pulo do questionário
+,,0,Não
+,,1,Sim
+,,9,Sem resposta
+E01P7302,"NOS ÚLTIMOS 12 MESES, o conselho escolar teve alguma deliberação sobre os temas? - Alimentação",-1,Pulo do questionário
+,,0,Não
+,,1,Sim
+,,9,Sem resposta
+E01P7303,"NOS ÚLTIMOS 12 MESES, o conselho escolar teve alguma deliberação sobre os temas? - Segurança/violência ",-1,Pulo do questionário
+,,0,Não
+,,1,Sim
+,,9,Sem resposta
+E01P7304,"NOS ÚLTIMOS 12 MESES, o conselho escolar teve alguma deliberação sobre os temas? - Saúde sexual e saúde reprodutiva ",-1,Pulo do questionário
+,,0,Não
+,,1,Sim
+,,9,Sem resposta
+E01P7305,"NOS ÚLTIMOS 12 MESES, o conselho escolar teve alguma deliberação sobre os temas? - Diversidade sexual e gênero",-1,Pulo do questionário
+,,0,Não
+,,1,Sim
+,,9,Sem resposta
+E01P7306,"NOS ÚLTIMOS 12 MESES, o conselho escolar teve alguma deliberação sobre os temas? - Nenhum desses temas",-1,Pulo do questionário
+,,0,Não
+,,1,Sim
+,,9,Sem resposta
+E01P34,A escola fica aberta nos finais de semana para uso da comunidade?,1,Sim
+,,2,Não
+,,9,Sem resposta
+E01P35,"As ações desenvolvidas na escola, no final de semana, são pactuadas com a comunidade?",-1,Pulo do questionário
+,,1,Sim
+,,2,Não
+,,9,Sem resposta
+ATIVIDADE FÍSICA,,,
+E01P74,A escola oferece práticas de atividade física para os(as) alunos(as)?,1,Sim
+,,2,Não
+,,9,Sem resposta
+E01P7501,"Quais práticas de atividades físicas abaixo são oferecidas para os(as) alunos(as)? - Esportes de quadra (futebol, voleibol, basquete, handebol etc.)",-1,Pulo do questionário
+,,0,Não
+,,1,Sim
+,,9,Sem resposta
+E01P7502,"Quais práticas de atividades físicas abaixo são oferecidas para os(as) alunos(as)? - Esportes aquáticos (natação, polo aquático, hidroginástica etc.)",-1,Pulo do questionário
+,,0,Não
+,,1,Sim
+,,9,Sem resposta
+E01P7503,"Quais práticas de atividades físicas abaixo são oferecidas para os(as) alunos(as)? - Esportes de aventura (trilha, escalada, rapel etc.)",-1,Pulo do questionário
+,,0,Não
+,,1,Sim
+,,9,Sem resposta
+E01P7504,Quais práticas de atividades físicas abaixo são oferecidas para os(as) alunos(as)? - Atletismo/corrida,-1,Pulo do questionário
+,,0,Não
+,,1,Sim
+,,9,Sem resposta
+E01P7505,"Quais práticas de atividades físicas abaixo são oferecidas para os(as) alunos(as)? - Dança (ballet, hip hop, zumba, dança de salão etc.)",-1,Pulo do questionário
+,,0,Não
+,,1,Sim
+,,9,Sem resposta
+E01P7506,"Quais práticas de atividades físicas abaixo são oferecidas para os(as) alunos(as)? - Lutas (judô, karatê, capoeira etc.)",-1,Pulo do questionário
+,,0,Não
+,,1,Sim
+,,9,Sem resposta
+E01P7507,"Quais práticas de atividades físicas abaixo são oferecidas para os(as) alunos(as)? - Ginástica (rítmica, artística/olímpica, acrobática)",-1,Pulo do questionário
+,,0,Não
+,,1,Sim
+,,9,Sem resposta
+E01P7508,Quais práticas de atividades físicas abaixo são oferecidas para os(as) alunos(as)? - Outras,-1,Pulo do questionário
+,,0,Não
+,,1,Sim
+,,9,Sem resposta
+E01P76,As práticas de atividade física são realizadas sob orientação de instrutor ou professor de educação física?,-1,Pulo do questionário
+,,1,"Sim, todas"
+,,2,"Sim, algumas"
+,,3,Não
+,,9,Sem resposta
+E01P22A,A escola oferece prática de atividade física para os(as) alunos(as) fora do horário regular de aula?,-1,Pulo do questionário
+,,1,"Sim, gratuito"
+,,2,"Sim, pago"
+,,3,"Sim, pago e gratuito"
+,,4,Não
+,,9,Sem resposta
+E01P18A,A escola tem pista para corrida/atletismo EM CONDIÇÕES DE USO?,1,Sim
+,,2,Não está em condições de uso
+,,3,Não tem pista de corrida/atletismo
+,,9,Sem resposta
+E01P19A,O pátio da escola é utilizado frequentemente para prática de atividade física com instrutor?,1,Sim
+,,2,Não é utilizado para prática de atividade física com instrutor
+,,3,Não tem pátio
+,,9,Sem resposta
+E01P38A,A escola participa de jogos ou competições físico-esportivas entre escolas?,1,Sim
+,,2,Não
+,,9,Sem resposta
+E01P39A,"A escola realiza jogos ou competições físico-esportivas entre as classes, turmas ou turnos?",1,Sim
+,,2,Não
+,,9,Sem resposta
+ALIMENTAÇÃO,,,
+E01P77,"A escola segue alguma legislação ou política municipal, estadual ou federal, bem como regra escrita própria, sobre o tipo de alimento a ser oferecido ou comercializado em suas dependências?",1,"Sim, municipal, estadual ou federal"
+,,2,"Sim, própria"
+,,3,"Sim, ambas"
+,,4,Não
+,,9,Sem resposta
+E01P11A,A escola tem cantina (espaço onde são comercializados alimentos e/ou bebidas)?,1,Sim
+,,2,Não
+,,9,Sem resposta
+E01P12B01,Que tipos de bebidas e alimentos são vendidos na cantina? - Refrigerante,-1,Pulo do questionário
+,,0,Não
+,,1,Sim
+,,9,Sem resposta
+E01P12B02,"Que tipos de bebidas e alimentos são vendidos na cantina? - Bebidas açucaradas (suco artificial, suco de caixinha, chá gelado, isotônicos, águas com sabor, energéticos)",-1,Pulo do questionário
+,,0,Não
+,,1,Sim
+,,9,Sem resposta
+E01P12B03,Que tipos de bebidas e alimentos são vendidos na cantina? - Suco natural de frutas (com água ou leite),-1,Pulo do questionário
+,,0,Não
+,,1,Sim
+,,9,Sem resposta
+E01P12B04,Que tipos de bebidas e alimentos são vendidos na cantina? - Bebidas lácteas/iogurtes com sabor e achocolatados,-1,Pulo do questionário
+,,0,Não
+,,1,Sim
+,,9,Sem resposta
+E01P12B05,"Que tipos de bebidas e alimentos são vendidos na cantina? - Salgados fritos (coxinha, pastel, quibe etc.) ou batata frita",-1,Pulo do questionário
+,,0,Não
+,,1,Sim
+,,9,Sem resposta
+E01P12B06,"Que tipos de bebidas e alimentos são vendidos na cantina? - Salgados assados (pastel de forno, empada, esfirra etc.)",-1,Pulo do questionário
+,,0,Não
+,,1,Sim
+,,9,Sem resposta
+E01P12B07,Que tipos de bebidas e alimentos são vendidos na cantina? - Salgadinhos industrializados em pacotes (chips) e batata frita de pacote,-1,Pulo do questionário
+,,0,Não
+,,1,Sim
+,,9,Sem resposta
+E01P12B08,Que tipos de bebidas e alimentos são vendidos na cantina? - Biscoitos ou bolachas industrializadas salgadas ou doces,-1,Pulo do questionário
+,,0,Não
+,,1,Sim
+,,9,Sem resposta
+E01P12B09,"Que tipos de bebidas e alimentos são vendidos na cantina? - Balas, confeitos, chocolates, sorvetes etc.",-1,Pulo do questionário
+,,0,Não
+,,1,Sim
+,,9,Sem resposta
+E01P12B10,"Que tipos de bebidas e alimentos são vendidos na cantina? - Sanduíches (cachorro quente, misto quente, hambúrguer etc.)",-1,Pulo do questionário
+,,0,Não
+,,1,Sim
+,,9,Sem resposta
+E01P12B11,Que tipos de bebidas e alimentos são vendidos na cantina? - Frutas frescas ou salada de frutas,-1,Pulo do questionário
+,,0,Não
+,,1,Sim
+,,9,Sem resposta
+E01P13A,Existe algum ponto alternativo (vendedor ambulante ou carrocinha) de venda de alimentos e/ou bebidas na porta ou no entorno da escola? (Considerar entorno as calçadas e a distância de 100 metros ao redor da escola),1,Sim
+,,2,Não
+,,9,Sem resposta
+E01P14B01,Que tipos de bebidas e alimentos são vendidos no ponto alternativo de vendas? - Refrigerante,-1,Pulo do questionário
+,,0,Não
+,,1,Sim
+,,9,Sem resposta
+E01P14B02,"Que tipos de bebidas e alimentos são vendidos no ponto alternativo de vendas? - Bebidas açucaradas (suco artificial, suco de caixinha, chá gelado, isotônicos, águas com sabor, energéticos)",-1,Pulo do questionário
+,,0,Não
+,,1,Sim
+,,9,Sem resposta
+E01P14B03,Que tipos de bebidas e alimentos são vendidos no ponto alternativo de vendas? - Suco natural de frutas (com água ou leite),-1,Pulo do questionário
+,,0,Não
+,,1,Sim
+,,9,Sem resposta
+E01P14B04,Que tipos de bebidas e alimentos são vendidos no ponto alternativo de vendas? - Bebidas lácteas/iogurtes com sabor e achocolatados,-1,Pulo do questionário
+,,0,Não
+,,1,Sim
+,,9,Sem resposta
+E01P14B05,"Que tipos de bebidas e alimentos são vendidos no ponto alternativo de vendas? - Salgados fritos (coxinha, pastel, quibe etc.) ou batata frita",-1,Pulo do questionário
+,,0,Não
+,,1,Sim
+,,9,Sem resposta
+E01P14B06,"Que tipos de bebidas e alimentos são vendidos no ponto alternativo de vendas? - Salgados assados (pastel de forno, empada, esfirra etc.)",-1,Pulo do questionário
+,,0,Não
+,,1,Sim
+,,9,Sem resposta
+E01P14B07,Que tipos de bebidas e alimentos são vendidos no ponto alternativo de vendas? - Salgadinhos industrializados em pacotes (chips) e batata frita de pacote,-1,Pulo do questionário
+,,0,Não
+,,1,Sim
+,,9,Sem resposta
+E01P14B08,Que tipos de bebidas e alimentos são vendidos no ponto alternativo de vendas? - Biscoitos ou bolachas industrializadas salgadas ou doces,-1,Pulo do questionário
+,,0,Não
+,,1,Sim
+,,9,Sem resposta
+E01P14B09,"Que tipos de bebidas e alimentos são vendidos no ponto alternativo de vendas? - Balas, confeitos, chocolates, sorvetes etc.",-1,Pulo do questionário
+,,0,Não
+,,1,Sim
+,,9,Sem resposta
+E01P14B10,"Que tipos de bebidas e alimentos são vendidos no ponto alternativo de vendas? - Sanduíches (cachorro quente, misto quente, hambúrguer etc.)",-1,Pulo do questionário
+,,0,Não
+,,1,Sim
+,,9,Sem resposta
+E01P14B11,Que tipos de bebidas e alimentos são vendidos no ponto alternativo de vendas? - Frutas frescas ou salada de frutas,-1,Pulo do questionário
+,,0,Não
+,,1,Sim
+,,9,Sem resposta
+E01P78,"Existe propaganda como cartazes, geladeiras, freezers e mesas com marcas de alimentos e bebidas industrializados na escola?",1,Sim
+,,2,Não
+,,9,Sem resposta
+E01P49,A escola tem horta?,1,Sim
+,,2,Não
+,,9,Sem resposta
+E01P49A1,Os alimentos da horta são utilizados no preparo da comida/merenda escolar?,-1,Pulo do questionário
+,,1,Sim
+,,2,Não
+,,9,Sem resposta
+E01P49A2,São realizadas ações de educação alimentar e nutricional com os(as) alunos(as) na horta?,-1,Pulo do questionário
+,,1,Sim
+,,2,Não
+,,9,Sem resposta
+SANEAMENTO BÁSICO E HIGIENE,,,
+E01P51,"NOS ÚLTIMOS 12 MESES, alguma vez a água da escola foi testada quanto a sua potabilidade (se é adequada para beber)?",-1,Pulo do questionário
+,,1,Sim
+,,2,Não
+,,3,Não sabe
+,,9,Sem resposta
+E01P55A,A escola oferece papel higiênico para uso dos(as) alunos(as) nos banheiros da escola?,-1,Pulo do questionário
+,,1,Sim
+,,2,Não
+,,9,Sem resposta
+E01P56,A escola tem pia ou lavatório EM CONDIÇÕES DE USO onde os(as) alunos(as) possam lavar as mãos depois de ir ao banheiro e/ou antes das refeições?,1,Sim
+,,2,Não está em condições de uso
+,,3,Não tem pia ou lavatório
+,,9,Sem resposta
+E01P57,A escola oferece sabão para que os(as) alunos(as) lavem as mãos após usar o banheiro e/ou antes das refeições?,1,Sim
+,,2,Não
+,,9,Sem resposta
+E01P58A1,"NA ÚLTIMA SEMANA, em quantos dias o lixo foi removido dos espaços internos da escola, como salas de aula, pátio e cozinha?",1,Nenhum dia
+,,2,1 a 2 dias
+,,3,3 a 4 dias
+,,4,5 ou mais dias
+,,9,Sem resposta
+E01P58A2,"NA ÚLTIMA SEMANA, em quantos dias o lixo foi retirado para fora das dependências da escola?",1,Nenhum dia
+,,2,1 a 2 dias
+,,3,3 a 4 dias
+,,4,5 ou mais dias
+,,9,Sem resposta
+SEGURANÇA,,,
+E01P79,"NOS ÚLTIMOS 12 MESES, com que frequência você presenciou (viu) ou ouviu falar que ocorreram assaltos e roubos a pessoas, residências e comércios na localidade (bairro) onde a escola está situada?",1,Nenhuma vez
+,,2,Poucas vezes
+,,3,Algumas vezes
+,,4,Muitas vezes
+,,9,Sem resposta
+E01P80,"NOS ÚLTIMOS 12 MESES, com que frequência você presenciou (viu) ou ouviu falar que ocorreram tiros ou tiroteios na localidade (bairro) onde a escola está situada?",1,Nenhuma vez
+,,2,Poucas vezes
+,,3,Algumas vezes
+,,4,Muitas vezes
+,,9,Sem resposta
+E01P81,"NOS ÚLTIMOS 12 MESES, com que frequência você presenciou (viu) ou ouviu falar que havia alguém vendendo drogas na localidade (bairro) onde a escola está situada?",1,Nenhuma vez
+,,2,Poucas vezes
+,,3,Algumas vezes
+,,4,Muitas vezes
+,,9,Sem resposta
+E01P82,"NOS ÚLTIMOS 12 MESES, com que frequência você presenciou (viu) ou ouviu falar que alguém tinha sido agredido fisicamente ou espancado na localidade (bairro) onde a escola está situada?",1,Nenhuma vez
+,,2,Poucas vezes
+,,3,Algumas vezes
+,,4,Muitas vezes
+,,9,Sem resposta
+E01P83,"NOS ÚLTIMOS 12 MESES, com que frequência você presenciou (viu) ou ouviu falar que alguém foi assassinado na localidade (bairro) onde a escola está situada?,",1,Nenhuma vez
+,,2,Poucas vezes
+,,3,Algumas vezes
+,,4,Muitas vezes
+,,9,Sem resposta
+E01P84,"NOS ÚLTIMOS 12 MESES, com que frequência você presenciou (viu) ou ouviu falar que alguém sofreu algum tipo de violência sexual na localidade (bairro) onde a escola está situada?",1,Nenhuma vez
+,,2,Poucas vezes
+,,3,Algumas vezes
+,,4,Muitas vezes
+,,9,Sem resposta
+E01P59A1,"NOS ÚLTIMOS 12 MESES, a escola teve que suspender ou interromper suas aulas por motivo de segurança em termos de violência?",1,Sim
+,,2,Não
+,,9,Sem resposta
+E01P59A2,"NOS ÚLTIMOS 12 MESES, quantas vezes a escola teve que suspender ou interromper suas aulas por motivo de segurança em termos de violência?",-1,Pulo do questionário
+,,1,1 vez
+,,2,2 a 4 vezes
+,,3,5 ou mais vezes
+,,9,Sem resposta
+POLÍTICAS DE SAÚDE,,,
+E01P60,A escola tem algum grupo ou comitê responsável por orientar ou coordenar ações e/ou atividades relacionadas à saúde?,1,Sim
+,,2,Não
+,,9,Sem resposta
+E01P61,A escola participa do Programa de Saúde na Escola (PSE)?,-1,Pulo do questionário
+,,1,Sim
+,,2,Não
+,,9,Sem resposta
+E01P8501,"NOS ÚLTIMOS 12 MESES, a escola desenvolveu quais dessas seguintes ações? - Apoio à vacinação dos(as) alunos(as)",0,Não
+,,1,Sim
+,,9,Sem resposta
+E01P8502,"NOS ÚLTIMOS 12 MESES, a escola desenvolveu quais dessas seguintes ações? - Promoção da alimentação saudável e prevenção da obesidade",0,Não
+,,1,Sim
+,,9,Sem resposta
+E01P8503,"NOS ÚLTIMOS 12 MESES, a escola desenvolveu quais dessas seguintes ações? - Promoção e avaliação da saúde bucal",0,Não
+,,1,Sim
+,,9,Sem resposta
+E01P8504,"NOS ÚLTIMOS 12 MESES, a escola desenvolveu quais dessas seguintes ações? - Promoção da cultura da paz, cidadania e direitos humanos",0,Não
+,,1,Sim
+,,9,Sem resposta
+E01P8505,"NOS ÚLTIMOS 12 MESES, a escola desenvolveu quais dessas seguintes ações? - Prevenção de violências e acidentes",0,Não
+,,1,Sim
+,,9,Sem resposta
+E01P8506,"NOS ÚLTIMOS 12 MESES, a escola desenvolveu quais dessas seguintes ações? - Prevenção do uso de tabaco",0,Não
+,,1,Sim
+,,9,Sem resposta
+E01P8507,"NOS ÚLTIMOS 12 MESES, a escola desenvolveu quais dessas seguintes ações? - Prevenção do uso de álcool",0,Não
+,,1,Sim
+,,9,Sem resposta
+E01P8508,"NOS ÚLTIMOS 12 MESES, a escola desenvolveu quais dessas seguintes ações? - Prevenção do uso de crack e outras drogas",0,Não
+,,1,Sim
+,,9,Sem resposta
+E01P8509,"NOS ÚLTIMOS 12 MESES, a escola desenvolveu quais dessas seguintes ações? - Prevenção de infecções/doenças sexualmente transmissíveis (IST/AIDS)",0,Não
+,,1,Sim
+,,9,Sem resposta
+E01P8510,"NOS ÚLTIMOS 12 MESES, a escola desenvolveu quais dessas seguintes ações? - Prevenção de práticas de bullying nas dependências da escola",0,Não
+,,1,Sim
+,,9,Sem resposta
+E01P8511,"NOS ÚLTIMOS 12 MESES, a escola desenvolveu quais dessas seguintes ações? - Prevenção de brigas nas dependências da escola",0,Não
+,,1,Sim
+,,9,Sem resposta
+E01P8512,"NOS ÚLTIMOS 12 MESES, a escola desenvolveu quais dessas seguintes ações? - Nenhuma dessas ações",0,Não
+,,1,Sim
+,,9,Sem resposta
+E01P64A,"NOS ÚLTIMOS 12 MESES, a escola realizou ações conjuntas com a Unidade Básica de Saúde ou a Equipe de Saúde da Família ou a Equipe de Atenção Básica?",1,Sim
+,,2,Não
+,,9,Sem resposta
+E01P65A,"NOS ÚLTIMOS 12 MESES, a escola manteve registros sobre a vacinação dos(as) alunos(as)?",1,Sim
+,,2,Não
+,,9,Sem resposta
+E01P66A,"NOS ÚLTIMOS 12 MESES, a escola registrou na ficha dos(as) alunos(as) informações sobre alergias e/ou tipo sanguíneo dos(as) alunos(as)?",1,"Sim, ambos"
+,,2,"Sim, apenas alergias"
+,,3,"Sim, apenas tipo sanguíneo"
+,,4,Não
+,,9,Sem resposta
+E01P26A,"NOS ÚLTIMOS 12 MESES, a escola teve conhecimento de consumo de cigarro por professores(as) e/ou funcionários(as) nas suas dependências?",1,"Sim, ambos"
+,,2,"Sim, apenas professores(as)"
+,,3,"Sim, apenas funcionários(as)"
+,,4,Não
+,,9,Sem resposta
+E01P27A,"NOS ÚLTIMOS 12 MESES, a escola teve conhecimento de consumo de cigarro por alunos(as) nas suas dependências?",1,Sim
+,,2,Não
+,,9,Sem resposta

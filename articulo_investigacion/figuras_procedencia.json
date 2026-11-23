@@ -1,0 +1,44 @@
+[
+  {
+    "figura": 1,
+    "vista": "Aporte de los predictores",
+    "nota_original": "Media de los cinco países: ΔAP +0.214 (IC95% +0.203 a +0.225). Un valor positivo indica mejor precisión promedio al ordenar las respuestas positivas. Cada punto compara los mismos estudiantes de prueba. La media da igual peso a los cinco países. IC95% de 500 remuestreos de conglomerados dentro de estratos, condicionados a los modelos ajustados.",
+    "path": "C:\\Users\\USUARIO\\OneDrive\\Escritorio\\Proyecto  07\\articulo_investigacion\\figuras\\Figura_01.png",
+    "sha256": "a1d27fb02dda10d430eb280a2024781e4e22640b4c35c1834d29182c430932e8"
+  },
+  {
+    "figura": 2,
+    "vista": "Familia, escuela y alimentación",
+    "nota_original": "Para «Mis padres comprendieron mis problemas», la proporción con Y1 fue 36.7% en «Nunca» y 10.8% en «Siempre». Son grupos de estudiantes distintos. Estudiantes de 13–15 años con Y1 observado en los últimos 12 meses. Asociación descriptiva sin ajuste. IC95% aproximados por linealización dentro de la cohorte elegible. Los estratos con una sola PSU aportan cero a la varianza. Se omiten categorías con menos de diez positivos o diez negativos.",
+    "path": "C:\\Users\\USUARIO\\OneDrive\\Escritorio\\Proyecto  07\\articulo_investigacion\\figuras\\Figura_02.png",
+    "sha256": "b15d7fcd2a3f31bcaa733123042033818486f22050c895e04124e287e1286c8c"
+  },
+  {
+    "figura": 3,
+    "vista": "Comparación de algoritmos",
+    "nota_original": "Frente a la logística, las diferencias de AP van de -0.085 a +0.011 entre las combinaciones de país y algoritmo. Cada celda compara modelos en los mismos estudiantes del país excluido. Son diferencias puntuales. Las diferencias pequeñas requieren evaluar incertidumbre antes de proclamar una familia ganadora.",
+    "path": "C:\\Users\\USUARIO\\OneDrive\\Escritorio\\Proyecto  07\\articulo_investigacion\\figuras\\Figura_03.png",
+    "sha256": "81ddc1319c0034f8212694a7d05a1a8f2056bd30223cefe59a8cc43a79ca4203"
+  },
+  {
+    "figura": 4,
+    "vista": "PR cinco países",
+    "nota_original": "Cada punto corresponde a un umbral. La precisión indica qué proporción de los señalados respondió Y1 positivamente y la sensibilidad qué proporción de los positivos se recuperó. La prevalencia del país sirve de referencia.",
+    "path": "C:\\Users\\USUARIO\\OneDrive\\Escritorio\\Proyecto  07\\articulo_investigacion\\figuras\\Figura_04.png",
+    "sha256": "c0d488f216f23a841caf225d1413273a41a1730d17f606c95246632c2988ec2d"
+  },
+  {
+    "figura": 5,
+    "vista": "Calibración cinco países",
+    "nota_original": "Cada punto agrupa probabilidades similares. Por encima de la diagonal la frecuencia observada supera la predicción media y el modelo subestima Y1. Las barras muestran el IC95% de la frecuencia observada.",
+    "path": "C:\\Users\\USUARIO\\OneDrive\\Escritorio\\Proyecto  07\\articulo_investigacion\\figuras\\Figura_05.png",
+    "sha256": "c96bf7e86fcae370c10aa813639c2f3e34f04e59b706ee1e363ccb9ce01e2883"
+  },
+  {
+    "figura": 6,
+    "vista": "Brechas por sexo y edad",
+    "nota_original": "La mayor brecha en magnitud corresponde a Uruguay: -41.7 puntos porcentuales (femenino menos masculino, FNR). Cero indica igual estimación entre grupos. FNR es la proporción de positivos omitidos y FPR la de negativos señalados. Los intervalos por conglomerados reflejan incertidumbre dentro de cada país.",
+    "path": "C:\\Users\\USUARIO\\OneDrive\\Escritorio\\Proyecto  07\\articulo_investigacion\\figuras\\Figura_06.png",
+    "sha256": "e47c2087deb26274844f1c25c0460b1f858a966e49fe4754940d23ffe1971024"
+  }
+]

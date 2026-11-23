@@ -1,0 +1,175 @@
+[
+  {
+    "dataset": "YRBS2021",
+    "rows": 17232,
+    "columns": 237,
+    "target": "Q26",
+    "counts": {
+      "2": 13334,
+      "1": 3593,
+      "NaN": 305
+    }
+  },
+  {
+    "dataset": "YRBS2023",
+    "rows": 20103,
+    "columns": 250,
+    "target": "Q27",
+    "counts": {
+      "2": 15453,
+      "1": 4214,
+      "NaN": 436
+    }
+  },
+  {
+    "dataset": "YRBS2025",
+    "rows": 10710,
+    "columns": 251,
+    "target": "Q27",
+    "counts": {
+      "2": 8899,
+      "1": 1555,
+      "NaN": 256
+    }
+  },
+  {
+    "dataset": "ARG2018_Buenos Aires",
+    "rows": 2254,
+    "columns": 124
+  },
+  {
+    "dataset": "ARG2018_Catamarca",
+    "rows": 2401,
+    "columns": 121
+  },
+  {
+    "dataset": "ARG2018_Chaco",
+    "rows": 2562,
+    "columns": 124
+  },
+  {
+    "dataset": "ARG2018_Chubut",
+    "rows": 2489,
+    "columns": 121
+  },
+  {
+    "dataset": "ARG2018_Cordoba",
+    "rows": 2158,
+    "columns": 124
+  },
+  {
+    "dataset": "ARG2018_Corrientes",
+    "rows": 2355,
+    "columns": 125
+  },
+  {
+    "dataset": "ARG2018_Entre Rios",
+    "rows": 2521,
+    "columns": 124
+  },
+  {
+    "dataset": "ARG2018_Jujuy",
+    "rows": 3034,
+    "columns": 124
+  },
+  {
+    "dataset": "ARG2018_La Rioja",
+    "rows": 2265,
+    "columns": 124
+  },
+  {
+    "dataset": "ARG2018_Mendoza",
+    "rows": 2967,
+    "columns": 124
+  },
+  {
+    "dataset": "ARG2018_Misiones",
+    "rows": 2909,
+    "columns": 124
+  },
+  {
+    "dataset": "ARG2018_National",
+    "rows": 56981,
+    "columns": 124
+  },
+  {
+    "dataset": "ARG2018_Salta",
+    "rows": 2356,
+    "columns": 124
+  },
+  {
+    "dataset": "ARG2018_San Juan",
+    "rows": 2422,
+    "columns": 124
+  },
+  {
+    "dataset": "ARG2018_Santa Cruz",
+    "rows": 2730,
+    "columns": 124
+  },
+  {
+    "dataset": "ARG2018_Santa Fe",
+    "rows": 3832,
+    "columns": 124
+  },
+  {
+    "dataset": "ARG2018_Santiago del Estero",
+    "rows": 2971,
+    "columns": 121
+  },
+  {
+    "dataset": "ARG2018_Tierra del Fuego",
+    "rows": 2530,
+    "columns": 121
+  },
+  {
+    "dataset": "ARG2018_Tucuman",
+    "rows": 2538,
+    "columns": 124
+  },
+  {
+    "dataset": "BOL2018_Highland Dataset",
+    "rows": 2550,
+    "columns": 115
+  },
+  {
+    "dataset": "BOL2018_National Dataset",
+    "rows": 7931,
+    "columns": 115
+  },
+  {
+    "dataset": "BOL2018_Plains Dataset",
+    "rows": 2851,
+    "columns": 115
+  },
+  {
+    "dataset": "BOL2018_Valley Dataset",
+    "rows": 2530,
+    "columns": 115
+  },
+  {
+    "dataset": "PER2010_PER2010_Public_Use",
+    "rows": 2882,
+    "columns": 123
+  },
+  {
+    "dataset": "PRY2017_PYH2017",
+    "rows": 3149,
+    "columns": 141
+  },
+  {
+    "dataset": "URY2019_URY2019 (Montevideo)",
+    "rows": 1555,
+    "columns": 106
+  },
+  {
+    "dataset": "URY2019_URY2019 (Rest of country)",
+    "rows": 1607,
+    "columns": 106
+  },
+  {
+    "dataset": "URY2019_URY2019",
+    "rows": 3162,
+    "columns": 106
+  }
+]

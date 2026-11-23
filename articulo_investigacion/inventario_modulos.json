@@ -1,0 +1,1018 @@
+[
+  {
+    "archivo": "app.py",
+    "sha256": "875d57507ca15f021735cf958692348a4591bc86b5e8073629c549bd839dbe9e",
+    "lineas": 9,
+    "funciones": [],
+    "imports": [
+      "pathlib",
+      "real_dashboard"
+    ]
+  },
+  {
+    "archivo": "entrenar_datos_reales.py",
+    "sha256": "6e990b7c45a5decadb72fb94a2b1573b35e2c3396f631db41ec7958774a9c684",
+    "lineas": 23,
+    "funciones": [],
+    "imports": [
+      "pathlib",
+      "training_jobs"
+    ]
+  },
+  {
+    "archivo": "pipeline_sp07.py",
+    "sha256": "2bfb0667b85eb01c20c233a75d535aa3b4ffc968a1f10bae769ff46a125880c4",
+    "lineas": 107,
+    "funciones": [
+      "run_7_phase_pipeline"
+    ],
+    "imports": [
+      "phase1_ingestion",
+      "phase2_quality_audit",
+      "phase3_feature_engineering",
+      "phase4_statistical_eda",
+      "phase5_model_training",
+      "phase6_clinical_calibration",
+      "phase7_statistical_inference"
+    ]
+  },
+  {
+    "archivo": "Archivos\\app.py",
+    "sha256": "bedf1ac9a20cea90a67d237e45844a473ce1a7a4411f124f20feba72ad70d1e1",
+    "lineas": 1453,
+    "funciones": [
+      "get_db_engine",
+      "query_db",
+      "load_clean_data",
+      "load_attrition_report",
+      "load_eda_summary",
+      "load_hypotheses_results",
+      "load_decision_curve",
+      "load_shap_ranking",
+      "explain_table",
+      "explain_chart",
+      "render_report_section"
+    ],
+    "imports": [
+      "sqlalchemy",
+      "report_generator",
+      "pdf_report_generator",
+      "pipeline_sp07"
+    ]
+  },
+  {
+    "archivo": "Archivos\\app_demo_sintetico.py",
+    "sha256": "b52e2882df7a16b60e626af221425b98b19b644b4a0927fbbf5dfcd564e0a03f",
+    "lineas": 959,
+    "funciones": [
+      "get_db_engine",
+      "query_db",
+      "load_clean_data",
+      "load_attrition_report",
+      "load_feasibility_report",
+      "load_eda_summary",
+      "load_hypotheses_results",
+      "load_decision_curve",
+      "load_shap_ranking",
+      "load_logreg_odds_ratios",
+      "explain_table",
+      "explain_chart",
+      "render_report_section"
+    ],
+    "imports": [
+      "sqlalchemy",
+      "report_generator",
+      "pdf_report_generator",
+      "export_engine",
+      "restricted_inference",
+      "optuna_tuner",
+      "statistical_analysis_module",
+      "pipeline_sp07"
+    ]
+  },
+  {
+    "archivo": "Archivos\\pipeline_sp07.py",
+    "sha256": "2bfb0667b85eb01c20c233a75d535aa3b4ffc968a1f10bae769ff46a125880c4",
+    "lineas": 107,
+    "funciones": [
+      "run_7_phase_pipeline"
+    ],
+    "imports": [
+      "phase1_ingestion",
+      "phase2_quality_audit",
+      "phase3_feature_engineering",
+      "phase4_statistical_eda",
+      "phase5_model_training",
+      "phase6_clinical_calibration",
+      "phase7_statistical_inference"
+    ]
+  },
+  {
+    "archivo": "revision_p07\\auditar_datos.py",
+    "sha256": "ec448cf55df83a3d1ffff26681a5badbca7d04e03f20e292e272f2bfcb48b07b",
+    "lineas": 46,
+    "funciones": [],
+    "imports": [
+      "pathlib"
+    ]
+  },
+  {
+    "archivo": "revision_p07\\corregir_protocolo.py",
+    "sha256": "829cd1d2a964e021fa6a244b32003c73d589790f1b53582635e5e42eb949b5fd",
+    "lineas": 146,
+    "funciones": [
+      "replace",
+      "h",
+      "p",
+      "table"
+    ],
+    "imports": [
+      "pathlib",
+      "docx",
+      "docx.shared",
+      "docx.oxml",
+      "docx.oxml.ns"
+    ]
+  },
+  {
+    "archivo": "revision_p07\\documentacion_extra.py",
+    "sha256": "685ee3941e6cdb93e2db72deb27da226811cb0595c14e6d4b263989d49b322eb",
+    "lineas": 18,
+    "funciones": [],
+    "imports": [
+      "pathlib",
+      "pypdf"
+    ]
+  },
+  {
+    "archivo": "revision_p07\\obtener_contexto.py",
+    "sha256": "fea55dd9129553c7a758b335468af94f2f2b3a685582526f74c380c2da981421",
+    "lineas": 16,
+    "funciones": [
+      "fetch"
+    ],
+    "imports": [
+      "pathlib"
+    ]
+  },
+  {
+    "archivo": "revision_p07\\obtener_datos.py",
+    "sha256": "dd08645e8ce39d94a04e225a25d7f416ce6eddff3488074b8767bdf649a7459b",
+    "lineas": 31,
+    "funciones": [
+      "get"
+    ],
+    "imports": [
+      "pathlib"
+    ]
+  },
+  {
+    "archivo": "revision_p07\\obtener_gshs.py",
+    "sha256": "a35affbd15b8a171cf388f600bbaf5dd62adb7e79a3dcfa48f4e59f161bfda22",
+    "lineas": 28,
+    "funciones": [
+      "survey"
+    ],
+    "imports": [
+      "pathlib"
+    ]
+  },
+  {
+    "archivo": "revision_p07\\preparar_base.py",
+    "sha256": "676b29b946e48db298674516b11978396a0c01816fe6512e40f30df23c5ff447",
+    "lineas": 37,
+    "funciones": [],
+    "imports": [
+      "pathlib"
+    ]
+  },
+  {
+    "archivo": "revision_p07\\validar_archivos.py",
+    "sha256": "9c8ee1e81f79b4ebb0dfedc9d67e0101e9fd3f253c29138d014eaee9268e4c6a",
+    "lineas": 31,
+    "funciones": [],
+    "imports": [
+      "pathlib"
+    ]
+  },
+  {
+    "archivo": "src\\data_ingestion.py",
+    "sha256": "21b2d7b21068af37b3c6d737cbd5e798af2d4f109899e29ded7c554d25b36e81",
+    "lineas": 274,
+    "funciones": [
+      "fetch_world_bank_context",
+      "generate_gshs_adolescent_cohort",
+      "populate_database_and_files"
+    ],
+    "imports": [
+      "sqlalchemy"
+    ]
+  },
+  {
+    "archivo": "src\\discussion_figures.py",
+    "sha256": "d0c1101653d3eac1f182c8fafb1ef1d63885a7372f64d72d86741f5a32705d5c",
+    "lineas": 152,
+    "funciones": [
+      "country_labels",
+      "interval_figure",
+      "observed",
+      "comparison",
+      "discussion"
+    ],
+    "imports": [
+      "publication_charts"
+    ]
+  },
+  {
+    "archivo": "src\\eda_engine.py",
+    "sha256": "dd7ab56ca999b43d67663e8c2b89aed76400588ec2a81be41abcb948d452e358",
+    "lineas": 226,
+    "funciones": [
+      "run_feature_engineering",
+      "run_statistical_eda"
+    ],
+    "imports": [
+      "scipy",
+      "sqlalchemy"
+    ]
+  },
+  {
+    "archivo": "src\\export_engine.py",
+    "sha256": "753a5a2788bdebe99e2ef5f91007284a6f0e7c95bcbdf2ce693e5a496b914599",
+    "lineas": 318,
+    "funciones": [
+      "set_cell_background",
+      "generate_word_report",
+      "generate_excel_workbook",
+      "export_high_dpi_scientific_figures"
+    ],
+    "imports": [
+      "docx.shared",
+      "docx.enum.text",
+      "docx.enum.table",
+      "docx.oxml",
+      "docx.oxml.ns",
+      "openpyxl.styles",
+      "openpyxl.utils.dataframe",
+      "sqlalchemy"
+    ]
+  },
+  {
+    "archivo": "src\\models.py",
+    "sha256": "c9f0382d6bae74e67cb198e6b38b886baee8ca25848fc050e8ee3f94a9f0e67b",
+    "lineas": 107,
+    "funciones": [
+      "build_model_factories"
+    ],
+    "imports": [
+      "sklearn.base",
+      "sklearn.neural_network",
+      "sklearn.multioutput",
+      "sklearn.linear_model",
+      "sklearn.ensemble"
+    ]
+  },
+  {
+    "archivo": "src\\optuna_tuner.py",
+    "sha256": "e811f4ad8e39a0a553c1c1f96e8e6ab197f63da5174e4a0363bd3c4efe4298f5",
+    "lineas": 184,
+    "funciones": [
+      "get_search_spaces_documentation",
+      "run_optuna_study",
+      "load_or_run_default_study"
+    ],
+    "imports": [
+      "sklearn.pipeline",
+      "sklearn.model_selection",
+      "sklearn.metrics",
+      "phase5_model_training",
+      "models",
+      "phase5_model_training",
+      "phase3_feature_engineering",
+      "sklearn.ensemble",
+      "sklearn.linear_model"
+    ]
+  },
+  {
+    "archivo": "src\\pdf_report_generator.py",
+    "sha256": "a02af841b843830269cf52a01a1234b90b9fb3c69837243cf0d9bad9742b2761",
+    "lineas": 716,
+    "funciones": [
+      "get_report_styles",
+      "build_pdf_table",
+      "generate_pdf_module_1",
+      "generate_pdf_module_2",
+      "generate_pdf_module_3",
+      "generate_pdf_module_4",
+      "generate_pdf_module_5",
+      "generate_pdf_module_6",
+      "generate_pdf_module_7"
+    ],
+    "imports": [
+      "reportlab.lib.pagesizes",
+      "reportlab.lib",
+      "reportlab.platypus",
+      "reportlab.lib.styles",
+      "reportlab.lib.units",
+      "reportlab.pdfgen"
+    ]
+  },
+  {
+    "archivo": "src\\phase1_ingestion.py",
+    "sha256": "a9b02db73504c56622c5b678d4dd6315fd7325ac536e8fb9fd83eff523667bb2",
+    "lineas": 306,
+    "funciones": [
+      "fetch_world_bank_context",
+      "generate_raw_gshs_responses",
+      "populate_dictionary_in_db",
+      "run_phase1_ingestion"
+    ],
+    "imports": [
+      "sqlalchemy"
+    ]
+  },
+  {
+    "archivo": "src\\phase2_quality_audit.py",
+    "sha256": "45e07237a53eeeda2c1e6cb06a263c35903ddf8c0195a8468e90238290ef29c3",
+    "lineas": 142,
+    "funciones": [
+      "run_phase2_quality_audit"
+    ],
+    "imports": [
+      "phase1_ingestion"
+    ]
+  },
+  {
+    "archivo": "src\\phase3_feature_engineering.py",
+    "sha256": "ee4491405260c7d8924d8748037242f74f1583291e8d47764ae61ab1a3862544",
+    "lineas": 174,
+    "funciones": [
+      "derive_outcomes_and_features",
+      "run_phase3_feature_engineering"
+    ],
+    "imports": [
+      "sqlalchemy",
+      "phase2_quality_audit"
+    ]
+  },
+  {
+    "archivo": "src\\phase4_statistical_eda.py",
+    "sha256": "ed7d928a086c78f4566fa41c80c25b47c41df0d8ebebe4de4c28d68b867f54e7",
+    "lineas": 135,
+    "funciones": [
+      "run_phase4_statistical_eda"
+    ],
+    "imports": [
+      "scipy",
+      "phase3_feature_engineering"
+    ]
+  },
+  {
+    "archivo": "src\\phase5_model_training.py",
+    "sha256": "b307ae8dcf41328704eda8fbd7e4e6644a0a0f0eed6f98626abb641840f4346f",
+    "lineas": 286,
+    "funciones": [
+      "get_feature_blocks",
+      "get_country_partitions",
+      "make_preprocessor",
+      "run_phase5_model_training"
+    ],
+    "imports": [
+      "sqlalchemy",
+      "sklearn.base",
+      "sklearn.pipeline",
+      "sklearn.compose",
+      "sklearn.impute",
+      "sklearn.preprocessing",
+      "sklearn.model_selection",
+      "sklearn.metrics",
+      "models",
+      "phase3_feature_engineering"
+    ]
+  },
+  {
+    "archivo": "src\\phase6_clinical_calibration.py",
+    "sha256": "db6e25d42f7495c0f153e09058004f0b762205edf8728f669b64c482b27db1f9",
+    "lineas": 225,
+    "funciones": [
+      "calculate_cox_calibration",
+      "compute_thresholds",
+      "evaluate_predictions",
+      "compute_decision_curve",
+      "compute_calibration_bins",
+      "run_phase6_clinical_calibration"
+    ],
+    "imports": [
+      "sklearn.metrics",
+      "sklearn.linear_model",
+      "sqlalchemy",
+      "phase5_model_training"
+    ]
+  },
+  {
+    "archivo": "src\\phase7_statistical_inference.py",
+    "sha256": "e3cd7c9b168f0aeeae2fb03f4e26c9caac43fe7a680ed2661198eab4aee6e086",
+    "lineas": 365,
+    "funciones": [
+      "paired_bootstrap_prauc_difference",
+      "bootstrap_one_sample_auc",
+      "run_fairness_audit",
+      "run_shap_analysis",
+      "run_logistic_regression_explanations",
+      "run_phase7_statistical_inference"
+    ],
+    "imports": [
+      "sklearn.metrics",
+      "sklearn.inspection",
+      "sqlalchemy",
+      "models",
+      "phase5_model_training",
+      "phase5_model_training"
+    ]
+  },
+  {
+    "archivo": "src\\pipeline_engine.py",
+    "sha256": "b596fdb291b527798f56af8c127f83785450e32b9424a962a4dbc3f3fa4ea0b7",
+    "lineas": 347,
+    "funciones": [
+      "make_preprocessor",
+      "calculate_cox_calibration",
+      "compute_thresholds",
+      "evaluate_predictions",
+      "compute_decision_curve",
+      "run_pipeline_training"
+    ],
+    "imports": [
+      "sqlalchemy",
+      "sklearn.base",
+      "sklearn.pipeline",
+      "sklearn.compose",
+      "sklearn.impute",
+      "sklearn.preprocessing",
+      "sklearn.linear_model",
+      "sklearn.model_selection",
+      "sklearn.metrics",
+      "models",
+      "eda_engine"
+    ]
+  },
+  {
+    "archivo": "src\\protocol_analysis.py",
+    "sha256": "deb5dcf0ef3914bd2e3c146e265e9eb035b99f1678038a0d7123fb3969f821ce",
+    "lineas": 127,
+    "funciones": [
+      "scores",
+      "write_tables",
+      "analyse"
+    ],
+    "imports": [
+      "pathlib",
+      "sklearn.metrics",
+      "sklearn.linear_model",
+      "catboost",
+      "threadpoolctl"
+    ]
+  },
+  {
+    "archivo": "src\\protocol_explanations.py",
+    "sha256": "1ec0a04b57aaf73c2c4b9914d3baa6d998c6b4c9f0bf9b0b2ba82c393a3ccebf",
+    "lineas": 65,
+    "funciones": [
+      "elaborate"
+    ],
+    "imports": [
+      "scipy.linalg",
+      "scipy.special",
+      "catboost"
+    ]
+  },
+  {
+    "archivo": "src\\protocol_optuna.py",
+    "sha256": "b1d3891878b1d6ce9e9e3563c7e2a48df48e5b188efb82dd305e24b272b23290",
+    "lineas": 62,
+    "funciones": [
+      "optimise"
+    ],
+    "imports": [
+      "pathlib",
+      "sklearn.compose",
+      "sklearn.preprocessing",
+      "sklearn.pipeline",
+      "sklearn.model_selection",
+      "sklearn.metrics",
+      "protocol_analysis"
+    ]
+  },
+  {
+    "archivo": "src\\protocol_sensitivity.py",
+    "sha256": "681c8a01fcd8d5d3f6ecf6a6e03fbe6d500bceb3be3033ad475ac0b89ca56d69",
+    "lineas": 34,
+    "funciones": [
+      "supplemental"
+    ],
+    "imports": []
+  },
+  {
+    "archivo": "src\\protocol_views.py",
+    "sha256": "54c47a85fe69473988063b0f20e9227ddbe8894835ac5fd6d72f85da30ae0dee",
+    "lineas": 175,
+    "funciones": [
+      "provenance",
+      "exports",
+      "render_protocol",
+      "inspect_import",
+      "external_figures",
+      "explanation_figures"
+    ],
+    "imports": [
+      "pathlib",
+      "importlib.metadata",
+      "publication_charts",
+      "research_notes",
+      "training_jobs",
+      "matplotlib",
+      "matplotlib.backends.backend_pdf",
+      "word_evaluation",
+      "discussion_figures",
+      "discussion_figures",
+      "discussion_figures",
+      "protocol_sensitivity",
+      "protocol_optuna"
+    ]
+  },
+  {
+    "archivo": "src\\publication_charts.py",
+    "sha256": "9a5fa56ae99fc54d57f3bcee47a700d7668801f44f4ce2c1e1c1911a85236500",
+    "lineas": 39,
+    "funciones": [
+      "png600",
+      "chart"
+    ],
+    "imports": [
+      "PIL"
+    ]
+  },
+  {
+    "archivo": "src\\real_dashboard.py",
+    "sha256": "b21b4ac580eda85cc3ecf1abbde386f85e9da355672cd15df5285b481db838a7",
+    "lineas": 142,
+    "funciones": [
+      "table",
+      "load",
+      "progress_panel",
+      "render"
+    ],
+    "imports": [
+      "pathlib",
+      "publication_charts",
+      "training_jobs",
+      "protocol_views",
+      "protocol_views"
+    ]
+  },
+  {
+    "archivo": "src\\real_data_training.py",
+    "sha256": "f075d14d8f4f38877a3ac01f424642e4b9573453d9c438c12aa22c4fd6776a21",
+    "lineas": 201,
+    "funciones": [
+      "digest",
+      "prepare",
+      "weights",
+      "pipe",
+      "specs",
+      "fit_predict",
+      "metrics",
+      "sigmoid",
+      "inner_search",
+      "calibrate",
+      "experiment",
+      "main"
+    ],
+    "imports": [
+      "pathlib",
+      "sklearn.base",
+      "sklearn.pipeline",
+      "sklearn.impute",
+      "sklearn.preprocessing",
+      "sklearn.linear_model",
+      "sklearn.ensemble",
+      "sklearn.neural_network",
+      "sklearn.model_selection",
+      "sklearn.metrics",
+      "sklearn.exceptions",
+      "xgboost",
+      "catboost",
+      "threadpoolctl"
+    ]
+  },
+  {
+    "archivo": "src\\report_generator.py",
+    "sha256": "de8748f7f6b9f19ecd9159172bcd9bb2ff16d5832071aef846d7b61fa1f71739",
+    "lineas": 437,
+    "funciones": [
+      "df_to_markdown",
+      "md_to_html",
+      "generate_report_module_1",
+      "generate_report_module_2",
+      "generate_report_module_3",
+      "generate_report_module_4",
+      "generate_report_module_5",
+      "generate_report_module_6",
+      "generate_report_module_7"
+    ],
+    "imports": []
+  },
+  {
+    "archivo": "src\\research_notes.py",
+    "sha256": "17ddc9fe2816da495b70cf6a6af37a9f1646d5e69f6ef3ee5b60dc014f7898fd",
+    "lineas": 17,
+    "funciones": [],
+    "imports": []
+  },
+  {
+    "archivo": "src\\restricted_inference.py",
+    "sha256": "74ec7cc44289e3881826011e3fe0d3073ea742d844ab8a723158e1625459580e",
+    "lineas": 211,
+    "funciones": [
+      "validate_inference_inputs",
+      "get_predefined_synthetic_cases",
+      "run_research_inference"
+    ],
+    "imports": []
+  },
+  {
+    "archivo": "src\\statistical_analysis_module.py",
+    "sha256": "615e9911ae9d708544e3be02692568fee2af0c83ec32aec7ca6b3509cbac0a6f",
+    "lineas": 1173,
+    "funciones": [
+      "wilson_score_interval",
+      "bootstrap_prauc_ci",
+      "bootstrap_rocauc_ci",
+      "check_small_subgroup_protection",
+      "load_all_statistical_artifacts",
+      "render_figure_export_panel",
+      "render_chart_1_data_availability",
+      "render_chart_2_prevalence_subgroups",
+      "render_chart_3_predictive_gain_ablation",
+      "render_chart_4_forest_plot_countries",
+      "render_chart_5_algorithmic_fairness",
+      "render_chart_6_shap_dependence",
+      "render_chart_7_calibration_curves",
+      "render_chart_8_multi_algorithm_multi_outcome",
+      "render_chart_9_determinant_distributions",
+      "render_chart_10_shap_stability_folds",
+      "render_chart_11_shap_interaction_heatmap",
+      "render_chart_12_predicted_probability_distribution",
+      "render_chart_13_variability_external_folds",
+      "render_chart_14_learning_curves",
+      "render_chart_15_optuna_history",
+      "render_chart_16_decision_curve_analysis",
+      "render_statistical_analysis_module"
+    ],
+    "imports": [
+      "plotly.subplots",
+      "sklearn.metrics",
+      "scipy"
+    ]
+  },
+  {
+    "archivo": "src\\statistical_fairness.py",
+    "sha256": "7e560550aa803061981e5c4ca81d55645d18f17f2f4ec8e7adec724e18342e00",
+    "lineas": 327,
+    "funciones": [
+      "paired_bootstrap_auc_difference",
+      "bootstrap_one_sample_auc",
+      "run_fairness_audit",
+      "run_shap_analysis",
+      "run_phase_7_evaluation"
+    ],
+    "imports": [
+      "scipy",
+      "sklearn.metrics",
+      "sqlalchemy",
+      "models",
+      "pipeline_engine",
+      "eda_engine"
+    ]
+  },
+  {
+    "archivo": "src\\training_jobs.py",
+    "sha256": "9892155aae846c38027425860c190ca60fd54a24a07b51f7a88c137006c901ca",
+    "lineas": 81,
+    "funciones": [
+      "read_json",
+      "atomic_json",
+      "alive",
+      "job_status",
+      "active_results",
+      "preflight",
+      "start_run"
+    ],
+    "imports": [
+      "pathlib",
+      "datetime",
+      "real_data_training"
+    ]
+  },
+  {
+    "archivo": "src\\word_evaluation.py",
+    "sha256": "f79309635c16293e4e3ef0d170f0664b38f8cf40a46cf2907a5f58fad1bb31f1",
+    "lineas": 69,
+    "funciones": [
+      "report_figures",
+      "write_report"
+    ],
+    "imports": [
+      "io",
+      "pathlib",
+      "tempfile",
+      "docx",
+      "docx.shared",
+      "discussion_figures",
+      "publication_charts",
+      "protocol_views"
+    ]
+  },
+  {
+    "archivo": "streamlit_app\\app.py",
+    "sha256": "cba70003507a33b447270e0fcb7c9fee4482dc1ce14af8c662a456bb02300faf",
+    "lineas": 9,
+    "funciones": [],
+    "imports": [
+      "pathlib",
+      "real_dashboard"
+    ]
+  },
+  {
+    "archivo": "tests\\test_phase0_architecture.py",
+    "sha256": "17c771741c474c86818b6e9bf3e39712d9c2aaacbb812af9a23cfa8210eb4630",
+    "lineas": 49,
+    "funciones": [],
+    "imports": [
+      "app"
+    ]
+  },
+  {
+    "archivo": "tests\\test_phase1_phase2_leakage.py",
+    "sha256": "601d5315352b7c609bd6786e390e3f66abb6378dbc702f8a7b3228efe9c4c0e5",
+    "lineas": 78,
+    "funciones": [],
+    "imports": [
+      "phase3_feature_engineering",
+      "phase5_model_training",
+      "phase5_model_training"
+    ]
+  },
+  {
+    "archivo": "tests\\test_phase3_to_phase7_pipeline.py",
+    "sha256": "18607bb01684e58cc4fcdfc00b0b3ecef947d9f099ffca43fcaf7752c96f1a58",
+    "lineas": 67,
+    "funciones": [],
+    "imports": [
+      "pipeline_sp07"
+    ]
+  },
+  {
+    "archivo": "tests\\test_phase5_export.py",
+    "sha256": "6121045602b1356662fad80fd4fbffe90f0912461a4584e9b668e76421ab5035",
+    "lineas": 47,
+    "funciones": [],
+    "imports": [
+      "export_engine",
+      "export_engine",
+      "export_engine"
+    ]
+  },
+  {
+    "archivo": "tests\\test_phase6_inference.py",
+    "sha256": "bd7f265e040265fc1ba4655154f1c9431c8a7f8c2ab6faf830058970b56452fc",
+    "lineas": 49,
+    "funciones": [],
+    "imports": [
+      "restricted_inference",
+      "restricted_inference"
+    ]
+  },
+  {
+    "archivo": "tests\\test_phase7_optuna.py",
+    "sha256": "72f0d2f5e3a8666440566146a4abd014b5ef9fb305dff16b77eb4e4f9d64e3ea",
+    "lineas": 40,
+    "funciones": [],
+    "imports": [
+      "optuna_tuner"
+    ]
+  },
+  {
+    "archivo": "tests\\test_statistical_analysis.py",
+    "sha256": "f1d8e5e01968a64d460ea7ac1c7e4db2c37f183980183e46d9b4a912156bf4cb",
+    "lineas": 161,
+    "funciones": [],
+    "imports": [
+      "statistical_analysis_module"
+    ]
+  },
+  {
+    "archivo": "tools\\build_app.py",
+    "sha256": "622ebc1f10807951f4c701a72c7bd2d7cd8929028d4794d4b52da5080b59695a",
+    "lineas": 1145,
+    "funciones": [
+      "main"
+    ],
+    "imports": []
+  },
+  {
+    "archivo": "tools\\build_app_with_charts.py",
+    "sha256": "5ba583a0389c1b2f098373016977d8258d1d77085e8c609a7435076e2415a1ef",
+    "lineas": 1336,
+    "funciones": [
+      "main"
+    ],
+    "imports": []
+  },
+  {
+    "archivo": "tools\\build_app_with_reports.py",
+    "sha256": "390c4739663aed58118c0a31b9d6f4d79736c6f96b03f4cfcce4884501a3d495",
+    "lineas": 1415,
+    "funciones": [
+      "main"
+    ],
+    "imports": []
+  },
+  {
+    "archivo": "tools\\check_local_app.py",
+    "sha256": "ecd06429b97cd850ecf66fee889d05c267badb261e202e2398791c01f91ef026",
+    "lineas": 12,
+    "funciones": [],
+    "imports": [
+      "pathlib",
+      "streamlit.testing.v1"
+    ]
+  },
+  {
+    "archivo": "tools\\completar_auditoria.py",
+    "sha256": "6188cb896b84aa0a4eaf75704e4f7e7e2ab34f450ef3c9b117bfe00d4941f34c",
+    "lineas": 32,
+    "funciones": [
+      "extend"
+    ],
+    "imports": [
+      "pathlib",
+      "training_jobs",
+      "protocol_views",
+      "protocol_optuna",
+      "sklearn.metrics",
+      "threadpoolctl"
+    ]
+  },
+  {
+    "archivo": "tools\\complete_real_training.py",
+    "sha256": "46bdf6192a903b6078b20911adc1f5af0b6cd796e65a2dce32a91b327b9a99c8",
+    "lineas": 92,
+    "funciones": [
+      "selected_predictions",
+      "weighted_ap",
+      "compare",
+      "main"
+    ],
+    "imports": [
+      "pathlib",
+      "threadpoolctl"
+    ]
+  },
+  {
+    "archivo": "tools\\evaluar_protocolo.py",
+    "sha256": "0dbd8a0c838189fbd596f373b7f5804947735b80a9b7dbf33492bb929db8c664",
+    "lineas": 8,
+    "funciones": [],
+    "imports": [
+      "pathlib",
+      "training_jobs",
+      "protocol_analysis"
+    ]
+  },
+  {
+    "archivo": "tools\\obtener_metadata_entrenamiento.py",
+    "sha256": "6adff765a5f5eb237b93dcd236ac2dc8d3668a0aa5eecc3184400efd80ed786b",
+    "lineas": 29,
+    "funciones": [],
+    "imports": [
+      "pathlib"
+    ]
+  },
+  {
+    "archivo": "tools\\report_real_training.py",
+    "sha256": "a4c605f4869f631b0b1b3ff7bcbb167e4931995c66c13f5e21f9561e0df3d3e9",
+    "lineas": 66,
+    "funciones": [
+      "md"
+    ],
+    "imports": [
+      "pathlib"
+    ]
+  },
+  {
+    "archivo": "tools\\run_real_workflow.py",
+    "sha256": "249a3472a14f4c4f276ab2ff22d69c3702e95ec5d099cc12733752bc348be35b",
+    "lineas": 85,
+    "funciones": [
+      "run"
+    ],
+    "imports": [
+      "pathlib",
+      "datetime",
+      "training_jobs",
+      "threadpoolctl",
+      "protocol_analysis",
+      "protocol_views",
+      "completar_auditoria",
+      "protocol_explanations",
+      "protocol_sensitivity"
+    ]
+  },
+  {
+    "archivo": "tools\\serve_local.py",
+    "sha256": "09e182d26fa15332361fbbdf264be42ca59bcf7b4388b9d48cfd6af9be303ed3",
+    "lineas": 12,
+    "funciones": [],
+    "imports": [
+      "pathlib",
+      "streamlit.web"
+    ]
+  },
+  {
+    "archivo": "tools\\test_real_workflow.py",
+    "sha256": "5bb166023e77979efa9137ee8b0401a9c99834e813f0c52bb440f2d11393dc09",
+    "lineas": 49,
+    "funciones": [],
+    "imports": [
+      "pathlib",
+      "unittest.mock",
+      "streamlit.testing.v1"
+    ]
+  },
+  {
+    "archivo": "tools\\train_yrbs_temporal.py",
+    "sha256": "3fd4213d26d89ce301b4568eb5121ff25346ae7897ba13ee0a24e828a3be6162",
+    "lineas": 77,
+    "funciones": [
+      "prepare",
+      "main"
+    ],
+    "imports": [
+      "pathlib",
+      "sklearn.model_selection",
+      "sklearn.metrics",
+      "threadpoolctl"
+    ]
+  },
+  {
+    "archivo": "tools\\validate_training_metadata.py",
+    "sha256": "c3c2dbddd50307e047a68df5d55c65455db435fba98351cb5b5d710803e39779",
+    "lineas": 19,
+    "funciones": [],
+    "imports": [
+      "pathlib"
+    ]
+  },
+  {
+    "archivo": "tools\\verificar_evaluacion.py",
+    "sha256": "9f9a9b910d4bf47ae0d1309103c5f4c59eebe7a8d8e97480d1a4df9bf5c67f28",
+    "lineas": 12,
+    "funciones": [],
+    "imports": [
+      "evaluar_protocolo",
+      "protocol_explanations",
+      "protocol_views",
+      "pathlib",
+      "streamlit.testing.v1"
+    ]
+  },
+  {
+    "archivo": "tools\\verificar_optuna_ui.py",
+    "sha256": "a1c71c6cdb82f320c31a77bbbb1f5189999ca7185910adc10061dbcd6c0b1672",
+    "lineas": 15,
+    "funciones": [],
+    "imports": [
+      "evaluar_protocolo",
+      "pathlib",
+      "streamlit.testing.v1"
+    ]
+  },
+  {
+    "archivo": "tools\\verificar_protocolo_final.py",
+    "sha256": "7e5516d5d49ad3739082853a609c6f7a470bfe3db15ef8412a1fcb3463838633",
+    "lineas": 28,
+    "funciones": [],
+    "imports": [
+      "evaluar_protocolo",
+      "protocol_sensitivity",
+      "protocol_views",
+      "training_jobs",
+      "pathlib",
+      "PIL",
+      "docx",
+      "openpyxl",
+      "streamlit.testing.v1"
+    ]
+  }
+]

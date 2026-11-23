@@ -1,0 +1,18 @@
+# Archivos pesados originales (>100MB / zips no distribuibles conforme a LEEME_DATASETS.md)
+datasets/originales/*.zip
+datasets/originales/*.dat
+datasets/originales/*.dta
+datasets/originales/*.csv
+datasets/originales/*.pdf
+!datasets/originales/*Formats-Program.sas
+
+# Vendor local packages y dumps de navegacion/QA
+vendor/
+qa_*.png
+qa_*/
+*_QA.pdf
+page*.html
+who_accepted.html
+ibge.html
+gshs_*_access.html
+YRBS*_guia.pdf.txt

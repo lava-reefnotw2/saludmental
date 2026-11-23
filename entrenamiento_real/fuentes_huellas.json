@@ -1,0 +1,52 @@
+[
+  {
+    "file": "datasets\\Argentina.csv",
+    "sha256": "78230452bd403a85ce3af20c283a5334a9a2fb4d3bab7f23dfffd8e892410893",
+    "identical_revision": [
+      "ARG2018_National.csv"
+    ]
+  },
+  {
+    "file": "datasets\\BoliviaNacional.csv",
+    "sha256": "60de87326109e9343b73e55f71bce99173bdcce1660a694deb95b75eeed738f9",
+    "identical_revision": [
+      "BOL2018_National Dataset.csv"
+    ]
+  },
+  {
+    "file": "datasets\\Guatemala.csv",
+    "sha256": "4fcde186d5939549958c0b25393cc22c847fb5d514697dadeb50f48459334325",
+    "identical_revision": []
+  },
+  {
+    "file": "datasets\\Honduras.csv",
+    "sha256": "6ee8a54a245be98cdfd51d72549d0ade54512d9f9921a27fe8ff6f5862160c1d",
+    "identical_revision": []
+  },
+  {
+    "file": "datasets\\Panama.csv",
+    "sha256": "d756af3c8535c2b6b697038ed1f9dcfb0063aa8c8a5dea72864cda714a059fec",
+    "identical_revision": []
+  },
+  {
+    "file": "datasets\\Paraguay.csv",
+    "sha256": "0c8e2240ee1f9e80ad6a953cdcec711485dc129a592c3b6fa58c668ae190870d",
+    "identical_revision": [
+      "PRY2017_PYH2017.csv"
+    ]
+  },
+  {
+    "file": "datasets\\Peru.csv",
+    "sha256": "c265d49c3c6c3c602fc1a2d8580557bf1c0378a1bed1ea677fcef0319ab73ea6",
+    "identical_revision": [
+      "PER2010_PER2010_Public_Use.csv"
+    ]
+  },
+  {
+    "file": "datasets\\Uruguay.csv",
+    "sha256": "e5b48d583227c2529ef10cdce6ef2366f1771d914b65aead98de9c796185995f",
+    "identical_revision": [
+      "URY2019_URY2019.csv"
+    ]
+  }
+]

@@ -1,0 +1,9 @@
+survey_id,n_raw,n_eligible,events,excluded_age,excluded_y1_after_age,structural_missing
+ARG2018,56981,35421,7685,20649,911,
+BOL2018,7931,3589,779,4080,262,
+GTM2015,4374,3294,660,930,150,"truancy,peer_kindness,parental_supervision,parental_understanding,parental_knowledge"
+HND2012,1779,1225,234,528,26,
+PAN2018,2948,1527,280,1383,38,
+PRY2017,3149,1784,247,1334,31,
+PER2010,2882,2298,457,565,19,
+URY2019,3162,1745,341,1391,26,

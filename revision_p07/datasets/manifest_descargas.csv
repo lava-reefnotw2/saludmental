@@ -1,0 +1,77 @@
+file,url,bytes,sha256,status,verified_date
+XXH2021_YRBS_Data.dat,https://www.cdc.gov/yrbs/files/2021/XXH2021_YRBS_Data.dat,7289136,0a8605d7843fba9cb50e7c0c4094089b0ce2793a9988506971fdae3d9f2a04ae,descargado,2026-11-17
+2021XXH-SAS-Input-Program.sas,https://www.cdc.gov/yrbs/files/2021/2021XXH-SAS-Input-Program.sas,17031,f5bd4bfaef2c0e6244178649a1b251cef7910ba2f8379a7c97339712b5a00b0d,descargado,2026-11-17
+2021XXH-Formats-Program.sas,https://www.cdc.gov/yrbs/files/2021/2021XXH-Formats-Program.sas,17121,11f3895710ca4bac72f6aaa0c3ed50a1b65b525c7ea56971e51a8490dbf71d65,descargado,2026-11-17
+XXH2023_YRBS_Data.dat,https://www.cdc.gov/yrbs/files/2023/XXH2023_YRBS_Data.dat,8503569,0a83cba11dc8a0cdf0043aacf0b80478f86cf93a91a8ecb81a276518e486241a,descargado,2026-11-17
+2023XXH-SAS-Input-Program.sas,https://www.cdc.gov/yrbs/files/2023/2023XXH-SAS-Input-Program.sas,18559,89a7d57d9658bb8233d892544b436b8931c2b1d18dce7d8af52080465114771f,descargado,2026-11-17
+2023XXH-Formats-Program.sas,https://www.cdc.gov/yrbs/files/2023/2023XXH-Formats-Program.sas,18033,6e5d1ab02070a352733c870cb50b9ecf3158c64b4aa01bf33dfa65d51890cd12,descargado,2026-11-17
+XXH2025_YRBS_Data.dat,https://www.cdc.gov/yrbs/files/2025/XXH2025_YRBS_Data.dat,4594590,7857d9419a43a27a5630baecf7513823c1bc93730fc2bc11989dc0e766a50c33,descargado,2026-11-17
+2025XXH-SAS-Input-Program.sas,https://www.cdc.gov/yrbs/files/2025/2025XXH-SAS-Input-Program.sas,18876,dbe4283e88139f3afe162258b70361d8dfba4882029c3f2a8cc024f9d07baeaf,descargado,2026-11-17
+2025XXH-Formats-Program.sas,https://www.cdc.gov/yrbs/files/2025/2025XXH-Formats-Program.sas,18092,4fcef1a8e121e21218437e690249818b14cefa7dba7492ddc9d44575fbe6f5bc,descargado,2026-11-17
+PER2010_PER2010_Public_Use.csv,https://extranet.who.int/ncdsmicrodata/index.php/catalog/204/download/1622,733072,c265d49c3c6c3c602fc1a2d8580557bf1c0378a1bed1ea677fcef0319ab73ea6,descargado,2026-11-17
+PER2010_PER2010_Public_Use.dta,https://extranet.who.int/ncdsmicrodata/index.php/catalog/204/download/1623,440211,1665b4ea51481b5f4d266fe72b0b14f6f5de07a837625dc7ca616f108c4bb038,descargado,2026-11-17
+ARG2018_National.csv,https://extranet.who.int/ncdsmicrodata/index.php/catalog/866/download/6149,14705501,78230452bd403a85ce3af20c283a5334a9a2fb4d3bab7f23dfffd8e892410893,descargado,2026-11-17
+ARG2018_National.dta,https://extranet.who.int/ncdsmicrodata/index.php/catalog/866/download/6131,8352912,b6e6348c5b2ae3ad51a5d5606ea9b82747c323dd2c775f49776d5a518f238564,descargado,2026-11-17
+ARG2018_Buenos Aires.csv,https://extranet.who.int/ncdsmicrodata/index.php/catalog/866/download/6138,585293,f9eb34a80d70c31d2f342db72b2b92d7fa224479f4bac51923d9673d517d0019,descargado,2026-11-17
+ARG2018_Catamarca.csv,https://extranet.who.int/ncdsmicrodata/index.php/catalog/866/download/6139,599931,c7235322484c0d5296a67c9feb548dfcc2409b4cf97e78dc5a742e1e3b693551,descargado,2026-11-17
+ARG2018_Chaco.csv,https://extranet.who.int/ncdsmicrodata/index.php/catalog/866/download/6732,661752,8f39e08b4df4e37c7d2ddcfd517e9a80d200db626eff5df0b663f4f974800269,descargado,2026-11-17
+ARG2018_Chubut.csv,https://extranet.who.int/ncdsmicrodata/index.php/catalog/866/download/6141,628564,1a761186b322ef4fbe4361c74f6117f05b52664ef2fb2813b64d991fb76ddb31,descargado,2026-11-17
+ARG2018_Cordoba.csv,https://extranet.who.int/ncdsmicrodata/index.php/catalog/866/download/6142,558816,78d1f02b33a6777383921ca05cfd68a4eed02ddc56cc153567e01f1b2cf34a8a,descargado,2026-11-17
+ARG2018_Corrientes.csv,https://extranet.who.int/ncdsmicrodata/index.php/catalog/866/download/6143,612984,7a2e50454f663b422ec22da3afdb9218d0adc26e1ac5c0dc68651a84570f919b,descargado,2026-11-17
+ARG2018_Entre Rios.csv,https://extranet.who.int/ncdsmicrodata/index.php/catalog/866/download/6144,654300,d75278598b52f6aa3a7da2a8c73ebe528e80c06a31720780a9979e3feed9ae9f,descargado,2026-11-17
+ARG2018_Jujuy.csv,https://extranet.who.int/ncdsmicrodata/index.php/catalog/866/download/6145,781897,aaf632576717225105d4ac94397ca7fb183dc2b91dc8d80cbf07bf067a605c8a,descargado,2026-11-17
+ARG2018_La Rioja.csv,https://extranet.who.int/ncdsmicrodata/index.php/catalog/866/download/6146,584566,2640603f2f5f1363d809abea8fca20e93aa9e43827b0483e52d2dee7e0b8e101,descargado,2026-11-17
+ARG2018_Mendoza.csv,https://extranet.who.int/ncdsmicrodata/index.php/catalog/866/download/6147,773681,901f27a65be2d0a23e5c2a27667fceca1407040bcdf399a5e7fb264d0247bc01,descargado,2026-11-17
+ARG2018_Misiones.csv,https://extranet.who.int/ncdsmicrodata/index.php/catalog/866/download/6148,747460,e251e616ace699df40d3f24839dccef39303e50220180a5905737ba8166ba450,descargado,2026-11-17
+ARG2018_Salta.csv,https://extranet.who.int/ncdsmicrodata/index.php/catalog/866/download/6150,609503,0b6c0433ccec059a0adea52f17b382aa7a2cdfdde92511a9a28de433ae05076a,descargado,2026-11-17
+ARG2018_San Juan.csv,https://extranet.who.int/ncdsmicrodata/index.php/catalog/866/download/6151,626297,0067717c57a637e427b684f1e4ae213dc80f2a5b32085d8ad64ddf417a32d758,descargado,2026-11-17
+ARG2018_Santa Cruz.csv,https://extranet.who.int/ncdsmicrodata/index.php/catalog/866/download/6152,704741,022c0c349e2c1870d20239495e0b00bf773370652513143c6d9071aefada27af,descargado,2026-11-17
+ARG2018_Santa Fe.csv,https://extranet.who.int/ncdsmicrodata/index.php/catalog/866/download/6153,994542,2fbd4a64d072ccb5e8c8e2655bac1429e74455f5a624dc97c47134a34c82dbce,descargado,2026-11-17
+ARG2018_Santiago del Estero.csv,https://extranet.who.int/ncdsmicrodata/index.php/catalog/866/download/6154,742953,9d57faea58d1cd6917066534b5d98a82d9363fbe23b11478cbc1c3e4891d9c33,descargado,2026-11-17
+ARG2018_Tierra del Fuego.csv,https://extranet.who.int/ncdsmicrodata/index.php/catalog/866/download/6155,640038,0b8ffbe28e7aa69ad4a41e4faac03125cb77fa9fbe46220aa29a1febb3dc244f,descargado,2026-11-17
+ARG2018_Tucuman.csv,https://extranet.who.int/ncdsmicrodata/index.php/catalog/866/download/6156,649558,2bb62446b5cb704485345bf0a74449d27f7315e273e45f55134bd20925337957,descargado,2026-11-17
+ARG2018_Buenos Aires.dta,https://extranet.who.int/ncdsmicrodata/index.php/catalog/866/download/6733,360516,d6a2df724781b92d6b22f2cca2e79b1673ee26525ac28c6bded7136b96cc49b5,descargado,2026-11-17
+ARG2018_Catamarca.dta,https://extranet.who.int/ncdsmicrodata/index.php/catalog/866/download/6734,373929,7258d148748b32624c806878f7300cc101e6305c18195924dbdea154c6c6fb7f,descargado,2026-11-17
+ARG2018_Chaco.dta,https://extranet.who.int/ncdsmicrodata/index.php/catalog/866/download/6735,405176,fbf217867a7b3941181a11fba377324cc1ab9a742f97af578c4c1ac70867d4e2,descargado,2026-11-17
+ARG2018_Chubut.dta,https://extranet.who.int/ncdsmicrodata/index.php/catalog/866/download/6736,386425,5eabe0ece3e5ecaa5e4f38871466f89fce503fe7bcfd3f0415328fabc964c24c,descargado,2026-11-17
+ARG2018_Cordoba.dta,https://extranet.who.int/ncdsmicrodata/index.php/catalog/866/download/6737,346596,6ee0d52cfeb52d2e834ce684652f3b0b7d7af5eb90430f566cbb61450a2f01e0,descargado,2026-11-17
+ARG2018_Corrientes.dta,https://extranet.who.int/ncdsmicrodata/index.php/catalog/866/download/6738,377678,a3eec3c1ca6cf3a37c790be8a7a39757e8bf3fa8fcbf5e436f7ae40a07049eef,descargado,2026-11-17
+ARG2018_Entre Rios.dta,https://extranet.who.int/ncdsmicrodata/index.php/catalog/866/download/6739,399231,a588916e42b665cf3c552a591c52f6085deefc26479e8374cde504579c313a60,descargado,2026-11-17
+ARG2018_Jujuy.dta,https://extranet.who.int/ncdsmicrodata/index.php/catalog/866/download/6741,473616,c4b7ab3278a584574ed303f1f1060c0ede330a3693138c89d521e0dac402ba79,descargado,2026-11-17
+ARG2018_La Rioja.dta,https://extranet.who.int/ncdsmicrodata/index.php/catalog/866/download/6742,362111,0548d6f67ee4dc401d45ab94df43bff7ac803be18f6793255555540e1f07bc58,descargado,2026-11-17
+ARG2018_Mendoza.dta,https://extranet.who.int/ncdsmicrodata/index.php/catalog/866/download/6743,463901,4d52d339dcb47c078aed882ce6bb254455c268d82002ed1f4954b2af113031f2,descargado,2026-11-17
+ARG2018_Misiones.dta,https://extranet.who.int/ncdsmicrodata/index.php/catalog/866/download/6744,455491,168a4a3343c0d4d4b0f17c7acdc4a9db78a13f4771861374970cf8a691509179,descargado,2026-11-17
+ARG2018_Salta.dta,https://extranet.who.int/ncdsmicrodata/index.php/catalog/866/download/6740,375306,413869bc4c462310710c49415adb95ab259d137e25da7f67b665697bd8691e56,descargado,2026-11-17
+ARG2018_San Juan.dta,https://extranet.who.int/ncdsmicrodata/index.php/catalog/866/download/6745,384876,f03df2a80bb20b1ab4285e4629eb80a0fb7fa589f7d9810ad31c6fc34af32310,descargado,2026-11-17
+ARG2018_Santa Cruz.dta,https://extranet.who.int/ncdsmicrodata/index.php/catalog/866/download/6746,429536,2eca85f6930459d859059e68356359b3c3b8bfa8fcaacbe9600f81440444f203,descargado,2026-11-17
+ARG2018_Santa Fe.dta,https://extranet.who.int/ncdsmicrodata/index.php/catalog/866/download/6747,589326,c51119c6570863f08ec5f29894abe79e35fac341825e1376e55d5977c7300c72,descargado,2026-11-17
+ARG2018_Santiago del Estero.dta,https://extranet.who.int/ncdsmicrodata/index.php/catalog/866/download/6748,454869,9132bcd893ff53abbc2a5e51a0d44037bd89beaa9fa18af01b935ba3555188fc,descargado,2026-11-17
+ARG2018_Tierra del Fuego.dta,https://extranet.who.int/ncdsmicrodata/index.php/catalog/866/download/6749,392247,33649296cfea52c9058f949403f9d758e97c7d2310dd26310e12bd9664859055,descargado,2026-11-17
+ARG2018_Tucuman.dta,https://extranet.who.int/ncdsmicrodata/index.php/catalog/866/download/6750,401696,81f8025cb36002e68ded498e302623f30addad3638200ebbe27b647e8bb20869,descargado,2026-11-17
+PRY2017_PYH2017.csv,https://extranet.who.int/ncdsmicrodata/index.php/catalog/651/download/4674,846088,0c8e2240ee1f9e80ad6a953cdcec711485dc129a592c3b6fa58c668ae190870d,descargado,2026-11-17
+PRY2017_PYH2017.dta,https://extranet.who.int/ncdsmicrodata/index.php/catalog/651/download/4675,533204,b02893a507847e0da86a0fad357a383f4918feea5218ff443fcca6987f5dce00,descargado,2026-11-17
+URY2019_URY2019 (Montevideo).csv,https://extranet.who.int/ncdsmicrodata/index.php/catalog/945/download/6684,350383,4ac28826695f3294a9af59aeaa16bbcf654edb8ac3eac1316c7c8c6bfad7202b,descargado,2026-11-17
+URY2019_URY2019 (Montevideo).dta,https://extranet.who.int/ncdsmicrodata/index.php/catalog/945/download/6685,226021,d5699b3e5c5a819d608e8c16b5df4a32de4f717d792ed2791ddaf31eecab9dba,descargado,2026-11-17
+URY2019_URY2019.csv,https://extranet.who.int/ncdsmicrodata/index.php/catalog/945/download/6688,712500,e5b48d583227c2529ef10cdce6ef2366f1771d914b65aead98de9c796185995f,descargado,2026-11-17
+URY2019_URY2019.dta,https://extranet.who.int/ncdsmicrodata/index.php/catalog/945/download/6689,426948,b3c06ab0e450347c04d8d364037d1159ce50ee34fb634b212f8274f7bf277a41,descargado,2026-11-17
+URY2019_URY2019 (Rest of country).csv,https://extranet.who.int/ncdsmicrodata/index.php/catalog/945/download/6686,364693,2c8d0608cb088bee701d6c05fb0db46d25a58d1ca40973bbc3b29c94ab9802e7,descargado,2026-11-17
+URY2019_URY2019 (Rest of country).dta,https://extranet.who.int/ncdsmicrodata/index.php/catalog/945/download/6687,232625,c82f96a9b4b89487d2b9a62094667309e2618c83487e01189b6c181318d8a1d8,descargado,2026-11-17
+BOL2018_Highland Dataset.csv,https://extranet.who.int/ncdsmicrodata/index.php/catalog/881/download/6256,606779,236b1b777fa95979f32ed58573ac392d96f3c0a3f5480546ae966acdf09acf69,descargado,2026-11-17
+BOL2018_Highland Dataset.dta,https://extranet.who.int/ncdsmicrodata/index.php/catalog/881/download/6257,378081,01973435eac3bde49353dc6a6e47c63b667accdd05c11f84ec5dadd74b2727d7,descargado,2026-11-17
+BOL2018_National Dataset.csv,https://extranet.who.int/ncdsmicrodata/index.php/catalog/881/download/6254,1878942,60de87326109e9343b73e55f71bce99173bdcce1660a694deb95b75eeed738f9,descargado,2026-11-17
+BOL2018_National Dataset.dta,https://extranet.who.int/ncdsmicrodata/index.php/catalog/881/download/6255,1101966,8b0ed5bc70357efdcd2c25e7510feca54a4b5787107bf9199b9fcf2f58aeef2a,descargado,2026-11-17
+BOL2018_Plains Dataset.csv,https://extranet.who.int/ncdsmicrodata/index.php/catalog/881/download/6258,682783,24a99e66668c5389ce9c4fb18209dec0b155689f69618b18b12f05f0855490fb,descargado,2026-11-17
+BOL2018_Plains Dataset.dta,https://extranet.who.int/ncdsmicrodata/index.php/catalog/881/download/6259,419017,15cddad50a9f137fcda2d0faeaac4298763e7790f5b9053ee9366f860c5d4043,descargado,2026-11-17
+BOL2018_Valley Dataset.csv,https://extranet.who.int/ncdsmicrodata/index.php/catalog/881/download/6260,596186,611d560f34a428abca79f9f0469dd96156ea9caa969efff8a5c528b97682202b,descargado,2026-11-17
+BOL2018_Valley Dataset.dta,https://extranet.who.int/ncdsmicrodata/index.php/catalog/881/download/6261,375361,a699793a3b35c9e74cca7b19d7df925ecbfcb9ffcf584e2ba3664bdaf954adc4,descargado,2026-11-17
+PENSE2019_Documentacao.zip,https://ftp.ibge.gov.br/pense/2019/microdados/Documentacao.zip,52901,6a1a09385ac3a04229a9939e55940bdacc357cad111db0c0b58a471601975835,descargado,2026-11-17
+PENSE2019_Dados.zip,https://ftp.ibge.gov.br/pense/2019/microdados/Dados.zip,122757880,a0f7ddd2b961299ef5eab078cb01f32af967c35ba987a42507838b3589275adf,descargado,2026-11-17
+PENSE2024_Documentacao.zip,https://ftp.ibge.gov.br/pense/2024/microdados/Documentacao.zip,49093,10bf2ede81fd7baf9ef2c17682a265666e706075a677bd1276ea120e467a8b19,descargado,2026-11-17
+PENSE2024_Dados.zip,https://ftp.ibge.gov.br/pense/2024/microdados/Dados.zip,156845946,7b3bf4d0b7d87e0bf2d81c9cc74a1194f66b653c97ae93e6bcb002b2d91d2070,descargado,2026-11-17
+WDI_NY.GDP.PCAP.PP.KD.json,https://api.worldbank.org/v2/country/PER;ARG;PRY;URY;BOL;BRA;USA/indicator/NY.GDP.PCAP.PP.KD?date=2009:2025&format=json&per_page=20000,29199,0a833615c54f2a23683c2b7e38a4afa55258afd1ea830c35ae482754d570fa8f,descargado,2026-11-17
+WDI_SI.POV.GINI.json,https://api.worldbank.org/v2/country/PER;ARG;PRY;URY;BOL;BRA;USA/indicator/SI.POV.GINI?date=2009:2025&format=json&per_page=20000,22185,ef1710d67bdef8d457b1823a45dd0cae8897bac81702d9ef94a8ae41eb5a4709,descargado,2026-11-17
+WDI_SH.XPD.CHEX.GD.ZS.json,https://api.worldbank.org/v2/country/PER;ARG;PRY;URY;BOL;BRA;USA/indicator/SH.XPD.CHEX.GD.ZS?date=2009:2025&format=json&per_page=20000,26759,3211032ad1a6fb1226ea15e477a7d284f43d54095caec94cfd7a0f1089e89b90,descargado,2026-11-17
+WDI_SL.UEM.1524.ZS.json,https://api.worldbank.org/v2/country/PER;ARG;PRY;URY;BOL;BRA;USA/indicator/SL.UEM.1524.ZS?date=2009:2025&format=json&per_page=20000,31540,94db205c59a99cfdbf16aba7fb57a0475eb7f138fe3ccee9e2aed10e1a39cdf8,descargado,2026-11-17
+YRBS2025_guia.pdf,https://www.cdc.gov/yrbs/files/2025/2025-YRBS-Data-Users-Guide-Final.pdf,802320,d9014fae532bb9e5418c01ed5e24aebd97220348ece8155618cccf3152c1d31a,descargado,2026-11-17
+YRBS2023_guia.pdf,https://www.cdc.gov/yrbs/media/pdf/2023/2023_National_YRBS_Data_Users_Guide508.pdf,1036445,54b081c797873c1a16d7b6d4be728591667fb7781e799ee2bec9fa6ae3f90a61,descargado,2026-11-17
+YRBS2021_guia.pdf,https://www.cdc.gov/yrbs/files/2021/pdf/2021_YRBS_Data_Users_Guide_508.pdf,2215399,e758264daa61b0e8750401f98c7485ed98eb21983afa87b7fe5f32aa50e2cfe2,descargado,2026-11-17

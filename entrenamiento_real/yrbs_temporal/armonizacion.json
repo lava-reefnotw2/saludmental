@@ -1,0 +1,383 @@
+[
+  {
+    "year": 2021,
+    "canonical": "age_years",
+    "source": "Q1",
+    "label": "How old are you",
+    "categories": {
+      " ": "Missing",
+      "1": "12 years old or younger",
+      "2": "13 years old",
+      "3": "14 years old",
+      "4": "15 years old",
+      "5": "16 years old",
+      "6": "17 years old",
+      "7": "18 years old or older"
+    }
+  },
+  {
+    "year": 2021,
+    "canonical": "sex_code",
+    "source": "Q2",
+    "label": "What is your sex",
+    "categories": {
+      " ": "Missing",
+      "1": "Female",
+      "2": "Male"
+    }
+  },
+  {
+    "year": 2021,
+    "canonical": "physical_fight",
+    "source": "Q16",
+    "label": "Times in fight past 12 months",
+    "categories": {
+      " ": "Missing",
+      "1": "0 times",
+      "2": "1 time",
+      "3": "2 or 3 times",
+      "4": "4 or 5 times",
+      "5": "6 or 7 times",
+      "6": "8 or 9 times",
+      "7": "10 or 11 times",
+      "8": "12 or more times"
+    }
+  },
+  {
+    "year": 2021,
+    "canonical": "alcohol_30d",
+    "source": "Q41",
+    "label": "Current alcohol use",
+    "categories": {
+      " ": "Missing",
+      "1": "0 days",
+      "2": "1 or 2 days",
+      "3": "3 to 5 days",
+      "4": "6 to 9 days",
+      "5": "10 to 19 days",
+      "6": "20 to 29 days",
+      "7": "All 30 days"
+    }
+  },
+  {
+    "year": 2021,
+    "canonical": "physical_activity",
+    "source": "Q77",
+    "label": "Physical activity >= 5 days",
+    "categories": {
+      " ": "Missing",
+      "1": "0 days",
+      "2": "1 day",
+      "3": "2 days",
+      "4": "3 days",
+      "5": "4 days",
+      "6": "5 days",
+      "7": "6 days",
+      "8": "7 days"
+    }
+  },
+  {
+    "year": 2021,
+    "canonical": "school_bullying",
+    "source": "Q23",
+    "label": "Bullied at school",
+    "categories": {
+      " ": "Missing",
+      "1": "Yes",
+      "2": "No"
+    }
+  },
+  {
+    "year": 2021,
+    "canonical": "electronic_bullying",
+    "source": "Q24",
+    "label": "Electronic bullying",
+    "categories": {
+      " ": "Missing",
+      "1": "Yes",
+      "2": "No"
+    }
+  },
+  {
+    "year": 2021,
+    "canonical": "breakfast",
+    "source": "Q76",
+    "label": "Breakfast eating",
+    "categories": {
+      " ": "Missing",
+      "1": "0 days",
+      "2": "1 day",
+      "3": "2 days",
+      "4": "3 days",
+      "5": "4 days",
+      "6": "5 days",
+      "7": "6 days",
+      "8": "7 days"
+    }
+  },
+  {
+    "year": 2021,
+    "canonical": "y1_ideation",
+    "source": "Q26",
+    "label": "Considered suicide",
+    "categories": {
+      " ": "Missing",
+      "1": "Yes",
+      "2": "No"
+    }
+  },
+  {
+    "year": 2023,
+    "canonical": "age_years",
+    "source": "Q1",
+    "label": "How old are you",
+    "categories": {
+      " ": "Missing",
+      "1": "12 years old or younger",
+      "2": "13 years old",
+      "3": "14 years old",
+      "4": "15 years old",
+      "5": "16 years old",
+      "6": "17 years old",
+      "7": "18 years old or older"
+    }
+  },
+  {
+    "year": 2023,
+    "canonical": "sex_code",
+    "source": "Q2",
+    "label": "What is your sex",
+    "categories": {
+      " ": "Missing",
+      "1": "Female",
+      "2": "Male"
+    }
+  },
+  {
+    "year": 2023,
+    "canonical": "physical_fight",
+    "source": "Q16",
+    "label": "Times in fight past 12 months",
+    "categories": {
+      " ": "Missing",
+      "1": "0 times",
+      "2": "1 time",
+      "3": "2 or 3 times",
+      "4": "4 or 5 times",
+      "5": "6 or 7 times",
+      "6": "8 or 9 times",
+      "7": "10 or 11 times",
+      "8": "12 or more times"
+    }
+  },
+  {
+    "year": 2023,
+    "canonical": "alcohol_30d",
+    "source": "Q42",
+    "label": "Current alcohol use",
+    "categories": {
+      " ": "Missing",
+      "1": "0 days",
+      "2": "1 or 2 days",
+      "3": "3 to 5 days",
+      "4": "6 to 9 days",
+      "5": "10 to 19 days",
+      "6": "20 to 29 days",
+      "7": "All 30 days"
+    }
+  },
+  {
+    "year": 2023,
+    "canonical": "physical_activity",
+    "source": "Q76",
+    "label": "Physical activity >= 5 days",
+    "categories": {
+      " ": "Missing",
+      "1": "0 days",
+      "2": "1 day",
+      "3": "2 days",
+      "4": "3 days",
+      "5": "4 days",
+      "6": "5 days",
+      "7": "6 days",
+      "8": "7 days"
+    }
+  },
+  {
+    "year": 2023,
+    "canonical": "school_bullying",
+    "source": "Q24",
+    "label": "Bullied at school",
+    "categories": {
+      " ": "Missing",
+      "1": "Yes",
+      "2": "No"
+    }
+  },
+  {
+    "year": 2023,
+    "canonical": "electronic_bullying",
+    "source": "Q25",
+    "label": "Electronic bullying",
+    "categories": {
+      " ": "Missing",
+      "1": "Yes",
+      "2": "No"
+    }
+  },
+  {
+    "year": 2023,
+    "canonical": "breakfast",
+    "source": "Q75",
+    "label": "Breakfast eating",
+    "categories": {
+      " ": "Missing",
+      "1": "0 days",
+      "2": "1 day",
+      "3": "2 days",
+      "4": "3 days",
+      "5": "4 days",
+      "6": "5 days",
+      "7": "6 days",
+      "8": "7 days"
+    }
+  },
+  {
+    "year": 2023,
+    "canonical": "y1_ideation",
+    "source": "Q27",
+    "label": "Considered suicide",
+    "categories": {
+      " ": "Missing",
+      "1": "Yes",
+      "2": "No"
+    }
+  },
+  {
+    "year": 2025,
+    "canonical": "age_years",
+    "source": "Q1",
+    "label": "How old are you",
+    "categories": {
+      " ": "Missing",
+      "1": "12 years old or younger",
+      "2": "13 years old",
+      "3": "14 years old",
+      "4": "15 years old",
+      "5": "16 years old",
+      "6": "17 years old",
+      "7": "18 years old or older"
+    }
+  },
+  {
+    "year": 2025,
+    "canonical": "sex_code",
+    "source": "Q2",
+    "label": "What is your sex",
+    "categories": {
+      " ": "Missing",
+      "1": "Female",
+      "2": "Male"
+    }
+  },
+  {
+    "year": 2025,
+    "canonical": "physical_fight",
+    "source": "Q15",
+    "label": "Physical Fighting",
+    "categories": {
+      " ": "Missing",
+      "1": "0 times",
+      "2": "1 time",
+      "3": "2 or 3 times",
+      "4": "4 or 5 times",
+      "5": "6 or 7 times",
+      "6": "8 or 9 times",
+      "7": "10 or 11 times",
+      "8": "12 or more times"
+    }
+  },
+  {
+    "year": 2025,
+    "canonical": "alcohol_30d",
+    "source": "Q41",
+    "label": "Current alcohol use",
+    "categories": {
+      " ": "Missing",
+      "1": "0 days",
+      "2": "1 or 2 days",
+      "3": "3 to 5 days",
+      "4": "6 to 9 days",
+      "5": "10 to 19 days",
+      "6": "20 to 29 days",
+      "7": "All 30 days"
+    }
+  },
+  {
+    "year": 2025,
+    "canonical": "physical_activity",
+    "source": "Q73",
+    "label": "Physical activity >= 5 days",
+    "categories": {
+      " ": "Missing",
+      "1": "0 days",
+      "2": "1 day",
+      "3": "2 days",
+      "4": "3 days",
+      "5": "4 days",
+      "6": "5 days",
+      "7": "6 days",
+      "8": "7 days"
+    }
+  },
+  {
+    "year": 2025,
+    "canonical": "school_bullying",
+    "source": "Q23",
+    "label": "Bullying at school",
+    "categories": {
+      " ": "Missing",
+      "1": "Yes",
+      "2": "No"
+    }
+  },
+  {
+    "year": 2025,
+    "canonical": "electronic_bullying",
+    "source": "Q24",
+    "label": "Electronic bullying",
+    "categories": {
+      " ": "Missing",
+      "1": "Yes",
+      "2": "No"
+    }
+  },
+  {
+    "year": 2025,
+    "canonical": "breakfast",
+    "source": "Q72",
+    "label": "Breakfast eating",
+    "categories": {
+      " ": "Missing",
+      "1": "0 days",
+      "2": "1 day",
+      "3": "2 days",
+      "4": "3 days",
+      "5": "4 days",
+      "6": "5 days",
+      "7": "6 days",
+      "8": "7 days"
+    }
+  },
+  {
+    "year": 2025,
+    "canonical": "y1_ideation",
+    "source": "Q27",
+    "label": "Considered suicide",
+    "categories": {
+      " ": "Missing",
+      "1": "Yes",
+      "2": "No"
+    }
+  }
+]

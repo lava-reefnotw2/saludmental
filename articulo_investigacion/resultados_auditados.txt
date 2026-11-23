@@ -1,0 +1,100 @@
+FIGURA 1 Media de los cinco países: ΔAP +0.214 (IC95% +0.203 a +0.225). Un valor positivo indica mejor precisión promedio al ordenar las respuestas positivas. Cada punto compara los mismos estudiantes de prueba. La media da igual peso a los cinco países. IC95% de 500 remuestreos de conglomerados dentro de estratos, condicionados a los modelos ajustados.
+FIGURA 2 Para «Mis padres comprendieron mis problemas», la proporción con Y1 fue 36.7% en «Nunca» y 10.8% en «Siempre». Son grupos de estudiantes distintos. Estudiantes de 13–15 años con Y1 observado en los últimos 12 meses. Asociación descriptiva sin ajuste. IC95% aproximados por linealización dentro de la cohorte elegible. Los estratos con una sola PSU aportan cero a la varianza. Se omiten categorías con menos de diez positivos o diez negativos.
+FIGURA 3 Frente a la logística, las diferencias de AP van de -0.085 a +0.011 entre las combinaciones de país y algoritmo. Cada celda compara modelos en los mismos estudiantes del país excluido. Son diferencias puntuales. Las diferencias pequeñas requieren evaluar incertidumbre antes de proclamar una familia ganadora.
+FIGURA 4 Cada punto corresponde a un umbral. La precisión indica qué proporción de los señalados respondió Y1 positivamente y la sensibilidad qué proporción de los positivos se recuperó. La prevalencia del país sirve de referencia.
+FIGURA 5 Cada punto agrupa probabilidades similares. Por encima de la diagonal la frecuencia observada supera la predicción media y el modelo subestima Y1. Las barras muestran el IC95% de la frecuencia observada.
+FIGURA 6 La mayor brecha en magnitud corresponde a Uruguay: -41.7 puntos porcentuales (femenino menos masculino, FNR). Cero indica igual estimación entre grupos. FNR es la proporción de positivos omitidos y FPR la de negativos señalados. Los intervalos por conglomerados reflejan incertidumbre dentro de cada país.
+
+H1
+                      country  delta_AP       low      high
+0                         ARG  0.230882  0.218961  0.245490
+1                         BOL  0.172993  0.151432  0.198102
+2                         PER  0.178775  0.153021  0.205021
+3                         PRY  0.253282  0.218321  0.292590
+4                         URY  0.231819  0.211422  0.254592
+5  Macro · cinco países fijos  0.213550  0.203158  0.224639
+
+metricas
+  country model      n  threshold  intercept     slope  AP_unweighted        AP       AUC     Brier  sensitivity  specificity       FNR       FPR       PPV       NPV        F1  balanced_accuracy  calibration_bias  prevalence    TP_weight    FN_weight    FP_weight     TN_weight
+0     ARG    B0  35421       0.25   0.547335  1.220794       0.281308  0.284456  0.629979  0.164177     0.242885     0.855130  0.757115  0.144870  0.315521  0.804227  0.274479           0.549008         -0.034854    0.215652   91256.8827  284463.1186  197969.0996  1.168562e+06
+1     ARG    B1  35421       0.26   0.193064  1.045888       0.494218  0.515338  0.764920  0.139420     0.555597     0.821641  0.444403  0.178359  0.461342  0.870542  0.504102           0.688619         -0.018845    0.215652  208749.0462  166970.9551  243733.1941  1.122798e+06
+2     BOL    B0   3589       0.13  -0.128743  0.741259       0.262571  0.263635  0.590188  0.170368     0.648008     0.521428  0.351992  0.478572  0.277602  0.839221  0.388691           0.584718         -0.038829    0.221063   61653.3495   33489.5868  160439.5902  1.748068e+05
+3     BOL    B1   3589       0.27  -0.130816  0.753454       0.437205  0.436628  0.715958  0.153944     0.461785     0.805657  0.538215  0.194343  0.402753  0.840625  0.430254           0.633721         -0.024950    0.221063   43935.6152   51207.3211   65152.7146  2.700936e+05
+4     PER    B0   2298       0.16   0.587562  1.370673       0.266320  0.263057  0.632962  0.150771     0.717738     0.547690  0.282262  0.452310  0.277287  0.889197  0.400029           0.632714         -0.009360    0.194709  136579.5542   53712.1655  355977.8439  4.310432e+05
+5     PER    B1   2298       0.23  -0.142914  0.915034       0.447790  0.441833  0.731567  0.136620     0.565184     0.755523  0.434816  0.244477  0.358549  0.877845  0.438755           0.660353          0.005714    0.194709  107549.7957   82741.9240  192408.4770  5.946126e+05
+6     PRY    B0   1784       0.26  -0.420207  1.032361       0.190971  0.193719  0.632776  0.121699     0.517819     0.654323  0.482181  0.345677  0.196138  0.892833  0.284510           0.586071          0.063098    0.140067   18035.0517   16793.7922   73915.9266  1.399136e+05
+7     PRY    B1   1784       0.24   0.015703  1.156399       0.443626  0.447002  0.791052  0.099610     0.536508     0.851309  0.463492  0.148691  0.370162  0.918543  0.438075           0.693908          0.020848    0.140067   18685.9511   16142.8928   31794.5566  1.820349e+05
+8     URY    B0   1745       0.16   0.554206  1.358450       0.270259  0.278390  0.641937  0.154643     0.747521     0.494254  0.252479  0.505746  0.271367  0.885962  0.398185           0.620888         -0.009449    0.201262   12053.1307    4071.0047   32363.1439  3.162776e+04
+9     URY    B1   1745       0.22   0.165209  1.125852       0.488581  0.510209  0.787874  0.129882     0.686643     0.758624  0.313357  0.241376  0.417519  0.905731  0.519284           0.722634         -0.002629    0.201262   11071.5233    5052.6121   15445.8619  4.854504e+04
+
+equidad
+   country  subgroup  reference  compared  n_ref  n_comp metric  difference       low      high
+1      ARG  sex_code          1         2  16788   18354    FNR   -0.383209 -0.416774 -0.353274
+2      ARG  sex_code          1         2  16788   18354    FPR    0.252594  0.236606  0.267900
+16     BOL  sex_code          1         2   1801    1764    FNR   -0.349648 -0.408226 -0.293866
+17     BOL  sex_code          1         2   1801    1764    FPR    0.263004  0.242732  0.281719
+31     PER  sex_code          1         2   1105    1186    FNR   -0.370740 -0.445770 -0.297122
+32     PER  sex_code          1         2   1105    1186    FPR    0.184641  0.157911  0.213274
+46     PRY  sex_code          1         2    853     921    FNR   -0.392181 -0.466053 -0.314244
+47     PRY  sex_code          1         2    853     921    FPR    0.217550  0.188544  0.242025
+61     URY  sex_code          1         2    834     898    FNR   -0.416948 -0.490632 -0.350422
+62     URY  sex_code          1         2    834     898    FPR    0.324455  0.294426  0.354834
+
+explicacion
+                   mean_abs_SHAP  permutation_delta_AP
+variable                                              
+sex_code                0.486284              0.092062
+alcohol_30d             0.310492              0.049246
+physical_attack         0.281711              0.085015
+close_friends           0.207843              0.024312
+sedentary_time          0.153507              0.028131
+food_insecurity         0.116138              0.000998
+physical_fight          0.105678              0.015719
+physical_activity       0.057950             -0.001039
+age_years               0.018866             -0.000384
+
+H4
+                         n        AP  delta_vs_logistica
+model                                                   
+B1_catboost       6360.375  0.428082           -0.000513
+B1_logreg_C01     6360.375  0.428595            0.000000
+B1_mlp            6360.375  0.376004           -0.052591
+B1_random_forest  6360.375  0.419615           -0.008980
+B1_xgboost        6360.375  0.428521           -0.000074
+ensamble_media    6360.375  0.428390           -0.000205
+
+estabilidad
+                   rank_median  rank_min  rank_max
+variable                                          
+age_years                  8.0       7.0       8.0
+alcohol_30d                2.0       2.0       6.0
+close_friends              5.0       2.0       9.0
+food_insecurity            6.0       5.0       7.0
+physical_activity          8.0       6.0       9.0
+physical_attack            3.0       1.0       9.0
+physical_fight             7.0       3.0       9.0
+sedentary_time             4.0       3.0       6.0
+sex_code                   1.0       1.0       5.0
+
+sensibilidad_AP
+   pooled_AP_equal_country_weight  macro_AP_unweighted
+0                        0.467863             0.462284
+FAMILIA
+               respuesta    n  eventos  observada      low     high
+                  Nunca 7487     2761   0.367156 0.345697 0.388616
+               Rara vez 6075     1726   0.283096 0.265427 0.300766
+                A veces 5807     1168   0.202267 0.185441 0.219093
+La mayoría de las veces 5823      808   0.131875 0.116362 0.147388
+                Siempre 8779      910   0.107596 0.097878 0.117314
+MISSING
+ country_iso3  age_years  sex_code  food_insecurity  physical_attack  physical_fight  close_friends  alcohol_30d  physical_activity  sedentary_time  truancy  peer_kindness  parental_supervision  parental_understanding  parental_knowledge
+         ARG        0.0  0.007877         0.008441         0.002908        0.003614       0.015386     0.038254           0.025437        0.028684 0.031930       0.026707              0.031422                0.040936            0.032890
+         BOL        0.0  0.006687         0.005851         0.005573        0.007802       0.012538     0.032600           0.029256        0.029256 0.014489       0.017554              0.032600                0.015603            0.028699
+         GTM        0.0  0.004554         0.011233         0.007590        0.006375       0.016090     0.019126           0.029751        0.065877 1.000000       1.000000              1.000000                1.000000            1.000000
+         HND        0.0  0.005714         0.005714         0.000816        0.013061       0.015510     0.036735           0.022041        0.019592 0.021224       0.023673              0.013878                0.020408            0.025306
+         PAN        0.0  0.005239         0.014407         0.003274        0.001965       0.002620     0.044532           0.021611        0.017027 0.013098       0.018337              0.031434                0.020956            0.018337
+         PER        0.0  0.003046         0.000000         0.001305        0.000000       0.004352     0.051349           0.004787        0.001305 0.008268       0.003046              0.006527                0.006527            0.002611
+         PRY        0.0  0.005605         0.006726         0.015135        0.002803       0.012332     0.034193           0.024103        0.010090 0.010090       0.016816              0.007848                0.014013            0.020179
+         URY        0.0  0.007450         0.002865         0.010315        0.006304       0.007450     0.037249           0.054441        0.068195 0.058453       0.071633              0.072779                0.068768            0.070487
+RAW/AGE/Y1
+ {'n_raw': 83206, 'n_eligible': 50883, 'events': 10683, 'excluded_age': 30860, 'excluded_y1_after_age': 1463}

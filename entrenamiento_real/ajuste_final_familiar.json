@@ -1,0 +1,8 @@
+{
+  "selected": "B1_logreg_C01",
+  "inner_macro_ap": {
+    "B1_logreg_C01": 0.46659147626833397,
+    "B1_logreg_C1": 0.46511811859141805
+  },
+  "threshold": 0.24
+}

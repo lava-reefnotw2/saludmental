@@ -1,0 +1,65 @@
+[
+  {
+    "file": "XXH2021_YRBS_Data.dat",
+    "url": "https://www.cdc.gov/yrbs/files/2021/XXH2021_YRBS_Data.dat",
+    "bytes": 7289136,
+    "sha256": "0a8605d7843fba9cb50e7c0c4094089b0ce2793a9988506971fdae3d9f2a04ae",
+    "status": "descargado"
+  },
+  {
+    "file": "2021XXH-SAS-Input-Program.sas",
+    "url": "https://www.cdc.gov/yrbs/files/2021/2021XXH-SAS-Input-Program.sas",
+    "bytes": 17031,
+    "sha256": "f5bd4bfaef2c0e6244178649a1b251cef7910ba2f8379a7c97339712b5a00b0d",
+    "status": "descargado"
+  },
+  {
+    "file": "2021XXH-Formats-Program.sas",
+    "url": "https://www.cdc.gov/yrbs/files/2021/2021XXH-Formats-Program.sas",
+    "bytes": 17121,
+    "sha256": "11f3895710ca4bac72f6aaa0c3ed50a1b65b525c7ea56971e51a8490dbf71d65",
+    "status": "descargado"
+  },
+  {
+    "file": "XXH2023_YRBS_Data.dat",
+    "url": "https://www.cdc.gov/yrbs/files/2023/XXH2023_YRBS_Data.dat",
+    "bytes": 8503569,
+    "sha256": "0a83cba11dc8a0cdf0043aacf0b80478f86cf93a91a8ecb81a276518e486241a",
+    "status": "descargado"
+  },
+  {
+    "file": "2023XXH-SAS-Input-Program.sas",
+    "url": "https://www.cdc.gov/yrbs/files/2023/2023XXH-SAS-Input-Program.sas",
+    "bytes": 18559,
+    "sha256": "89a7d57d9658bb8233d892544b436b8931c2b1d18dce7d8af52080465114771f",
+    "status": "descargado"
+  },
+  {
+    "file": "2023XXH-Formats-Program.sas",
+    "url": "https://www.cdc.gov/yrbs/files/2023/2023XXH-Formats-Program.sas",
+    "bytes": 18033,
+    "sha256": "6e5d1ab02070a352733c870cb50b9ecf3158c64b4aa01bf33dfa65d51890cd12",
+    "status": "descargado"
+  },
+  {
+    "file": "XXH2025_YRBS_Data.dat",
+    "url": "https://www.cdc.gov/yrbs/files/2025/XXH2025_YRBS_Data.dat",
+    "bytes": 4594590,
+    "sha256": "7857d9419a43a27a5630baecf7513823c1bc93730fc2bc11989dc0e766a50c33",
+    "status": "descargado"
+  },
+  {
+    "file": "2025XXH-SAS-Input-Program.sas",
+    "url": "https://www.cdc.gov/yrbs/files/2025/2025XXH-SAS-Input-Program.sas",
+    "bytes": 18876,
+    "sha256": "dbe4283e88139f3afe162258b70361d8dfba4882029c3f2a8cc024f9d07baeaf",
+    "status": "descargado"
+  },
+  {
+    "file": "2025XXH-Formats-Program.sas",
+    "url": "https://www.cdc.gov/yrbs/files/2025/2025XXH-Formats-Program.sas",
+    "bytes": 18092,
+    "sha256": "4fcef1a8e121e21218437e690249818b14cefa7dba7492ddc9d44575fbe6f5bc",
+    "status": "descargado"
+  }
+]

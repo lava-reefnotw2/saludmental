@@ -1,0 +1,178 @@
+[
+  {
+    "test_country": "ARG",
+    "train_countries": [
+      "BOL",
+      "GTM",
+      "HND",
+      "PAN",
+      "PER",
+      "PRY",
+      "URY"
+    ],
+    "selected": "B1_logreg_C01",
+    "inner_macro_ap": {
+      "B0_logreg": 0.23566856210743817,
+      "B1_logreg_C01": 0.41672894934077503,
+      "B1_logreg_C1": 0.4132144025968515,
+      "B1_random_forest": 0.4085469704577878,
+      "B1_xgboost": 0.4104440540577815,
+      "B1_catboost": 0.4127793609340554,
+      "B1_mlp": 0.35460627847434356
+    }
+  },
+  {
+    "test_country": "BOL",
+    "train_countries": [
+      "ARG",
+      "GTM",
+      "HND",
+      "PAN",
+      "PER",
+      "PRY",
+      "URY"
+    ],
+    "selected": "B1_catboost",
+    "inner_macro_ap": {
+      "B0_logreg": 0.23918045745469899,
+      "B1_logreg_C01": 0.4262092912215148,
+      "B1_logreg_C1": 0.42439507850623925,
+      "B1_random_forest": 0.41867937343485284,
+      "B1_xgboost": 0.4265450620395758,
+      "B1_catboost": 0.4292243690109587,
+      "B1_mlp": 0.36279468308465707
+    }
+  },
+  {
+    "test_country": "GTM",
+    "train_countries": [
+      "ARG",
+      "BOL",
+      "HND",
+      "PAN",
+      "PER",
+      "PRY",
+      "URY"
+    ],
+    "selected": "B1_xgboost",
+    "inner_macro_ap": {
+      "B0_logreg": 0.24922260454688308,
+      "B1_logreg_C01": 0.4342894998119133,
+      "B1_logreg_C1": 0.4325534584896582,
+      "B1_random_forest": 0.42516324962843577,
+      "B1_xgboost": 0.43694291536187985,
+      "B1_catboost": 0.43686321932097705,
+      "B1_mlp": 0.37562897982555515
+    }
+  },
+  {
+    "test_country": "HND",
+    "train_countries": [
+      "ARG",
+      "BOL",
+      "GTM",
+      "PAN",
+      "PER",
+      "PRY",
+      "URY"
+    ],
+    "selected": "B1_catboost",
+    "inner_macro_ap": {
+      "B0_logreg": 0.23473442477386858,
+      "B1_logreg_C01": 0.42055899436400684,
+      "B1_logreg_C1": 0.41899609869595916,
+      "B1_random_forest": 0.4085804092858773,
+      "B1_xgboost": 0.417966959749296,
+      "B1_catboost": 0.4215751814353309,
+      "B1_mlp": 0.36394378385862314
+    }
+  },
+  {
+    "test_country": "PAN",
+    "train_countries": [
+      "ARG",
+      "BOL",
+      "GTM",
+      "HND",
+      "PER",
+      "PRY",
+      "URY"
+    ],
+    "selected": "B1_catboost",
+    "inner_macro_ap": {
+      "B0_logreg": 0.23617615486671775,
+      "B1_logreg_C01": 0.43326134052051746,
+      "B1_logreg_C1": 0.4319458215882479,
+      "B1_random_forest": 0.42102278483029437,
+      "B1_xgboost": 0.4293890664974841,
+      "B1_catboost": 0.4353376830250745,
+      "B1_mlp": 0.37963572815213414
+    }
+  },
+  {
+    "test_country": "PER",
+    "train_countries": [
+      "ARG",
+      "BOL",
+      "GTM",
+      "HND",
+      "PAN",
+      "PRY",
+      "URY"
+    ],
+    "selected": "B1_xgboost",
+    "inner_macro_ap": {
+      "B0_logreg": 0.2370098574976101,
+      "B1_logreg_C01": 0.4261295727100426,
+      "B1_logreg_C1": 0.42482246831165377,
+      "B1_random_forest": 0.4166607535311209,
+      "B1_xgboost": 0.42931391575610006,
+      "B1_catboost": 0.42403774237942293,
+      "B1_mlp": 0.36662605492026124
+    }
+  },
+  {
+    "test_country": "PRY",
+    "train_countries": [
+      "ARG",
+      "BOL",
+      "GTM",
+      "HND",
+      "PAN",
+      "PER",
+      "URY"
+    ],
+    "selected": "B1_catboost",
+    "inner_macro_ap": {
+      "B0_logreg": 0.24325985851111456,
+      "B1_logreg_C01": 0.4305226467376472,
+      "B1_logreg_C1": 0.4296559002384687,
+      "B1_random_forest": 0.42192976291722256,
+      "B1_xgboost": 0.42983570978468516,
+      "B1_catboost": 0.4310238375548134,
+      "B1_mlp": 0.3818873226527972
+    }
+  },
+  {
+    "test_country": "URY",
+    "train_countries": [
+      "ARG",
+      "BOL",
+      "GTM",
+      "HND",
+      "PAN",
+      "PER",
+      "PRY"
+    ],
+    "selected": "B1_catboost",
+    "inner_macro_ap": {
+      "B0_logreg": 0.2340164997075908,
+      "B1_logreg_C01": 0.4268188220909384,
+      "B1_logreg_C1": 0.4260465468934081,
+      "B1_random_forest": 0.41927911572322657,
+      "B1_xgboost": 0.42906209336113393,
+      "B1_catboost": 0.4303034118852707,
+      "B1_mlp": 0.37791601708419675
+    }
+  }
+]

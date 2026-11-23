@@ -21,11 +21,12 @@ wheels/
 .installed.cfg
 *.egg
 
-# Virtual Environments
+# Virtual Environments (do NOT commit compiled environment binaries)
 venv/
 ENV/
 env/
 .venv/
+.venv_training/
 
 # Environment Variables & Secrets
 .env
@@ -42,6 +43,6 @@ secrets.toml
 catboost_info/
 *.log
 
-# Streamlit local state
+# Streamlit local state & process logs
 .streamlit/secrets.toml
-
+.run/

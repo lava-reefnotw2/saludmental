@@ -1,0 +1,50 @@
+{
+  "GSHS": {
+    "rows": 44837,
+    "columns": 26,
+    "events": 9509,
+    "unique_record_keys": true,
+    "design_complete": true,
+    "age_range": "13-15",
+    "labels_binary": true
+  },
+  "YRBS2021": {
+    "rows": 17232,
+    "columns": 237,
+    "min_line_length": 421,
+    "last_field_end": 421,
+    "label_matches_official_derived_variable": true,
+    "weights_positive": true
+  },
+  "YRBS2023": {
+    "rows": 20103,
+    "columns": 250,
+    "min_line_length": 421,
+    "last_field_end": 421,
+    "label_matches_official_derived_variable": true,
+    "weights_positive": true
+  },
+  "YRBS2025": {
+    "rows": 10710,
+    "columns": 251,
+    "min_line_length": 427,
+    "last_field_end": 427,
+    "label_matches_official_derived_variable": true,
+    "weights_positive": true
+  },
+  "PENSE2019": {
+    "rows": 165838,
+    "csv_matches_official_zip": true,
+    "tristeza_valid_1to5": 158510,
+    "vida_valid_1to5": 158261,
+    "nonpositive_or_missing_final_weights": 6593
+  },
+  "PENSE2024": {
+    "rows": 153870,
+    "csv_matches_official_zip": true,
+    "tristeza_valid_1to5": 147956,
+    "vida_valid_1to5": 147773,
+    "nonpositive_or_missing_final_weights": 5134
+  },
+  "manifest_files_verified": 100
+}

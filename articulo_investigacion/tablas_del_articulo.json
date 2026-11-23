@@ -1,0 +1,477 @@
+[
+  {
+    "n": 1,
+    "title": "Encuestas y composición de la cohorte de 13 a 15 años",
+    "headers": [
+      "País",
+      "Año",
+      "Registros iniciales",
+      "Elegibles",
+      "Y1 positivos",
+      "Y1 sin peso %",
+      "Y1 con peso %"
+    ],
+    "rows": [
+      [
+        "Argentina",
+        "2018",
+        "56 981",
+        "35 421",
+        "7 685",
+        "21,7",
+        "21,6"
+      ],
+      [
+        "Bolivia",
+        "2018",
+        "7 931",
+        "3 589",
+        "779",
+        "21,7",
+        "22,1"
+      ],
+      [
+        "Guatemala",
+        "2015",
+        "4 374",
+        "3 294",
+        "660",
+        "20,0",
+        "16,4"
+      ],
+      [
+        "Honduras",
+        "2012",
+        "1 779",
+        "1 225",
+        "234",
+        "19,1",
+        "19,6"
+      ],
+      [
+        "Panamá",
+        "2018",
+        "2 948",
+        "1 527",
+        "280",
+        "18,3",
+        "18,7"
+      ],
+      [
+        "Paraguay",
+        "2017",
+        "3 149",
+        "1 784",
+        "247",
+        "13,8",
+        "14,0"
+      ],
+      [
+        "Perú",
+        "2010",
+        "2 882",
+        "2 298",
+        "457",
+        "19,9",
+        "19,5"
+      ],
+      [
+        "Uruguay",
+        "2019",
+        "3 162",
+        "1 745",
+        "341",
+        "19,5",
+        "20,1"
+      ],
+      [
+        "Total",
+        "2010–2019",
+        "83 206",
+        "50 883",
+        "10 683",
+        "21,0",
+        "—"
+      ]
+    ],
+    "note": "Y1: ideación suicida autorreportada en doce meses. Conteos sin ponderar; proporciones ponderadas dentro de cada encuesta. No se calculó una prevalencia regional. Los años y marcos nacionales difirieron. Fuente: auditoria_cohorte.csv y eda_por_pais.csv de la ejecución activa."
+  },
+  {
+    "n": 2,
+    "title": "Operacionalización y disponibilidad de los predictores",
+    "headers": [
+      "Dominio",
+      "Contenido y ventana",
+      "Codificación original",
+      "Bloque"
+    ],
+    "rows": [
+      [
+        "Edad y sexo",
+        "Edad observada; sexo del cuestionario",
+        "Edad 13–15; sexo 1 o 2",
+        "D, N, C"
+      ],
+      [
+        "Inseguridad alimentaria",
+        "Hambre por falta de alimentos en casa; 30 días",
+        "Frecuencia de 1 a 5",
+        "N, C"
+      ],
+      [
+        "Agresión física y peleas",
+        "Frecuencia de cada experiencia; 12 meses",
+        "Dos variables de 1 a 8",
+        "N, C"
+      ],
+      [
+        "Amistades cercanas",
+        "Número de amistades cercanas",
+        "Categorías de 1 a 4",
+        "N, C"
+      ],
+      [
+        "Alcohol",
+        "Días con consumo; 30 días",
+        "Categorías de 1 a 7",
+        "N, C"
+      ],
+      [
+        "Actividad física",
+        "Días con al menos 60 min; 7 días",
+        "Categorías de 1 a 8",
+        "N, C"
+      ],
+      [
+        "Sedentarismo",
+        "Tiempo sentado en un día habitual",
+        "Categorías de 1 a 6",
+        "N, C"
+      ],
+      [
+        "Absentismo",
+        "Ausencia sin permiso; 30 días",
+        "Categorías de 1 a 5",
+        "C"
+      ],
+      [
+        "Apoyo de pares",
+        "Amabilidad y ayuda de estudiantes; 30 días",
+        "Frecuencia de 1 a 5",
+        "C"
+      ],
+      [
+        "Supervisión parental",
+        "Comprobación de tareas; 30 días",
+        "Frecuencia de 1 a 5",
+        "C"
+      ],
+      [
+        "Comprensión parental",
+        "Comprensión de problemas; 30 días",
+        "Frecuencia de 1 a 5",
+        "C"
+      ],
+      [
+        "Conocimiento parental",
+        "Conocimiento del tiempo libre; 30 días",
+        "Frecuencia de 1 a 5",
+        "C"
+      ]
+    ],
+    "note": "D: demográfico; N: núcleo; C: completo. Las filas agrupan catorce variables: edad y sexo son dos; agresión y peleas son dos. Los códigos se expandieron como categorías, sin asumir distancias ordinales. Ausencia individual: categoría explícita. El bloque completo añadió cinco preguntas no disponibles en Guatemala. País, año y otros desenlaces no se utilizaron como predictores. Fuente: armonizacion.csv, variables.json y real_data_training.py."
+  },
+  {
+    "n": 3,
+    "title": "Rendimiento macro externo en ocho países con el núcleo común",
+    "headers": [
+      "Modelo o estrategia",
+      "AP",
+      "ROC-AUC",
+      "Brier",
+      "Sens.",
+      "Espec."
+    ],
+    "rows": [
+      [
+        "Logística demográfica",
+        "0,2421",
+        "0,6089",
+        "0,1502",
+        "0,3975",
+        "0,7125"
+      ],
+      [
+        "Logística C=0,1",
+        "0,4286",
+        "0,7319",
+        "0,1345",
+        "0,5182",
+        "0,8112"
+      ],
+      [
+        "Logística C=1",
+        "0,4277",
+        "0,7318",
+        "0,1346",
+        "0,5253",
+        "0,8046"
+      ],
+      [
+        "Random Forest",
+        "0,4196",
+        "0,7311",
+        "0,1352",
+        "0,4958",
+        "0,8282"
+      ],
+      [
+        "XGBoost",
+        "0,4285",
+        "0,7337",
+        "0,1344",
+        "0,5205",
+        "0,8121"
+      ],
+      [
+        "CatBoost",
+        "0,4281",
+        "0,7341",
+        "0,1344",
+        "0,5043",
+        "0,8247"
+      ],
+      [
+        "MLP",
+        "0,3760",
+        "0,6966",
+        "0,1411",
+        "0,4464",
+        "0,8258"
+      ],
+      [
+        "Selección anidada",
+        "0,4282",
+        "0,7346",
+        "0,1344",
+        "0,5147",
+        "0,8183"
+      ]
+    ],
+    "note": "AP: average precision; ROC-AUC: área bajo la curva ROC; MLP: perceptrón multicapa; Sens.: sensibilidad; Espec.: especificidad. Cada país contribuyó por igual al promedio y las métricas nacionales utilizaron pesos de encuesta. Sensibilidad y especificidad correspondieron a umbrales elegidos internamente por partición. La selección anidada pudo elegir distintas familias; no representa un único ajuste. No se dispuso de IC de estas medias en el artefacto. Fuente: gshs8_core/resumen_macro.csv."
+  },
+  {
+    "n": 4,
+    "title": "Incrementos pareados de AP en los mismos cinco países externos",
+    "headers": [
+      "Comparación o país",
+      "AP núcleo",
+      "AP familiar",
+      "Diferencia",
+      "IC95 % de diferencia"
+    ],
+    "rows": [
+      [
+        "Argentina",
+        "0,4714",
+        "0,5153",
+        "0,0440",
+        "0,0387 a 0,0493"
+      ],
+      [
+        "Bolivia",
+        "0,4210",
+        "0,4366",
+        "0,0156",
+        "0,0058 a 0,0239"
+      ],
+      [
+        "Perú",
+        "0,4229",
+        "0,4418",
+        "0,0189",
+        "0,0044 a 0,0318"
+      ],
+      [
+        "Paraguay",
+        "0,4142",
+        "0,4470",
+        "0,0328",
+        "0,0114 a 0,0510"
+      ],
+      [
+        "Uruguay",
+        "0,4439",
+        "0,5102",
+        "0,0663",
+        "0,0453 a 0,0852"
+      ],
+      [
+        "Macro añadir familia",
+        "0,4347",
+        "0,4702",
+        "0,0355",
+        "0,0286 a 0,0413"
+      ],
+      [
+        "Macro ampliar 5→8",
+        "—",
+        "—",
+        "-0,0013",
+        "-0,0050 a 0,0021"
+      ],
+      [
+        "Macro ampliar 5→7",
+        "—",
+        "—",
+        "-0,0002",
+        "-0,0027 a 0,0031"
+      ]
+    ],
+    "note": "Las primeras seis filas comparan núcleo común con bloque completo y la misma selección logística. Las dos últimas cambian países de desarrollo conservando variables, estrategia logística y estudiantes externos; no corresponden a las columnas núcleo/familiar. Diferencias B−A, 44 837 estudiantes externos en conjunto. IC percentiles de 500 remuestreos de PSU dentro de estrato, con modelos y países fijos; estratos de una PSU fijos. Fuente: comparaciones_pareadas.csv."
+  },
+  {
+    "n": 5,
+    "title": "Funcionamiento externo de la logística familiar en cinco países",
+    "headers": [
+      "País",
+      "Umbral",
+      "Sens.",
+      "Espec.",
+      "VPP",
+      "Brier",
+      "Pendiente",
+      "Sesgo"
+    ],
+    "rows": [
+      [
+        "Argentina",
+        "0,260",
+        "0,556",
+        "0,822",
+        "0,461",
+        "0,139",
+        "1,046",
+        "-0,019"
+      ],
+      [
+        "Bolivia",
+        "0,270",
+        "0,462",
+        "0,806",
+        "0,403",
+        "0,154",
+        "0,753",
+        "-0,025"
+      ],
+      [
+        "Perú",
+        "0,230",
+        "0,565",
+        "0,756",
+        "0,359",
+        "0,137",
+        "0,915",
+        "0,006"
+      ],
+      [
+        "Paraguay",
+        "0,240",
+        "0,537",
+        "0,851",
+        "0,370",
+        "0,100",
+        "1,156",
+        "0,021"
+      ],
+      [
+        "Uruguay",
+        "0,220",
+        "0,687",
+        "0,759",
+        "0,418",
+        "0,130",
+        "1,126",
+        "-0,003"
+      ]
+    ],
+    "note": "Sens.: sensibilidad; Espec.: especificidad; VPP: valor predictivo positivo. Sesgo: media ponderada de probabilidad menos proporción observada, ideal 0. Pendiente de recalibración diagnóstica, ideal 1; no se aplicó al modelo externo. Umbrales ajustados internamente; resultados del bloque completo de cinco países, no de ocho países. Fuente: protocolo/metricas.csv."
+  },
+  {
+    "n": 6,
+    "title": "Magnitud de atribuciones y estabilidad de importancia de CatBoost",
+    "headers": [
+      "Variable",
+      "Media |SHAP|",
+      "Pérdida media AP",
+      "Rango mediano",
+      "Rango mín.–máx."
+    ],
+    "rows": [
+      [
+        "Sexo registrado",
+        "0,4863",
+        "0,0921",
+        "1,0",
+        "1–5"
+      ],
+      [
+        "Alcohol",
+        "0,3105",
+        "0,0492",
+        "2,0",
+        "2–6"
+      ],
+      [
+        "Agresión física recibida",
+        "0,2817",
+        "0,0850",
+        "3,0",
+        "1–9"
+      ],
+      [
+        "Amistades cercanas",
+        "0,2078",
+        "0,0243",
+        "5,0",
+        "2–9"
+      ],
+      [
+        "Sedentarismo",
+        "0,1535",
+        "0,0281",
+        "4,0",
+        "3–6"
+      ],
+      [
+        "Inseguridad alimentaria",
+        "0,1161",
+        "0,0010",
+        "6,0",
+        "5–7"
+      ],
+      [
+        "Peleas",
+        "0,1057",
+        "0,0157",
+        "7,0",
+        "3–9"
+      ],
+      [
+        "Actividad física",
+        "0,0580",
+        "-0,0010",
+        "8,0",
+        "6–9"
+      ],
+      [
+        "Edad",
+        "0,0189",
+        "-0,0004",
+        "8,0",
+        "7–8"
+      ]
+    ],
+    "note": "Media simple de cinco países, con ponderación de encuesta dentro de país. SHAP y pérdida de AP: muestras externas de 512 estudiantes por país; rangos: muestras separadas de 384 estudiantes y una permutación por variable. SHAP en log-odds, con indicadores agrupados por variable; no indica dirección ni causalidad. Rango 1 indica mayor pérdida de AP. Una pérdida negativa puede surgir por variación de la permutación. Fuente: explicacion.csv y estabilidad.csv."
+  }
+]

@@ -1,2 +1,21 @@
 [server]
 enableStaticServing = true
+
+[theme]
+showWidgetBorder = true
+
+[theme.light]
+primaryColor = "#5E46AC"
+backgroundColor = "#F2F5FF"
+secondaryBackgroundColor = "#E9EEFC"
+textColor = "#192341"
+borderColor = "#CED6EF"
+dataframeHeaderBackgroundColor = "#E7ECFA"
+
+[theme.dark]
+primaryColor = "#B49AF5"
+backgroundColor = "#10172A"
+secondaryBackgroundColor = "#1B2645"
+textColor = "#F1F3FF"
+borderColor = "#455477"
+dataframeHeaderBackgroundColor = "#263355"

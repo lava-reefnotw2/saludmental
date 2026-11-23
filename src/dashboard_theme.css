@@ -1,0 +1,297 @@
+/* Shared glass surfaces for both views. Follow Streamlit's active color scheme. */
+[data-testid="stApp"] {
+    --p07-ink: light-dark(#192341, #f1f3ff);
+    --p07-muted: light-dark(#495774, #bbc6e4);
+    --p07-accent: light-dark(#48389d, #cebcff);
+    --p07-line: light-dark(#53659b36, #b3c1ee42);
+    --p07-glass: light-dark(#ffffffb8, #273354c9);
+    --p07-glass-tint: light-dark(#edf2ffd4, #1b2645d9);
+    --p07-surface: light-dark(#f2f5ff, #10172a);
+    --p07-orchid: light-dark(#b39aec64, #7959bd62);
+    --p07-mint: light-dark(#7fd6cc54, #257c8560);
+    --p07-shadow: light-dark(#22346913, #060a1b50);
+    --p07-plus: light-dark(#5847ba, #baa6ff);
+    --p07-minus: light-dark(#007d79, #64dfcf);
+    --p07-cta: linear-gradient(108deg, #5441ac, #345aa6);
+    color: var(--p07-ink);
+}
+
+[data-testid="stAppViewContainer"] {
+    background:
+        radial-gradient(ellipse at 98% 0%, var(--p07-mint), transparent 44rem),
+        radial-gradient(ellipse at 4% 16%, var(--p07-orchid), transparent 44rem),
+        var(--p07-surface);
+}
+
+[data-testid="stMain"] { background: transparent; }
+
+[data-testid="stHeader"] {
+    background: color-mix(in srgb, var(--p07-surface) 82%, transparent);
+    backdrop-filter: blur(16px);
+    border-bottom: 1px solid var(--p07-line);
+    color: var(--p07-ink);
+}
+
+[data-testid="stMainBlockContainer"] {
+    padding-top: clamp(4.4rem, 6vw, 5rem);
+    padding-inline: clamp(.95rem, 3.2vw, 3.5rem);
+    max-width: 104rem;
+}
+
+.p07-hero,
+.st-key-p07_profile_card,
+.st-key-p07_score_card,
+.st-key-p07_explanation_card,
+.st-key-p07_training [data-testid="stTabPanel"],
+.st-key-p07_overview [data-testid="stMetric"],
+.st-key-p07_retraining {
+    box-sizing: border-box;
+    color: var(--p07-ink);
+    border: 1px solid var(--p07-line);
+    border-radius: 20px;
+    background: linear-gradient(145deg, var(--p07-glass), var(--p07-glass-tint));
+    backdrop-filter: blur(18px);
+    box-shadow: 0 12px 30px var(--p07-shadow);
+    padding: clamp(.95rem, 2vw, 1.6rem);
+    min-width: 0;
+}
+
+.p07-hero {
+    border-radius: 26px;
+    padding: clamp(1.25rem, 4vw, 3rem);
+    background:
+        radial-gradient(ellipse at 96% 12%, var(--p07-mint), transparent 61%),
+        linear-gradient(115deg, var(--p07-glass), var(--p07-orchid));
+}
+
+.p07-hero h1 {
+    margin: .45rem 0 .65rem;
+    padding: 0;
+    color: var(--p07-ink);
+    font-size: clamp(2rem, 4.2vw, 3.75rem);
+    font-weight: 760;
+    line-height: 1.08;
+    letter-spacing: -.06em;
+    text-wrap: balance;
+    max-width: 23ch;
+}
+
+.p07-hero > p:not(.p07-eyebrow) {
+    max-width: 65ch;
+    color: var(--p07-muted);
+    margin: 0;
+}
+
+.st-key-p07_training .p07-hero { padding: clamp(1.05rem, 2.7vw, 2.15rem); }
+.st-key-p07_training .p07-hero h1 {
+    font-size: clamp(1.85rem, 3.25vw, 3.25rem);
+    max-width: none;
+}
+
+.p07-eyebrow {
+    color: var(--p07-accent);
+    font-size: .73rem;
+    font-weight: 740;
+    letter-spacing: .105em;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.p07-tags { display: flex; gap: .4rem; flex-wrap: wrap; margin-top: 1rem; }
+.p07-tags span {
+    color: var(--p07-accent);
+    background: var(--p07-glass);
+    border: 1px solid var(--p07-line);
+    border-radius: 999px;
+    font-size: .78rem;
+    font-weight: 650;
+    padding: .24rem .73rem;
+}
+
+:is(.st-key-p07_training, .st-key-p07_explorer) :is(h2, h3, h4, [data-testid="stWidgetLabel"] p) {
+    color: var(--p07-ink);
+}
+
+:is(.st-key-p07_training, .st-key-p07_explorer) [data-testid="stCaptionContainer"] p {
+    color: var(--p07-muted);
+}
+
+/* The sidebar uses native buttons with a clear active route. */
+[data-testid="stSidebar"] {
+    border-inline-end: 1px solid var(--p07-line);
+    background:
+        radial-gradient(ellipse at 0% 2%, var(--p07-orchid), transparent 24rem),
+        linear-gradient(151deg, var(--p07-glass), var(--p07-surface));
+    backdrop-filter: blur(20px);
+}
+
+[data-testid="stSidebarContent"] { background: transparent; }
+
+.p07-brand {
+    display: flex;
+    align-items: center;
+    gap: .85rem;
+    padding: .85rem;
+    border-radius: 18px;
+    border: 1px solid var(--p07-line);
+    background: linear-gradient(125deg, var(--p07-glass), var(--p07-glass-tint));
+    box-shadow: 0 8px 24px var(--p07-shadow);
+    color: var(--p07-ink);
+    line-height: 1.25;
+}
+
+.p07-brand-mark {
+    display: grid;
+    place-items: center;
+    flex: 0 0 2.8rem;
+    height: 2.8rem;
+    border-radius: 13px;
+    background: var(--p07-cta);
+    color: white;
+    font-size: .92rem;
+    font-weight: 780;
+    letter-spacing: -.045em;
+}
+
+.st-key-p07_navigation button {
+    position: relative;
+    justify-content: flex-start;
+    text-align: left;
+    min-height: 3.2rem;
+    border: 1px solid var(--p07-line);
+    border-radius: 14px;
+    padding: .68rem .92rem;
+    background: var(--p07-glass);
+    color: var(--p07-ink);
+    white-space: normal;
+    transition: border-color .16s, background .16s, box-shadow .16s;
+}
+
+.st-key-p07_navigation button > div { justify-content: flex-start; gap: .65rem; }
+
+.st-key-p07_navigation button[data-testid="stBaseButton-primary"] {
+    background: linear-gradient(105deg, var(--p07-orchid), var(--p07-glass));
+    border-color: var(--p07-accent);
+    color: var(--p07-accent);
+    box-shadow: 0 7px 18px var(--p07-shadow);
+    font-weight: 750;
+}
+
+.st-key-p07_navigation button[data-testid="stBaseButton-primary"]::before {
+    content: '';
+    position: absolute;
+    inset-block: .75rem;
+    inset-inline-start: 0;
+    width: 3px;
+    border-radius: 0 5px 5px 0;
+    background: var(--p07-accent);
+}
+
+.st-key-p07_navigation button:hover {
+    border-color: var(--p07-accent);
+    background: var(--p07-glass-tint);
+    color: var(--p07-accent);
+}
+
+.st-key-p07_overview [data-testid="stMetric"] { height: 100%; padding: .9rem 1.1rem; }
+.st-key-p07_overview [data-testid="stMetricValue"] {
+    color: var(--p07-accent);
+    line-height: 1.2;
+    letter-spacing: -.045em;
+    font-variant-numeric: tabular-nums;
+    font-size: clamp(1.4rem, 2.9vw, 2.6rem);
+    font-weight: 760;
+}
+
+.st-key-p07_training [role="tablist"] {
+    gap: .38rem;
+    padding: .35rem;
+    border: 1px solid var(--p07-line);
+    background: var(--p07-glass);
+    border-radius: 16px;
+    scroll-padding-inline: .35rem;
+}
+
+.st-key-p07_training [role="tab"] {
+    min-height: 2.5rem;
+    color: var(--p07-muted);
+    padding: .55rem .9rem;
+    border-radius: 11px;
+    white-space: nowrap;
+    transition: background .16s, color .16s;
+}
+
+.st-key-p07_training [role="tab"]:hover { color: var(--p07-accent); background: var(--p07-glass-tint); }
+.st-key-p07_training [role="tab"][aria-selected="true"] {
+    color: var(--p07-accent);
+    font-weight: 750;
+    background: linear-gradient(120deg, var(--p07-orchid), var(--p07-glass-tint));
+}
+
+.st-key-p07_training [data-testid="stTabHighlight"] { display: none; }
+.st-key-p07_training [role="tabpanel"] { scroll-margin-top: 4rem; }
+
+/* Keep native widgets and their keyboard interaction inside glass panels. */
+:is(.st-key-p07_training, .st-key-p07_explorer) [data-testid="stExpander"] > details,
+.st-key-p07_explorer [data-testid="stMetric"],
+.st-key-p07_training [data-testid="stPlotlyChart"] {
+    border: 1px solid var(--p07-line);
+    border-radius: 15px;
+    background: var(--p07-glass);
+}
+
+.st-key-p07_training [data-testid="stPlotlyChart"] { overflow: hidden; }
+:is(.st-key-p07_training, .st-key-p07_explorer) [data-testid="stDataFrame"] {
+    border: 1px solid var(--p07-line);
+    border-radius: 13px;
+    overflow: hidden;
+    box-shadow: 0 6px 15px var(--p07-shadow);
+}
+
+:is(.st-key-p07_training, .st-key-p07_explorer) [data-testid="stAlert"] {
+    border-radius: 13px;
+    border: 1px solid var(--p07-line);
+}
+
+:is(.st-key-p07_training, .st-key-p07_explorer) [data-baseweb="select"] > div,
+:is(.st-key-p07_training, .st-key-p07_explorer) button:is([data-testid="stBaseButton-secondary"], [data-testid="stBaseButton-secondaryFormSubmit"], [data-testid="stBaseButton-secondaryDownloadButton"]) {
+    background: var(--p07-glass);
+    border: 1px solid var(--p07-line);
+    border-radius: 11px;
+    color: var(--p07-ink);
+}
+
+:is(.st-key-p07_training, .st-key-p07_explorer) button:is([data-testid="stBaseButton-primary"], [data-testid="stBaseButton-primaryFormSubmit"]) {
+    background: var(--p07-cta);
+    color: #fff;
+    border: 1px solid transparent;
+    border-radius: 12px;
+    min-height: 2.7rem;
+    font-weight: 720;
+    box-shadow: 0 6px 16px var(--p07-shadow);
+}
+
+:is(.st-key-p07_training, .st-key-p07_explorer) button:not(:disabled):hover {
+    border-color: var(--p07-accent);
+}
+
+:is(.st-key-p07_training, .st-key-p07_explorer) button:disabled {
+    opacity: .55;
+    box-shadow: none;
+}
+
+:is(.st-key-p07_navigation, .st-key-p07_training, .st-key-p07_explorer) :is(button:focus-visible, [data-baseweb="select"]:focus-within) {
+    outline: 2px solid var(--p07-accent);
+    outline-offset: 2px;
+}
+
+@media (max-width: 630px) {
+    .st-key-p07_overview [data-testid="stHorizontalBlock"] { flex-wrap: wrap; gap: .55rem; }
+    .st-key-p07_overview [data-testid="stColumn"] { flex: 1 1 8rem; min-width: 0; }
+    .st-key-p07_overview [data-testid="stMetric"] { padding: .7rem .85rem; }
+    .p07-hero { border-radius: 20px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .st-key-p07_training [role="tab"], .st-key-p07_navigation button { transition: none; }
+}

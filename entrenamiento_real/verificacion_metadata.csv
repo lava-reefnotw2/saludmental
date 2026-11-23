@@ -1,0 +1,41 @@
+survey_id,variable,domain_valid,official_count_categories,official_counts_match,label,question
+GTM2015,q1,True,8,True,Custom Age,How old are you?
+GTM2015,q2,True,2,True,Sex,What is your sex?
+GTM2015,q6,True,5,True,How often went hungry,"During the past 30 days, how often did you go hungry because there was not enough food in your home?"
+GTM2015,q15,True,8,True,Physically attacked,"During the past 12 months, how many times were you physically attacked?"
+GTM2015,q16,True,8,True,Physical fighting,"During the past 12 months, how many times were you in a physical fight?"
+GTM2015,q24,True,2,True,Considered suicide,"During the past 12 months, did you ever seriously consider attempting suicide?"
+GTM2015,q27,True,4,True,Close friends,How many close friends do you have?
+GTM2015,q35,True,7,True,Current alcohol use,"During the past 30 days, on how many days did you have at least one drink containing alcohol?"
+GTM2015,q49,True,8,True,Physical activity >= 5 days,"During the past 7 days, on how many days were you physically active for a total of at least 60 minutes per day? ADD UP ALL THE TIME YOU SPENT IN ANY KIND OF PHYSICAL ACTIVITY EACH DAY."
+GTM2015,q52,True,6,True,Sitting activities,"How much time do you spend during a typical or usual day sitting and watching television, playing computer games, talking with friends, or doing other sitting activities, such as COUNTRY SPECIFIC EXAMPLES?"
+HND2012,q1,True,6,True,How old are you,How old are you?
+HND2012,q2,True,2,True,Sex,What is your sex?
+HND2012,q6,True,5,True,Went hungry past 30 days,"During the past 30 days, how often did you go hungry because there was not enough food in your home?"
+HND2012,q15,True,8,True,Times attacked past 12 mo.,"During the past 12 months, how many times were you physically attacked?"
+HND2012,q16,True,8,True,How many times in fight 12 mos,"During the past 12 months, how many times were you in a physical fight?"
+HND2012,q24,True,2,True,Ever considered suicide 12 mos,"During the past 12 months, did you ever seriously consider attempting suicide?"
+HND2012,q27,True,4,True,Number close friends,How many close friends do you have?
+HND2012,q35,True,7,True,Days one drink or more past 30 days,"During the past 30 days, on how many days did you have at least one drink containing alcohol?"
+HND2012,q49,True,8,True,Days active 60 min plus past 7 days,"During the past 7 days, on how many days were you physically active for a total of at least 60 minutes per day? ADD UP ALL THE TIME YOU SPENT IN ANY KIND OF PHYSICAL ACTIVITY EACH DAY."
+HND2012,q52,True,6,True,Time spent sitting on usual day,"How much time do you spend during a typical or usual day sitting and watching television, playing computer games, talking with friends, or doing other sitting activities, such as COUNTRY SPECIFIC EXAMPLES?"
+HND2012,q53,True,5,True,Miss school no permission past 30 days,"During the past 30 days, on how many days did you miss classes or school without permission?"
+HND2012,q54,True,5,True,Others helpful in school past 30 days,"During the past 30 days, how often were most of the students in your school kind and helpful?"
+HND2012,q55,True,5,True,Parents check homework past 30 days,"During the past 30 days, how often did your parents or guardians check to see if your homework was done?"
+HND2012,q56,True,5,True,Parent understand troubles past 30 days,"During the past 30 days, how often did your parents or guardians understand your problems and worries?"
+HND2012,q57,True,5,True,Parent know what you do past 30 days,"During the past 30 days, how often did your parents or guardians really know what you were doing with your free time?"
+PAN2018,q1,True,0,True,Custom Age,How old are you?
+PAN2018,q2,True,0,True,Sex,What is your sex?
+PAN2018,q6,True,0,True,How often went hungry,"During the past 30 days, how often did you go hungry because there was not enough food in your home?"
+PAN2018,q15,True,0,True,Physically attacked,"During the past 12 months, how many times were you physically attacked?"
+PAN2018,q16,True,0,True,Physical fighting,"During the past 12 months, how many times were you in a physical fight?"
+PAN2018,q24,True,0,True,Considered suicide,"During the past 12 months, did you ever seriously consider attempting suicide?"
+PAN2018,q27,True,0,True,Close friends,How many close friends do you have?
+PAN2018,q35,True,0,True,Current alcohol use,"During the past 30 days, on how many days did you have at least one drink containing alcohol?"
+PAN2018,q49,True,0,True,Physical activity past 7 days,"During the past 7 days, on how many days were you physically active for a total of at least 60 minutes per day? ADD UP ALL THE TIME YOU SPENT IN ANY KIND OF PHYSICAL ACTIVITY EACH DAY."
+PAN2018,q52,True,0,True,Sitting activities,"How much time do you spend during a typical or usual day sitting and watching television, playing computer games, talking with friends, or doing other sitting activities, such as COUNTRY SPECIFIC EXAMPLES?"
+PAN2018,q53,True,0,True,Miss school no permission,"During the past 30 days, on how many days did you miss classes or school without permission?"
+PAN2018,q54,True,0,True,Other students kind and helpful,"During the past 30 days, how often were most of the students in your school kind and helpful?"
+PAN2018,q55,True,0,True,Parents check homework,"During the past 30 days, how often did your parents or guardians check to see if your homework was done?"
+PAN2018,q56,True,0,True,Parents understand problems,"During the past 30 days, how often did your parents or guardians understand your problems and worries?"
+PAN2018,q57,True,0,True,Parents know about free time,"During the past 30 days, how often did your parents or guardians really know what you were doing with your free time?"

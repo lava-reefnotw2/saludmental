@@ -1,0 +1,114 @@
+[
+  {
+    "test_country": "ARG",
+    "train_countries": [
+      "BOL",
+      "HND",
+      "PAN",
+      "PER",
+      "PRY",
+      "URY"
+    ],
+    "selected": "B1_logreg_C01",
+    "inner_macro_ap": {
+      "B1_logreg_C01": 0.4494746128129297,
+      "B1_logreg_C1": 0.444166068682282
+    }
+  },
+  {
+    "test_country": "BOL",
+    "train_countries": [
+      "ARG",
+      "HND",
+      "PAN",
+      "PER",
+      "PRY",
+      "URY"
+    ],
+    "selected": "B1_logreg_C01",
+    "inner_macro_ap": {
+      "B1_logreg_C01": 0.46892255786317794,
+      "B1_logreg_C1": 0.4676066900411889
+    }
+  },
+  {
+    "test_country": "HND",
+    "train_countries": [
+      "ARG",
+      "BOL",
+      "PAN",
+      "PER",
+      "PRY",
+      "URY"
+    ],
+    "selected": "B1_logreg_C01",
+    "inner_macro_ap": {
+      "B1_logreg_C01": 0.4572841849620726,
+      "B1_logreg_C1": 0.45595967669172593
+    }
+  },
+  {
+    "test_country": "PAN",
+    "train_countries": [
+      "ARG",
+      "BOL",
+      "HND",
+      "PER",
+      "PRY",
+      "URY"
+    ],
+    "selected": "B1_logreg_C01",
+    "inner_macro_ap": {
+      "B1_logreg_C01": 0.46996778835812214,
+      "B1_logreg_C1": 0.4687251302392194
+    }
+  },
+  {
+    "test_country": "PER",
+    "train_countries": [
+      "ARG",
+      "BOL",
+      "HND",
+      "PAN",
+      "PRY",
+      "URY"
+    ],
+    "selected": "B1_logreg_C01",
+    "inner_macro_ap": {
+      "B1_logreg_C01": 0.47172542002942747,
+      "B1_logreg_C1": 0.47017741210272607
+    }
+  },
+  {
+    "test_country": "PRY",
+    "train_countries": [
+      "ARG",
+      "BOL",
+      "HND",
+      "PAN",
+      "PER",
+      "URY"
+    ],
+    "selected": "B1_logreg_C01",
+    "inner_macro_ap": {
+      "B1_logreg_C01": 0.46583160385986305,
+      "B1_logreg_C1": 0.4643791008279272
+    }
+  },
+  {
+    "test_country": "URY",
+    "train_countries": [
+      "ARG",
+      "BOL",
+      "HND",
+      "PAN",
+      "PER",
+      "PRY"
+    ],
+    "selected": "B1_logreg_C01",
+    "inner_macro_ap": {
+      "B1_logreg_C01": 0.45627490436389695,
+      "B1_logreg_C1": 0.45450532953002937
+    }
+  }
+]

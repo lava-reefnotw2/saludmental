@@ -1,0 +1,102 @@
+VARIÁVEIS CADASTRAIS E DA AMOSTRA,,,
+Código da Variável,Descrição da Variável,Categorias,
+,,Código,Descrição
+VARIÁVEIS CADASTRAIS,,,
+REGIAO,Região geográfica,1,Norte
+,,2,Nordeste
+,,3,Sudeste
+,,4,Sul
+,,5,Centro-Oeste
+UF,Unidade da Federação,11,Rondônia
+,,12,Acre
+,,13,Amazonas
+,,14,Roraima
+,,15,Para
+,,16,Amapá
+,,17,Tocantins
+,,21,Maranhão
+,,22,Piauí
+,,23,Ceará
+,,24,Rio Grande do Norte
+,,25,Paraíba
+,,26,Pernambuco
+,,27,Alagoas
+,,28,Sergipe
+,,29,Bahia
+,,31,Minas Gerais
+,,32,Espirito Santo
+,,33,Rio de Janeiro
+,,35,São Paulo
+,,41,Paraná
+,,42,Santa Catarina
+,,43,Rio Grande do Sul
+,,50,Mato Grosso do Sul
+,,51,Mato Grosso
+,,52,Goiás
+,,53,Distrito Federal
+MUNICIPIO_CAP,Município da capital,0,Não é capital
+,,1100205,Porto Velho
+,,1200401,Rio Branco
+,,1302603,Manaus
+,,1400100,Boa Vista
+,,1501402,Belém
+,,1600303,Macapá
+,,1721000,Palmas
+,,2111300,São Luís
+,,2211001,Teresina
+,,2304400,Fortaleza
+,,2408102,Natal
+,,2507507,João Pessoa
+,,2611606,Recife
+,,2704302,Maceió
+,,2800308,Aracaju
+,,2927408,Salvador
+,,3106200,Belo Horizonte
+,,3205309,Vitória
+,,3304557,Rio de Janeiro
+,,3550308,São Paulo
+,,4106902,Curitiba
+,,4205407,Florianópolis
+,,4314902,Porto Alegre
+,,5002704,Campo Grande
+,,5103403,Cuiabá
+,,5208707,Goiânia
+,,5300108,Distrito Federal
+TIPO_MUNIC,Indicadora de município da capital,1,Capital
+,,2,Não capital
+SITUACAO,Situação,1,Urbana
+,,2,Rural
+DEP_ADMIN,Dependência administrativa,1,Pública
+,,2,Privada
+ESFERA,Esfera administrativa,1,Federal
+,,2,Estadual
+,,3,Municipal
+,,4,Privada
+ESCOLA,"Código da Escola
+UPA (unidade primária de amostragem)",1 a 69,Aninhado com ESTRATO_EXP
+TURMA,"Código da Turma
+USA (unidade secundária de amostragem)",1 a 12,Aninhado com ESTRATO_EXP e ESCOLA
+ALUNO,Código do Aluno,1 a 100,"Aninhado com ESTRATO_EXP, ESCOLA e TURMA"
+ANO_TURMA,Ano escolar,1,7º ano / 6ª série
+,,2,8º ano / 7ª série
+,,3,9º ano / 8ª série
+,,4,1ª Série
+,,5,2ª Série
+,,6,3ª Série
+,,7,Curso Técnico Integrado 1ª Série
+,,8,Curso Técnico Integrado 2ª Série
+,,9,Curso Técnico Integrado 3ª Série
+,,10,Normal/Magistério 1ª Série
+,,11,Normal/Magistério 2ª Série
+,,12,Normal/Magistério 3ª Série
+VARIÁVEIS DA AMOSTRA,,,
+ESTRATO,Estrato,,As 2 primeiras posições representam o código da Unidade da Federação
+IND_EXPANSAO,Domínio de estimação,0,Registros introduzidos para representar os alunos matriculados não frequentes
+,,1,Registros de alunos matriculados frequentes
+PESO_ALUNO_FREQ,Peso do aluno com pós-estratificação pelos totais de matriculados do Censo Escolar,,"Peso com pós-estratificação para alunos matriculados. Usado para obtenção de estimativas pontuais dos alunos frequentes.
+Possui valor zero para os registros de alunos matriculados não frequentes."
+PESO_INICIAL,Peso do aluno sem pós-estratificação pelos totais de matriculados do Censo Escolar,,"Peso antes da pós-estratificação. Deve ser usado para estimativas de precisão (erro-padrão, intervalo de confiança, CV, etc.), para o domínio IND_EXPANSAO = 1"
+POSEST,Domínios de pós-estratificação,,"As 2 primeiras posições representam o código da Unidade da Federação.
+Os totais para cada domínio estão na variável TOTAIS_POSEST"
+TOTAIS_POSEST,Totais para os domínios de pós-estratificação,,"Totais de alunos matriculados do Censo Escolar nos pós-estratos.
+Associado aos domínios da variável POSEST"

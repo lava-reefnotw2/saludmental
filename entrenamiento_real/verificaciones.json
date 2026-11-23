@@ -1,0 +1,31 @@
+{
+  "gshs5_core": {
+    "n": 44837,
+    "n_models": 2,
+    "held_out_countries": 5,
+    "disjoint": true,
+    "unique_predictions": true
+  },
+  "gshs5_familiar": {
+    "n": 44837,
+    "n_models": 2,
+    "held_out_countries": 5,
+    "disjoint": true,
+    "unique_predictions": true
+  },
+  "gshs8_core": {
+    "n": 50883,
+    "n_models": 7,
+    "held_out_countries": 8,
+    "disjoint": true,
+    "unique_predictions": true
+  },
+  "gshs7_familiar": {
+    "n": 47589,
+    "n_models": 2,
+    "held_out_countries": 7,
+    "disjoint": true,
+    "unique_predictions": true
+  },
+  "serialized_model_roundtrip": true
+}

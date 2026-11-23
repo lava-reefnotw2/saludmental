@@ -1,0 +1,252 @@
+variable,position,width,decimals,label,type
+Q1,17,1,,How old are you,string
+Q2,18,1,,What is your sex,string
+Q3,19,1,,In what grade are you,string
+Q4,20,8,,What is your race/ethnicity,string
+Q5,28,4,2,How tall are you,number
+Q6,32,6,2,How much do you weigh,number
+Q7,38,1,,Seat belt use,string
+Q8,39,1,,Riding with a drinking driver,string
+Q9,40,1,,Drinking and driving,string
+Q10,41,1,,Texting and driving,string
+Q11,42,1,,Weapon carrying at school,string
+Q12,43,1,,Gun carrying,string
+Q13,44,1,,Safety concerns at school,string
+Q14,45,1,,Threatened at school,string
+Q15,46,1,,Physical Fighting,string
+Q16,47,1,,Physical fighting at school,string
+Q17,48,1,,Saw physical violence in neighborhood,string
+Q18,49,1,,Forced sexual intercourse,string
+Q19,50,1,,Sexual violence,string
+Q20,51,1,,Sexual dating violence,string
+Q21,52,1,,Physical dating violence,string
+Q22,53,1,,treated unfairly in school b/c race/ethnicity,string
+Q23,54,1,,Bullying at school,string
+Q24,55,1,,Electronic bullying,string
+Q25,56,1,,Self harm>=1 time,string
+Q26,57,1,,Sad or hopeless,string
+Q27,58,1,,Considered suicide,string
+Q28,59,1,,Made a suicide plan past 12 months,string
+Q29,60,1,,Attempted suicide,string
+Q30,61,1,,Injurious suicide attempt,string
+Q31,62,1,,Ever cigarette use,string
+Q32,63,1,,Initiation of cigarette smoking,string
+Q33,64,1,,Current cigarette use,string
+Q34,65,1,,Smoked >10 cigarettes,string
+Q35,66,1,,Electronic vapor product use,string
+Q36,67,1,,Current electronic vapor product use,string
+Q37,68,1,,EVP from store,string
+Q38,69,1,,Current smokeless tobacco use,string
+Q39,70,1,,Current cigar use,string
+Q40,71,1,,Initiation of alcohol use,string
+Q41,72,1,,Current alcohol use,string
+Q42,73,1,,Drinks in a row past 30 days,string
+Q43,74,1,,Source of alcohol,string
+Q44,75,1,,Ever marijuana use,string
+Q45,76,1,,Initiation of marijuana use,string
+Q46,77,1,,Current marijuana use,string
+Q47,78,1,,Ever prescription pain medicine use,string
+Q48,79,1,,Ever cocaine use,string
+Q49,80,1,,Ever inhalant use,string
+Q50,81,1,,Ever heroin use ,string
+Q51,82,1,,Ever methamphetamine use,string
+Q52,83,1,,Ever ecstasy use,string
+Q53,84,1,,Illegal injected drug use,string
+Q54,85,1,,Ever sexual intercourse,string
+Q55,86,1,,Sex before 13 years,string
+Q56,87,1,,Number of sex partners,string
+Q57,88,1,,Current sexual activity,string
+Q58,89,1,,Alcohol/drugs and sex,string
+Q59,90,1,,Condom use,string
+Q60,91,1,,Birth control pill use,string
+Q61,92,1,,Sex of sexual contacts,string
+Q62,93,1,,Sexual identity,string
+Q64,95,1,,Perception of weight,string
+Q65,96,1,,Weight loss,string
+Q66,97,1,,Fruit eating,string
+Q67,98,1,,Green salad eating,string
+Q68,99,1,,Potato eating,string
+Q69,100,1,,Carrot eating,string
+Q70,101,1,,Other vegetable eating,string
+Q71,102,1,,No soda drinking,string
+Q72,103,1,,Breakfast eating,string
+Q73,104,1,,Physical activity >= 5 days,string
+Q74,105,1,,PE attendance,string
+Q75,106,1,,Sports team participation,string
+Q76,107,1,,Concussion,string
+Q77,108,1,,Social media,string
+Q78,109,1,,HIV testing,string
+Q79,110,1,,STI testing,string
+Q80,111,1,,Oral health care,string
+Q81,112,1,,Current mental health,string
+Q82,113,1,,Get help with emotions 12 mos,string
+Q83,114,1,,Sleep,string
+Q84,115,1,,Unstable housing,string
+Q85,116,1,,Worried food would run out,string
+Q86,117,1,,Food ran out,string
+Q87,118,1,,Access to loaded gun,string
+Q88,119,1,,Ever Parental emotional abuse ACEs,string
+Q89,120,1,,Ever Parental physical abuse ACEs,string
+Q90,121,1,,Current Rx Pain med w/out Rx,string
+Q91,122,1,,Ever used hallucinogenic drugs,string
+Q92,123,1,,Sports drinks,string
+Q93,124,1,,Plain water,string
+Q94,125,1,,Ate an unusually large amount past 30 days,string
+Q95,126,1,,Muscle strengthening,string
+Q96,127,1,,Time alone with MD/nurse last check up,string
+Q97,128,1,,Sunburn,string
+Q98,129,1,,Didn't receive needed counseling/therapy past 12 m,string
+Q99,130,1,,How often Household adult met basic needs ACEs,string
+Q100,131,1,,Worried about climate change,string
+Q101,132,1,,Worried about extreme heat,string
+Q102,133,1,,Feel close to people at their school,string
+Q103,134,1,,Unfairly disciplined at school,string
+Q104,135,1,,Parental monitoring,string
+Q105,136,1,,Difficulty concentrating,string
+Q106,137,1,,How well speak English,string
+QN7,185,1,,Did not always wear a seat belt,number
+QN8,186,1,,Rode with a driver who had been drinking alcohol,number
+QN9,187,1,,Drove a car or other vehicle when they had been drinking alcohol,number
+QN10,188,1,,Texted or e-mailed while driving a car or other vehicle	,number
+QN11,189,1,,Carried a weapon on school property ,number
+QN12,190,1,,Carried a gun ,number
+QN13,191,1,,Did not go to school because they felt unsafe at school or on their way to or from school ,number
+QN14,192,1,,Were threatened or injured with a weapon on school property ,number
+QN15,193,1,,Were in a physical fight ,number
+QN16,194,1,,Were in a physical fight on school property ,number
+QN17,195,1,,"Ever saw someone get physically attacked, beaten, stabbed, or shot in their neighborhood",number
+QN18,196,1,,Were ever physically forced to have sexual intercourse,number
+QN19,197,1,,Experienced sexual violence,number
+QN20,198,1,,Experienced sexual dating violence,number
+QN21,199,1,,Experienced physical dating violence,number
+QN22,200,1,,Felt that they were ever treated badly or unfairly in school because of their race or ethnicity,number
+QN23,201,1,,Were bullied on school property,number
+QN24,202,1,,Were electronically bullied,number
+QN25,203,1,,Did something to purposely hurt themselves without wanting to die,number
+QN26,204,1,,Felt sad or hopeless,number
+QN27,205,1,,Seriously considered attempting suicide,number
+QN28,206,1,,Made a plan about how they would attempt suicide,number
+QN29,207,1,,Actually attempted suicide,number
+QN30,208,1,,"Had a suicide attempt that resulted in an injury, poisoning, or overdose that had to be treated by a doctor or nurse",number
+QN31,209,1,,Ever smoked a cigarette,number
+QN32,210,1,,Smoked a cigarette before age 13 years,number
+QN33,211,1,,Currently smoked cigarettes,number
+QN34,212,1,,Smoked more than 10 cigarettes per day,number
+QN35,213,1,,Ever used an electronic vapor product,number
+QN36,214,1,,Currently used an electronic vapor product,number
+QN37,215,1,,"Usually got their electronic vapor products by buying them themselves in a convenience store, supermarket, discount store, or gas station",number
+QN38,216,1,,Currently used smokeless tobacco,number
+QN39,217,1,,Currently smoked cigars,number
+QN40,218,1,,Had their first drink of alcohol before age 13 years,number
+QN41,219,1,,Currently drank alcohol,number
+QN42,220,1,,Reported that the largest number of drinks they had in a row was 10 or more,number
+QN43,221,1,,Usually got the alcohol they drank by someone giving it to them,number
+QN44,222,1,,Ever used marijuana ,number
+QN45,223,1,,tried marijuana for the first time before age 13 years,number
+QN46,224,1,,Currently used marijuana ,number
+QN47,225,1,,Ever took prescription pain medicine without a doctor's prescription or differently than how a doctor told them to use it,number
+QN48,226,1,,Ever used cocaine ,number
+QN49,227,1,,Ever used inhalants,number
+QN50,228,1,,Ever used heroin ,number
+QN51,229,1,,Ever used methamphetamines,number
+QN52,230,1,,Ever used ecstasy,number
+QN53,231,1,,Ever injected any illegal drug ,number
+QN54,232,1,,Ever had sexual intercourse,number
+QN55,233,1,,Had sexual intercourse for the first time before age 13 years,number
+QN56,234,1,,Had sexual intercourse with four or more persons during their life,number
+QN57,235,1,,Were currently sexually active,number
+QN58,236,1,,Drank alcohol or used drugs before last sexual intercourse,number
+QN59,237,1,,Used a condom during last sexual intercourse,number
+QN60,238,1,,Used birth control pills before last sexual intercourse with opposite-sex partner,number
+QN64,242,1,,Described themselves as slightly or very overweight,number
+QN65,243,1,,Were trying to lose weight,number
+QN66,244,1,,Did not eat fruit,number
+QN67,245,1,,Did not eat green salad,number
+QN68,246,1,,Did not eat potatoes,number
+QN69,247,1,,Did not eat carrots,number
+QN70,248,1,,Did not eat other vegetables,number
+QN71,249,1,,"Did not drink a can, bottle, or glass of soda or pop ",number
+QN72,250,1,,Did not eat breakfast,number
+QN73,251,1,,Were physically active at least 60 minutes per day on 5 or more days,number
+QN74,252,1,,Attended physical education (PE) classes on 1 or more days,number
+QN75,253,1,,Played on at least one sports team,number
+QN76,254,1,,Had a concussion from playing a sport or being physically active,number
+QN77,255,1,,Used social media several times a day,number
+QN78,256,1,,Were ever tested for human immunodeficiency virus (HIV),number
+QN79,257,1,,"Were tested for a sexually transmitted infection (STI) other than HIV, such as chlamydia or gonorrhea",number
+QN80,258,1,,Saw a dentist,number
+QN81,259,1,,Reported that their mental health was most of the time or always not good,number
+QN82,260,1,,"Most of the time or always got the kind of help they needed when feeling sad, empty, hopeless, angry, or anxious",number
+QN83,261,1,,Got 8 or more hours of sleep,number
+QN84,262,1,,Experienced unstable housing,number
+QN85,263,1,,"Reported their family sometimes, most of the time, or always worried that their food would run out before they got money to buy more",number
+QN86,264,1,,"Reported sometimes, most of the time, or always the food their family bought ran out and they did not have money to buy more",number
+QN87,265,1,,could get a loaded gun that is ready for them to fire without a parent or other adultâ€™s permission or supervision,number
+QN88,266,1,,Reported that a parent or other adult in their home most of the time or always insulted them or put them down,number
+QN89,267,1,,"Reported that a parent or other adult in their home most of the time or always hit, beat, kicked, or physically hurt them in any way",number
+QN90,268,1,,currently took prescription pain medicine without a doctor's prescription or differently than how a doctor told them to use it,number
+QN91,269,1,,ever used hallucinogenic drugs,number
+QN92,270,1,,"did not drink a can, bottle, or glass of a sports drink",number
+QN93,271,1,,did not drink a bottle or glass of plain water,number
+QN94,272,1,,ate an unusually large amount of food in a short period of time and experienced a loss of control over how much they were eating or felt that they could not stop eating even when full,number
+QN95,273,1,,did exercises on three or more days to strengthen or tone their muscles,number
+QN96,274,1,,Talked to the doctor or nurse about their health and behaviors without a parent or guardian in the room,number
+QN97,275,1,,had a sunburn,number
+QN98,276,1,,"Needed counseling or therapy from a health professional, but did not get it because of cost, not knowing how or where to get help, or another reason",number
+QN99,277,1,,Reported that an adult in their household most of the time or always tried hard to make sure their basic needs were met,number
+QN100,278,1,,Reported being worried or very worried about climate change,number
+QN101,279,1,,Reported being worried or very worried about extreme heat,number
+QN102,280,1,,strongly agree or agree that they feel close to people at their school,number
+QN103,281,1,,have been unfairly disciplined at school,number
+QN104,282,1,,reported that their parents or other adults in their family most of the time or always know where they are going or with whom they will be,number
+QN105,283,1,,"have serious difficulty concentrating, remembering, or making decisions",number
+QN106,284,1,,speak English well or very well,number
+SITE,1,3,00,,string
+SCHOOLID,4,10,00,,string
+QNFRCIG,350,1,,,number
+QNDAYCIG,351,1,,,number
+QNFREVP,352,1,,,number
+QNDAYEVP,353,1,,,number
+QNFRSKL,354,1,,,number
+QNDAYSKL,355,1,,,number
+QNFRCGR,356,1,,,number
+QNDAYCGR,357,1,,,number
+QNTB2,358,1,,,number
+QNTB4,359,1,,,number
+QNFRTB4,360,1,,,number
+QNDAYTB4,361,1,,,number
+QNIUDIMP,362,1,,,number
+QNOTHHPL,363,1,,,number
+QNBCNONE,364,1,,,number
+QNCONPP,365,1,,,number
+QNFRUIT1,366,1,,,number
+QNFRUIT2,367,1,,,number
+QNFRUIT3,368,1,,,number
+QNVEG0,369,1,,,number
+QNVEG1,370,1,,,number
+QNVEG2,371,1,,,number
+QNVEG3,372,1,,,number
+QNSODA1,373,1,,,number
+QNSODA2,374,1,,,number
+QNBK7DAY,375,1,,,number
+QNPA0DAY,376,1,,,number
+QNPA7DAY,377,1,,,number
+QNDLYPE,378,1,,,number
+QNNODNT,379,1,,,number
+QNFDINSC,380,1,,,number
+QNSPDRK1,381,1,,,number
+QNSPDRK2,382,1,,,number
+QNWATER1,383,1,,,number
+QNWATER2,384,1,,,number
+QNWATER3,385,1,,,number
+QNILLICT,386,1,,,number
+QNOBESE,387,1,,,number
+QNOWT,388,1,,,number
+WEIGHT,389,10,4,,number
+STRATUM,399,3,,,number
+PSU,402,6,,,number
+BMIPCT,408,5,2,,number
+RACEETH,415,2,00,,string
+Q5ORIG,417,3,00,,string
+Q6ORIG,420,3,00,,string
+RECORD,423,5,,,number

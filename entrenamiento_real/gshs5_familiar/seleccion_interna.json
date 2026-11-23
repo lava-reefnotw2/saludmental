@@ -1,0 +1,72 @@
+[
+  {
+    "test_country": "ARG",
+    "train_countries": [
+      "BOL",
+      "PER",
+      "PRY",
+      "URY"
+    ],
+    "selected": "B1_logreg_C01",
+    "inner_macro_ap": {
+      "B1_logreg_C01": 0.4467651340524711,
+      "B1_logreg_C1": 0.4376673757245705
+    }
+  },
+  {
+    "test_country": "BOL",
+    "train_countries": [
+      "ARG",
+      "PER",
+      "PRY",
+      "URY"
+    ],
+    "selected": "B1_logreg_C01",
+    "inner_macro_ap": {
+      "B1_logreg_C01": 0.4773511855555269,
+      "B1_logreg_C1": 0.4748888928956999
+    }
+  },
+  {
+    "test_country": "PER",
+    "train_countries": [
+      "ARG",
+      "BOL",
+      "PRY",
+      "URY"
+    ],
+    "selected": "B1_logreg_C01",
+    "inner_macro_ap": {
+      "B1_logreg_C01": 0.477343273974279,
+      "B1_logreg_C1": 0.47531421346344727
+    }
+  },
+  {
+    "test_country": "PRY",
+    "train_countries": [
+      "ARG",
+      "BOL",
+      "PER",
+      "URY"
+    ],
+    "selected": "B1_logreg_C01",
+    "inner_macro_ap": {
+      "B1_logreg_C01": 0.4756404395708679,
+      "B1_logreg_C1": 0.4738572389430633
+    }
+  },
+  {
+    "test_country": "URY",
+    "train_countries": [
+      "ARG",
+      "BOL",
+      "PER",
+      "PRY"
+    ],
+    "selected": "B1_logreg_C01",
+    "inner_macro_ap": {
+      "B1_logreg_C01": 0.45818240680145716,
+      "B1_logreg_C1": 0.455908456312041
+    }
+  }
+]

@@ -1,0 +1,27 @@
+SP-07. Detección de patrones de riesgo en salud mental adolescente mediante inteligencia artificial y determinantes sociales
+Título en inglés: Explainable Machine Learning for Adolescent Mental Health Risk Stratification Using Social and Behavioral Determinants.
+Antecedentes: La salud mental adolescente está influida por factores familiares, escolares, sociales, económicos y conductuales. La detección temprana es una prioridad de salud pública.
+Vacío de conocimiento: desarrollar modelos de estratificación de riesgo que evalúen interacciones entre factores individuales y contextuales, con validación intercultural y control de sesgos.
+Objetivo: identificar patrones asociados a indicadores de malestar psicológico y riesgo psicosocial en adolescentes.
+Hipótesis: la integración de factores individuales y contextuales mejorará la identificación de perfiles de vulnerabilidad frente a modelos basados únicamente en variables demográficas.
+Datasets:
+WHO Global School-based Student Health Survey.
+UNICEF Global Insight.
+World Bank.
+Metodología:
+Estudio transversal con encuestas poblacionales.
+Definición de desenlaces utilizando escalas e indicadores validados.
+Comparación de Logistic Regression, Random Forest, XGBoost, CatBoost y MLP.
+Modelos multitarea y ensambles para desenlaces múltiples.
+Validación entre países y grupos demográficos.
+Evaluación de sensibilidad, especificidad, PR-AUC y calibración.
+SHAP y evaluación de sesgo.
+Análisis de utilidad poblacional y prevención de estigmatización.
+Resultados esperados: identificación de perfiles poblacionales de vulnerabilidad y factores contextuales asociados.
+Consideración ética: no presentar el sistema como herramienta diagnóstica individual ni utilizarlo para etiquetar o discriminar adolescentes.
+Impacto
+Novedad
+Potencial Q1
+★★★★★
+★★★★★
+★★★★☆

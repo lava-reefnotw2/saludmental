@@ -1,0 +1,17 @@
+[
+  {
+    "tag": "GTM2015",
+    "url": "https://extranet.who.int/ncdsmicrodata/index.php/metadata/export/488/ddi",
+    "sha256": "67b2690c214e0c12c3a4169c1c93b27cc8332fe055b91e697acbec9008fb8b6a"
+  },
+  {
+    "tag": "HND2012",
+    "url": "https://extranet.who.int/ncdsmicrodata/index.php/metadata/export/103/ddi",
+    "sha256": "d71332ed6693d3ffb4190e5dd7912546196d25ae2d12146fc1851930a0acd136"
+  },
+  {
+    "tag": "PAN2018",
+    "url": "https://extranet.who.int/ncdsmicrodata/index.php/metadata/export/879/ddi",
+    "sha256": "874752dc45643a25a68dc32754f7fec9b63454ccd6123eaec7fdbeddefd711db"
+  }
+]

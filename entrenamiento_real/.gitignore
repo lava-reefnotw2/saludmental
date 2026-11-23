@@ -1,0 +1,6 @@
+# Transient execution runs and state locks (keep baseline verified models and tables)
+runs/
+active.json
+job.json
+training.lock
+*.log

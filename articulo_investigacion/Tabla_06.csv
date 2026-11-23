@@ -1,0 +1,10 @@
+﻿Variable,Media |SHAP|,Pérdida media AP,Rango mediano,Rango mín.–máx.
+Sexo registrado,"0,4863","0,0921","1,0",1–5
+Alcohol,"0,3105","0,0492","2,0",2–6
+Agresión física recibida,"0,2817","0,0850","3,0",1–9
+Amistades cercanas,"0,2078","0,0243","5,0",2–9
+Sedentarismo,"0,1535","0,0281","4,0",3–6
+Inseguridad alimentaria,"0,1161","0,0010","6,0",5–7
+Peleas,"0,1057","0,0157","7,0",3–9
+Actividad física,"0,0580","-0,0010","8,0",6–9
+Edad,"0,0189","-0,0004","8,0",7–8
